@@ -7,7 +7,7 @@ Updated to work with Xcode 7 and iOS 9.
 h2. Building
 
 The sample app in LibMecabSample should build and run as configured in both 
-the simulator and on devices iOS 8+ devices.
+the simulator and on devices.
 
 As for implementing the mecab library into your own app, please check the following
 tutorial for a couple of options:
