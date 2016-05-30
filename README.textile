@@ -1,33 +1,42 @@
-h1. 形態素解析エンジンMecab on iPhone（Cocoa Static Library版）
+h1. Japanese Morphological Analyzer Mecab on iPhone（Cocoa Static Library Version）
 
-形態素解析エンジン Mecab を iPhone 上で利用するサンプルアプリケーションです。
-Mecab を Cocoa Touch Static Libaray としてビルドしています。
+This is an application that integrates Mecab and allows it to be used on iOS.
+Mecab is built as a Cocoa Touch Static Libarary.
+Updated to work with Xcode 7 and iOS 9.
 
-!/FLCLjp/iPhone-libmecab/raw/master/screenshot.png!
+h2. Building
 
-h2. ビルド方法
+The sample app in LibMecabSample should build and run as configured in both 
+the simulator and on devices iOS 8+ devices.
 
-h3. xcode 4
+As for implementing the mecab library into your own app, please check the following
+tutorial for a couple of options:
 
-# LibMecabSample/LibMecabSample.xcodeproj を開きます。
-# ビルドターゲットで LibMecabSample を選びビルドします。
+"Creating a Static Library in iOS Tutorial":https://www.raywenderlich.com/41377/creating-a-static-library-in-ios-tutorial
 
-h3. xcode 3
+Unfortunately, you may end up with errors following either method listed in the tutorial.
 
-# mecab/mecab.xcodeproj を開きます。
-# ターゲット（Device/Simulator）、構成を選びビルドします。
-# LibMecabSample/LibMecabSample.xcodeproj を開きます。
-# 先ほどビルドしたものと同じターゲット、構成でビルドします。
+I'm not sure exactly why it doesn't work but if you're able to figure out the problem,
+please post your method to the following post on Stack Overflow:
 
-h2. ライセンス
+"Implementing an older Mecab library into a modern iOS app":http://stackoverflow.com/questions/37405004/implementing-an-older-mecab-library-into-a-modern-ios-app
 
-Mecab およびその関連ファイルについては、各ライブラリーのライセンスに従いご利用ください。
-サンプルアプリケーションについてはライセンスなどの制限は設けておりません。ご自由にご利用ください。
+For now, the best method I've found is to build an app over the top of the LibMecabSample
+app that's included. You can simply rename the project and go from there:
 
-h2. 謝辞
+"Renaming a Project or App":https://developer.apple.com/library/ios/recipes/xcode_help-project_editor/RenamingaProject/RenamingaProject.html
 
-このアプリケーションを作成するにあたり、以下のサイトを参考にさせて頂きました。
+Please let me know if you have any trouble, questions, or comments.
 
-"Mecab":http://mecab.sourceforge.net/
-"Mac OS X Leopard に「標準で」インストールされている MeCabを使ってみる - きまぐれ日記":http://chasen.org/~taku/blog/archives/2008/07/mac_os_x_leropa.html
-"iPhoneからMeCabを呼びたい - pokosho!":http://pokosho.com/b/archives/1012
+h2. License
+
+Mecab is free software and can be used under the GPL, LGPL, and/or BSD licenses.
+For details, please check the COPYING, GPL, LGPL, and BSD files included with Mecab.
+Feel free to use this repository under the terms of the licenses inherited from Mecab.
+
+h2. Acknowledgments
+
+This repository is based on:
+
+"Mecab":http://taku910.github.io/mecab/
+"iPhone-libmecab":https://github.com/FLCLjp/iPhone-libmecab/
