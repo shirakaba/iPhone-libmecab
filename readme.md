@@ -15,7 +15,7 @@ You can implement Mecab from this repo into your own app using the following ste
 
 1.  Manually copy the `mecab` folder over to your project folder. Select `Add Files to "yourProject"...` from the Xcode menu and choose the `mecab.xcodeproj` in the mecab folder you copied over.  The project along with it's subfolders and all required classes will be added to your project tree.
 
-2.  Drag the `Mecab.h`, `Mecab.m`, `Node.h`, and `Node.m` files from the `LibMecabSample` folder into your project, make sure to select `Copy items if needed`.
+2.  Drag the `Mecab.h`, `Mecab.m`, `Node.h`, and `Node.m` files from the `LibMecabSample` folder into your project, making sure to select `Copy items if needed`.
 
 3.  Still in the LibMecabSample folder, drag the `ipadic` folder into your project; I recommend dragging it into the `Supporting Files` group to make sure it goes into your main bundle where mecab can find it.  Again, be sure to select `Copy items if needed`.
 
