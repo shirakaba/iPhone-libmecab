@@ -14,15 +14,6 @@
 		13C86E6B12C87B77006F2369 /* NodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C86E6A12C87B77006F2369 /* NodeCell.m */; };
 		13C86E7D12C87C33006F2369 /* libmecab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E7C12C87C31006F2369 /* libmecab.a */; };
 		13C86E8812C87C70006F2369 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E8712C87C70006F2369 /* libstdc++.dylib */; };
-		13C86E9512C87C9D006F2369 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 13C86E8C12C87C93006F2369 /* char.bin */; };
-		13C86E9612C87C9D006F2369 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 13C86E8D12C87C93006F2369 /* dicrc */; };
-		13C86E9712C87C9D006F2369 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 13C86E8E12C87C93006F2369 /* left-id.def */; };
-		13C86E9812C87C9D006F2369 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 13C86E8F12C87C94006F2369 /* matrix.bin */; };
-		13C86E9912C87C9D006F2369 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 13C86E9012C87C94006F2369 /* pos-id.def */; };
-		13C86E9A12C87C9D006F2369 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 13C86E9112C87C94006F2369 /* rewrite.def */; };
-		13C86E9B12C87C9D006F2369 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 13C86E9212C87C94006F2369 /* right-id.def */; };
-		13C86E9C12C87C9D006F2369 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 13C86E9312C87C9C006F2369 /* sys.dic */; };
-		13C86E9D12C87C9D006F2369 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 13C86E9412C87C9D006F2369 /* unk.dic */; };
 		13C86F6E12C8871C006F2369 /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 13C86F6D12C8871C006F2369 /* mecabrc */; };
 		1D3623260D0F684500981E51 /* LibMecabSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* LibMecabSampleAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -32,6 +23,15 @@
 		2899E5220DE3E06400AC0155 /* LibMecabSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* LibMecabSampleViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* LibMecabSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* LibMecabSampleViewController.m */; };
+		7D2179EF1EB3D2D600E13831 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179E61EB3D2D600E13831 /* char.bin */; };
+		7D2179F01EB3D2D600E13831 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179E71EB3D2D600E13831 /* dicrc */; };
+		7D2179F11EB3D2D600E13831 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179E81EB3D2D600E13831 /* left-id.def */; };
+		7D2179F21EB3D2D600E13831 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179E91EB3D2D600E13831 /* matrix.bin */; };
+		7D2179F31EB3D2D600E13831 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179EA1EB3D2D600E13831 /* pos-id.def */; };
+		7D2179F41EB3D2D600E13831 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179EB1EB3D2D600E13831 /* rewrite.def */; };
+		7D2179F51EB3D2D600E13831 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179EC1EB3D2D600E13831 /* right-id.def */; };
+		7D2179F61EB3D2D600E13831 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179ED1EB3D2D600E13831 /* sys.dic */; };
+		7D2179F71EB3D2D600E13831 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179EE1EB3D2D600E13831 /* unk.dic */; };
 		E630CC2F1CFBE222001774B0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E630CC2E1CFBE222001774B0 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -56,15 +56,6 @@
 		13C86E6A12C87B77006F2369 /* NodeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeCell.m; sourceTree = "<group>"; };
 		13C86E7412C87C31006F2369 /* mecab.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mecab.xcodeproj; path = ../mecab/mecab.xcodeproj; sourceTree = SOURCE_ROOT; };
 		13C86E8712C87C70006F2369 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
-		13C86E8C12C87C93006F2369 /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = char.bin; sourceTree = "<group>"; };
-		13C86E8D12C87C93006F2369 /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dicrc; sourceTree = "<group>"; };
-		13C86E8E12C87C93006F2369 /* left-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "left-id.def"; sourceTree = "<group>"; };
-		13C86E8F12C87C94006F2369 /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = matrix.bin; sourceTree = "<group>"; };
-		13C86E9012C87C94006F2369 /* pos-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pos-id.def"; sourceTree = "<group>"; };
-		13C86E9112C87C94006F2369 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rewrite.def; sourceTree = "<group>"; };
-		13C86E9212C87C94006F2369 /* right-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-id.def"; sourceTree = "<group>"; };
-		13C86E9312C87C9C006F2369 /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = sys.dic; sourceTree = "<group>"; };
-		13C86E9412C87C9D006F2369 /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = unk.dic; sourceTree = "<group>"; };
 		13C86F6D12C8871C006F2369 /* mecabrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mecabrc; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* LibMecabSampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibMecabSampleAppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +69,15 @@
 		28D7ACF70DDB3853001CB0EB /* LibMecabSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibMecabSampleViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* LibMecabSample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibMecabSample_Prefix.pch; sourceTree = "<group>"; };
+		7D2179E61EB3D2D600E13831 /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = char.bin; sourceTree = "<group>"; };
+		7D2179E71EB3D2D600E13831 /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dicrc; sourceTree = "<group>"; };
+		7D2179E81EB3D2D600E13831 /* left-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "left-id.def"; sourceTree = "<group>"; };
+		7D2179E91EB3D2D600E13831 /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = matrix.bin; sourceTree = "<group>"; };
+		7D2179EA1EB3D2D600E13831 /* pos-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pos-id.def"; sourceTree = "<group>"; };
+		7D2179EB1EB3D2D600E13831 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rewrite.def; sourceTree = "<group>"; };
+		7D2179EC1EB3D2D600E13831 /* right-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-id.def"; sourceTree = "<group>"; };
+		7D2179ED1EB3D2D600E13831 /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = sys.dic; sourceTree = "<group>"; };
+		7D2179EE1EB3D2D600E13831 /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = unk.dic; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* LibMecabSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LibMecabSample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		E630CC2E1CFBE222001774B0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,22 +131,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13C86E8B12C87C93006F2369 /* ipadic */ = {
-			isa = PBXGroup;
-			children = (
-				13C86E8C12C87C93006F2369 /* char.bin */,
-				13C86E8D12C87C93006F2369 /* dicrc */,
-				13C86E8E12C87C93006F2369 /* left-id.def */,
-				13C86E8F12C87C94006F2369 /* matrix.bin */,
-				13C86E9012C87C94006F2369 /* pos-id.def */,
-				13C86E9112C87C94006F2369 /* rewrite.def */,
-				13C86E9212C87C94006F2369 /* right-id.def */,
-				13C86E9312C87C9C006F2369 /* sys.dic */,
-				13C86E9412C87C9D006F2369 /* unk.dic */,
-			);
-			path = ipadic;
-			sourceTree = "<group>";
-		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				13C86F6D12C8871C006F2369 /* mecabrc */,
-				13C86E8B12C87C93006F2369 /* ipadic */,
+				7D2179E51EB3D2D600E13831 /* ipadic */,
 				E630CC2E1CFBE222001774B0 /* Default-568h@2x.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				2899E5210DE3E06400AC0155 /* LibMecabSampleViewController.xib */,
@@ -202,6 +186,22 @@
 				13C86E8712C87C70006F2369 /* libstdc++.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D2179E51EB3D2D600E13831 /* ipadic */ = {
+			isa = PBXGroup;
+			children = (
+				7D2179E61EB3D2D600E13831 /* char.bin */,
+				7D2179E71EB3D2D600E13831 /* dicrc */,
+				7D2179E81EB3D2D600E13831 /* left-id.def */,
+				7D2179E91EB3D2D600E13831 /* matrix.bin */,
+				7D2179EA1EB3D2D600E13831 /* pos-id.def */,
+				7D2179EB1EB3D2D600E13831 /* rewrite.def */,
+				7D2179EC1EB3D2D600E13831 /* right-id.def */,
+				7D2179ED1EB3D2D600E13831 /* sys.dic */,
+				7D2179EE1EB3D2D600E13831 /* unk.dic */,
+			);
+			path = ipadic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,19 +273,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				7D2179F61EB3D2D600E13831 /* sys.dic in Resources */,
+				7D2179F51EB3D2D600E13831 /* right-id.def in Resources */,
+				7D2179F71EB3D2D600E13831 /* unk.dic in Resources */,
+				7D2179F31EB3D2D600E13831 /* pos-id.def in Resources */,
+				7D2179EF1EB3D2D600E13831 /* char.bin in Resources */,
 				2899E5220DE3E06400AC0155 /* LibMecabSampleViewController.xib in Resources */,
 				13C86E5E12C87B3E006F2369 /* NodeCell.xib in Resources */,
-				13C86E9512C87C9D006F2369 /* char.bin in Resources */,
-				13C86E9612C87C9D006F2369 /* dicrc in Resources */,
+				7D2179F21EB3D2D600E13831 /* matrix.bin in Resources */,
 				E630CC2F1CFBE222001774B0 /* Default-568h@2x.png in Resources */,
-				13C86E9712C87C9D006F2369 /* left-id.def in Resources */,
-				13C86E9812C87C9D006F2369 /* matrix.bin in Resources */,
-				13C86E9912C87C9D006F2369 /* pos-id.def in Resources */,
-				13C86E9A12C87C9D006F2369 /* rewrite.def in Resources */,
-				13C86E9B12C87C9D006F2369 /* right-id.def in Resources */,
-				13C86E9C12C87C9D006F2369 /* sys.dic in Resources */,
-				13C86E9D12C87C9D006F2369 /* unk.dic in Resources */,
+				7D2179F41EB3D2D600E13831 /* rewrite.def in Resources */,
+				7D2179F11EB3D2D600E13831 /* left-id.def in Resources */,
 				13C86F6E12C8871C006F2369 /* mecabrc in Resources */,
+				7D2179F01EB3D2D600E13831 /* dicrc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
