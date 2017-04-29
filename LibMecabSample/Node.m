@@ -11,8 +11,8 @@
 @implementation Node
 
 @synthesize surface;
-@synthesize feature;
-@synthesize features;
+@synthesize feature; // All features, as comma-separated string. Empty fields marked with: *
+@synthesize features; // All features, parsed into array
 
 - (void)setFeature:(NSString *)value {
 	if (feature) {

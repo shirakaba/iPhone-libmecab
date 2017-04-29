@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NodeCell.h"
+#import "Node.h"
 
 @class Mecab;
 
@@ -18,7 +19,7 @@
 	NodeCell *nodeCell;
 	
 	Mecab *mecab;
-	NSArray *nodes;
+	NSArray<Node *> *nodes;
 
 }
 
@@ -26,7 +27,7 @@
 @property (nonatomic, retain) IBOutlet UITableView *tableView_;
 @property (nonatomic, retain) IBOutlet NodeCell *nodeCell;
 @property (nonatomic, retain) Mecab *mecab;
-@property (nonatomic, retain) NSArray *nodes;
+@property (nonatomic, retain) NSArray<Node *> *nodes;
 
 - (IBAction)parse:(id)sender;
 

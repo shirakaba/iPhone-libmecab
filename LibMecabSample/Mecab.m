@@ -15,7 +15,7 @@
 
 @implementation Mecab
 
-- (NSArray *)parseToNodeWithString:(NSString *)string {
+- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string {
 
 	if (mecab == NULL) {
     
@@ -41,7 +41,7 @@
 		return nil;
 	}
 	
-	NSMutableArray *newNodes = [NSMutableArray array];
+	NSMutableArray<Node *> *newNodes = [NSMutableArray<Node *> array];
 	node = node->next;
 	for (; node->next != NULL; node = node->next) {
 
@@ -52,7 +52,7 @@
 		[newNode release];
 	}
 	
-	return [NSArray arrayWithArray:newNodes];
+	return [NSArray<Node *> arrayWithArray:newNodes];
 }
 
 - (void)dealloc {

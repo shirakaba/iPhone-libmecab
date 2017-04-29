@@ -9,17 +9,15 @@
 
 
 @interface Node : NSObject {
-	
 	NSString *surface;
 	NSString *feature;
 	
-	NSArray *features;
-
+	NSArray<NSString *> *features;
 }
 
 @property (nonatomic, retain) NSString *surface;
 @property (nonatomic, retain) NSString *feature;
-@property (nonatomic, retain) NSArray *features;
+@property (nonatomic, retain) NSArray<NSString *> *features;
 
 // 品詞
 - (NSString *)partOfSpeech;

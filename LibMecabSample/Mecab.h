@@ -7,12 +7,13 @@
 
 #include <mecab.h>
 #import <UIKit/UIKit.h>
+#import "Node.h"
 
 
 @interface Mecab : NSObject {
 	mecab_t *mecab;
 }
 
-- (NSArray *)parseToNodeWithString:(NSString *)string;
+- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string;
 
 @end
