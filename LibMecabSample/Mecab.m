@@ -31,8 +31,8 @@
 	}
 
 	const mecab_node_t *node;
-	const char *buf= [string cStringUsingEncoding:NSJapaneseEUCStringEncoding];
-	NSUInteger l= [string lengthOfBytesUsingEncoding:NSJapaneseEUCStringEncoding];
+	const char *buf= [string cStringUsingEncoding:NSUTF8StringEncoding];
+	NSUInteger l= [string lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
 
 	node = mecab_sparse_tonode2(mecab, buf, l);
 	if (node == NULL) {
@@ -46,8 +46,8 @@
 	for (; node->next != NULL; node = node->next) {
 
 		Node *newNode = [Node new];
-		newNode.surface = [[[NSString alloc] initWithBytes:node->surface length:node->length encoding:NSJapaneseEUCStringEncoding] autorelease];
-		newNode.feature = [NSString stringWithCString:node->feature encoding:NSJapaneseEUCStringEncoding];
+		newNode.surface = [[[NSString alloc] initWithBytes:node->surface length:node->length encoding:NSUTF8StringEncoding] autorelease];
+		newNode.feature = [NSString stringWithCString:node->feature encoding:NSUTF8StringEncoding];
 		[newNodes addObject:newNode];
 		[newNode release];
 	}

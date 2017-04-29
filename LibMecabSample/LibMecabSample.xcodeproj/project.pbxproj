@@ -23,15 +23,15 @@
 		2899E5220DE3E06400AC0155 /* LibMecabSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* LibMecabSampleViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* LibMecabSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* LibMecabSampleViewController.m */; };
-		7D217A031EB3D4E600E13831 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179FA1EB3D4E600E13831 /* char.bin */; };
-		7D217A041EB3D4E600E13831 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179FB1EB3D4E600E13831 /* dicrc */; };
-		7D217A051EB3D4E600E13831 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179FC1EB3D4E600E13831 /* left-id.def */; };
-		7D217A061EB3D4E600E13831 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179FD1EB3D4E600E13831 /* matrix.bin */; };
-		7D217A071EB3D4E600E13831 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179FE1EB3D4E600E13831 /* pos-id.def */; };
-		7D217A081EB3D4E600E13831 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D2179FF1EB3D4E600E13831 /* rewrite.def */; };
-		7D217A091EB3D4E600E13831 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D217A001EB3D4E600E13831 /* right-id.def */; };
-		7D217A0A1EB3D4E600E13831 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D217A011EB3D4E600E13831 /* sys.dic */; };
-		7D217A0B1EB3D4E600E13831 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D217A021EB3D4E600E13831 /* unk.dic */; };
+		7D471C9A1EB494C80038BCA5 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C911EB494C80038BCA5 /* char.bin */; };
+		7D471C9B1EB494C80038BCA5 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C921EB494C80038BCA5 /* dicrc */; };
+		7D471C9C1EB494C80038BCA5 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C931EB494C80038BCA5 /* left-id.def */; };
+		7D471C9D1EB494C80038BCA5 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C941EB494C80038BCA5 /* matrix.bin */; };
+		7D471C9E1EB494C80038BCA5 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C951EB494C80038BCA5 /* pos-id.def */; };
+		7D471C9F1EB494C80038BCA5 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C961EB494C80038BCA5 /* rewrite.def */; };
+		7D471CA01EB494C80038BCA5 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C971EB494C80038BCA5 /* right-id.def */; };
+		7D471CA11EB494C80038BCA5 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C981EB494C80038BCA5 /* sys.dic */; };
+		7D471CA21EB494C80038BCA5 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C991EB494C80038BCA5 /* unk.dic */; };
 		E630CC2F1CFBE222001774B0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E630CC2E1CFBE222001774B0 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -69,15 +69,15 @@
 		28D7ACF70DDB3853001CB0EB /* LibMecabSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibMecabSampleViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* LibMecabSample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibMecabSample_Prefix.pch; sourceTree = "<group>"; };
-		7D2179FA1EB3D4E600E13831 /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = char.bin; sourceTree = "<group>"; };
-		7D2179FB1EB3D4E600E13831 /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dicrc; sourceTree = "<group>"; };
-		7D2179FC1EB3D4E600E13831 /* left-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "left-id.def"; sourceTree = "<group>"; };
-		7D2179FD1EB3D4E600E13831 /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = matrix.bin; sourceTree = "<group>"; };
-		7D2179FE1EB3D4E600E13831 /* pos-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pos-id.def"; sourceTree = "<group>"; };
-		7D2179FF1EB3D4E600E13831 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rewrite.def; sourceTree = "<group>"; };
-		7D217A001EB3D4E600E13831 /* right-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-id.def"; sourceTree = "<group>"; };
-		7D217A011EB3D4E600E13831 /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = sys.dic; sourceTree = "<group>"; };
-		7D217A021EB3D4E600E13831 /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = unk.dic; sourceTree = "<group>"; };
+		7D471C911EB494C80038BCA5 /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = char.bin; sourceTree = "<group>"; };
+		7D471C921EB494C80038BCA5 /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dicrc; sourceTree = "<group>"; };
+		7D471C931EB494C80038BCA5 /* left-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "left-id.def"; sourceTree = "<group>"; };
+		7D471C941EB494C80038BCA5 /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = matrix.bin; sourceTree = "<group>"; };
+		7D471C951EB494C80038BCA5 /* pos-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pos-id.def"; sourceTree = "<group>"; };
+		7D471C961EB494C80038BCA5 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rewrite.def; sourceTree = "<group>"; };
+		7D471C971EB494C80038BCA5 /* right-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-id.def"; sourceTree = "<group>"; };
+		7D471C981EB494C80038BCA5 /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = sys.dic; sourceTree = "<group>"; };
+		7D471C991EB494C80038BCA5 /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = unk.dic; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* LibMecabSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LibMecabSample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		E630CC2E1CFBE222001774B0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,18 +191,18 @@
 		7D2179E51EB3D2D600E13831 /* ipadic */ = {
 			isa = PBXGroup;
 			children = (
-				7D2179FA1EB3D4E600E13831 /* char.bin */,
-				7D2179FB1EB3D4E600E13831 /* dicrc */,
-				7D2179FC1EB3D4E600E13831 /* left-id.def */,
-				7D2179FD1EB3D4E600E13831 /* matrix.bin */,
-				7D2179FE1EB3D4E600E13831 /* pos-id.def */,
-				7D2179FF1EB3D4E600E13831 /* rewrite.def */,
-				7D217A001EB3D4E600E13831 /* right-id.def */,
-				7D217A011EB3D4E600E13831 /* sys.dic */,
-				7D217A021EB3D4E600E13831 /* unk.dic */,
+				7D471C911EB494C80038BCA5 /* char.bin */,
+				7D471C921EB494C80038BCA5 /* dicrc */,
+				7D471C931EB494C80038BCA5 /* left-id.def */,
+				7D471C941EB494C80038BCA5 /* matrix.bin */,
+				7D471C951EB494C80038BCA5 /* pos-id.def */,
+				7D471C961EB494C80038BCA5 /* rewrite.def */,
+				7D471C971EB494C80038BCA5 /* right-id.def */,
+				7D471C981EB494C80038BCA5 /* sys.dic */,
+				7D471C991EB494C80038BCA5 /* unk.dic */,
 			);
 			name = ipadic;
-			path = "naist-jdic";
+			path = "naist-jdic-utf-8";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,19 +274,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				7D217A0A1EB3D4E600E13831 /* sys.dic in Resources */,
-				7D217A091EB3D4E600E13831 /* right-id.def in Resources */,
-				7D217A0B1EB3D4E600E13831 /* unk.dic in Resources */,
-				7D217A071EB3D4E600E13831 /* pos-id.def in Resources */,
-				7D217A031EB3D4E600E13831 /* char.bin in Resources */,
+				7D471CA11EB494C80038BCA5 /* sys.dic in Resources */,
+				7D471CA01EB494C80038BCA5 /* right-id.def in Resources */,
+				7D471CA21EB494C80038BCA5 /* unk.dic in Resources */,
+				7D471C9E1EB494C80038BCA5 /* pos-id.def in Resources */,
+				7D471C9A1EB494C80038BCA5 /* char.bin in Resources */,
 				2899E5220DE3E06400AC0155 /* LibMecabSampleViewController.xib in Resources */,
 				13C86E5E12C87B3E006F2369 /* NodeCell.xib in Resources */,
-				7D217A061EB3D4E600E13831 /* matrix.bin in Resources */,
+				7D471C9D1EB494C80038BCA5 /* matrix.bin in Resources */,
 				E630CC2F1CFBE222001774B0 /* Default-568h@2x.png in Resources */,
-				7D217A081EB3D4E600E13831 /* rewrite.def in Resources */,
-				7D217A051EB3D4E600E13831 /* left-id.def in Resources */,
+				7D471C9F1EB494C80038BCA5 /* rewrite.def in Resources */,
+				7D471C9C1EB494C80038BCA5 /* left-id.def in Resources */,
 				13C86F6E12C8871C006F2369 /* mecabrc in Resources */,
-				7D217A041EB3D4E600E13831 /* dicrc in Resources */,
+				7D471C9B1EB494C80038BCA5 /* dicrc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
