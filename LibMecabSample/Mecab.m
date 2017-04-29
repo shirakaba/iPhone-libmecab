@@ -10,7 +10,6 @@
 #include <string.h>
 #include <iconv.h>
 #import "Mecab.h"
-#import "Node.h"
 
 
 @implementation Mecab
