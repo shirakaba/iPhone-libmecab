@@ -9,7 +9,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <iconv.h>
+//#include <mecab.h>
 #import "Mecab.h"
+
 
 
 @implementation Mecab

@@ -5,7 +5,8 @@
 //  Copyright 2010 FLCL.jp. All rights reserved.
 //
 
-#include <mecab.h>
+//#import "/Users/jamie/Documents/git/iPhone-libmecab/mecab/mecab.h"
+#import "../mecab/mecab.h" // or #import <mecab.h> to use globally installed one
 #import <UIKit/UIKit.h>
 #import "Node.h"
 

@@ -6,13 +6,13 @@
 //
 // This code is currently not used in the project, but does compile.
 
-//import Foundation
-//import UIKit
-//
-//class Uivc: UIViewController {
-//    override func viewDidLoad() {
-//        let mecab : Mecab = Mecab()
-//        let nodes : [Node] = mecab.parseToNode(with: "これはなんですか。")
-//        print(nodes[0].feature)
-//    }
-//}
+import Foundation
+import UIKit
+
+class Uivc: UIViewController {
+    override func viewDidLoad() {
+        let mecab : Mecab = Mecab()
+        let nodes : [Node] = mecab.parseToNode(with: "これはなんですか。")
+        print(nodes[0].feature)
+    }
+}

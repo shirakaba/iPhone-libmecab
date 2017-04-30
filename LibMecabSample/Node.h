@@ -6,7 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+//#import "/Users/jamie/Documents/git/iPhone-libmecab/mecab/mecab.h"
+#import "../mecab/mecab.h" // or #import <mecab.h> to use globally installed one
 
 @interface Node : NSObject {
 	NSString *surface;
