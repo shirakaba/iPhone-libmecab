@@ -138,6 +138,8 @@
 		130B2E5912C7916400444AC7 /* LGPL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LGPL; sourceTree = "<group>"; };
 		130B2E5A12C7916400444AC7 /* NEWS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
 		130B2E5B12C7916400444AC7 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		7D8F2DDB1EB600EF0039B643 /* MecabStatic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MecabStatic.h; sourceTree = "<group>"; };
+		7D8F2DDC1EB600EF0039B643 /* MecabStatic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MecabStatic.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* mecab_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mecab_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libmecab.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmecab.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +170,7 @@
 			children = (
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
+				7D8F2DDA1EB600EF0039B643 /* MecabStatic */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -262,6 +265,15 @@
 				AA747D9E0F9514B9006C5449 /* mecab_Prefix.pch */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		7D8F2DDA1EB600EF0039B643 /* MecabStatic */ = {
+			isa = PBXGroup;
+			children = (
+				7D8F2DDB1EB600EF0039B643 /* MecabStatic.h */,
+				7D8F2DDC1EB600EF0039B643 /* MecabStatic.m */,
+			);
+			path = MecabStatic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
