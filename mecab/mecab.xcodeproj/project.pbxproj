@@ -66,6 +66,8 @@
 		130B2DD912C5033100444AC7 /* viterbisub.h in Headers */ = {isa = PBXBuildFile; fileRef = 130B2D9E12C5033100444AC7 /* viterbisub.h */; };
 		130B2DDA12C5033100444AC7 /* writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 130B2D9F12C5033100444AC7 /* writer.cpp */; };
 		130B2DDB12C5033100444AC7 /* writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 130B2DA012C5033100444AC7 /* writer.h */; };
+		7D38890B1FB7417000C1816E /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D3889091FB7416F00C1816E /* Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D38890C1FB7417000C1816E /* Mecab.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D38890A1FB7416F00C1816E /* Mecab.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AA747D9F0F9514B9006C5449 /* mecab_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* mecab_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -138,6 +140,8 @@
 		130B2E5912C7916400444AC7 /* LGPL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LGPL; sourceTree = "<group>"; };
 		130B2E5A12C7916400444AC7 /* NEWS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
 		130B2E5B12C7916400444AC7 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		7D3889091FB7416F00C1816E /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Node.h; path = ../LibMecabSample/Node.h; sourceTree = "<group>"; };
+		7D38890A1FB7416F00C1816E /* Mecab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Mecab.h; path = ../LibMecabSample/Mecab.h; sourceTree = "<group>"; };
 		7D8F2DDB1EB600EF0039B643 /* MecabStatic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MecabStatic.h; sourceTree = "<group>"; };
 		7D8F2DDC1EB600EF0039B643 /* MecabStatic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MecabStatic.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* mecab_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mecab_Prefix.pch; sourceTree = SOURCE_ROOT; };
@@ -168,6 +172,8 @@
 		0867D691FE84028FC02AAC07 /* mecab */ = {
 			isa = PBXGroup;
 			children = (
+				7D38890A1FB7416F00C1816E /* Mecab.h */,
+				7D3889091FB7416F00C1816E /* Node.h */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				7D8F2DDA1EB600EF0039B643 /* MecabStatic */,
@@ -283,6 +289,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D38890B1FB7417000C1816E /* Node.h in Headers */,
+				7D38890C1FB7417000C1816E /* Mecab.h in Headers */,
 				AA747D9F0F9514B9006C5449 /* mecab_Prefix.pch in Headers */,
 				130B2DA212C5033100444AC7 /* char_property.h in Headers */,
 				130B2DA312C5033100444AC7 /* common.h in Headers */,
@@ -325,9 +333,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "mecab" */;
 			buildPhases = (
-				D2AAC07A0554694100DB518D /* Headers */,
-				D2AAC07B0554694100DB518D /* Sources */,
 				D2AAC07C0554694100DB518D /* Frameworks */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07A0554694100DB518D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -416,7 +424,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = mecab_Prefix.pch;
+				GCC_PREFIX_HEADER = "${SRCROOT}/mecab_Prefix.pch";
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_NAME = mecab;
@@ -431,7 +439,7 @@
 				DSTROOT = /tmp/mecab.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = mecab_Prefix.pch;
+				GCC_PREFIX_HEADER = "${SRCROOT}/mecab_Prefix.pch";
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_NAME = mecab;

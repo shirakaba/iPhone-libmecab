@@ -7,7 +7,7 @@
 
 //#import "/Users/jamie/Documents/git/iPhone-libmecab/mecab/mecab.h"
 #import "../mecab/mecab.h" // or #import <mecab.h> to use globally installed one
-#import <UIKit/UIKit.h>
+// #import <Foundation/Foundation.h> // imported implicitly via mecab_Prefix.pch
 #import "Node.h"
 
 
