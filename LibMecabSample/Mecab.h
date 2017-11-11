@@ -12,9 +12,10 @@
 
 
 @interface Mecab : NSObject {
-	mecab_t *mecab;
+    mecab_t *mecab;
 }
 
 - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string;
 
 @end
+
