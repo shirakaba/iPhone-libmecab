@@ -10,7 +10,7 @@
 #import "NodeCell.h"
 #import "../mecab/objc_bridging/Node.h"
 
-@class MecabObjC;
+@class Mecab;
 
 @interface LibMecabSampleViewController : UIViewController {
 	
