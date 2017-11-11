@@ -7,8 +7,8 @@
 //
 
 #import "LibMecabSampleViewController.h"
-#import "Mecab.h"
-#import "Node.h"
+#import "../mecab/objc_bridging/MecabObjC.h"
+#import "../mecab/objc_bridging/Node.h"
 
 @implementation LibMecabSampleViewController
 
@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	self.mecab = [[Mecab new] autorelease];
+	self.mecab = [[MecabObjC new] autorelease];
 }
 
 - (IBAction)parse:(id)sender {
