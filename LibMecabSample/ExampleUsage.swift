@@ -6,7 +6,6 @@
 //
 // This code is currently not used in the project, but does compile.
 
-import Foundation
 import UIKit
 
 class Uivc: UIViewController {

@@ -6,7 +6,7 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+// #import <Foundation/Foundation.h> // imported implicitly via mecab_Prefix.pch
 
 @interface MecabStatic : NSObject
 
