@@ -18,7 +18,7 @@
 	UITableView *tableView_;
 	NodeCell *nodeCell;
 	
-	MecabObjC *mecab;
+	Mecab *mecab;
 	NSArray<Node *> *nodes;
 
 }
@@ -26,7 +26,7 @@
 @property (nonatomic, retain) IBOutlet UITextField *textField;
 @property (nonatomic, retain) IBOutlet UITableView *tableView_;
 @property (nonatomic, retain) IBOutlet NodeCell *nodeCell;
-@property (nonatomic, retain) MecabObjC *mecab;
+@property (nonatomic, retain) Mecab *mecab;
 @property (nonatomic, retain) NSArray<Node *> *nodes;
 
 - (IBAction)parse:(id)sender;

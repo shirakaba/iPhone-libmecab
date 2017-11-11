@@ -11,7 +11,7 @@
 #import "Node.h"
 
 
-@interface MecabObjC : NSObject {
+@interface Mecab : NSObject {
     mecab_t *mecab;
 }
 

@@ -13,7 +13,7 @@
 
 
 
-@implementation MecabObjC
+@implementation Mecab
 
 - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string {
     

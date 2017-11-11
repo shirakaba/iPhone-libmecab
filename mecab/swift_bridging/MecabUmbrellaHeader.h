@@ -26,6 +26,9 @@ FOUNDATION_EXPORT const unsigned char MecabUmbrellaHeaderVersionString[];
 // #import <MeCab/objc_bridging/Mecab.h>
 // #import <MeCab/objc_bridging/Node.h>
 
-#import <mecab/MecabObjC.h>
-#import <mecab/Node.h>
+// #import <mecab/MecabObjC.h>
+// #import <mecab/Node.h>
+
+ #import "../objc_bridging/MecabObjC.h"
+ #import "../objc_bridging/Node.h"
 

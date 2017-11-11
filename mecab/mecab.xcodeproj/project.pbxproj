@@ -81,6 +81,7 @@
 		7D60FD691FB77D27006E7BF8 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD581FB76EA5006E7BF8 /* sys.dic */; };
 		7D60FD6A1FB77D27006E7BF8 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD591FB76EA5006E7BF8 /* unk.dic */; };
 		7D60FD6B1FB77D27006E7BF8 /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD561FB76E5C006E7BF8 /* mecabrc */; };
+		7D60FD701FB7A6C7006E7BF8 /* mecab-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCCF1FB76DF8006E7BF8 /* mecab-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -162,6 +163,7 @@
 		7D60FD5E1FB76EA5006E7BF8 /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = matrix.bin; path = "Resources/naist-jdic-utf-8/matrix.bin"; sourceTree = "<group>"; };
 		7D60FD5F1FB76EA5006E7BF8 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = rewrite.def; path = "Resources/naist-jdic-utf-8/rewrite.def"; sourceTree = "<group>"; };
 		7D60FD601FB76EA5006E7BF8 /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dicrc; path = "Resources/naist-jdic-utf-8/dicrc"; sourceTree = "<group>"; };
+		7D60FD6F1FB7A4DD006E7BF8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = swift_bridging/module.modulemap; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libmecab.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmecab.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -210,6 +212,7 @@
 		7D60FCCC1FB76DE1006E7BF8 /* swift_bridging */ = {
 			isa = PBXGroup;
 			children = (
+				7D60FD6F1FB7A4DD006E7BF8 /* module.modulemap */,
 				7D60FCCE1FB76DF8006E7BF8 /* Info.plist */,
 				7D60FCCF1FB76DF8006E7BF8 /* mecab-Bridging-Header.h */,
 				7D60FCCD1FB76DF8006E7BF8 /* MecabUmbrellaHeader.h */,
@@ -340,6 +343,7 @@
 				7D60FD3E1FB76E30006E7BF8 /* learner_node.h in Headers */,
 				7D60FD2F1FB76E30006E7BF8 /* context_id.h in Headers */,
 				7D60FD1F1FB76E30006E7BF8 /* ucs.h in Headers */,
+				7D60FD701FB7A6C7006E7BF8 /* mecab-Bridging-Header.h in Headers */,
 				7D60FD371FB76E30006E7BF8 /* param.h in Headers */,
 				7D60FD231FB76E30006E7BF8 /* connector.h in Headers */,
 				7D60FD411FB76E30006E7BF8 /* char_property.h in Headers */,

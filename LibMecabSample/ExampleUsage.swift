@@ -10,7 +10,7 @@ import UIKit
 
 class Uivc: UIViewController {
     override func viewDidLoad() {
-        let mecab : MecabObjC = MecabObjC()
+        let mecab : Mecab = Mecab()
         let nodes : [Node] = mecab.parseToNode(with: "これはなんですか。")
         print(nodes[0].feature)
     }

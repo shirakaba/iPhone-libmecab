@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	self.mecab = [[MecabObjC new] autorelease];
+	self.mecab = [[Mecab new] autorelease];
 }
 
 - (IBAction)parse:(id)sender {
