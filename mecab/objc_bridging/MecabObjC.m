@@ -9,11 +9,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include <iconv.h>
-#import "Mecab.h"
+#import "MecabObjC.h"
 
 
 
-@implementation Mecab
+@implementation MecabObjC
 
 - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string {
     
