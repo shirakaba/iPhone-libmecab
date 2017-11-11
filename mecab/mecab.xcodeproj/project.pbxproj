@@ -458,6 +458,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_NAME = mecab;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 			};
 			name = Debug;
 		};
@@ -472,6 +473,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_NAME = mecab;
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
