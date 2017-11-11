@@ -22,8 +22,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		13C86E5B12C87B30006F2369 /* Mecab.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C86E5812C87B30006F2369 /* Mecab.m */; };
-		13C86E5C12C87B30006F2369 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C86E5A12C87B30006F2369 /* Node.m */; };
 		13C86E5E12C87B3E006F2369 /* NodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C86E5D12C87B3E006F2369 /* NodeCell.xib */; };
 		13C86E6812C87B6C006F2369 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E6712C87B6C006F2369 /* libiconv.dylib */; };
 		13C86E6B12C87B77006F2369 /* NodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C86E6A12C87B77006F2369 /* NodeCell.m */; };
@@ -48,9 +46,6 @@
 		7D471CA11EB494C80038BCA5 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C981EB494C80038BCA5 /* sys.dic */; };
 		7D471CA21EB494C80038BCA5 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C991EB494C80038BCA5 /* unk.dic */; };
 		7D471CA51EB4B7610038BCA5 /* ExampleUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D471CA41EB4B7610038BCA5 /* ExampleUsage.swift */; };
-		7D471CC41EB4DC820038BCA5 /* Mecab.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C86E5812C87B30006F2369 /* Mecab.m */; };
-		7D471CC61EB4DC820038BCA5 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C86E5A12C87B30006F2369 /* Node.m */; };
-		7D471CC71EB4DC820038BCA5 /* LibMecabSample-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D471CA31EB4B7610038BCA5 /* LibMecabSample-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D471CCC1EB4DEAC0038BCA5 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C911EB494C80038BCA5 /* char.bin */; };
 		7D471CCD1EB4DEAC0038BCA5 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C921EB494C80038BCA5 /* dicrc */; };
 		7D471CCE1EB4DEAC0038BCA5 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C931EB494C80038BCA5 /* left-id.def */; };
@@ -63,21 +58,12 @@
 		7D471CD51EB4DEAF0038BCA5 /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 13C86F6D12C8871C006F2369 /* mecabrc */; };
 		7D471CD61EB4DEB50038BCA5 /* LibMecabSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* LibMecabSample-Info.plist */; };
 		7D471CD81EB4DEE30038BCA5 /* libmecab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E7C12C87C31006F2369 /* libmecab.a */; };
-		7D471CDB1EB4E4370038BCA5 /* MeCab.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D471CAE1EB4D6CB0038BCA5 /* MeCab.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D471CDF1EB4E4420038BCA5 /* Mecab.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C86E5712C87B30006F2369 /* Mecab.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D471CE01EB4E4420038BCA5 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C86E5912C87B30006F2369 /* Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D471CE21EB4E7390038BCA5 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D471CE11EB4E7390038BCA5 /* libstdc++.tbd */; };
 		7D471CE41EB4E7460038BCA5 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D471CE31EB4E7460038BCA5 /* libiconv.tbd */; };
 		7D8F2DD41EB5FFCA0039B643 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		7D8F2DEA1EB6010F0039B643 /* MecabStatic.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8F2DE91EB6010F0039B643 /* MecabStatic.m */; };
 		7D8F2DEB1EB6010F0039B643 /* MecabStatic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7D8F2DE81EB6010F0039B643 /* MecabStatic.h */; };
-		7D8F2DF21EB601250039B643 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C86E5A12C87B30006F2369 /* Node.m */; };
-		7D8F2DF31EB601280039B643 /* Mecab.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C86E5812C87B30006F2369 /* Mecab.m */; };
 		7D8F2DF41EB601480039B643 /* libmecab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E7C12C87C31006F2369 /* libmecab.a */; };
-		7D8F2DF81EB601790039B643 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C86E5912C87B30006F2369 /* Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D8F2DF91EB6017B0039B643 /* Mecab.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C86E5712C87B30006F2369 /* Mecab.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D8F2DFA1EB6017D0039B643 /* LibMecabSample-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D471CA31EB4B7610038BCA5 /* LibMecabSample-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D8F2DFB1EB6018A0039B643 /* MeCab.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D471CAE1EB4D6CB0038BCA5 /* MeCab.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7D8F2DFF1EB6029A0039B643 /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 13C86F6D12C8871C006F2369 /* mecabrc */; };
 		7D8F2E001EB6029A0039B643 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C911EB494C80038BCA5 /* char.bin */; };
 		7D8F2E011EB6029A0039B643 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D471C921EB494C80038BCA5 /* dicrc */; };
@@ -140,10 +126,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		13C86E5712C87B30006F2369 /* Mecab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mecab.h; sourceTree = "<group>"; };
-		13C86E5812C87B30006F2369 /* Mecab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mecab.m; sourceTree = "<group>"; };
-		13C86E5912C87B30006F2369 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
-		13C86E5A12C87B30006F2369 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
 		13C86E5D12C87B3E006F2369 /* NodeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NodeCell.xib; sourceTree = "<group>"; };
 		13C86E6712C87B6C006F2369 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		13C86E6912C87B77006F2369 /* NodeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeCell.h; sourceTree = "<group>"; };
@@ -172,11 +154,8 @@
 		7D471C971EB494C80038BCA5 /* right-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-id.def"; sourceTree = "<group>"; };
 		7D471C981EB494C80038BCA5 /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = sys.dic; sourceTree = "<group>"; };
 		7D471C991EB494C80038BCA5 /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = unk.dic; sourceTree = "<group>"; };
-		7D471CA31EB4B7610038BCA5 /* LibMecabSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LibMecabSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		7D471CA41EB4B7610038BCA5 /* ExampleUsage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleUsage.swift; sourceTree = "<group>"; };
 		7D471CAC1EB4D6CB0038BCA5 /* Mecab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mecab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D471CAE1EB4D6CB0038BCA5 /* MeCab.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeCab.h; sourceTree = "<group>"; };
-		7D471CAF1EB4D6CB0038BCA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D471CBB1EB4D89C0038BCA5 /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libiconv.2.tbd; sourceTree = DEVELOPER_DIR; };
 		7D471CBD1EB4D8B30038BCA5 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libstdc++.6.0.9.tbd"; sourceTree = DEVELOPER_DIR; };
 		7D471CBF1EB4D9320038BCA5 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../../../usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
@@ -238,19 +217,6 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		13C86E5612C87B30006F2369 /* Mecab */ = {
-			isa = PBXGroup;
-			children = (
-				13C86E5712C87B30006F2369 /* Mecab.h */,
-				13C86E5812C87B30006F2369 /* Mecab.m */,
-				13C86E5912C87B30006F2369 /* Node.h */,
-				13C86E5A12C87B30006F2369 /* Node.m */,
-				7D471CA41EB4B7610038BCA5 /* ExampleUsage.swift */,
-				7D471CA31EB4B7610038BCA5 /* LibMecabSample-Bridging-Header.h */,
-			);
-			name = Mecab;
-			sourceTree = "<group>";
-		};
 		13C86E7512C87C31006F2369 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,10 +238,10 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				7D471CA41EB4B7610038BCA5 /* ExampleUsage.swift */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
-				7D471CAD1EB4D6CB0038BCA5 /* MeCab */,
 				7D8F2DE71EB6010F0039B643 /* MecabStatic */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -287,7 +253,6 @@
 			isa = PBXGroup;
 			children = (
 				13C86E7412C87C31006F2369 /* mecab.xcodeproj */,
-				13C86E5612C87B30006F2369 /* Mecab */,
 				32CA4F630368D1EE00C91783 /* LibMecabSample_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -342,15 +307,6 @@
 			path = "naist-jdic-utf-8";
 			sourceTree = "<group>";
 		};
-		7D471CAD1EB4D6CB0038BCA5 /* MeCab */ = {
-			isa = PBXGroup;
-			children = (
-				7D471CAE1EB4D6CB0038BCA5 /* MeCab.h */,
-				7D471CAF1EB4D6CB0038BCA5 /* Info.plist */,
-			);
-			path = MeCab;
-			sourceTree = "<group>";
-		};
 		7D8F2DE71EB6010F0039B643 /* MecabStatic */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,10 +323,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D471CDB1EB4E4370038BCA5 /* MeCab.h in Headers */,
-				7D471CDF1EB4E4420038BCA5 /* Mecab.h in Headers */,
-				7D471CE01EB4E4420038BCA5 /* Node.h in Headers */,
-				7D471CC71EB4DC820038BCA5 /* LibMecabSample-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,10 +330,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D8F2DF81EB601790039B643 /* Node.h in Headers */,
-				7D8F2DF91EB6017B0039B643 /* Mecab.h in Headers */,
-				7D8F2DFA1EB6017D0039B643 /* LibMecabSample-Bridging-Header.h in Headers */,
-				7D8F2DFB1EB6018A0039B643 /* MeCab.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,8 +554,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* LibMecabSampleAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* LibMecabSampleViewController.m in Sources */,
-				13C86E5B12C87B30006F2369 /* Mecab.m in Sources */,
-				13C86E5C12C87B30006F2369 /* Node.m in Sources */,
 				13C86E6B12C87B77006F2369 /* NodeCell.m in Sources */,
 				7D471CA51EB4B7610038BCA5 /* ExampleUsage.swift in Sources */,
 			);
@@ -618,8 +564,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D8F2DD41EB5FFCA0039B643 /* main.m in Sources */,
-				7D471CC41EB4DC820038BCA5 /* Mecab.m in Sources */,
-				7D471CC61EB4DC820038BCA5 /* Node.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,8 +572,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D8F2DEA1EB6010F0039B643 /* MecabStatic.m in Sources */,
-				7D8F2DF21EB601250039B643 /* Node.m in Sources */,
-				7D8F2DF31EB601280039B643 /* Mecab.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
