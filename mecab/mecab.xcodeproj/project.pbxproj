@@ -6,6 +6,22 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		7D6D55551FB874B400DEF011 /* mecabFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7D6D55561FB874B400DEF011 /* Build configuration list for PBXAggregateTarget "mecabFramework" */;
+			buildPhases = (
+				7D6D555B1FB874E200DEF011 /* Run Script: "Multiplatform build" */,
+			);
+			dependencies = (
+				7D6D55671FB876CC00DEF011 /* PBXTargetDependency */,
+				7D6D555A1FB874DD00DEF011 /* PBXTargetDependency */,
+			);
+			name = mecabFramework;
+			productName = Mecab;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		7D60FCD81FB76E11006E7BF8 /* mecab_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD31FB76E11006E7BF8 /* mecab_Prefix.pch */; };
 		7D60FCD91FB76E11006E7BF8 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D60FCD41FB76E11006E7BF8 /* Node.m */; };
@@ -71,19 +87,36 @@
 		7D60FD511FB76E30006E7BF8 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FD161FB76E2F006E7BF8 /* common.h */; };
 		7D60FD521FB76E30006E7BF8 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FD171FB76E2F006E7BF8 /* thread.h */; };
 		7D60FD531FB76E30006E7BF8 /* darts.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FD181FB76E2F006E7BF8 /* darts.h */; };
-		7D60FD621FB77D27006E7BF8 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5B1FB76EA5006E7BF8 /* char.bin */; };
-		7D60FD631FB77D27006E7BF8 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD601FB76EA5006E7BF8 /* dicrc */; };
-		7D60FD641FB77D27006E7BF8 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5A1FB76EA5006E7BF8 /* left-id.def */; };
-		7D60FD651FB77D27006E7BF8 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5E1FB76EA5006E7BF8 /* matrix.bin */; };
-		7D60FD661FB77D27006E7BF8 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5D1FB76EA5006E7BF8 /* pos-id.def */; };
-		7D60FD671FB77D27006E7BF8 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5F1FB76EA5006E7BF8 /* rewrite.def */; };
-		7D60FD681FB77D27006E7BF8 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5C1FB76EA5006E7BF8 /* right-id.def */; };
-		7D60FD691FB77D27006E7BF8 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD581FB76EA5006E7BF8 /* sys.dic */; };
-		7D60FD6A1FB77D27006E7BF8 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD591FB76EA5006E7BF8 /* unk.dic */; };
-		7D60FD6B1FB77D27006E7BF8 /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD561FB76E5C006E7BF8 /* mecabrc */; };
 		7D60FD701FB7A6C7006E7BF8 /* mecab-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCCF1FB76DF8006E7BF8 /* mecab-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D6D55681FB876F800DEF011 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5B1FB76EA5006E7BF8 /* char.bin */; };
+		7D6D55691FB876F800DEF011 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD601FB76EA5006E7BF8 /* dicrc */; };
+		7D6D556A1FB876F800DEF011 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5A1FB76EA5006E7BF8 /* left-id.def */; };
+		7D6D556B1FB876F800DEF011 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5E1FB76EA5006E7BF8 /* matrix.bin */; };
+		7D6D556C1FB876F800DEF011 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5D1FB76EA5006E7BF8 /* pos-id.def */; };
+		7D6D556D1FB876F800DEF011 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5F1FB76EA5006E7BF8 /* rewrite.def */; };
+		7D6D556E1FB876F800DEF011 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5C1FB76EA5006E7BF8 /* right-id.def */; };
+		7D6D556F1FB876F800DEF011 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD581FB76EA5006E7BF8 /* sys.dic */; };
+		7D6D55701FB876F800DEF011 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD591FB76EA5006E7BF8 /* unk.dic */; };
+		7D6D55711FB876F800DEF011 /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD561FB76E5C006E7BF8 /* mecabrc */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D6D55591FB874DD00DEF011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = mecab;
+		};
+		7D6D55661FB876CC00DEF011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D6D555F1FB875FB00DEF011;
+			remoteInfo = mecabResources;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7D60FCCD1FB76DF8006E7BF8 /* MecabUmbrellaHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MecabUmbrellaHeader.h; path = swift_bridging/MecabUmbrellaHeader.h; sourceTree = "<group>"; };
@@ -164,11 +197,21 @@
 		7D60FD5F1FB76EA5006E7BF8 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = rewrite.def; path = "Resources/naist-jdic-utf-8/rewrite.def"; sourceTree = "<group>"; };
 		7D60FD601FB76EA5006E7BF8 /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dicrc; path = "Resources/naist-jdic-utf-8/dicrc"; sourceTree = "<group>"; };
 		7D60FD6F1FB7A4DD006E7BF8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = swift_bridging/module.modulemap; sourceTree = "<group>"; };
+		7D6D55601FB875FB00DEF011 /* mecabResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mecabResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6D55621FB875FB00DEF011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D6D55721FB8772000DEF011 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libmecab.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmecab.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7D6D555D1FB875FB00DEF011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07C0554694100DB518D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				D2AAC07E0554694100DB518D /* libmecab.a */,
+				7D6D55601FB875FB00DEF011 /* mecabResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +239,7 @@
 				7D60FCDD1FB76E19006E7BF8 /* src */,
 				7D60FCD21FB76DFF006E7BF8 /* objc_bridging */,
 				7D60FCCC1FB76DE1006E7BF8 /* swift_bridging */,
+				7D6D55611FB875FB00DEF011 /* mecabResources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -204,6 +249,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D6D55721FB8772000DEF011 /* CoreFoundation.framework */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -323,6 +369,14 @@
 			name = "naist-jdic-utf-8";
 			sourceTree = "<group>";
 		};
+		7D6D55611FB875FB00DEF011 /* mecabResources */ = {
+			isa = PBXGroup;
+			children = (
+				7D6D55621FB875FB00DEF011 /* Info.plist */,
+			);
+			path = mecabResources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -371,6 +425,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		7D6D555F1FB875FB00DEF011 /* mecabResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D6D55631FB875FB00DEF011 /* Build configuration list for PBXNativeTarget "mecabResources" */;
+			buildPhases = (
+				7D6D555C1FB875FB00DEF011 /* Sources */,
+				7D6D555D1FB875FB00DEF011 /* Frameworks */,
+				7D6D555E1FB875FB00DEF011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mecabResources;
+			productName = mecabResources;
+			productReference = 7D6D55601FB875FB00DEF011 /* mecabResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		D2AAC07D0554694100DB518D /* mecab */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "mecab" */;
@@ -378,7 +449,6 @@
 				D2AAC07B0554694100DB518D /* Sources */,
 				D2AAC07C0554694100DB518D /* Frameworks */,
 				D2AAC07A0554694100DB518D /* Headers */,
-				7D60FD611FB77D15006E7BF8 /* Resources */,
 				7D6D55541FB86E3A00DEF011 /* Run Script: "Build Framework" */,
 			);
 			buildRules = (
@@ -397,6 +467,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
+				TargetAttributes = {
+					7D6D55551FB874B400DEF011 = {
+						CreatedOnToolsVersion = 9.0.1;
+					};
+					7D6D555F1FB875FB00DEF011 = {
+						CreatedOnToolsVersion = 9.0.1;
+					};
+				};
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "mecab" */;
 			compatibilityVersion = "Xcode 3.1";
@@ -414,25 +492,27 @@
 			projectRoot = "";
 			targets = (
 				D2AAC07D0554694100DB518D /* mecab */,
+				7D6D55551FB874B400DEF011 /* mecabFramework */,
+				7D6D555F1FB875FB00DEF011 /* mecabResources */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7D60FD611FB77D15006E7BF8 /* Resources */ = {
+		7D6D555E1FB875FB00DEF011 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D60FD621FB77D27006E7BF8 /* char.bin in Resources */,
-				7D60FD631FB77D27006E7BF8 /* dicrc in Resources */,
-				7D60FD641FB77D27006E7BF8 /* left-id.def in Resources */,
-				7D60FD651FB77D27006E7BF8 /* matrix.bin in Resources */,
-				7D60FD661FB77D27006E7BF8 /* pos-id.def in Resources */,
-				7D60FD671FB77D27006E7BF8 /* rewrite.def in Resources */,
-				7D60FD681FB77D27006E7BF8 /* right-id.def in Resources */,
-				7D60FD691FB77D27006E7BF8 /* sys.dic in Resources */,
-				7D60FD6A1FB77D27006E7BF8 /* unk.dic in Resources */,
-				7D60FD6B1FB77D27006E7BF8 /* mecabrc in Resources */,
+				7D6D55681FB876F800DEF011 /* char.bin in Resources */,
+				7D6D55691FB876F800DEF011 /* dicrc in Resources */,
+				7D6D556A1FB876F800DEF011 /* left-id.def in Resources */,
+				7D6D556B1FB876F800DEF011 /* matrix.bin in Resources */,
+				7D6D556C1FB876F800DEF011 /* pos-id.def in Resources */,
+				7D6D556D1FB876F800DEF011 /* rewrite.def in Resources */,
+				7D6D556E1FB876F800DEF011 /* right-id.def in Resources */,
+				7D6D556F1FB876F800DEF011 /* sys.dic in Resources */,
+				7D6D55701FB876F800DEF011 /* unk.dic in Resources */,
+				7D6D55711FB876F800DEF011 /* mecabrc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,9 +533,30 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
 		};
+		7D6D555B1FB874E200DEF011 /* Run Script: "Multiplatform build" */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script: \"Multiplatform build\"";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nJB_BUNDLE_NAME=mecabResources\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n\n# Ensure that the framework is present in both platorm's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework to the user's desktop\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"\n\n# Copy the resources bundle to the user's desktop\n# ditto \"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.bundle\" \\\n# \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.bundle\"\n\n# In our case, the bundle name is mecabResources.bundle rather than mecab.bundle\nditto \"${BUILT_PRODUCTS_DIR}/${JB_BUNDLE_NAME}.bundle\" \\\n\"${HOME}/Desktop/${JB_BUNDLE_NAME}.bundle\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7D6D555C1FB875FB00DEF011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC07B0554694100DB518D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -494,6 +595,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7D6D555A1FB874DD00DEF011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* mecab */;
+			targetProxy = 7D6D55591FB874DD00DEF011 /* PBXContainerItemProxy */;
+		};
+		7D6D55671FB876CC00DEF011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D6D555F1FB875FB00DEF011 /* mecabResources */;
+			targetProxy = 7D6D55661FB876CC00DEF011 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB921F08733DC00010E9CD /* Debug */ = {
@@ -562,6 +676,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
@@ -598,9 +714,105 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		7D6D55571FB874B400DEF011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVU9P2GAL9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7D6D55581FB874B400DEF011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVU9P2GAL9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7D6D55641FB875FB00DEF011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TVU9P2GAL9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = mecabResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bottledlogic.mecab.mecabResources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		7D6D55651FB875FB00DEF011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TVU9P2GAL9;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = mecabResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bottledlogic.mecab.mecabResources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -621,6 +833,24 @@
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
 				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D6D55561FB874B400DEF011 /* Build configuration list for PBXAggregateTarget "mecabFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D6D55571FB874B400DEF011 /* Debug */,
+				7D6D55581FB874B400DEF011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D6D55631FB875FB00DEF011 /* Build configuration list for PBXNativeTarget "mecabResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D6D55641FB875FB00DEF011 /* Debug */,
+				7D6D55651FB875FB00DEF011 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
