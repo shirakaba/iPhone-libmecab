@@ -198,6 +198,7 @@
 		7D60FD601FB76EA5006E7BF8 /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dicrc; path = "Resources/naist-jdic-utf-8/dicrc"; sourceTree = "<group>"; };
 		7D60FD6F1FB7A4DD006E7BF8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = swift_bridging/module.modulemap; sourceTree = "<group>"; };
 		7D6D55601FB875FB00DEF011 /* mecabResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mecabResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6D55621FB875FB00DEF011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D6D55721FB8772000DEF011 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libmecab.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmecab.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,6 +239,7 @@
 				7D60FCDD1FB76E19006E7BF8 /* src */,
 				7D60FCD21FB76DFF006E7BF8 /* objc_bridging */,
 				7D60FCCC1FB76DE1006E7BF8 /* swift_bridging */,
+				7D6D55611FB875FB00DEF011 /* mecabResources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -365,6 +367,14 @@
 				7D60FD591FB76EA5006E7BF8 /* unk.dic */,
 			);
 			name = "naist-jdic-utf-8";
+			sourceTree = "<group>";
+		};
+		7D6D55611FB875FB00DEF011 /* mecabResources */ = {
+			isa = PBXGroup;
+			children = (
+				7D6D55621FB875FB00DEF011 /* Info.plist */,
+			);
+			path = mecabResources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
