@@ -32,6 +32,10 @@ FOUNDATION_EXPORT const unsigned char MecabUmbrellaHeaderVersionString[];
 // #import "../objc_bridging/MecabObjC.h"
 // #import "../objc_bridging/Node.h"
 
-#import <mecabFramework/MecabObjC.h>
-#import <mecabFramework/Node.h>
+// #import <mecabFramework/MecabObjC.h>
+// #import <mecabFramework/Node.h>
 
+// Although the target name is "mecabFramework" (for uniqueness), the build script for the framework
+// ultimately names it as "mecab.framework".
+#import <mecab/MecabObjC.h>
+#import <mecab/Node.h>
