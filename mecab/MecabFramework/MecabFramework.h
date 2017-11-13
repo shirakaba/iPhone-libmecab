@@ -1,19 +1,17 @@
 //
-//  MeCab.h
-//  MeCab
+//  MecabFramework.h
+//  MecabFramework
 //
-//  Created by jamie on 29/04/2017.
-//
+//  Created by jamie on 13/11/2017.
 //
 
-// #import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-//! Project version number for MecabUmbrellaHeader.
-FOUNDATION_EXPORT double MecabUmbrellaHeaderVersionNumber;
+//! Project version number for MecabFramework.
+FOUNDATION_EXPORT double MecabFrameworkVersionNumber;
 
-//! Project version string for MecabUmbrellaHeader.
-FOUNDATION_EXPORT const unsigned char MecabUmbrellaHeaderVersionString[];
+//! Project version string for MecabFramework.
+FOUNDATION_EXPORT const unsigned char MecabFrameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <MecabFramework/PublicHeader.h>
 
@@ -39,3 +37,4 @@ FOUNDATION_EXPORT const unsigned char MecabUmbrellaHeaderVersionString[];
 // ultimately names it as "mecab.framework".
 #import <MecabFramework/MecabObjC.h>
 #import <MecabFramework/Node.h>
+

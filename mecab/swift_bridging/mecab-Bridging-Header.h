@@ -5,6 +5,10 @@
 //  May be able to get around that by making a framework.
 //
 
+/* These two imports DO work when the consumer has this file explicitly set as the bridging header.  */
+// #import "../objc_bridging/MecabObjC.h"
+// #import "../objc_bridging/Node.h"
 
-#import "../objc_bridging/MecabObjC.h"
-#import "../objc_bridging/Node.h"
+/* Trying to make it relative to the framework so that this bridging header gets bundled in. */
+#import <MecabFramework/MecabObjC.h>
+#import <MecabFramework/Node.h>

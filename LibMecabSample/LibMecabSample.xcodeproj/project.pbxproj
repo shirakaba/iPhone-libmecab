@@ -45,6 +45,13 @@
 			remoteGlobalIDString = 7D6D55601FB875FB00DEF011;
 			remoteInfo = mecabResources;
 		};
+		7D6D55A21FB92B0800DEF011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13C86E7412C87C31006F2369 /* mecab.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7D6D55871FB9252500DEF011;
+			remoteInfo = MecabFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -137,6 +144,7 @@
 			children = (
 				13C86E7C12C87C31006F2369 /* libmecab.a */,
 				7D6D55791FB87C2900DEF011 /* mecabResources.bundle */,
+				7D6D55A31FB92B0800DEF011 /* MecabFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -312,6 +320,13 @@
 			remoteRef = 7D6D55781FB87C2900DEF011 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		7D6D55A31FB92B0800DEF011 /* MecabFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MecabFramework.framework;
+			remoteRef = 7D6D55A21FB92B0800DEF011 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -393,7 +408,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = LibMecabSample;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/../mecab/swift_bridging/mecab-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -414,7 +428,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = LibMecabSample;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/../mecab/swift_bridging/mecab-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
