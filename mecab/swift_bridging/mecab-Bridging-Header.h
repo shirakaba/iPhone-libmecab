@@ -11,4 +11,4 @@
 
 /* Trying to make it relative to the framework so that this bridging header gets bundled in. */
 #import <MecabFramework/MecabObjC.h>
-#import <MecabFramework/Node.h>
+#import <MecabFramework/NodeObjC.h>

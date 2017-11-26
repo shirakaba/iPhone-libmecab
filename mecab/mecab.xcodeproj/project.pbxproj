@@ -23,10 +23,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		7D60FCD81FB76E11006E7BF8 /* mecab_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD31FB76E11006E7BF8 /* mecab_Prefix.pch */; };
-		7D60FCD91FB76E11006E7BF8 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D60FCD41FB76E11006E7BF8 /* Node.m */; };
+		7D60FCD81FB76E11006E7BF8 /* mecab-prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD31FB76E11006E7BF8 /* mecab-prefix.pch */; };
+		7D60FCD91FB76E11006E7BF8 /* NodeObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D60FCD41FB76E11006E7BF8 /* NodeObjC.m */; };
 		7D60FCDA1FB76E11006E7BF8 /* MecabObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D60FCD51FB76E11006E7BF8 /* MecabObjC.m */; };
-		7D60FCDB1FB76E11006E7BF8 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD61FB76E11006E7BF8 /* Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D60FCDB1FB76E11006E7BF8 /* NodeObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD61FB76E11006E7BF8 /* NodeObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D60FCDC1FB76E11006E7BF8 /* MecabObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD71FB76E11006E7BF8 /* MecabObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D60FD191FB76E30006E7BF8 /* mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCDE1FB76E26006E7BF8 /* mutex.h */; };
 		7D60FD1A1FB76E30006E7BF8 /* stream_wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCDF1FB76E26006E7BF8 /* stream_wrapper.h */; };
@@ -98,9 +98,9 @@
 		7D6D556F1FB876F800DEF011 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD581FB76EA5006E7BF8 /* sys.dic */; };
 		7D6D55701FB876F800DEF011 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD591FB76EA5006E7BF8 /* unk.dic */; };
 		7D6D55711FB876F800DEF011 /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD561FB76E5C006E7BF8 /* mecabrc */; };
-		7D6D558B1FB9252500DEF011 /* MecabFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D6D55891FB9252500DEF011 /* MecabFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D6D558B1FB9252500DEF011 /* MecabFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D6D55891FB9252500DEF011 /* MecabFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D6D559D1FB9259900DEF011 /* MecabObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD71FB76E11006E7BF8 /* MecabObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D6D559E1FB9259900DEF011 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD61FB76E11006E7BF8 /* Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D6D559E1FB9259900DEF011 /* NodeObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD61FB76E11006E7BF8 /* NodeObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -138,10 +138,10 @@
 /* Begin PBXFileReference section */
 		7D60FCCE1FB76DF8006E7BF8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = swift_bridging/Info.plist; sourceTree = "<group>"; };
 		7D60FCCF1FB76DF8006E7BF8 /* mecab-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "mecab-Bridging-Header.h"; path = "swift_bridging/mecab-Bridging-Header.h"; sourceTree = "<group>"; };
-		7D60FCD31FB76E11006E7BF8 /* mecab_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mecab_Prefix.pch; path = objc_bridging/mecab_Prefix.pch; sourceTree = "<group>"; };
-		7D60FCD41FB76E11006E7BF8 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Node.m; path = objc_bridging/Node.m; sourceTree = "<group>"; };
+		7D60FCD31FB76E11006E7BF8 /* mecab-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "mecab-prefix.pch"; path = "objc_bridging/mecab-prefix.pch"; sourceTree = "<group>"; };
+		7D60FCD41FB76E11006E7BF8 /* NodeObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NodeObjC.m; path = objc_bridging/NodeObjC.m; sourceTree = "<group>"; };
 		7D60FCD51FB76E11006E7BF8 /* MecabObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MecabObjC.m; path = objc_bridging/MecabObjC.m; sourceTree = "<group>"; };
-		7D60FCD61FB76E11006E7BF8 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Node.h; path = objc_bridging/Node.h; sourceTree = "<group>"; };
+		7D60FCD61FB76E11006E7BF8 /* NodeObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NodeObjC.h; path = objc_bridging/NodeObjC.h; sourceTree = "<group>"; };
 		7D60FCD71FB76E11006E7BF8 /* MecabObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MecabObjC.h; path = objc_bridging/MecabObjC.h; sourceTree = "<group>"; };
 		7D60FCDE1FB76E26006E7BF8 /* mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mutex.h; path = src/mutex.h; sourceTree = "<group>"; };
 		7D60FCDF1FB76E26006E7BF8 /* stream_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream_wrapper.h; path = src/stream_wrapper.h; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 		7D6D55721FB8772000DEF011 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		7D6D557E1FB8864700DEF011 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		7D6D55871FB9252500DEF011 /* MecabFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MecabFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D6D55891FB9252500DEF011 /* MecabFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MecabFramework.h; sourceTree = "<group>"; };
+		7D6D55891FB9252500DEF011 /* MecabFramework-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MecabFramework-umbrella.h"; sourceTree = "<group>"; };
 		7D6D558A1FB9252500DEF011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libmecab.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmecab.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -295,11 +295,11 @@
 		7D60FCD21FB76DFF006E7BF8 /* objc_bridging */ = {
 			isa = PBXGroup;
 			children = (
-				7D60FCD31FB76E11006E7BF8 /* mecab_Prefix.pch */,
+				7D60FCD31FB76E11006E7BF8 /* mecab-prefix.pch */,
 				7D60FCD71FB76E11006E7BF8 /* MecabObjC.h */,
 				7D60FCD51FB76E11006E7BF8 /* MecabObjC.m */,
-				7D60FCD61FB76E11006E7BF8 /* Node.h */,
-				7D60FCD41FB76E11006E7BF8 /* Node.m */,
+				7D60FCD61FB76E11006E7BF8 /* NodeObjC.h */,
+				7D60FCD41FB76E11006E7BF8 /* NodeObjC.m */,
 			);
 			name = objc_bridging;
 			sourceTree = "<group>";
@@ -399,7 +399,7 @@
 		7D6D55881FB9252500DEF011 /* MecabFramework */ = {
 			isa = PBXGroup;
 			children = (
-				7D6D55891FB9252500DEF011 /* MecabFramework.h */,
+				7D6D55891FB9252500DEF011 /* MecabFramework-umbrella.h */,
 				7D6D558A1FB9252500DEF011 /* Info.plist */,
 			);
 			path = MecabFramework;
@@ -412,9 +412,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D6D558B1FB9252500DEF011 /* MecabFramework.h in Headers */,
+				7D6D558B1FB9252500DEF011 /* MecabFramework-umbrella.h in Headers */,
 				7D6D559D1FB9259900DEF011 /* MecabObjC.h in Headers */,
-				7D6D559E1FB9259900DEF011 /* Node.h in Headers */,
+				7D6D559E1FB9259900DEF011 /* NodeObjC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,9 +423,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D60FD211FB76E30006E7BF8 /* mecab.h in Headers */,
-				7D60FCDB1FB76E11006E7BF8 /* Node.h in Headers */,
+				7D60FCDB1FB76E11006E7BF8 /* NodeObjC.h in Headers */,
 				7D60FCDC1FB76E11006E7BF8 /* MecabObjC.h in Headers */,
-				7D60FCD81FB76E11006E7BF8 /* mecab_Prefix.pch in Headers */,
+				7D60FCD81FB76E11006E7BF8 /* mecab-prefix.pch in Headers */,
 				7D60FD3C1FB76E30006E7BF8 /* string_buffer.h in Headers */,
 				7D60FD1D1FB76E30006E7BF8 /* mempool.h in Headers */,
 				7D60FD351FB76E30006E7BF8 /* scoped_ptr.h in Headers */,
@@ -639,7 +639,7 @@
 			files = (
 				7D60FD1B1FB76E30006E7BF8 /* mecab.cpp in Sources */,
 				7D60FCDA1FB76E11006E7BF8 /* MecabObjC.m in Sources */,
-				7D60FCD91FB76E11006E7BF8 /* Node.m in Sources */,
+				7D60FCD91FB76E11006E7BF8 /* NodeObjC.m in Sources */,
 				7D60FD4B1FB76E30006E7BF8 /* dictionary_compiler.cpp in Sources */,
 				7D60FD321FB76E30006E7BF8 /* context_id.cpp in Sources */,
 				7D60FD461FB76E30006E7BF8 /* dictionary_rewriter.cpp in Sources */,
@@ -707,7 +707,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "${SRCROOT}/objc_bridging/mecab_Prefix.pch";
+				GCC_PREFIX_HEADER = "${SRCROOT}/objc_bridging/mecab-prefix.pch";
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_NAME = mecab;
@@ -722,7 +722,7 @@
 				DSTROOT = /tmp/mecab.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "${SRCROOT}/objc_bridging/mecab_Prefix.pch";
+				GCC_PREFIX_HEADER = "${SRCROOT}/objc_bridging/mecab-prefix.pch";
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_NAME = mecab;
@@ -939,6 +939,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "$(TARGET_NAME)/module.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bottledlogic.mecab.MecabFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -986,6 +987,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "$(TARGET_NAME)/module.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bottledlogic.mecab.MecabFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

@@ -5,6 +5,11 @@
 //  Created by jamie on 13/11/2017.
 //
 
+#ifndef MecabFramework_umbrella_h
+#define MecabFramework_umbrella_h
+
+#endif /* MecabFramework_umbrella_h */
+
 #import <UIKit/UIKit.h>
 
 //! Project version number for MecabFramework.
@@ -36,5 +41,5 @@ FOUNDATION_EXPORT const unsigned char MecabFrameworkVersionString[];
 // Although the target name is "mecabFramework" (for uniqueness), the build script for the framework
 // ultimately names it as "mecab.framework".
 #import <MecabFramework/MecabObjC.h>
-#import <MecabFramework/Node.h>
+#import <MecabFramework/NodeObjC.h>
 

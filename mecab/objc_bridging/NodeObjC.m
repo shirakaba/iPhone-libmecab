@@ -5,7 +5,7 @@
 //  Copyright 2010 FLCL.jp. All rights reserved.
 //
 
-#import "Node.h"
+#import "NodeObjC.h"
 
 
 @implementation Node

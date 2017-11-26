@@ -7,6 +7,7 @@
 // This code is currently not used in the project, but does compile.
 
 import UIKit
+import MecabFramework
 
 class Uivc: UIViewController {
     override func viewDidLoad() {
