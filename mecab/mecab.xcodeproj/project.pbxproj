@@ -98,9 +98,9 @@
 		7D6D556F1FB876F800DEF011 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD581FB76EA5006E7BF8 /* sys.dic */; };
 		7D6D55701FB876F800DEF011 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD591FB76EA5006E7BF8 /* unk.dic */; };
 		7D6D55711FB876F800DEF011 /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD561FB76E5C006E7BF8 /* mecabrc */; };
-		7D6D558B1FB9252500DEF011 /* MecabFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D6D55891FB9252500DEF011 /* MecabFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D6D559D1FB9259900DEF011 /* MecabObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD71FB76E11006E7BF8 /* MecabObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D6D559E1FB9259900DEF011 /* NodeObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD61FB76E11006E7BF8 /* NodeObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DA363321FCB290B0004EF6F /* MecabFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D6D55891FB9252500DEF011 /* MecabFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -412,7 +412,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D6D558B1FB9252500DEF011 /* MecabFramework-umbrella.h in Headers */,
+				7DA363321FCB290B0004EF6F /* MecabFramework-umbrella.h in Headers */,
 				7D6D559D1FB9259900DEF011 /* MecabObjC.h in Headers */,
 				7D6D559E1FB9259900DEF011 /* NodeObjC.h in Headers */,
 			);
@@ -484,9 +484,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D6D558C1FB9252500DEF011 /* Build configuration list for PBXNativeTarget "MecabFramework" */;
 			buildPhases = (
+				7D6D55841FB9252500DEF011 /* Headers */,
 				7D6D55821FB9252500DEF011 /* Sources */,
 				7D6D55831FB9252500DEF011 /* Frameworks */,
-				7D6D55841FB9252500DEF011 /* Headers */,
 				7D6D55851FB9252500DEF011 /* Resources */,
 			);
 			buildRules = (
@@ -504,9 +504,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "mecab" */;
 			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
 				D2AAC07B0554694100DB518D /* Sources */,
 				D2AAC07C0554694100DB518D /* Frameworks */,
-				D2AAC07A0554694100DB518D /* Headers */,
 				7D6D55541FB86E3A00DEF011 /* Run Script: "Build Framework" */,
 			);
 			buildRules = (

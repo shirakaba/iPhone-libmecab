@@ -5,10 +5,10 @@
 //  Created by jamie on 13/11/2017.
 //
 
-#ifndef MecabFramework_umbrella_h
-#define MecabFramework_umbrella_h
+#ifndef mecab_umbrella_h
+#define mecab_umbrella_h
 
-#endif /* MecabFramework_umbrella_h */
+#endif /* mecab_umbrella_h */
 
 #import <UIKit/UIKit.h>
 

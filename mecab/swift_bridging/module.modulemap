@@ -3,8 +3,9 @@
 //
 
 // http://nsomar.com/modular-framework-creating-and-using-them/
-framework module mecab {
+framework module MecabFramework {
     umbrella header "MecabFramework-umbrella.h"
+    // umbrella header "../Headers/MecabObjC.h"
     
     module * { export * }
     export *
