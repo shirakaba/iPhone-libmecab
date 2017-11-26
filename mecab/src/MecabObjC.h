@@ -6,7 +6,7 @@
 //
 
 //#import "/Users/jamie/Documents/git/iPhone-libmecab/mecab/mecab.h"
-#import "../src/mecab.h" // or #import <mecab.h> to use globally installed one
+#import "mecab.h" // or #import <mecab.h> to use globally installed one
 #import <Foundation/Foundation.h> // imported implicitly via mecab_Prefix.pch
 #import "Node.h"
 

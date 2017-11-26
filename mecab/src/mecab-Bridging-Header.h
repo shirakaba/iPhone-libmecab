@@ -6,5 +6,5 @@
 //
 
 
-#import "../objc_bridging/MecabObjC.h"
-#import "../objc_bridging/Node.h"
+#import "MecabObjC.h"
+#import "Node.h"

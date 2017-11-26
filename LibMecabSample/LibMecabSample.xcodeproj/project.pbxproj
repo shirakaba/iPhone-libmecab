@@ -10,7 +10,6 @@
 		13C86E5E12C87B3E006F2369 /* NodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C86E5D12C87B3E006F2369 /* NodeCell.xib */; };
 		13C86E6812C87B6C006F2369 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E6712C87B6C006F2369 /* libiconv.dylib */; };
 		13C86E6B12C87B77006F2369 /* NodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C86E6A12C87B77006F2369 /* NodeCell.m */; };
-		13C86E7D12C87C33006F2369 /* libmecab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E7C12C87C31006F2369 /* libmecab.a */; };
 		13C86E8812C87C70006F2369 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E8712C87C70006F2369 /* libstdc++.dylib */; };
 		1D3623260D0F684500981E51 /* LibMecabSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* LibMecabSampleAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -27,6 +26,7 @@
 		7D471CE41EB4E7460038BCA5 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D471CE31EB4E7460038BCA5 /* libiconv.tbd */; };
 		7D6D557B1FB8808700DEF011 /* mecabResources.bundle in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6D55791FB87C2900DEF011 /* mecabResources.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7D8F2DD41EB5FFCA0039B643 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		7DA3635E1FCB42270004EF6F /* libmecab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E7C12C87C31006F2369 /* libmecab.a */; };
 		E630CC2F1CFBE222001774B0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E630CC2E1CFBE222001774B0 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -101,7 +101,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				13C86E6812C87B6C006F2369 /* libiconv.dylib in Frameworks */,
-				13C86E7D12C87C33006F2369 /* libmecab.a in Frameworks */,
+				7DA3635E1FCB42270004EF6F /* libmecab.a in Frameworks */,
 				13C86E8812C87C70006F2369 /* libstdc++.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
