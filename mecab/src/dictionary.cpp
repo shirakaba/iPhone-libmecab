@@ -133,7 +133,8 @@ bool Dictionary::compile(const Param &param,
   }
 
   if (!matrix.openText(matrix_file) &&
-      !matrix.open(matrix_bin_file)) {
+      !matrix.open(matrix_bin_file,
+                   param.get<std::string>("white-space-penalty-infos").c_str())) {
     matrix.set_left_size(1);
     matrix.set_right_size(1);
   }
