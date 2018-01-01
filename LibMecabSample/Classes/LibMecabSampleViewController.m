@@ -7,8 +7,8 @@
 //
 
 #import "LibMecabSampleViewController.h"
-#import "../mecab/objc_bridging/MecabObjC.h"
-#import "../mecab/objc_bridging/Node.h"
+#import "../mecab/src/MecabObjC.h"
+#import "../mecab/src/Node.h"
 
 @implementation LibMecabSampleViewController
 

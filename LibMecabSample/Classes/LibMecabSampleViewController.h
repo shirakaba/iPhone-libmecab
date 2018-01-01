@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NodeCell.h"
-#import "../mecab/objc_bridging/Node.h"
+#import "../mecab/src/Node.h"
 
 @class Mecab;
 
