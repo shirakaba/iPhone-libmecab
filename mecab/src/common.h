@@ -46,7 +46,7 @@
 #define MODEL_DEF_FILE          "mecabResourcesKorean.bundle/model.def"
 #define MODEL_FILE              "mecabResourcesKorean.bundle/model.bin"
 #define DICRC                   "mecabResourcesKorean.bundle/dicrc"
-#define BOS_KEY                 "mecabResourcesKorean.bundle/BOS/EOS"
+#define BOS_KEY                 "BOS/EOS"
 
 #define DEFAULT_MAX_GROUPING_SIZE 24
 
