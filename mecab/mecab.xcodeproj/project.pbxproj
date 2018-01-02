@@ -287,13 +287,13 @@
 		7D15E71F1FFB0CED0015401F /* mecab-ko-dic-utf-8 */ = {
 			isa = PBXGroup;
 			children = (
+				7D15E7241FFB0D340015401F /* char.bin */,
 				7D15E72E1FFB0E960015401F /* dicrc */,
 				7D15E72F1FFB0E960015401F /* left-id.def */,
+				7D15E7281FFB0D350015401F /* matrix.bin */,
 				7D15E72B1FFB0E950015401F /* pos-id.def */,
 				7D15E72D1FFB0E960015401F /* rewrite.def */,
 				7D15E72C1FFB0E960015401F /* right-id.def */,
-				7D15E7241FFB0D340015401F /* char.bin */,
-				7D15E7281FFB0D350015401F /* matrix.bin */,
 				7D15E7211FFB0D340015401F /* sys.dic */,
 				7D15E7201FFB0D340015401F /* unk.dic */,
 			);
