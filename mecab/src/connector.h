@@ -1,41 +1,41 @@
 // MeCab -- Yet Another Part-of-Speech and Morphological Analyzer
 //
+//  $Id: connector.h 173 2009-04-18 08:10:57Z taku-ku $;
 //
 //  Copyright(C) 2001-2006 Taku Kudo <taku@chasen.org>
 //  Copyright(C) 2004-2006 Nippon Telegraph and Telephone Corporation
-#ifndef MECAB_CONNECTOR_H_
-#define MECAB_CONNECTOR_H_
+#ifndef MECAB_CONNECTOR_H
+#define MECAB_CONNECTOR_H
 
 #include "mecab.h"
-#include "mmap.h"
 #include "common.h"
-#include "scoped_ptr.h"
 
 namespace MeCab {
 class Param;
+template <class T> class Mmap;
 
 class Connector {
  private:
-  scoped_ptr<Mmap<short> >  cmmap_;
+  Mmap<short>    *cmmap_;
   short          *matrix_;
   unsigned short  lsize_;
   unsigned short  rsize_;
   whatlog         what_;
 
-  // mecab-ko
-  class SpacePenalty {
-    public:
-      unsigned short posid_;
-      int penalty_cost_;
-      SpacePenalty(unsigned short posid, int penalty_cost)
-        : posid_(posid)
-        , penalty_cost_(penalty_cost)
-      {}
-  };
-  std::vector<SpacePenalty>left_space_penalty_factor_;
+// mecab-ko
+class SpacePenalty {
+public:
+    unsigned short posid_;
+    int penalty_cost_;
+    SpacePenalty(unsigned short posid, int penalty_cost)
+    : posid_(posid)
+    , penalty_cost_(penalty_cost)
+    {}
+};
+std::vector<SpacePenalty>left_space_penalty_factor_;
 
-  void set_left_space_penalty_factor(const char *factor_str);
-  int get_space_penalty_cost(const Node *rNode) const;
+void set_left_space_penalty_factor(const char *factor_str);
+int get_space_penalty_cost(const Node *rNode) const;
 
  public:
 
@@ -50,11 +50,6 @@ class Connector {
 
   void set_left_size(size_t lsize)  { lsize_ = lsize; }
   void set_right_size(size_t rsize) { rsize_ = rsize; }
-
-  inline int transition_cost(unsigned short rcAttr,
-                             unsigned short lcAttr) const {
-    return matrix_[rcAttr + lsize_ * lcAttr];
-  }
 
   int cost(const Node *lNode, const Node *rNode) const;
 
@@ -72,9 +67,9 @@ class Connector {
   static bool compile(const char *, const char *);
 
   explicit Connector():
-      cmmap_(new Mmap<short>), matrix_(0), lsize_(0), rsize_(0) {}
+      cmmap_(0), matrix_(0), lsize_(0), rsize_(0) {}
 
   virtual ~Connector() { this->close(); }
 };
 }
-#endif  // MECAB_CONNECTOR_H_
+#endif

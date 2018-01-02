@@ -1,15 +1,15 @@
 //  MeCab -- Yet Another Part-of-Speech and Morphological Analyzer
 //
+//  $Id: stream_wrapper.h 173 2009-04-18 08:10:57Z taku-ku $;
 //
 //  Copyright(C) 2001-2006 Taku Kudo <taku@chasen.org>
 //  Copyright(C) 2004-2006 Nippon Telegraph and Telephone Corporation
-#ifndef MECAB_STREAM_WRAPPER_H_
-#define MECAB_STREAM_WRAPPER_H_
+#ifndef MECAB_STREAM_WRAPPER_H
+#define MECAB_STREAM_WRAPPER_H
 
-#include <cstring>
-#include <fstream>
 #include <iostream>
-#include "utils.h"
+#include <fstream>
+#include <cstring>
 
 namespace MeCab {
 
@@ -20,11 +20,10 @@ class istream_wrapper {
   std::istream &operator*() const  { return *is_; }
   std::istream *operator->() const { return is_;  }
   explicit istream_wrapper(const char* filename): is_(0) {
-    if (std::strcmp(filename, "-") == 0) {
+    if (std::strcmp(filename, "-") == 0)
       is_ = &std::cin;
-    } else {
-      is_ = new std::ifstream(WPATH(filename));
-    }
+    else
+      is_ = new std::ifstream(filename);
   }
 
   virtual ~istream_wrapper() {
@@ -39,11 +38,10 @@ class ostream_wrapper {
   std::ostream &operator*() const  { return *os_; }
   std::ostream *operator->() const { return os_;  }
   explicit ostream_wrapper(const char* filename): os_(0) {
-    if (std::strcmp(filename, "-") == 0) {
+    if (std::strcmp(filename, "-") == 0)
       os_ = &std::cout;
-    } else {
-      os_ = new std::ofstream(WPATH(filename));
-    }
+    else
+      os_ = new std::ofstream(filename);
   }
 
   virtual ~ostream_wrapper() {
@@ -52,4 +50,4 @@ class ostream_wrapper {
 };
 }
 
-#endif  // MECAB_STREAM_WRAPPER_H_
+#endif
