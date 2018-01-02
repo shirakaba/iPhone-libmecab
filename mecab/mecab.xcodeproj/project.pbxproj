@@ -23,6 +23,16 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		7D15E7101FFB0CD80015401F /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5B1FB76EA5006E7BF8 /* char.bin */; };
+		7D15E7111FFB0CD80015401F /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD601FB76EA5006E7BF8 /* dicrc */; };
+		7D15E7121FFB0CD80015401F /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5A1FB76EA5006E7BF8 /* left-id.def */; };
+		7D15E7131FFB0CD80015401F /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5E1FB76EA5006E7BF8 /* matrix.bin */; };
+		7D15E7141FFB0CD80015401F /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5D1FB76EA5006E7BF8 /* pos-id.def */; };
+		7D15E7151FFB0CD80015401F /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5F1FB76EA5006E7BF8 /* rewrite.def */; };
+		7D15E7161FFB0CD80015401F /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5C1FB76EA5006E7BF8 /* right-id.def */; };
+		7D15E7171FFB0CD80015401F /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD581FB76EA5006E7BF8 /* sys.dic */; };
+		7D15E7181FFB0CD80015401F /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD591FB76EA5006E7BF8 /* unk.dic */; };
+		7D15E7191FFB0CD80015401F /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD561FB76E5C006E7BF8 /* mecabrc */; };
 		7D60FCD81FB76E11006E7BF8 /* mecab_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD31FB76E11006E7BF8 /* mecab_Prefix.pch */; };
 		7D60FCD91FB76E11006E7BF8 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D60FCD41FB76E11006E7BF8 /* Node.m */; };
 		7D60FCDA1FB76E11006E7BF8 /* MecabObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D60FCD51FB76E11006E7BF8 /* MecabObjC.m */; };
@@ -119,6 +129,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D15E71D1FFB0CD80015401F /* mecabResourcesKorean.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mecabResourcesKorean.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D15E71E1FFB0CD80015401F /* mecabResources copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "mecabResources copy-Info.plist"; path = "/Users/jamie/Documents/git/iPhone-libmecab/mecab/mecabResources copy-Info.plist"; sourceTree = "<absolute>"; };
+		7D15E7201FFB0D340015401F /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; name = unk.dic; path = "Resources/mecab-ko-dic-utf-8/unk.dic"; sourceTree = "<group>"; };
+		7D15E7211FFB0D340015401F /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; name = sys.dic; path = "Resources/mecab-ko-dic-utf-8/sys.dic"; sourceTree = "<group>"; };
+		7D15E7241FFB0D340015401F /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = char.bin; path = "Resources/mecab-ko-dic-utf-8/char.bin"; sourceTree = "<group>"; };
+		7D15E7251FFB0D340015401F /* model.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = model.bin; path = "Resources/mecab-ko-dic-utf-8/model.bin"; sourceTree = "<group>"; };
+		7D15E7281FFB0D350015401F /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = matrix.bin; path = "Resources/mecab-ko-dic-utf-8/matrix.bin"; sourceTree = "<group>"; };
 		7D60FCCD1FB76DF8006E7BF8 /* MecabFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MecabFramework.h; path = swift_bridging/MecabFramework.h; sourceTree = "<group>"; };
 		7D60FCCE1FB76DF8006E7BF8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = swift_bridging/Info.plist; sourceTree = "<group>"; };
 		7D60FCCF1FB76DF8006E7BF8 /* mecab-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "mecab-Bridging-Header.h"; path = "src/mecab-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -205,6 +222,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7D15E70E1FFB0CD80015401F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7D6D555D1FB875FB00DEF011 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +252,7 @@
 			children = (
 				D2AAC07E0554694100DB518D /* libmecab.a */,
 				7D6D55601FB875FB00DEF011 /* mecabResources.bundle */,
+				7D15E71D1FFB0CD80015401F /* mecabResourcesKorean.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,6 +266,7 @@
 				7D60FCCC1FB76DE1006E7BF8 /* swift_bridging */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				7D15E71E1FFB0CD80015401F /* mecabResources copy-Info.plist */,
 			);
 			name = mecab;
 			sourceTree = "<group>";
@@ -252,6 +278,18 @@
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D15E71F1FFB0CED0015401F /* mecab-ko-dic-utf-8 */ = {
+			isa = PBXGroup;
+			children = (
+				7D15E7241FFB0D340015401F /* char.bin */,
+				7D15E7281FFB0D350015401F /* matrix.bin */,
+				7D15E7251FFB0D340015401F /* model.bin */,
+				7D15E7211FFB0D340015401F /* sys.dic */,
+				7D15E7201FFB0D340015401F /* unk.dic */,
+			);
+			name = "mecab-ko-dic-utf-8";
 			sourceTree = "<group>";
 		};
 		7D60FCCC1FB76DE1006E7BF8 /* swift_bridging */ = {
@@ -346,6 +384,7 @@
 		7D60FD541FB76E4C006E7BF8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7D15E71F1FFB0CED0015401F /* mecab-ko-dic-utf-8 */,
 				7D6D557E1FB8864700DEF011 /* Info.plist */,
 				7D60FD571FB76E89006E7BF8 /* naist-jdic-utf-8 */,
 				7D60FD561FB76E5C006E7BF8 /* mecabrc */,
@@ -417,6 +456,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		7D15E70C1FFB0CD80015401F /* mecabResourcesKorean */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D15E71A1FFB0CD80015401F /* Build configuration list for PBXNativeTarget "mecabResourcesKorean" */;
+			buildPhases = (
+				7D15E70D1FFB0CD80015401F /* Sources */,
+				7D15E70E1FFB0CD80015401F /* Frameworks */,
+				7D15E70F1FFB0CD80015401F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mecabResourcesKorean;
+			productName = mecabResources;
+			productReference = 7D15E71D1FFB0CD80015401F /* mecabResourcesKorean.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		7D6D555F1FB875FB00DEF011 /* mecabResources */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D6D55631FB875FB00DEF011 /* Build configuration list for PBXNativeTarget "mecabResources" */;
@@ -486,11 +542,29 @@
 				D2AAC07D0554694100DB518D /* mecab */,
 				7D6D55551FB874B400DEF011 /* MecabFramework */,
 				7D6D555F1FB875FB00DEF011 /* mecabResources */,
+				7D15E70C1FFB0CD80015401F /* mecabResourcesKorean */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7D15E70F1FFB0CD80015401F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D15E7101FFB0CD80015401F /* char.bin in Resources */,
+				7D15E7111FFB0CD80015401F /* dicrc in Resources */,
+				7D15E7121FFB0CD80015401F /* left-id.def in Resources */,
+				7D15E7131FFB0CD80015401F /* matrix.bin in Resources */,
+				7D15E7141FFB0CD80015401F /* pos-id.def in Resources */,
+				7D15E7151FFB0CD80015401F /* rewrite.def in Resources */,
+				7D15E7161FFB0CD80015401F /* right-id.def in Resources */,
+				7D15E7171FFB0CD80015401F /* sys.dic in Resources */,
+				7D15E7181FFB0CD80015401F /* unk.dic in Resources */,
+				7D15E7191FFB0CD80015401F /* mecabrc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7D6D555E1FB875FB00DEF011 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,6 +616,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7D15E70D1FFB0CD80015401F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7D6D555C1FB875FB00DEF011 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -714,6 +795,82 @@
 			};
 			name = Release;
 		};
+		7D15E71B1FFB0CD80015401F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TVU9P2GAL9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "mecabResources copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bottledlogic.mecab.mecabResources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		7D15E71C1FFB0CD80015401F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TVU9P2GAL9;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "mecabResources copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bottledlogic.mecab.mecabResources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		7D6D55571FB874B400DEF011 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -825,6 +982,15 @@
 			buildConfigurations = (
 				1DEB922308733DC00010E9CD /* Debug */,
 				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D15E71A1FFB0CD80015401F /* Build configuration list for PBXNativeTarget "mecabResourcesKorean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D15E71B1FFB0CD80015401F /* Debug */,
+				7D15E71C1FFB0CD80015401F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
