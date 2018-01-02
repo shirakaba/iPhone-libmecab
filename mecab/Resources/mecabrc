@@ -13,5 +13,3 @@ dicdir =  ./
 ; node-format = %m\n
 ; bos-format = %S\n
 ; eos-format = EOS\n
-
-left-space-penalty-factor = 120, 6000, 184, 6000, 100, 500
