@@ -23,7 +23,7 @@
 @synthesize originalForm;
 @synthesize reading;
 @synthesize pronunciation;
-
+// MecabObjC.m sets newNode.feature =, but never any other property (lazy setting)
 - (void)setFeature:(NSString *)value {
     if (feature) [feature release];
     
@@ -37,7 +37,7 @@
 }
 
 // surface seems to be exposed by Mecab itself, hence why I haven't written a setter for it here.
-
+// I wrote the implementation for all these setters, but in practice MecabObjC.m only assigns to newNode lazily.
 - (void)setPartOfSpeech:(NSString *)value {
     if (partOfSpeech) [partOfSpeech release];
     partOfSpeech = value ? [value retain] : nil;

@@ -59,7 +59,7 @@
     
 	Node *node = [nodes objectAtIndex:indexPath.row];
 	cell.surfaceLabel.text = node.surface;
-	cell.featureLabel.text = [node pronunciation];
+    cell.featureLabel.text = [node reading]; // node.pronunciation field (field index 8) exists in Japanese (whether or not populated), but for Korean, the top index is 7 (which corresponds to node.pronunciation), although I don't yet know what that actually is.
     
     return cell;
 }
