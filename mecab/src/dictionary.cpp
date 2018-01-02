@@ -170,13 +170,23 @@ bool Dictionary::assignUserDictionaryCosts(
 
   CHECK_DIE(property.open(param));
   property.set_charset(from.c_str());
-
-  if (!matrix.openText(matrix_file.c_str()) &&
-      !matrix.open(
-          matrix_bin_file.c_str(),
-          param.get<std::string>("white-space-penalty-infos").c_str())) {
-    matrix.set_left_size(1);
-    matrix.set_right_size(1);
+  
+  if(!matrix.openText(matrix_file.c_str())){
+      // shirakaba/LibMecabSample:
+      // Use the "white-space-penalty-infos" overload for matrix.open() only if in Korean mode.
+      if(param.get<bool>("korean")){
+          if(!matrix.open(
+                          matrix_bin_file.c_str(),
+                          param.get<std::string>("white-space-penalty-infos").c_str())){
+              matrix.set_left_size(1);
+              matrix.set_right_size(1);
+          }
+      } else {
+          if(!matrix.open(matrix_bin_file.c_str())){
+              matrix.set_left_size(1);
+              matrix.set_right_size(1);
+          }
+      }
   }
 
   cid.open(left_id_file.c_str(),
@@ -282,13 +292,23 @@ bool Dictionary::compile(const Param &param,
     os.reset(new StringBuffer);
     memset(&node, 0, sizeof(node));
   }
-
-  if (!matrix.openText(matrix_file.c_str()) &&
-      !matrix.open(
-          matrix_bin_file.c_str(),
-          param.get<std::string>("white-space-penalty-infos").c_str())) {
-    matrix.set_left_size(1);
-    matrix.set_right_size(1);
+    
+  if(!matrix.openText(matrix_file.c_str())){
+      // shirakaba/LibMecabSample:
+      // Use the "white-space-penalty-infos" overload for matrix.open() only if in Korean mode.
+      if(param.get<bool>("korean")){
+          if(!matrix.open(
+                          matrix_bin_file.c_str(),
+                          param.get<std::string>("white-space-penalty-infos").c_str())){
+              matrix.set_left_size(1);
+              matrix.set_right_size(1);
+          }
+      } else {
+          if(!matrix.open(matrix_bin_file.c_str())){
+              matrix.set_left_size(1);
+              matrix.set_right_size(1);
+          }
+      }
   }
 
   posid.reset(new POSIDGenerator);

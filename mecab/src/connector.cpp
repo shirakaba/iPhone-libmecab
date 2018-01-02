@@ -18,11 +18,13 @@ bool Connector::open(const Param &param) {
       (param.get<std::string>("dicdir"), MATRIX_FILE);
   return open(
       filename.c_str(),
-      param.get<std::string>("left-space-penalty-factor").c_str());
+      param.get<std::string>("left-space-penalty-factor").c_str(),
+      param.get<bool>("korean"));
 }
 
 bool Connector::open(const char* filename,
                      const char* left_space_penalty_factor_str,
+                     bool koreanMode,
                      const char *mode) {
   CHECK_FALSE(cmmap_->open(filename, mode))
       << "cannot open: " << filename;
@@ -42,7 +44,7 @@ bool Connector::open(const char* filename,
 
   matrix_ = cmmap_->begin() + 2;
 
-  set_left_space_penalty_factor(left_space_penalty_factor_str);
+  if(koreanMode) set_left_space_penalty_factor(left_space_penalty_factor_str);
   return true;
 }
 

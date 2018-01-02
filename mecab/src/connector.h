@@ -63,7 +63,7 @@ class Connector {
   const short *matrix() const { return &matrix_[0]; }
 
   bool openText(const char *filename);
-  bool open(const char *filename, const char *white_space_penalty_info = "", const char *mode = "r");
+  bool open(const char *filename, const char *white_space_penalty_info = "", bool koreanMode = false, const char *mode = "r");
 
   bool is_valid(size_t lid, size_t rid) const {
     return (lid >= 0 && lid < rsize_ && rid >= 0 && rid < lsize_);
