@@ -136,6 +136,11 @@
 		7D15E7241FFB0D340015401F /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = char.bin; path = "Resources/mecab-ko-dic-utf-8/char.bin"; sourceTree = "<group>"; };
 		7D15E7251FFB0D340015401F /* model.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = model.bin; path = "Resources/mecab-ko-dic-utf-8/model.bin"; sourceTree = "<group>"; };
 		7D15E7281FFB0D350015401F /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = matrix.bin; path = "Resources/mecab-ko-dic-utf-8/matrix.bin"; sourceTree = "<group>"; };
+		7D15E72B1FFB0E950015401F /* pos-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "pos-id.def"; path = "Resources/mecab-ko-dic-utf-8/pos-id.def"; sourceTree = "<group>"; };
+		7D15E72C1FFB0E960015401F /* right-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "right-id.def"; path = "Resources/mecab-ko-dic-utf-8/right-id.def"; sourceTree = "<group>"; };
+		7D15E72D1FFB0E960015401F /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = rewrite.def; path = "Resources/mecab-ko-dic-utf-8/rewrite.def"; sourceTree = "<group>"; };
+		7D15E72E1FFB0E960015401F /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dicrc; path = "Resources/mecab-ko-dic-utf-8/dicrc"; sourceTree = "<group>"; };
+		7D15E72F1FFB0E960015401F /* left-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "left-id.def"; path = "Resources/mecab-ko-dic-utf-8/left-id.def"; sourceTree = "<group>"; };
 		7D60FCCD1FB76DF8006E7BF8 /* MecabFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MecabFramework.h; path = swift_bridging/MecabFramework.h; sourceTree = "<group>"; };
 		7D60FCCE1FB76DF8006E7BF8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = swift_bridging/Info.plist; sourceTree = "<group>"; };
 		7D60FCCF1FB76DF8006E7BF8 /* mecab-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "mecab-Bridging-Header.h"; path = "src/mecab-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -283,6 +288,11 @@
 		7D15E71F1FFB0CED0015401F /* mecab-ko-dic-utf-8 */ = {
 			isa = PBXGroup;
 			children = (
+				7D15E72E1FFB0E960015401F /* dicrc */,
+				7D15E72F1FFB0E960015401F /* left-id.def */,
+				7D15E72B1FFB0E950015401F /* pos-id.def */,
+				7D15E72D1FFB0E960015401F /* rewrite.def */,
+				7D15E72C1FFB0E960015401F /* right-id.def */,
 				7D15E7241FFB0D340015401F /* char.bin */,
 				7D15E7281FFB0D350015401F /* matrix.bin */,
 				7D15E7251FFB0D340015401F /* model.bin */,
