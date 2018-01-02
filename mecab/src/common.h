@@ -40,19 +40,19 @@
 // I've done "Embed Frameworks: mecabResources.bundle" on the parent project, targeting the Resources destination.
 // This places the bundle directly in the base of the folder "Products > LibMecabSample.app", where mecab runs.
 
-#define SYS_DIC_FILE            "mecabResources.bundle/sys.dic"
-#define UNK_DEF_FILE            "mecabResources.bundle/unk.def"
-#define UNK_DIC_FILE            "mecabResources.bundle/unk.dic"
-#define MATRIX_DEF_FILE         "mecabResources.bundle/matrix.def"
-#define MATRIX_FILE             "mecabResources.bundle/matrix.bin"
-#define CHAR_PROPERTY_DEF_FILE  "mecabResources.bundle/char.def"
-#define CHAR_PROPERTY_FILE      "mecabResources.bundle/char.bin"
-#define FEATURE_FILE            "mecabResources.bundle/feature.def"
-#define REWRITE_FILE            "mecabResources.bundle/rewrite.def"
-#define LEFT_ID_FILE            "mecabResources.bundle/left-id.def"
-#define RIGHT_ID_FILE           "mecabResources.bundle/right-id.def"
-#define POS_ID_FILE             "mecabResources.bundle/pos-id.def"
-#define DICRC                   "mecabResources.bundle/dicrc"
+#define SYS_DIC_FILE            "mecabResourcesKorean.bundle/sys.dic"
+#define UNK_DEF_FILE            "mecabResourcesKorean.bundle/unk.def"
+#define UNK_DIC_FILE            "mecabResourcesKorean.bundle/unk.dic"
+#define MATRIX_DEF_FILE         "mecabResourcesKorean.bundle/matrix.def"
+#define MATRIX_FILE             "mecabResourcesKorean.bundle/matrix.bin"
+#define CHAR_PROPERTY_DEF_FILE  "mecabResourcesKorean.bundle/char.def"
+#define CHAR_PROPERTY_FILE      "mecabResourcesKorean.bundle/char.bin"
+#define FEATURE_FILE            "mecabResourcesKorean.bundle/feature.def"
+#define REWRITE_FILE            "mecabResourcesKorean.bundle/rewrite.def"
+#define LEFT_ID_FILE            "mecabResourcesKorean.bundle/left-id.def"
+#define RIGHT_ID_FILE           "mecabResourcesKorean.bundle/right-id.def"
+#define POS_ID_FILE             "mecabResourcesKorean.bundle/pos-id.def"
+#define DICRC                   "mecabResourcesKorean.bundle/dicrc"
 #define BOS_KEY                 "BOS/EOS"
 
 #define DEFAULT_MAX_GROUPING_SIZE 24
