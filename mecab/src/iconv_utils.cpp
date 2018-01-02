@@ -1,23 +1,22 @@
 // MeCab -- Yet Another Part-of-Speech and Morphological Analyzer
 //
-//  $Id: iconv_utils.cpp 175 2009-05-31 02:34:37Z taku-ku $;
 //
 //  Copyright(C) 2001-2006 Taku Kudo <taku@chasen.org>
 //  Copyright(C) 2004-2006 Nippon Telegraph and Telephone Corporation
-#include <iostream>
-#include <fstream>
 #include <cstring>
+#include <fstream>
+#include <iostream>
 #include <string>
 #include "common.h"
-#include "utils.h"
 #include "scoped_ptr.h"
+#include "utils.h"
 
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
 
-#include "iconv_utils.h"
 #include "char_property.h"
+#include "iconv_utils.h"
 
 #if defined(_WIN32) && !defined(__CYGWIN__)
 #include "windows.h"
@@ -159,8 +158,8 @@ bool Iconv::convert(std::string *str) {
 
   if (to_cp_ == 1200 || to_cp_ == 1201) {
     str->resize(2 * wide_len);
-    memcpy(const_cast<char *>(str->data()),
-           reinterpret_cast<char *>(wide_str.get()), wide_len * 2);
+    std::memcpy(const_cast<char *>(str->data()),
+                reinterpret_cast<char *>(wide_str.get()), wide_len * 2);
     if (to_cp_ == 1201) {
       char *buf = const_cast<char *>(str->data());
       for (size_t i = 0; i < 2 * wide_len; i += 2) {

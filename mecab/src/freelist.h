@@ -1,6 +1,5 @@
 //  MeCab -- Yet Another Part-of-Speech and Morphological Analyzer
 //
-//  $Id: freelist.h 173 2009-04-18 08:10:57Z taku-ku $;
 //
 //  Copyright(C) 2001-2006 Taku Kudo <taku@chasen.org>
 //  Copyright(C) 2004-2006 Nippon Telegraph and Telephone Corporation
@@ -67,7 +66,7 @@ template <class T> class ChunkFreeList {
       li_++;
       pi_ = 0;
     }
-    size_t _size = _max(req, default_size);
+    size_t _size = std::max(req, default_size);
     freelist_.push_back(std::make_pair(_size, new T[_size]));
     li_ = freelist_.size() - 1;
     pi_ += req;
