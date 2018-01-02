@@ -35,8 +35,7 @@
 #endif
 
 #define COPYRIGHT "MeCab: Yet Another Part-of-Speech and Morphological Analyzer\n\
-\nCopyright(C) 2001-2009 Taku Kudo \nCopyright(C) 2004-2008 Nippon Telegraph and Telephone Corporation\n"
-
+\nCopyright(C) 2001-2012 Taku Kudo \nCopyright(C) 2004-2008 Nippon Telegraph and Telephone Corporation\n"
 // I've done "Embed Frameworks: mecabResources.bundle" on the parent project, targeting the Resources destination.
 // This places the bundle directly in the base of the folder "Products > LibMecabSample.app", where mecab runs.
 
@@ -52,6 +51,8 @@
 #define LEFT_ID_FILE            "mecabResourcesKorean.bundle/left-id.def"
 #define RIGHT_ID_FILE           "mecabResourcesKorean.bundle/right-id.def"
 #define POS_ID_FILE             "mecabResourcesKorean.bundle/pos-id.def"
+#define MODEL_DEF_FILE          "mecabResourcesKorean.bundle/model.def"
+#define MODEL_FILE              "mecabResourcesKorean.bundle/model.bin"
 #define DICRC                   "mecabResourcesKorean.bundle/dicrc"
 #define BOS_KEY                 "BOS/EOS"
 

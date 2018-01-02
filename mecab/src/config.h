@@ -16,6 +16,9 @@
 /* Define to 1 if you have the <fcntl.h> header file. */
 #define HAVE_FCNTL_H 1
 
+/* */
+#define HAVE_GCC_ATOMIC_OPS 1
+
 /* Define to 1 if you have the `getenv' function. */
 #define HAVE_GETENV 1
 
@@ -31,9 +34,6 @@
 /* Define to 1 if you have the <io.h> header file. */
 /* #undef HAVE_IO_H */
 
-/* Define to 1 if you have the `iconv' library (-liconv). */
-#define HAVE_LIBICONV 1
-
 /* Define to 1 if you have the `pthread' library (-lpthread). */
 #define HAVE_LIBPTHREAD 1
 
@@ -46,14 +46,11 @@
 /* Define to 1 if you have the `opendir' function. */
 #define HAVE_OPENDIR 1
 
+/* */
+#define HAVE_OSX_ATOMIC_OPS 1
+
 /* Define to 1 if you have the <pthread.h> header file. */
 #define HAVE_PTHREAD_H 1
-
-/* Define to 1 if you have the `setjmp' function. */
-#define HAVE_SETJMP 1
-
-/* Define to 1 if you have the <setjmp.h> header file. */
-#define HAVE_SETJMP_H 1
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
@@ -70,6 +67,9 @@
 /* Define to 1 if you have the <sys/mman.h> header file. */
 #define HAVE_SYS_MMAN_H 1
 
+/* Define to 1 if you have the <sys/param.h> header file. */
+#define HAVE_SYS_PARAM_H 1
+  
 /* Define to 1 if you have the <sys/stat.h> header file. */
 #define HAVE_SYS_STAT_H 1
 
@@ -79,8 +79,14 @@
 /* Define to 1 if you have the <sys/types.h> header file. */
 #define HAVE_SYS_TYPES_H 1
 
+/* */
+#define HAVE_TLS_KEYWORD 1
+
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
+
+/* Define to 1 if the system has the type `unsigned long long int'. */
+#define HAVE_UNSIGNED_LONG_LONG_INT 1
 
 /* Define to 1 if you have the <windows.h> header file. */
 /* #undef HAVE_WINDOWS_H */
@@ -107,6 +113,9 @@
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME ""
 
+/* Define to the home page for this package. */
+#define PACKAGE_URL ""
+
 /* Define to the version of this package. */
 #define PACKAGE_VERSION ""
 
@@ -132,7 +141,7 @@
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "0.98/ko-0.9.1/ja-ko-1.0.0"
+#define VERSION "0.996/ko-0.9.2/ja-ko-1.0.0"
 
 /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
    significant byte first (like Motorola and SPARC, unlike Intel). */
