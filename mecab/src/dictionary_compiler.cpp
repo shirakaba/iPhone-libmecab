@@ -24,6 +24,7 @@ class DictionaryComplier {
  public:
   static int run(int argc, char **argv) {
     static const MeCab::Option long_options[] = {
+      { "korean",   'k',   ".",   "KOREAN", "set KOREAN as true (default false)" },
       { "dicdir",   'd',   ".",   "DIR", "set DIR as dicdi (default \".\")" },
       { "outdir",   'o',   ".",   "DIR",
         "set DIR as output dir (default \".\")" },
