@@ -27,7 +27,6 @@ void setGlobalError(const char *str);
 namespace {
 
 const MeCab::Option long_options[] = {
-  { "bundledir",   'b',   ".",   "BUNDLEDIR", "set BUNDLEDIR as bundledir (default \".\")" },
   { "rcfile",        'r',  0, "FILE",    "use FILE as resource file" },
   { "dicdir",        'd',  0, "DIR",    "set DIR  as a system dicdir" },
   { "userdic",        'u',  0, "FILE",    "use FILE as a user dictionary" },
