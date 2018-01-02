@@ -24,6 +24,7 @@ class DictionaryComplier {
  public:
   static int run(int argc, char **argv) {
     static const MeCab::Option long_options[] = {
+      { "bundledir",   'b',   ".",   "BUNDLEDIR", "set BUNDLEDIR as bundledir (default \".\")" },
       { "dicdir",   'd',   ".",   "DIR", "set DIR as dicdi (default \".\")" },
       { "outdir",   'o',   ".",   "DIR",
         "set DIR as output dir (default \".\")" },
@@ -57,6 +58,7 @@ class DictionaryComplier {
 
     if (!param.help_version()) return 0;
 
+    const std::string bundledir = param.get<std::string>("bundledir");
     const std::string dicdir = param.get<std::string>("dicdir");
     const std::string outdir = param.get<std::string>("outdir");
     bool opt_unknown = param.get<bool>("unknown");

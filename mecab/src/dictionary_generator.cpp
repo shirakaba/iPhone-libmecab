@@ -197,6 +197,7 @@ class DictionaryGenerator {
 
   static int run(int argc, char **argv) {
     static const MeCab::Option long_options[] = {
+      { "bundledir",   'b',   ".",   "BUNDLEDIR", "set BUNDLEDIR as bundledir (default \".\")" },
       { "dicdir",  'd',  ".",   "DIR", "set DIR as dicdir(default \".\" )" },
       { "outdir",  'o',  ".",   "DIR", "set DIR as output dir" },
       { "model",   'm',  0,     "FILE",   "use FILE as model file" },
@@ -225,6 +226,7 @@ class DictionaryGenerator {
     DecoderFeatureIndex fi;
     DictionaryRewriter rewrite;
 
+    const std::string bundledir = param.get<std::string>("bundledir");
     const std::string dicdir = param.get<std::string>("dicdir");
     const std::string outdir = param.get<std::string>("outdir");
     const std::string model = param.get<std::string>("model");

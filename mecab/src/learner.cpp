@@ -257,6 +257,7 @@ class HMMLearner {
 class OLLearner {
  public:
   static int run(Param *param) {
+    const std::string bundledir = param->get<std::string>("bundledir");
     const std::string dicdir = param->get<std::string>("dicdir");
     CHECK_DIE(param->load(DCONF(DICRC)))
         << "no such file or directory: " << DCONF(DICRC);
@@ -600,6 +601,7 @@ class Learner {
  public:
   static bool run(int argc, char **argv) {
     static const MeCab::Option long_options[] = {
+      { "bundledir",   'b',   ".",   "BUNDLEDIR", "set BUNDLEDIR as bundledir (default \".\")" },
       { "dicdir",   'd',  ".",     "DIR",
         "set DIR as dicdir(default \".\" )" },
       { "cost",     'c',  "1.0",   "FLOAT",
