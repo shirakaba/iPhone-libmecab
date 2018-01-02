@@ -23,8 +23,9 @@
         // http://stackoverflow.com/a/18141528/5951226
         // http://stackoverflow.com/a/3495426/5951226
         NSString *path = [[NSBundle mainBundle] resourcePath];
+        NSString *resourceBundleRelativePath = @"mecabResourcesKorean.bundle";
         // -d is the flag to link the dictionary:  https://fasiha.github.io/mecab-emscripten/
-        mecab = mecab_new2([[@"-d " stringByAppendingString:path] UTF8String]);
+        mecab = mecab_new2([[@"--dicdir " stringByAppendingString:[NSString stringWithFormat:@"%@/%@", path, resourceBundleRelativePath]] UTF8String]);
         
         if (mecab == NULL) {
             fprintf(stderr, "error in mecab_new2: %s\n", mecab_strerror(NULL));
