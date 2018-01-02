@@ -1,5 +1,6 @@
 //  MeCab -- Yet Another Part-of-Speech and Morphological Analyzer
 //
+//  $Id: nbest_generator.cpp 173 2009-04-18 08:10:57Z taku-ku $;
 //
 //  Copyright(C) 2001-2006 Taku Kudo <taku@chasen.org>
 //  Copyright(C) 2004-2006 Nippon Telegraph and Telephone Corporation
@@ -9,20 +10,19 @@
 
 namespace MeCab {
 
-bool NBestGenerator::set(Lattice *lattice) {
+bool NBestGenerator::set(Node *node) {
   freelist_.free();
-  while (!agenda_.empty()) {
-    agenda_.pop();   // make empty
-  }
+  for (; node->next; node = node->next) {}   // seek to EOS;
+  while (!agenda_.empty()) agenda_.pop();   // make empty
   QueueElement *eos = freelist_.alloc();
-  eos->node = lattice->eos_node();
+  eos->node = node;
   eos->next = 0;
   eos->fx = eos->gx = 0;
   agenda_.push(eos);
   return true;
 }
 
-bool NBestGenerator::next() {
+Node* NBestGenerator::next() {
   while (!agenda_.empty()) {
     QueueElement *top = agenda_.top();
     agenda_.pop();
@@ -34,7 +34,7 @@ bool NBestGenerator::next() {
         n->next->node->prev = n->node;
         // TODO: rewrite costs;
       }
-      return true;
+      return rnode;
     }
 
     for (Path *path = rnode->lpath; path; path = path->lnext) {
@@ -46,7 +46,6 @@ bool NBestGenerator::next() {
       agenda_.push(n);
     }
   }
-
-  return false;
+  return 0;
 }
 }
