@@ -23,16 +23,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		7D15E7101FFB0CD80015401F /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5B1FB76EA5006E7BF8 /* char.bin */; };
-		7D15E7111FFB0CD80015401F /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD601FB76EA5006E7BF8 /* dicrc */; };
-		7D15E7121FFB0CD80015401F /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5A1FB76EA5006E7BF8 /* left-id.def */; };
-		7D15E7131FFB0CD80015401F /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5E1FB76EA5006E7BF8 /* matrix.bin */; };
-		7D15E7141FFB0CD80015401F /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5D1FB76EA5006E7BF8 /* pos-id.def */; };
-		7D15E7151FFB0CD80015401F /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5F1FB76EA5006E7BF8 /* rewrite.def */; };
-		7D15E7161FFB0CD80015401F /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5C1FB76EA5006E7BF8 /* right-id.def */; };
-		7D15E7171FFB0CD80015401F /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD581FB76EA5006E7BF8 /* sys.dic */; };
-		7D15E7181FFB0CD80015401F /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD591FB76EA5006E7BF8 /* unk.dic */; };
-		7D15E7191FFB0CD80015401F /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD561FB76E5C006E7BF8 /* mecabrc */; };
+		7D15E7301FFB0F310015401F /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D15E7241FFB0D340015401F /* char.bin */; };
+		7D15E7311FFB0F310015401F /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D15E72E1FFB0E960015401F /* dicrc */; };
+		7D15E7321FFB0F310015401F /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D15E72F1FFB0E960015401F /* left-id.def */; };
+		7D15E7331FFB0F310015401F /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D15E7281FFB0D350015401F /* matrix.bin */; };
+		7D15E7341FFB0F310015401F /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D15E72B1FFB0E950015401F /* pos-id.def */; };
+		7D15E7351FFB0F310015401F /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D15E72D1FFB0E960015401F /* rewrite.def */; };
+		7D15E7361FFB0F310015401F /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D15E72C1FFB0E960015401F /* right-id.def */; };
+		7D15E7371FFB0F310015401F /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D15E7211FFB0D340015401F /* sys.dic */; };
+		7D15E7381FFB0F310015401F /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D15E7201FFB0D340015401F /* unk.dic */; };
 		7D60FCD81FB76E11006E7BF8 /* mecab_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD31FB76E11006E7BF8 /* mecab_Prefix.pch */; };
 		7D60FCD91FB76E11006E7BF8 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D60FCD41FB76E11006E7BF8 /* Node.m */; };
 		7D60FCDA1FB76E11006E7BF8 /* MecabObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D60FCD51FB76E11006E7BF8 /* MecabObjC.m */; };
@@ -560,16 +559,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D15E7101FFB0CD80015401F /* char.bin in Resources */,
-				7D15E7111FFB0CD80015401F /* dicrc in Resources */,
-				7D15E7121FFB0CD80015401F /* left-id.def in Resources */,
-				7D15E7131FFB0CD80015401F /* matrix.bin in Resources */,
-				7D15E7141FFB0CD80015401F /* pos-id.def in Resources */,
-				7D15E7151FFB0CD80015401F /* rewrite.def in Resources */,
-				7D15E7161FFB0CD80015401F /* right-id.def in Resources */,
-				7D15E7171FFB0CD80015401F /* sys.dic in Resources */,
-				7D15E7181FFB0CD80015401F /* unk.dic in Resources */,
-				7D15E7191FFB0CD80015401F /* mecabrc in Resources */,
+				7D15E7301FFB0F310015401F /* char.bin in Resources */,
+				7D15E7311FFB0F310015401F /* dicrc in Resources */,
+				7D15E7321FFB0F310015401F /* left-id.def in Resources */,
+				7D15E7331FFB0F310015401F /* matrix.bin in Resources */,
+				7D15E7341FFB0F310015401F /* pos-id.def in Resources */,
+				7D15E7351FFB0F310015401F /* rewrite.def in Resources */,
+				7D15E7361FFB0F310015401F /* right-id.def in Resources */,
+				7D15E7371FFB0F310015401F /* sys.dic in Resources */,
+				7D15E7381FFB0F310015401F /* unk.dic in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
