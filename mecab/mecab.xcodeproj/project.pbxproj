@@ -126,7 +126,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7D15E71D1FFB0CD80015401F /* mecabResourcesKorean.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mecabResourcesKorean.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D15E71D1FFB0CD80015401F /* dicdirKoDic.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dicdirKoDic.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D15E71E1FFB0CD80015401F /* mecabResources copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "mecabResources copy-Info.plist"; path = "/Users/jamie/Documents/git/iPhone-libmecab/mecab/mecabResources copy-Info.plist"; sourceTree = "<absolute>"; };
 		7D15E7201FFB0D340015401F /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; name = unk.dic; path = "Resources/mecab-ko-dic-utf-8/unk.dic"; sourceTree = "<group>"; };
 		7D15E7211FFB0D340015401F /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; name = sys.dic; path = "Resources/mecab-ko-dic-utf-8/sys.dic"; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 		7D60FD5F1FB76EA5006E7BF8 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = rewrite.def; path = "Resources/naist-jdic-utf-8/rewrite.def"; sourceTree = "<group>"; };
 		7D60FD601FB76EA5006E7BF8 /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dicrc; path = "Resources/naist-jdic-utf-8/dicrc"; sourceTree = "<group>"; };
 		7D60FD6F1FB7A4DD006E7BF8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = swift_bridging/module.modulemap; sourceTree = "<group>"; };
-		7D6D55601FB875FB00DEF011 /* mecabResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mecabResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6D55601FB875FB00DEF011 /* dicdirNaistJdic.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dicdirNaistJdic.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6D55721FB8772000DEF011 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		7D6D557E1FB8864700DEF011 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		7D9E76601FFC1E3B00C82B51 /* stream_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream_wrapper.h; path = src/stream_wrapper.h; sourceTree = "<group>"; };
@@ -250,8 +250,8 @@
 			isa = PBXGroup;
 			children = (
 				D2AAC07E0554694100DB518D /* libmecab.a */,
-				7D6D55601FB875FB00DEF011 /* mecabResources.bundle */,
-				7D15E71D1FFB0CD80015401F /* mecabResourcesKorean.bundle */,
+				7D6D55601FB875FB00DEF011 /* dicdirNaistJdic.bundle */,
+				7D15E71D1FFB0CD80015401F /* dicdirKoDic.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -455,9 +455,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7D15E70C1FFB0CD80015401F /* mecabResourcesKorean */ = {
+		7D15E70C1FFB0CD80015401F /* dicdirKoDic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D15E71A1FFB0CD80015401F /* Build configuration list for PBXNativeTarget "mecabResourcesKorean" */;
+			buildConfigurationList = 7D15E71A1FFB0CD80015401F /* Build configuration list for PBXNativeTarget "dicdirKoDic" */;
 			buildPhases = (
 				7D15E70D1FFB0CD80015401F /* Sources */,
 				7D15E70E1FFB0CD80015401F /* Frameworks */,
@@ -467,14 +467,14 @@
 			);
 			dependencies = (
 			);
-			name = mecabResourcesKorean;
+			name = dicdirKoDic;
 			productName = mecabResources;
-			productReference = 7D15E71D1FFB0CD80015401F /* mecabResourcesKorean.bundle */;
+			productReference = 7D15E71D1FFB0CD80015401F /* dicdirKoDic.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		7D6D555F1FB875FB00DEF011 /* mecabResources */ = {
+		7D6D555F1FB875FB00DEF011 /* dicdirNaistJdic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D6D55631FB875FB00DEF011 /* Build configuration list for PBXNativeTarget "mecabResources" */;
+			buildConfigurationList = 7D6D55631FB875FB00DEF011 /* Build configuration list for PBXNativeTarget "dicdirNaistJdic" */;
 			buildPhases = (
 				7D6D555C1FB875FB00DEF011 /* Sources */,
 				7D6D555D1FB875FB00DEF011 /* Frameworks */,
@@ -484,9 +484,9 @@
 			);
 			dependencies = (
 			);
-			name = mecabResources;
+			name = dicdirNaistJdic;
 			productName = mecabResources;
-			productReference = 7D6D55601FB875FB00DEF011 /* mecabResources.bundle */;
+			productReference = 7D6D55601FB875FB00DEF011 /* dicdirNaistJdic.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		D2AAC07D0554694100DB518D /* mecab */ = {
@@ -540,8 +540,8 @@
 			targets = (
 				D2AAC07D0554694100DB518D /* mecab */,
 				7D6D55551FB874B400DEF011 /* MecabFramework */,
-				7D6D555F1FB875FB00DEF011 /* mecabResources */,
-				7D15E70C1FFB0CD80015401F /* mecabResourcesKorean */,
+				7D6D555F1FB875FB00DEF011 /* dicdirNaistJdic */,
+				7D15E70C1FFB0CD80015401F /* dicdirKoDic */,
 			);
 		};
 /* End PBXProject section */
@@ -609,7 +609,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\n# This file is made in Build/Intermediates.noindex/mecab.build/Debug-iphoneos/MecabFramework.build/Script-\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\n# RW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_FRAMEWORK_NAME=${TARGET_NAME} #MecabFramework\nJB_BUNDLE_NAME=mecabResources\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n\n# Ensure that the framework is present in both platorm's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework to the user's desktop\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"\n\n# Copy the resources bundle to the user's desktop\n# ditto \"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.bundle\" \\\n# \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.bundle\"\n\n# In our case, the bundle name is mecabResources.bundle rather than mecab.bundle\nditto \"${BUILT_PRODUCTS_DIR}/${JB_BUNDLE_NAME}.bundle\" \\\n\"${HOME}/Desktop/${JB_BUNDLE_NAME}.bundle\"";
+			shellScript = "set -e\n\n# This file is made in Build/Intermediates.noindex/mecab.build/Debug-iphoneos/MecabFramework.build/Script-\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\n# RW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_FRAMEWORK_NAME=${TARGET_NAME} #MecabFramework\nJB_JAPANESE_DICDIR_NAME=dicdirNaistJdic\nJB_JAPANESE_DICDIR_NAME=dicdirKoDic\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n\n# Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n\n# Ensure that the framework is present in both platorm's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework to the user's desktop\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"\n\n# Copy the resources bundle to the user's desktop\n# ditto \"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.bundle\" \\\n# \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.bundle\"\n\n# In our case, the bundle name is dicdirNaistJdic.bundle rather than mecab.bundle\nditto \"${BUILT_PRODUCTS_DIR}/${JB_JAPANESE_DICDIR_NAME}.bundle\" \\\n\"${HOME}/Desktop/${JB_JAPANESE_DICDIR_NAME}.bundle\"\n\nditto \"${BUILT_PRODUCTS_DIR}/${JB_KOREAN_DICDIR_NAME}.bundle\" \\\n\"${HOME}/Desktop/${JB_KOREAN_DICDIR_NAME}.bundle\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -675,7 +675,7 @@
 		};
 		7D6D55671FB876CC00DEF011 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7D6D555F1FB875FB00DEF011 /* mecabResources */;
+			target = 7D6D555F1FB875FB00DEF011 /* dicdirNaistJdic */;
 			targetProxy = 7D6D55661FB876CC00DEF011 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -825,7 +825,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bottledlogic.mecab.mecabResources;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bottledlogic.mecab.dicdirKoDic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -861,7 +861,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bottledlogic.mecab.mecabResources;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bottledlogic.mecab.dicdirKoDic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -919,7 +919,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bottledlogic.mecab.mecabResources;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bottledlogic.mecab.dicdirNaistJdic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -955,7 +955,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bottledlogic.mecab.mecabResources;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.bottledlogic.mecab.dicdirNaistJdic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -984,7 +984,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D15E71A1FFB0CD80015401F /* Build configuration list for PBXNativeTarget "mecabResourcesKorean" */ = {
+		7D15E71A1FFB0CD80015401F /* Build configuration list for PBXNativeTarget "dicdirKoDic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D15E71B1FFB0CD80015401F /* Debug */,
@@ -1002,7 +1002,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D6D55631FB875FB00DEF011 /* Build configuration list for PBXNativeTarget "mecabResources" */ = {
+		7D6D55631FB875FB00DEF011 /* Build configuration list for PBXNativeTarget "dicdirNaistJdic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D6D55641FB875FB00DEF011 /* Debug */,
