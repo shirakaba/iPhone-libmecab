@@ -134,7 +134,6 @@
 		7D15E7201FFB0D340015401F /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; name = unk.dic; path = "Resources/mecab-ko-dic-utf-8/unk.dic"; sourceTree = "<group>"; };
 		7D15E7211FFB0D340015401F /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; name = sys.dic; path = "Resources/mecab-ko-dic-utf-8/sys.dic"; sourceTree = "<group>"; };
 		7D15E7241FFB0D340015401F /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = char.bin; path = "Resources/mecab-ko-dic-utf-8/char.bin"; sourceTree = "<group>"; };
-		7D15E7251FFB0D340015401F /* model.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = model.bin; path = "Resources/mecab-ko-dic-utf-8/model.bin"; sourceTree = "<group>"; };
 		7D15E7281FFB0D350015401F /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = matrix.bin; path = "Resources/mecab-ko-dic-utf-8/matrix.bin"; sourceTree = "<group>"; };
 		7D15E72B1FFB0E950015401F /* pos-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "pos-id.def"; path = "Resources/mecab-ko-dic-utf-8/pos-id.def"; sourceTree = "<group>"; };
 		7D15E72C1FFB0E960015401F /* right-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "right-id.def"; path = "Resources/mecab-ko-dic-utf-8/right-id.def"; sourceTree = "<group>"; };
@@ -295,7 +294,6 @@
 				7D15E72C1FFB0E960015401F /* right-id.def */,
 				7D15E7241FFB0D340015401F /* char.bin */,
 				7D15E7281FFB0D350015401F /* matrix.bin */,
-				7D15E7251FFB0D340015401F /* model.bin */,
 				7D15E7211FFB0D340015401F /* sys.dic */,
 				7D15E7201FFB0D340015401F /* unk.dic */,
 			);
