@@ -186,12 +186,14 @@ bool Dictionary::compile(const Param &param,
         if (!cid.get()) {
           cid.reset(new ContextID);
           cid->open(left_id_file, right_id_file, &config_iconv);
-          CHECK_DIE(cid->left_size()  == matrix.left_size() &&
-                    cid->right_size() == matrix.right_size())
+          CHECK_DIE(cid->left_size()  == matrix.right_size() &&
+                    cid->right_size() == matrix.left_size())
               << "Context ID files("
               << left_id_file
               << " or "
-              << right_id_file << " may be broken";
+              << right_id_file << " may be broken: "
+              << cid->left_size() << " " << matrix.right_size() << " "
+              << cid->right_size() << " " << matrix.left_size();
         }
 
         lid = cid->lid(lfeature.c_str());

@@ -132,7 +132,7 @@
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "0.98/ko-0.9.0/ja-ko-1.0.0"
+#define VERSION "0.98/ko-0.9.1/ja-ko-1.0.0"
 
 /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
    significant byte first (like Motorola and SPARC, unlike Intel). */
