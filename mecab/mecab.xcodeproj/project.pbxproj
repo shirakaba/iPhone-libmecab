@@ -69,7 +69,6 @@
 		7D9E76AA1FFC1E4200C82B51 /* iconv_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76721FFC1E3C00C82B51 /* iconv_utils.h */; };
 		7D9E76AB1FFC1E4200C82B51 /* mecab-dict-gen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E76731FFC1E3C00C82B51 /* mecab-dict-gen.cpp */; };
 		7D9E76AC1FFC1E4200C82B51 /* context_id.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76741FFC1E3D00C82B51 /* context_id.h */; };
-		7D9E76AD1FFC1E4200C82B51 /* winmain.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76751FFC1E3D00C82B51 /* winmain.h */; };
 		7D9E76AE1FFC1E4200C82B51 /* mmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76761FFC1E3D00C82B51 /* mmap.h */; };
 		7D9E76AF1FFC1E4200C82B51 /* param.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E76771FFC1E3D00C82B51 /* param.cpp */; };
 		7D9E76B01FFC1E4200C82B51 /* context_id.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E76781FFC1E3D00C82B51 /* context_id.cpp */; };
@@ -180,7 +179,6 @@
 		7D9E76721FFC1E3C00C82B51 /* iconv_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iconv_utils.h; path = src/iconv_utils.h; sourceTree = "<group>"; };
 		7D9E76731FFC1E3C00C82B51 /* mecab-dict-gen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "mecab-dict-gen.cpp"; path = "src/mecab-dict-gen.cpp"; sourceTree = "<group>"; };
 		7D9E76741FFC1E3D00C82B51 /* context_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = context_id.h; path = src/context_id.h; sourceTree = "<group>"; };
-		7D9E76751FFC1E3D00C82B51 /* winmain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = winmain.h; path = src/winmain.h; sourceTree = "<group>"; };
 		7D9E76761FFC1E3D00C82B51 /* mmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mmap.h; path = src/mmap.h; sourceTree = "<group>"; };
 		7D9E76771FFC1E3D00C82B51 /* param.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = param.cpp; path = src/param.cpp; sourceTree = "<group>"; };
 		7D9E76781FFC1E3D00C82B51 /* context_id.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = context_id.cpp; path = src/context_id.cpp; sourceTree = "<group>"; };
@@ -375,7 +373,6 @@
 				7D9E767A1FFC1E3D00C82B51 /* utils.h */,
 				7D9E76701FFC1E3C00C82B51 /* viterbi.cpp */,
 				7D9E767F1FFC1E3E00C82B51 /* viterbi.h */,
-				7D9E76751FFC1E3D00C82B51 /* winmain.h */,
 				7D9E76711FFC1E3C00C82B51 /* writer.cpp */,
 				7D9E76941FFC1E4100C82B51 /* writer.h */,
 			);
@@ -419,7 +416,6 @@
 				7D9E76B71FFC1E4200C82B51 /* viterbi.h in Headers */,
 				7D9E76CD1FFC1E4200C82B51 /* common.h in Headers */,
 				7D9E76BE1FFC1E4200C82B51 /* char_property.h in Headers */,
-				7D9E76AD1FFC1E4200C82B51 /* winmain.h in Headers */,
 				7D9E76CB1FFC1E4200C82B51 /* ucstable.h in Headers */,
 				7D9E76BB1FFC1E4200C82B51 /* learner_node.h in Headers */,
 				7D9E769F1FFC1E4200C82B51 /* learner_tagger.h in Headers */,

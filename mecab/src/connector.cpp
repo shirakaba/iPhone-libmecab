@@ -26,8 +26,6 @@ bool Connector::open(const Param &param) {
 bool Connector::open(const char* filename,
                      const char* left_space_penalty_factor_str,
                      const char* mode) {
-  // mecab-ko removed this subtlety, defaulting mode simply to "r":
-  // const char *mode = param.get<bool>("open-mutable-dictionary") ? "r+" : "r";
   MMAP_OPEN(short, cmmap_, std::string(filename), mode);
 
   matrix_ = cmmap_->begin();
