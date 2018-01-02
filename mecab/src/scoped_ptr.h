@@ -1,6 +1,5 @@
 //  MeCab -- Yet Another Part-of-Speech and Morphological Analyzer
 //
-//  $Id: scoped_ptr.h 173 2009-04-18 08:10:57Z taku-ku $;
 //
 //  Copyright(C) 2001-2006 Taku Kudo <taku@chasen.org>
 //  Copyright(C) 2004-2006 Nippon Telegraph and Telephone Corporation
@@ -47,6 +46,26 @@ template<class T> class scoped_array {
     delete [] ptr_;
     ptr_ = p;
   }
+  T & operator*() const   { return *ptr_; }
+  T * operator->() const  { return ptr_;  }
+  T * get() const         { return ptr_;  }
+  T & operator[](size_t i) const   { return ptr_[i]; }
+};
+
+template<class T, int N> class scoped_fixed_array {
+ private:
+  T * ptr_;
+  size_t size_;
+  scoped_fixed_array(scoped_fixed_array const &);
+  scoped_fixed_array & operator= (scoped_fixed_array const &);
+  typedef scoped_fixed_array<T, N> this_type;
+
+ public:
+  typedef T element_type;
+  explicit scoped_fixed_array()
+      : ptr_(new T[N]), size_(N) {}
+  virtual ~scoped_fixed_array() { delete [] ptr_; }
+  size_t size() const { return size_; }
   T & operator*() const   { return *ptr_; }
   T * operator->() const  { return ptr_;  }
   T * get() const         { return ptr_;  }

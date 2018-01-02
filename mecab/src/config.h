@@ -69,7 +69,7 @@
 
 /* Define to 1 if you have the <sys/param.h> header file. */
 #define HAVE_SYS_PARAM_H 1
-  
+
 /* Define to 1 if you have the <sys/stat.h> header file. */
 #define HAVE_SYS_STAT_H 1
 
@@ -141,7 +141,7 @@
 #define STDC_HEADERS 1
 
 /* Version number of package */
-#define VERSION "0.996/ko-0.9.2/ja-ko-1.0.0"
+#define VERSION "0.996/ko-0.9.2"
 
 /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
    significant byte first (like Motorola and SPARC, unlike Intel). */

@@ -1,24 +1,21 @@
 //  MeCab -- Yet Another Part-of-Speech and Morphological Analyzer
 //
-//  $Id: param.cpp 173 2009-04-18 08:10:57Z taku-ku $;
 //
 //  Copyright(C) 2001-2006 Taku Kudo <taku@chasen.org>
 //  Copyright(C) 2004-2006 Nippon Telegraph and Telephone Corporation
-#include <fstream>
 #include <cstdio>
-#include "param.h"
+#include <fstream>
 #include "common.h"
-#include "utils.h"
+#include "param.h"
 #include "string_buffer.h"
+#include "utils.h"
 
 #ifdef HAVE_CONFIG_H
 #include "config.h"
 #endif
 
 namespace MeCab {
-
-using namespace std;
-
+namespace {
 void init_param(std::string *help,
                 std::string *version,
                 const std::string &system_name,
@@ -33,7 +30,7 @@ void init_param(std::string *help,
     size_t l = 1 + std::strlen(opts[i].name);
     if (opts[i].arg_description)
       l += (1 + std::strlen(opts[i].arg_description));
-    max = _max(l, max);
+    max = std::max(l, max);
   }
 
   for (size_t i = 0; opts[i].name; ++i) {
@@ -56,6 +53,7 @@ void init_param(std::string *help,
   *help += '\n';
   return;
 }
+}  // namespace
 
 void Param::dump_config(std::ostream *os) const {
   for (std::map<std::string, std::string>::const_iterator it = conf_.begin();
@@ -66,7 +64,7 @@ void Param::dump_config(std::ostream *os) const {
 }
 
 bool Param::load(const char *filename) {
-  std::ifstream ifs(filename);
+  std::ifstream ifs(WPATH(filename));
 
   CHECK_FALSE(ifs) << "no such file or directory: " << filename;
 
@@ -180,8 +178,8 @@ bool Param::open(int argc, char **argv, const Option *opts) {
 ERROR:
   switch (_errno) {
     case 0: WHAT << "unrecognized option `" << argv[ind] << "`"; break;
-    case 1: WHAT << "`" << argv[ind] << "` requres an argument";  break;
-    case 2: WHAT << "`" << argv[ind] << "` dosen't allow an argument"; break;
+    case 1: WHAT << "`" << argv[ind] << "` requires an argument";  break;
+    case 2: WHAT << "`" << argv[ind] << "` doesn't allow an argument"; break;
   }
   return false;
 }
@@ -192,13 +190,13 @@ void Param::clear() {
 }
 
 bool Param::open(const char *arg, const Option *opts) {
-  char str[BUF_SIZE];
-  std::strncpy(str, arg, sizeof(str));
+  scoped_fixed_array<char, BUF_SIZE> str;
+  std::strncpy(str.get(), arg, str.size());
   char* ptr[64];
   unsigned int size = 1;
   ptr[0] = const_cast<char*>(PACKAGE);
 
-  for (char *p = str; *p;) {
+  for (char *p = str.get(); *p;) {
     while (isspace(*p)) *p++ = '\0';
     if (*p == '\0') break;
     ptr[size++] = p;

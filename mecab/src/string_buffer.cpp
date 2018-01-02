@@ -1,11 +1,10 @@
 // MeCab -- Yet Another Part-of-Speech and Morphological Analyzer
 //
-//  $Id: string_buffer.cpp 173 2009-04-18 08:10:57Z taku-ku $;
 //
 //  Copyright(C) 2001-2006 Taku Kudo <taku@chasen.org>
 //  Copyright(C) 2004-2006 Nippon Telegraph and Telephone Corporation
-#include <cstring>
 #include <cstdio>
+#include <cstring>
 #include "common.h"
 #include "string_buffer.h"
 
