@@ -187,9 +187,9 @@ const mecab_node_t* mecab_sparse_tonode(mecab_t *tagger, const char *str) {
 }
 
 const mecab_node_t* mecab_sparse_tonode2(mecab_t *tagger,
-                                         const char *str, size_t len) {
+                                         const char *str, size_t len, size_t koreanMode = 0) {
   return reinterpret_cast<const mecab_node_t *>(
-      reinterpret_cast<MeCab::Tagger *>(tagger)->parseToNode(str, len));
+                                                reinterpret_cast<MeCab::Tagger *>(tagger)->parseToNode(str, len, koreanMode == 0 ? false : true));
 }
 
 const char* mecab_nbest_sparse_tostr(mecab_t *tagger, size_t N,

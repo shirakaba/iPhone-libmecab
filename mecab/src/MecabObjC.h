@@ -21,7 +21,7 @@ extern NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME;
 - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string;
 
 /** Specify the path from the main bundle to the dicdir folder */
-- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirRelativePath:(NSString *)dicdirRelativePath;
+- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirRelativePath:(NSString *)dicdirRelativePath koreanMode:(size_t)koreanMode;
 
 @end
 

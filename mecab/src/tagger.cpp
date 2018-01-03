@@ -158,22 +158,22 @@ class TaggerImpl: public Tagger {
   bool                  open(const char *arg);
   bool                  open(const ModelImpl &model);
 
-  bool                  parse(Lattice *lattice) const;
+  bool                  parse(Lattice *lattice, bool koreanMode = false) const;
 
   void                  set_request_type(int request_type);
   int                   request_type() const;
 
-  const char*           parse(const char*);
-  const char*           parse(const char*, size_t);
-  const char*           parse(const char*, size_t, char*, size_t);
-  const Node*           parseToNode(const char*);
-  const Node*           parseToNode(const char*, size_t = 0);
-  const char*           parseNBest(size_t, const char*);
-  const char*           parseNBest(size_t, const char*, size_t);
+  const char*           parse(const char*, bool koreanMode = false);
+  const char*           parse(const char*, size_t, bool koreanMode = false);
+  const char*           parse(const char*, size_t, char*, size_t, bool koreanMode = false);
+  const Node*           parseToNode(const char*, bool koreanMode = false);
+  const Node*           parseToNode(const char*, size_t = 0, bool koreanMode = false);
+  const char*           parseNBest(size_t, const char*, bool koreanMode = false);
+  const char*           parseNBest(size_t, const char*, size_t, bool koreanMode = false);
   const char*           parseNBest(size_t, const char*,
-                                   size_t, char *, size_t);
-  bool                  parseNBestInit(const char*);
-  bool                  parseNBestInit(const char*, size_t);
+                                   size_t, char *, size_t, bool koreanMode = false);
+  bool                  parseNBestInit(const char*, bool koreanMode = false);
+  bool                  parseNBestInit(const char*, size_t, bool koreanMode = false);
   const Node*           nextNode();
   const char*           next();
   const char*           next(char*, size_t);
@@ -550,23 +550,23 @@ bool TaggerImpl::all_morphs() const {
   return request_type_ & MECAB_ALL_MORPHS;
 }
 
-bool TaggerImpl::parse(Lattice *lattice) const {
+bool TaggerImpl::parse(Lattice *lattice, bool koreanMode) const {
 #ifdef HAVE_ATOMIC_OPS
   scoped_reader_lock l(model()->mutex());
 #endif
 
-  return model()->viterbi()->analyze(lattice);
+  return model()->viterbi()->analyze(lattice, koreanMode);
 }
 
-const char *TaggerImpl::parse(const char *str) {
-  return parse(str, std::strlen(str));
+const char *TaggerImpl::parse(const char *str, bool koreanMode) {
+  return parse(str, std::strlen(str), koreanMode);
 }
 
-const char *TaggerImpl::parse(const char *str, size_t len) {
+const char *TaggerImpl::parse(const char *str, size_t len, bool koreanMode) {
   Lattice *lattice = mutable_lattice();
   lattice->set_sentence(str, len);
   initRequestType();
-  if (!parse(lattice)) {
+  if (!parse(lattice, koreanMode)) {
     set_what(lattice->what());
     return 0;
   }
@@ -579,11 +579,11 @@ const char *TaggerImpl::parse(const char *str, size_t len) {
 }
 
 const char *TaggerImpl::parse(const char *str, size_t len,
-                              char *out, size_t len2) {
+                              char *out, size_t len2, bool koreanMode) {
   Lattice *lattice = mutable_lattice();
   lattice->set_sentence(str, len);
   initRequestType();
-  if (!parse(lattice)) {
+  if (!parse(lattice, koreanMode)) {
     set_what(lattice->what());
     return 0;
   }
@@ -595,31 +595,31 @@ const char *TaggerImpl::parse(const char *str, size_t len,
   return result;
 }
 
-const Node *TaggerImpl::parseToNode(const char *str) {
-  return parseToNode(str, std::strlen(str));
+const Node *TaggerImpl::parseToNode(const char *str, bool koreanMode) {
+  return parseToNode(str, std::strlen(str), koreanMode);
 }
 
-const Node *TaggerImpl::parseToNode(const char *str, size_t len) {
+const Node *TaggerImpl::parseToNode(const char *str, size_t len, bool koreanMode) {
   Lattice *lattice = mutable_lattice();
   lattice->set_sentence(str, len);
   initRequestType();
-  if (!parse(lattice)) {
+  if (!parse(lattice, koreanMode)) {
     set_what(lattice->what());
     return 0;
   }
   return lattice->bos_node();
 }
 
-bool TaggerImpl::parseNBestInit(const char *str) {
-  return parseNBestInit(str, std::strlen(str));
+bool TaggerImpl::parseNBestInit(const char *str, bool koreanMode) {
+  return parseNBestInit(str, std::strlen(str), koreanMode);
 }
 
-bool TaggerImpl::parseNBestInit(const char *str, size_t len) {
+bool TaggerImpl::parseNBestInit(const char *str, size_t len, bool koreanMode) {
   Lattice *lattice = mutable_lattice();
   lattice->set_sentence(str, len);
   initRequestType();
   lattice->add_request_type(MECAB_NBEST);
-  if (!parse(lattice)) {
+  if (!parse(lattice, koreanMode)) {
     set_what(lattice->what());
     return false;
   }
@@ -663,18 +663,18 @@ const char* TaggerImpl::next(char *out, size_t len2) {
   return result;
 }
 
-const char* TaggerImpl::parseNBest(size_t N, const char* str) {
-  return parseNBest(N, str, std::strlen(str));
+const char* TaggerImpl::parseNBest(size_t N, const char* str, bool koreanMode) {
+  return parseNBest(N, str, std::strlen(str), koreanMode);
 }
 
 const char* TaggerImpl::parseNBest(size_t N,
-                                   const char* str, size_t len) {
+                                   const char* str, size_t len, bool koreanMode) {
   Lattice *lattice = mutable_lattice();
   lattice->set_sentence(str, len);
   initRequestType();
   lattice->add_request_type(MECAB_NBEST);
 
-  if (!parse(lattice)) {
+  if (!parse(lattice, koreanMode)) {
     set_what(lattice->what());
     return 0;
   }
@@ -688,13 +688,13 @@ const char* TaggerImpl::parseNBest(size_t N,
 }
 
 const char* TaggerImpl::parseNBest(size_t N, const char* str, size_t len,
-                                   char *out, size_t len2) {
+                                   char *out, size_t len2, bool koreanMode) {
   Lattice *lattice = mutable_lattice();
   lattice->set_sentence(str, len);
   initRequestType();
   lattice->add_request_type(MECAB_NBEST);
 
-  if (!parse(lattice)) {
+  if (!parse(lattice, koreanMode)) {
     set_what(lattice->what());
     return 0;
   }
@@ -1112,9 +1112,9 @@ const char *Model::version() {
   return VERSION;
 }
 
-bool Tagger::parse(const Model &model, Lattice *lattice) {
+bool Tagger::parse(const Model &model, Lattice *lattice, bool koreanMode) {
   scoped_ptr<Tagger> tagger(model.createTagger());
-  return tagger->parse(lattice);
+  return tagger->parse(lattice, koreanMode);
 }
 
 Lattice *Lattice::create() {
