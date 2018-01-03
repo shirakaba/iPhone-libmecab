@@ -29,7 +29,9 @@
 	
 	NSString *string = textField.text;
 	
-	self.nodes = [mecab parseToNodeWithString:string];
+    // Default Japanese mode:
+    // self.nodes = [mecab parseToNodeWithString:string];
+    self.nodes = [mecab parseToNodeWithString:string dicdirRelativePath:DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME koreanMode:(size_t)0];
 	
 	[tableView_ reloadData];
 }
