@@ -56,7 +56,7 @@ class Connector {
     return matrix_[rcAttr + lsize_ * lcAttr];
   }
 
-  int cost(const Node *lNode, const Node *rNode) const;
+  int cost(const Node *lNode, const Node *rNode, bool koreanMode = false) const;
 
   // access to raw matrix
   short *mutable_matrix() { return &matrix_[0]; }

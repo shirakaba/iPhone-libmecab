@@ -68,11 +68,12 @@ void Connector::set_left_space_penalty_factor(const char *factor_str) {
 void Connector::close() {
   cmmap_->close();
 }
-
-int Connector::cost(const Node *lNode, const Node *rNode) const {
+    
+// shirakaba/LibMecabSample:
+// Only add get_space_penalty_cost() in Korean mode.
+int Connector::cost(const Node *lNode, const Node *rNode, bool koreanMode) const {
   return matrix_[lNode->rcAttr + lsize_ * rNode->lcAttr] +
-      rNode->wcost +
-      get_space_penalty_cost(rNode);
+    rNode->wcost + (koreanMode ? get_space_penalty_cost(rNode) : 0);
 }
 
 int Connector::get_space_penalty_cost(const Node *rNode) const {
