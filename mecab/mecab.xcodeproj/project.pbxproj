@@ -47,7 +47,6 @@
 		7D6D556E1FB876F800DEF011 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5C1FB76EA5006E7BF8 /* right-id.def */; };
 		7D6D556F1FB876F800DEF011 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD581FB76EA5006E7BF8 /* sys.dic */; };
 		7D6D55701FB876F800DEF011 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD591FB76EA5006E7BF8 /* unk.dic */; };
-		7D6D55711FB876F800DEF011 /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD561FB76E5C006E7BF8 /* mecabrc */; };
 		7D9E77141FFC4AD500C82B51 /* stream_wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76DB1FFC4ACD00C82B51 /* stream_wrapper.h */; };
 		7D9E77151FFC4AD500C82B51 /* tagger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E76DC1FFC4ACD00C82B51 /* tagger.cpp */; };
 		7D9E77161FFC4AD500C82B51 /* mecab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E76DD1FFC4ACE00C82B51 /* mecab.cpp */; };
@@ -576,7 +575,6 @@
 				7D6D556E1FB876F800DEF011 /* right-id.def in Resources */,
 				7D6D556F1FB876F800DEF011 /* sys.dic in Resources */,
 				7D6D55701FB876F800DEF011 /* unk.dic in Resources */,
-				7D6D55711FB876F800DEF011 /* mecabrc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
