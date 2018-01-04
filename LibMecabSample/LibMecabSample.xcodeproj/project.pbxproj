@@ -19,7 +19,7 @@
 		2899E5220DE3E06400AC0155 /* LibMecabSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* LibMecabSampleViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* LibMecabSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* LibMecabSampleViewController.m */; };
-		7D15E73F1FFB0FC80015401F /* mecabResourcesKorean.bundle in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D15E73E1FFB0FC80015401F /* mecabResourcesKorean.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7D15E73F1FFB0FC80015401F /* dicdirKoDic.bundle in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D15E73E1FFB0FC80015401F /* dicdirKoDic.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7D471CA51EB4B7610038BCA5 /* ExampleUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D471CA41EB4B7610038BCA5 /* ExampleUsage.swift */; };
 		7D471CD61EB4DEB50038BCA5 /* LibMecabSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* LibMecabSample-Info.plist */; };
 		7D471CD81EB4DEE30038BCA5 /* libmecab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E7C12C87C31006F2369 /* libmecab.a */; };
@@ -77,7 +77,7 @@
 			dstSubfolderSpec = 7;
 			files = (
 				7D9E76D61FFC3F9A00C82B51 /* dicdirNaistJdic.bundle in Embed Frameworks */,
-				7D15E73F1FFB0FC80015401F /* mecabResourcesKorean.bundle in Embed Frameworks */,
+				7D15E73F1FFB0FC80015401F /* dicdirKoDic.bundle in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,7 +160,7 @@
 			children = (
 				13C86E7C12C87C31006F2369 /* libmecab.a */,
 				7D6D55791FB87C2900DEF011 /* dicdirNaistJdic.bundle */,
-				7D15E73E1FFB0FC80015401F /* mecabResourcesKorean.bundle */,
+				7D15E73E1FFB0FC80015401F /* dicdirKoDic.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -331,10 +331,10 @@
 			remoteRef = 13C86E7B12C87C31006F2369 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		7D15E73E1FFB0FC80015401F /* mecabResourcesKorean.bundle */ = {
+		7D15E73E1FFB0FC80015401F /* dicdirKoDic.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = mecabResourcesKorean.bundle;
+			path = dicdirKoDic.bundle;
 			remoteRef = 7D15E73D1FFB0FC80015401F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
