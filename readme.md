@@ -104,7 +104,7 @@ git submodule update --remote
 
 3. In your own project's `.xcodeproj`/`.xcworkspace` file, choose your target (the app you're making) from the TARGETS column, then click the 'Build Phases' tab. In there, add the `dicdirNaistJDic` and `dicdirKoDic` bundles to Target Dependencies.
 
-4. Still in the 'Build Phases' tab, press the `+` button to add another build phase, called either 'Copy Files' or 'Embed Frameworks'. In this build phase, add the `dicdirNaistJDic` and `dicdirKoDic` bundles.
+4. Still in the 'Build Phases' tab, press the `+` button to add another build phase, called either 'Copy Files' or 'Embed Frameworks'. Ensure that 'Resources' is selected as the destination. In this build phase, add the `dicdirNaistJDic` and `dicdirKoDic` bundles.
 
 5. Next, in the 'General' tab, add the `dicdirNaistJDic` and `dicdirKoDic` bundles to the `Embedded Binaries` list.
 
