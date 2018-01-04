@@ -17,10 +17,10 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME = @"dicdirKoDic.bundle";
 @implementation Mecab
 
 - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string {
-    return [self parseToNodeWithString:string dicdirRelativePath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME koreanMode:0];
+    return [self parseToNodeWithString:string dicdirRelativePath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME];
 }
 
-- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirRelativePath:(NSString *)dicdirRelativePath koreanMode:(size_t)koreanMode {
+- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirRelativePath:(NSString *)dicdirRelativePath {
     
     if (mecab == NULL) {
         // https://developer.apple.com/documentation/foundation/bundle
@@ -38,7 +38,7 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME = @"dicdirKoDic.bundle";
     const char *buf= [string cStringUsingEncoding:NSUTF8StringEncoding];
     NSUInteger l= [string lengthOfBytesUsingEncoding:NSUTF8StringEncoding];
     
-    node = mecab_sparse_tonode2(mecab, buf, l, koreanMode);
+    node = mecab_sparse_tonode2(mecab, buf, l);
     if (node == NULL) {
         fprintf(stderr, "error\n");
         

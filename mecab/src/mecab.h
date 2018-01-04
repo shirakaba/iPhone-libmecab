@@ -458,7 +458,7 @@ extern "C" {
   /**
    * C wrapper of MeCab::Tagger::parseToNode(const char *str, size_t len)
    */
-  MECAB_DLL_EXTERN const mecab_node_t* mecab_sparse_tonode2(mecab_t *mecab, const char*, size_t, size_t koreanMode);
+  MECAB_DLL_EXTERN const mecab_node_t* mecab_sparse_tonode2(mecab_t *mecab, const char*, size_t);
 
   /**
    * C wrapper of MeCab::Tagger::parseNBest(size_t N, const char *str)
@@ -1162,7 +1162,7 @@ public:
    * }
    * @return boolean
    */
-  static bool  parse(const Model &model, Lattice *lattice, bool koreanMode = false);
+  static bool  parse(const Model &model, Lattice *lattice);
 
   /**
    * Parse lattice object.
@@ -1173,7 +1173,7 @@ public:
    * @return lattice lattice object
    * @return boolean
    */
-  virtual bool parse(Lattice *lattice, bool koreanMode = false) const                = 0;
+  virtual bool parse(Lattice *lattice) const                = 0;
 
   /**
    * Parse given sentence and return parsed result as string.
@@ -1183,7 +1183,7 @@ public:
    * @param str sentence
    * @return parsed result
    */
-  virtual const char* parse(const char *str, bool koreanMode = false)                = 0;
+  virtual const char* parse(const char *str)                = 0;
 
   /**
    * Parse given sentence and return Node object.
@@ -1194,7 +1194,7 @@ public:
    * @param str sentence
    * @return bos node object
    */
-  virtual const Node* parseToNode(const char *str, bool koreanMode = false)          = 0;
+  virtual const Node* parseToNode(const char *str)          = 0;
 
   /**
    * Parse given sentence and obtain N-best results as a string format.
@@ -1206,7 +1206,7 @@ public:
    * @param str sentence
    * @return parsed result
    */
-  virtual const char* parseNBest(size_t N, const char *str, bool koreanMode = false) = 0;
+  virtual const char* parseNBest(size_t N, const char *str) = 0;
 
   /**
    * Initialize N-best enumeration with a sentence.
@@ -1217,7 +1217,7 @@ public:
    * @param str sentence
    * @return boolean
    */
-  virtual bool  parseNBestInit(const char *str, bool koreanMode = false)             = 0;
+  virtual bool  parseNBestInit(const char *str)             = 0;
 
   /**
    * Return next-best parsed result. You must call parseNBestInit() in advance.
@@ -1260,7 +1260,7 @@ public:
    * @param olen output buffer length
    * @return parsed result
    */
-  virtual const char* parse(const char *str, size_t len, char *ostr, size_t olen, bool koreanMode = false) = 0;
+  virtual const char* parse(const char *str, size_t len, char *ostr, size_t olen) = 0;
 
   /**
    * The same as parse() method, but input length can be passed.
@@ -1268,7 +1268,7 @@ public:
    * @param len sentence length
    * @return parsed result
    */
-  virtual const char* parse(const char *str, size_t len, bool koreanMode = false)                          = 0;
+  virtual const char* parse(const char *str, size_t len)                          = 0;
 
   /**
    * The same as parseToNode(), but input lenth can be passed.
@@ -1276,7 +1276,7 @@ public:
    * @param len sentence length
    * @return node object
    */
-  virtual const Node* parseToNode(const char *str, size_t len, bool koreanMode = false)                    = 0;
+  virtual const Node* parseToNode(const char *str, size_t len)                    = 0;
 
   /**
    * The same as parseNBest(), but input length can be passed.
@@ -1285,7 +1285,7 @@ public:
    * @param len sentence length
    * @return parsed result
    */
-  virtual const char* parseNBest(size_t N, const char *str, size_t len, bool koreanMode = false)           = 0;
+  virtual const char* parseNBest(size_t N, const char *str, size_t len)           = 0;
 
   /**
    * The same as parseNBestInit(), but input length can be passed.
@@ -1294,7 +1294,7 @@ public:
    * @return boolean
    * @return parsed result
    */
-  virtual bool  parseNBestInit(const char *str, size_t len, bool koreanMode = false)                  = 0;
+  virtual bool  parseNBestInit(const char *str, size_t len)                  = 0;
 
   /**
    * The same as next(), but output buffer can be passed.
@@ -1316,7 +1316,7 @@ public:
    * @return parsed result
    */
   virtual const char* parseNBest(size_t N, const char *str,
-                                 size_t len, char *ostr, size_t olen, bool koreanMode = false)       = 0;
+                                 size_t len, char *ostr, size_t olen)       = 0;
 
   /**
    * The same as formatNode(), but output buffer can be passed.
