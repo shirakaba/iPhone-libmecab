@@ -29,7 +29,9 @@
 	
 	NSString *string = textField.text;
 	
-	self.nodes = [mecab parseToNodeWithString:string];
+    // Default Japanese mode:
+    // self.nodes = [mecab parseToNodeWithString:string];
+    self.nodes = [mecab parseToNodeWithString:string dicdirRelativePath:DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME koreanMode:(size_t)0];
 	
 	[tableView_ reloadData];
 }
@@ -59,7 +61,7 @@
     
 	Node *node = [nodes objectAtIndex:indexPath.row];
 	cell.surfaceLabel.text = node.surface;
-	cell.featureLabel.text = [node pronunciation];
+    cell.featureLabel.text = [node reading]; // node.pronunciation field (field index 8) exists in Japanese (whether or not populated), but for Korean, the top index is 7 (which corresponds to node.pronunciation), although I don't yet know what that actually is.
     
     return cell;
 }
