@@ -10,12 +10,17 @@
 #import <Foundation/Foundation.h> // imported implicitly via mecab_Prefix.pch
 #import "Node.h"
 
+extern NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME;
 
 @interface Mecab : NSObject {
     mecab_t *mecab;
 }
 
+/** Uses Japanese dictionary by default. */
 - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string;
+
+/** Specify the path from the main bundle to the dicdir folder */
+- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirRelativePath:(NSString *)dicdirRelativePath;
 
 @end
 

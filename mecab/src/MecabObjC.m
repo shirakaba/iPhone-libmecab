@@ -11,20 +11,20 @@
 #include <iconv.h>
 #import "MecabObjC.h"
 
-
+NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME = @"dicdirNaistJdic.bundle";
 
 @implementation Mecab
 
 - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string {
+    return [self parseToNodeWithString:string dicdirRelativePath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME];
+}
+
+- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirRelativePath:(NSString *)dicdirRelativePath {
     
     if (mecab == NULL) {
-        // resourcepath is the path to the folder holding your dictionaries directory. This might be the Resources group in XCode, but I'm not sure.
-        // see http://stackoverflow.com/questions/6263289/accesing-a-file-using-nsbundle-mainbundle-pathforresource-oftypeindirectory
-        // http://stackoverflow.com/a/18141528/5951226
-        // http://stackoverflow.com/a/3495426/5951226
+        // https://developer.apple.com/documentation/foundation/bundle
         NSString *path = [[NSBundle mainBundle] resourcePath];
-        // -d is the flag to link the dictionary:  https://fasiha.github.io/mecab-emscripten/
-        mecab = mecab_new2([[@"-d " stringByAppendingString:path] UTF8String]);
+        mecab = mecab_new2([[@"--dicdir " stringByAppendingString:[NSString stringWithFormat:@"%@/%@", path, dicdirRelativePath]] UTF8String]);
         
         if (mecab == NULL) {
             fprintf(stderr, "error in mecab_new2: %s\n", mecab_strerror(NULL));
