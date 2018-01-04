@@ -92,11 +92,13 @@ A few examples:
 
 1. In your own project's root directory (where I also assume your `.git` lives), run:
 
-    # Add a submodule tracking the 'master' branch (or alternatively the 'korean' branch)
-    git submodule add -b master git@github.com:shirakaba/iPhone-libmecab.git
+```bash
+# Add a submodule tracking the 'master' branch (or alternatively the 'korean' branch)
+git submodule add -b master git@github.com:shirakaba/iPhone-libmecab.git
     
-    # Update your submodule from the remote.
-    git submodule update --remote 
+# Update your submodule from the remote.
+git submodule update --remote
+```
 
 2. Open your own project's `.xcodeproj` or `.xcworkspace` instead if you have one. Add `mecab.xcodeproj` to it.
 
