@@ -118,7 +118,7 @@ git submodule update --remote
 
 ```Swift
 let mecab: Mecab = Mecab()
-let nodes: [Node] = mecab.parseToNode(with: input)
+let nodes: [Node] = mecab.parseToNode(with: "すもももももももものうち", dicdirRelativePath: DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME)
 ```
     
 8. If Xcode has succeeded in indexing, you should be able to Cmd-click on 'Node' and test out 'Jump to definition', which will take you to `Node.h`.
