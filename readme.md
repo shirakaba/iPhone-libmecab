@@ -104,18 +104,26 @@ git submodule update --remote
 
 3. In your own project's `.xcodeproj`/`.xcworkspace` file, choose your target (the app you're making) from the TARGETS column, then click the 'Build Phases' tab. In there, add the `mecabResources` bundle to Target Dependencies.
 
-4. Next, in the 'General' tab, add the `mecabResources` bundle to the `Embedded Binaries` list.
+4. Still in the 'Build Phases' tab, press the `+` button to add another build phase, called either 'Copy Files' or 'Embed Frameworks'. In this build phase, add the `mecabResources` bundle.
 
-5. In any Swift file in your project, add the line:
+5. Next, in the 'General' tab, add the `mecabResources` bundle to the `Embedded Binaries` list.
+
+6. Back in `Build Phases`, ensure that the following are added in `Link Binary With Libraries`:
+
+ * libmecab.a (this is listed under the 'Workspace' folder)
+ * libiconv.tbd (this may be listed under 'iOS 11.2' or a similar folder)
+ * libstdc++.tbd (this may be listed under 'iOS 11.2' or a similar folder)
+
+7. In any Swift file in your project, add the line:
 
 ```Swift
 let mecab: Mecab = Mecab()
 let nodes: [Node] = mecab.parseToNode(with: input)
 ```
     
-6. If Xcode has succeeded in indexing, you should be able to Cmd-click on 'Node' and test out 'Jump to definition', which will take you to `Node.h`.
+8. If Xcode has succeeded in indexing, you should be able to Cmd-click on 'Node' and test out 'Jump to definition', which will take you to `Node.h`.
 
-7. In your target's Build Settings tab, set `Objective-C Bridging Header` to a path that picks up the bridging header. For me, this was simply: `IPhone-libmecab/mecab/src/mecab-Bridging-Header.h`. If it fails to find this file upon running, then carefully compare the path that it looked with (in the error message) with the path that it should be navigating to.
+9. In your target's Build Settings tab, set `Objective-C Bridging Header` to a path that picks up the bridging header. For me, this was simply: `IPhone-libmecab/mecab/src/mecab-Bridging-Header.h`. If it fails to find this file upon running, then carefully compare the path that it looked with (in the error message) with the path that it should be navigating to.
 
 ## License
 
