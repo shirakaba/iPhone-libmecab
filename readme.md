@@ -102,11 +102,11 @@ git submodule update --remote
 
 2. Open your own project's `.xcodeproj` or `.xcworkspace` instead if you have one. Add `mecab.xcodeproj` to it.
 
-3. In your own project's `.xcodeproj`/`.xcworkspace` file, choose your target (the app you're making) from the TARGETS column, then click the 'Build Phases' tab. In there, add the `mecabResources` bundle to Target Dependencies.
+3. In your own project's `.xcodeproj`/`.xcworkspace` file, choose your target (the app you're making) from the TARGETS column, then click the 'Build Phases' tab. In there, add the `dicdirNaistJDic` bundle to Target Dependencies.
 
-4. Still in the 'Build Phases' tab, press the `+` button to add another build phase, called either 'Copy Files' or 'Embed Frameworks'. Ensure that 'Resources' is selected as the destination. In this build phase, add the `mecabResources` bundle.
+4. Still in the 'Build Phases' tab, press the `+` button to add another build phase, called either 'Copy Files' or 'Embed Frameworks'. Ensure that 'Resources' is selected as the destination. In this build phase, add the `dicdirNaistJDic` bundle.
 
-5. Next, in the 'General' tab, add the `mecabResources` bundle to the `Embedded Binaries` list.
+5. Next, in the 'General' tab, add the `dicdirNaistJDic` bundle to the `Embedded Binaries` list.
 
 6. Back in `Build Phases`, ensure that the following are added in `Link Binary With Libraries`:
 
