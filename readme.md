@@ -21,11 +21,11 @@ You can implement Mecab from this repo into your own app using the following ste
 
 4. Go into your project's `Build Phases`, look under `Compile Sources` and add `-fno-objc-arc` to `Compiler Flags` for both Mecab.h and Node.h.
 
-5.  Still in `Build Phases`, add the following to `Link Binary With Libraries`:
+5.  Still in `Build Phases`, ensure that the following are added in `Link Binary With Libraries`:
 
- * libmecab.a
- * libiconv.tbd
- * libstdc++.tbd
+ * libmecab.a (this is listed under the 'Workspace' folder)
+ * libiconv.tbd (this may be listed under 'iOS 11.2' or a similar folder)
+ * libstdc++.tbd (this may be listed under 'iOS 11.2' or a similar folder)
 
 6. Under "Header Search Paths" in `Build Settings` add `mecab`.
 
@@ -34,6 +34,8 @@ You can implement Mecab from this repo into your own app using the following ste
 Special thanks to [Joseph Toronto on Stack Overflow](http://stackoverflow.com/a/37891729/3295398) for coming up with these steps.
 
 ## Usage
+
+### By modifying the current project
 
 Import `"Mecab.h"` into your class. Allocate and initialize a new Mecab object and then supply it a string to parse via the `parseToNodeWithString` method.  It'll return an array of nodes that you can then manipulate as needed:
 
@@ -85,6 +87,43 @@ A few examples:
 よう: 名詞,非自立,助動詞語幹,*,*,*,よう,ヨウ,ヨー  
 に: 助詞,副詞化,*,*,*,*,に,ニ,ニ  
 </pre>
+
+### By incorporating into your own project
+
+1. In your own project's root directory (where I also assume your `.git` lives), run:
+
+```bash
+# Add a submodule tracking the 'master' branch (or alternatively the 'korean' branch)
+git submodule add -b master git@github.com:shirakaba/iPhone-libmecab.git
+    
+# Update your submodule from the remote.
+git submodule update --remote
+```
+
+2. Open your own project's `.xcodeproj` or `.xcworkspace` instead if you have one. Add `mecab.xcodeproj` to it.
+
+3. In your own project's `.xcodeproj`/`.xcworkspace` file, choose your target (the app you're making) from the TARGETS column, then click the 'Build Phases' tab. In there, add the `dicdirNaistJDic` and `dicdirKoDic` bundles to Target Dependencies.
+
+4. Still in the 'Build Phases' tab, press the `+` button to add another build phase, called either 'Copy Files' or 'Embed Frameworks'. Ensure that 'Resources' is selected as the destination. In this build phase, add the `dicdirNaistJDic` and `dicdirKoDic` bundles.
+
+5. Next, in the 'General' tab, add the `dicdirNaistJDic` and `dicdirKoDic` bundles to the `Embedded Binaries` list.
+
+6. Back in `Build Phases`, ensure that the following are added in `Link Binary With Libraries`:
+
+ * libmecab.a (this is listed under the 'Workspace' folder)
+ * libiconv.tbd (this may be listed under 'iOS 11.2' or a similar folder)
+ * libstdc++.tbd (this may be listed under 'iOS 11.2' or a similar folder)
+
+7. In any Swift file in your project, add the line:
+
+```Swift
+let mecab: Mecab = Mecab()
+let nodes: [Node] = mecab.parseToNode(with: "すもももももももものうち", dicdirRelativePath: DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME)
+```
+    
+8. If Xcode has succeeded in indexing, you should be able to Cmd-click on 'Node' and test out 'Jump to definition', which will take you to `Node.h`.
+
+9. In your target's Build Settings tab, set `Objective-C Bridging Header` to a path that picks up the bridging header. For me, this was simply: `IPhone-libmecab/mecab/src/mecab-Bridging-Header.h`. If it fails to find this file upon running, then carefully compare the path that it looked with (in the error message) with the path that it should be navigating to.
 
 ## License
 
