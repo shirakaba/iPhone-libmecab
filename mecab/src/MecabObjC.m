@@ -25,7 +25,7 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME = @"dicdirKoDic.bundle";
     if (mecab == NULL) {
         // https://developer.apple.com/documentation/foundation/bundle
         NSString *path = [[NSBundle mainBundle] resourcePath];
-        mecab = mecab_new2([[@"--dicdir " stringByAppendingString:[NSString stringWithFormat:@"%@/%@", path, dicdirRelativePath]] UTF8String]);
+        mecab = mecab_new2([[@"--output-format-type=none --dicdir " stringByAppendingString:[NSString stringWithFormat:@"%@/%@", path, dicdirRelativePath]] UTF8String]);
         
         if (mecab == NULL) {
             fprintf(stderr, "error in mecab_new2: %s\n", mecab_strerror(NULL));
