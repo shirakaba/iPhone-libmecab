@@ -93,7 +93,7 @@
 
 /* Begin PBXFileReference section */
 		7D15E71D1FFB0CD80015401F /* dicdirKoDic.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dicdirKoDic.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D15E71E1FFB0CD80015401F /* mecabResources copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "mecabResources copy-Info.plist"; path = "/Users/jamie/Documents/git/iPhone-libmecab/mecab/mecabResources copy-Info.plist"; sourceTree = "<absolute>"; };
+		7D15E71E1FFB0CD80015401F /* dicdirNaistJdic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "dicdirNaistJdic-Info.plist"; path = "/Users/jamie/Documents/git/iPhone-libmecab/mecab/dicdirNaistJdic-Info.plist"; sourceTree = "<absolute>"; };
 		7D15E7201FFB0D340015401F /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; name = unk.dic; path = "Resources/mecab-ko-dic-utf-8/unk.dic"; sourceTree = "<group>"; };
 		7D15E7211FFB0D340015401F /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; name = sys.dic; path = "Resources/mecab-ko-dic-utf-8/sys.dic"; sourceTree = "<group>"; };
 		7D15E7241FFB0D340015401F /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = char.bin; path = "Resources/mecab-ko-dic-utf-8/char.bin"; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		7D60FD6F1FB7A4DD006E7BF8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = swift_bridging/module.modulemap; sourceTree = "<group>"; };
 		7D6D55601FB875FB00DEF011 /* dicdirNaistJdic.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dicdirNaistJdic.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6D55721FB8772000DEF011 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		7D6D557E1FB8864700DEF011 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		7D6D557E1FB8864700DEF011 /* dicdirKoDic-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "dicdirKoDic-Info.plist"; path = "Resources/dicdirKoDic-Info.plist"; sourceTree = "<group>"; };
 		7D9E76DB1FFC4ACD00C82B51 /* stream_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream_wrapper.h; path = src/stream_wrapper.h; sourceTree = "<group>"; };
 		7D9E76DC1FFC4ACD00C82B51 /* tagger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tagger.cpp; path = src/tagger.cpp; sourceTree = "<group>"; };
 		7D9E76DD1FFC4ACE00C82B51 /* mecab.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mecab.cpp; path = src/mecab.cpp; sourceTree = "<group>"; };
@@ -231,7 +231,6 @@
 				7D60FCCC1FB76DE1006E7BF8 /* swift_bridging */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
-				7D15E71E1FFB0CD80015401F /* mecabResources copy-Info.plist */,
 			);
 			name = mecab;
 			sourceTree = "<group>";
@@ -352,8 +351,9 @@
 			isa = PBXGroup;
 			children = (
 				7D15E71F1FFB0CED0015401F /* mecab-ko-dic-utf-8 */,
-				7D6D557E1FB8864700DEF011 /* Info.plist */,
+				7D6D557E1FB8864700DEF011 /* dicdirKoDic-Info.plist */,
 				7D60FD571FB76E89006E7BF8 /* naist-jdic-utf-8 */,
+				7D15E71E1FFB0CD80015401F /* dicdirNaistJdic-Info.plist */,
 				7D60FD561FB76E5C006E7BF8 /* mecabrc */,
 			);
 			name = Resources;
@@ -739,7 +739,7 @@
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "mecabResources copy-Info.plist";
+				INFOPLIST_FILE = "Resources/dicdirKoDic-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -775,7 +775,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "mecabResources copy-Info.plist";
+				INFOPLIST_FILE = "Resources/dicdirKoDic-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -815,7 +815,7 @@
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_FILE = "Resources/dicdirNaistJdic-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -851,7 +851,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_FILE = "Resources/dicdirNaistJdic-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
