@@ -93,7 +93,7 @@
 
 /* Begin PBXFileReference section */
 		7D15E71D1FFB0CD80015401F /* dicdirKoDic.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dicdirKoDic.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D15E71E1FFB0CD80015401F /* dicdirNaistJdic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "dicdirNaistJdic-Info.plist"; path = "/Users/jamie/Documents/git/iPhone-libmecab/mecab/dicdirNaistJdic-Info.plist"; sourceTree = "<absolute>"; };
+		7D15E71E1FFB0CD80015401F /* dicdirNaistJdic-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; name = "dicdirNaistJdic-Info.plist"; path = "Resources/dicdirNaistJdic-Info.plist"; sourceTree = "<group>"; };
 		7D15E7201FFB0D340015401F /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; name = unk.dic; path = "Resources/mecab-ko-dic-utf-8/unk.dic"; sourceTree = "<group>"; };
 		7D15E7211FFB0D340015401F /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; name = sys.dic; path = "Resources/mecab-ko-dic-utf-8/sys.dic"; sourceTree = "<group>"; };
 		7D15E7241FFB0D340015401F /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = char.bin; path = "Resources/mecab-ko-dic-utf-8/char.bin"; sourceTree = "<group>"; };
