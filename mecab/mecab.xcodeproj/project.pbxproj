@@ -69,7 +69,7 @@
 		7D833BC121026379005F2854 /* learner_node.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76FE1FFC4AD100C82B51 /* learner_node.h */; };
 		7D833BC221026379005F2854 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E77111FFC4AD500C82B51 /* common.h */; };
 		7D833BC321026379005F2854 /* learner_tagger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76E21FFC4ACE00C82B51 /* learner_tagger.h */; };
-		7D833BC421026379005F2854 /* mecab.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76E11FFC4ACE00C82B51 /* mecab.h */; };
+		7D833BC421026379005F2854 /* mecab.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76E11FFC4ACE00C82B51 /* mecab.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D833BC521026379005F2854 /* iconv_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76ED1FFC4ACF00C82B51 /* iconv_utils.h */; };
 		7D833BC621026379005F2854 /* ucstable.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E770F1FFC4AD500C82B51 /* ucstable.h */; };
 		7D833BC721026379005F2854 /* ucs.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76DF1FFC4ACE00C82B51 /* ucs.h */; };
@@ -209,9 +209,9 @@
 		7D6D557E1FB8864700DEF011 /* dicdirKoDic-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "dicdirKoDic-Info.plist"; path = "Resources/dicdirKoDic-Info.plist"; sourceTree = "<group>"; };
 		7D833BE121026379005F2854 /* libmecab-macos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmecab-macos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D833BF2210263BA005F2854 /* dicdirNaistJdic-macos.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dicdirNaistJdic-macos.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D833BF3210263BA005F2854 /* dicdirNaistJdic copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "dicdirNaistJdic copy-Info.plist"; path = "/Users/jamie/Documents/git/iPhone-libmecab/mecab/dicdirNaistJdic copy-Info.plist"; sourceTree = "<absolute>"; };
+		7D833BF3210263BA005F2854 /* dicdirNaistJdic-macos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "dicdirNaistJdic-macos-Info.plist"; path = "/Users/jamie/Documents/git/iPhone-libmecab/mecab/dicdirNaistJdic-macos-Info.plist"; sourceTree = "<absolute>"; };
 		7D833C04210263CE005F2854 /* dicdirKoDic-macos.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dicdirKoDic-macos.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D833C05210263CE005F2854 /* dicdirKoDic copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "dicdirKoDic copy-Info.plist"; path = "/Users/jamie/Documents/git/iPhone-libmecab/mecab/dicdirKoDic copy-Info.plist"; sourceTree = "<absolute>"; };
+		7D833C05210263CE005F2854 /* dicdirKoDic-macos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "dicdirKoDic-macos-Info.plist"; path = "/Users/jamie/Documents/git/iPhone-libmecab/mecab/dicdirKoDic-macos-Info.plist"; sourceTree = "<absolute>"; };
 		7D9E76DB1FFC4ACD00C82B51 /* stream_wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream_wrapper.h; path = src/stream_wrapper.h; sourceTree = "<group>"; };
 		7D9E76DC1FFC4ACD00C82B51 /* tagger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tagger.cpp; path = src/tagger.cpp; sourceTree = "<group>"; };
 		7D9E76DD1FFC4ACE00C82B51 /* mecab.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mecab.cpp; path = src/mecab.cpp; sourceTree = "<group>"; };
@@ -343,8 +343,8 @@
 				7D60FCCC1FB76DE1006E7BF8 /* swift_bridging */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
-				7D833BF3210263BA005F2854 /* dicdirNaistJdic copy-Info.plist */,
-				7D833C05210263CE005F2854 /* dicdirKoDic copy-Info.plist */,
+				7D833BF3210263BA005F2854 /* dicdirNaistJdic-macos-Info.plist */,
+				7D833C05210263CE005F2854 /* dicdirKoDic-macos-Info.plist */,
 			);
 			name = mecab;
 			sourceTree = "<group>";
@@ -499,11 +499,11 @@
 				7D833BBD21026379005F2854 /* viterbi.h in Headers */,
 				7D833BBE21026379005F2854 /* char_property.h in Headers */,
 				7D833BBF21026379005F2854 /* winmain.h in Headers */,
+				7D833BC421026379005F2854 /* mecab.h in Headers */,
 				7D833BC021026379005F2854 /* darts.h in Headers */,
 				7D833BC121026379005F2854 /* learner_node.h in Headers */,
 				7D833BC221026379005F2854 /* common.h in Headers */,
 				7D833BC321026379005F2854 /* learner_tagger.h in Headers */,
-				7D833BC421026379005F2854 /* mecab.h in Headers */,
 				7D833BC521026379005F2854 /* iconv_utils.h in Headers */,
 				7D833BC621026379005F2854 /* ucstable.h in Headers */,
 				7D833BC721026379005F2854 /* ucs.h in Headers */,
@@ -1217,7 +1217,7 @@
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "dicdirNaistJdic copy-Info.plist";
+				INFOPLIST_FILE = "dicdirNaistJdic-macos-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1253,7 +1253,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "dicdirNaistJdic copy-Info.plist";
+				INFOPLIST_FILE = "dicdirNaistJdic-macos-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1293,7 +1293,7 @@
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "dicdirKoDic copy-Info.plist";
+				INFOPLIST_FILE = "dicdirKoDic-macos-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1329,7 +1329,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = "dicdirKoDic copy-Info.plist";
+				INFOPLIST_FILE = "dicdirKoDic-macos-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
