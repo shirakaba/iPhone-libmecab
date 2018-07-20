@@ -22,7 +22,7 @@ class Uivc: UIViewController {
     }
 }
 #else
-class Uivc: NSViewController {
+class Nsvc: NSViewController {
     override func viewDidLoad() {
         let mecab : Mecab = Mecab()
         let nodes : [Node] = mecab.parseToNode(with: "これはなんですか。")

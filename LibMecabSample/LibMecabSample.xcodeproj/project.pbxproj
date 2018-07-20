@@ -29,10 +29,6 @@
 		7D833C0D21026451005F2854 /* LibMecabSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* LibMecabSampleViewController.xib */; };
 		7D833C0E21026451005F2854 /* NodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C86E5D12C87B3E006F2369 /* NodeCell.xib */; };
 		7D833C0F21026451005F2854 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E630CC2E1CFBE222001774B0 /* Default-568h@2x.png */; };
-		7D833C1121026451005F2854 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		7D833C1221026451005F2854 /* LibMecabSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* LibMecabSampleAppDelegate.m */; };
-		7D833C1321026451005F2854 /* LibMecabSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* LibMecabSampleViewController.m */; };
-		7D833C1421026451005F2854 /* NodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C86E6A12C87B77006F2369 /* NodeCell.m */; };
 		7D833C1521026451005F2854 /* ExampleUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D471CA41EB4B7610038BCA5 /* ExampleUsage.swift */; };
 		7D833C1721026451005F2854 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		7D833C1821026451005F2854 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -42,7 +38,7 @@
 		7D833C33210265C7005F2854 /* dicdirNaistJdic-macos.bundle in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D833C2C21026451005F2854 /* dicdirNaistJdic-macos.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7D833C34210265C7005F2854 /* dicdirKoDic-macos.bundle in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D833C2E21026451005F2854 /* dicdirKoDic-macos.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7D833C35210265EB005F2854 /* libmecab-macos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D833C2A21026451005F2854 /* libmecab-macos.a */; };
-		7D8F2DD41EB5FFCA0039B643 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		7D833C37210269AE005F2854 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D833C36210269AE005F2854 /* main.swift */; };
 		7D9E76D61FFC3F9A00C82B51 /* dicdirNaistJdic.bundle in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6D55791FB87C2900DEF011 /* dicdirNaistJdic.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7DA3635E1FCB42270004EF6F /* libmecab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E7C12C87C31006F2369 /* libmecab.a */; };
 		E630CC2F1CFBE222001774B0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E630CC2E1CFBE222001774B0 /* Default-568h@2x.png */; };
@@ -177,6 +173,7 @@
 		7D471CE31EB4E7460038BCA5 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		7D833C2321026451005F2854 /* LibMecabSample-macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LibMecabSample-macos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D833C2421026451005F2854 /* LibMecabSample copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LibMecabSample copy-Info.plist"; path = "/Users/jamie/Documents/git/iPhone-libmecab/LibMecabSample/LibMecabSample copy-Info.plist"; sourceTree = "<absolute>"; };
+		7D833C36210269AE005F2854 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* LibMecabSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LibMecabSample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		E630CC2E1CFBE222001774B0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,7 +218,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Classes */ = {
+		080E96DDFE201D6D7F000001 /* iOS UI */ = {
 			isa = PBXGroup;
 			children = (
 				1D3623240D0F684500981E51 /* LibMecabSampleAppDelegate.h */,
@@ -230,8 +227,9 @@
 				28D7ACF70DDB3853001CB0EB /* LibMecabSampleViewController.m */,
 				13C86E6912C87B77006F2369 /* NodeCell.h */,
 				13C86E6A12C87B77006F2369 /* NodeCell.m */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
-			path = Classes;
+			path = "iOS UI";
 			sourceTree = "<group>";
 		};
 		13C86E7512C87C31006F2369 /* Products */ = {
@@ -260,8 +258,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				7D833C3921026A28005F2854 /* macos UI */,
 				7D471CA41EB4B7610038BCA5 /* ExampleUsage.swift */,
-				080E96DDFE201D6D7F000001 /* Classes */,
+				080E96DDFE201D6D7F000001 /* iOS UI */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -276,7 +275,6 @@
 			children = (
 				13C86E7412C87C31006F2369 /* mecab.xcodeproj */,
 				32CA4F630368D1EE00C91783 /* LibMecabSample_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -309,6 +307,14 @@
 				13C86E8712C87C70006F2369 /* libstdc++.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D833C3921026A28005F2854 /* macos UI */ = {
+			isa = PBXGroup;
+			children = (
+				7D833C36210269AE005F2854 /* main.swift */,
+			);
+			path = "macos UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -539,7 +545,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D8F2DD41EB5FFCA0039B643 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,10 +552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D833C1121026451005F2854 /* main.m in Sources */,
-				7D833C1221026451005F2854 /* LibMecabSampleAppDelegate.m in Sources */,
-				7D833C1321026451005F2854 /* LibMecabSampleViewController.m in Sources */,
-				7D833C1421026451005F2854 /* NodeCell.m in Sources */,
+				7D833C37210269AE005F2854 /* main.swift in Sources */,
 				7D833C1521026451005F2854 /* ExampleUsage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
