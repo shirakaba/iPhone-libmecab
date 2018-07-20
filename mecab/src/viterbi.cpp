@@ -67,7 +67,7 @@ bool Viterbi::open(const Param &param) {
   return true;
 }
 
-bool Viterbi::analyze(Lattice *lattice, bool koreanMode) const {
+bool Viterbi::analyze(Lattice *lattice) const {
   if (!lattice || !lattice->sentence()) {
     return false;
   }
@@ -81,16 +81,16 @@ bool Viterbi::analyze(Lattice *lattice, bool koreanMode) const {
       lattice->has_request_type(MECAB_MARGINAL_PROB)) {
     // IsAllPath=true
     if (lattice->has_constraint()) {
-      result = viterbi<true, true>(lattice, koreanMode);
+      result = viterbi<true, true>(lattice);
     } else {
-      result = viterbi<true, false>(lattice, koreanMode);
+      result = viterbi<true, false>(lattice);
     }
   } else {
     // IsAllPath=false
     if (lattice->has_constraint()) {
-      result = viterbi<false, true>(lattice, koreanMode);
+      result = viterbi<false, true>(lattice);
     } else {
-      result = viterbi<false, false>(lattice, koreanMode);
+      result = viterbi<false, false>(lattice);
     }
   }
 
@@ -316,13 +316,12 @@ template <bool IsAllPath> bool connect(size_t pos, Node *rnode,
                                        Node **begin_node_list,
                                        Node **end_node_list,
                                        const Connector *connector,
-                                       Allocator<Node, Path> *allocator,
-                                       bool koreanMode = false) {
+                                       Allocator<Node, Path> *allocator) {
   for (;rnode; rnode = rnode->bnext) {
     register long best_cost = 2147483647;
     Node* best_node = 0;
     for (Node *lnode = end_node_list[pos]; lnode; lnode = lnode->enext) {
-      register int lcost = connector->cost(lnode, rnode, koreanMode);  // local cost
+      register int lcost = connector->cost(lnode, rnode);  // local cost
       register long cost = lnode->cost + lcost;
 
       if (cost < best_cost) {
@@ -360,7 +359,7 @@ template <bool IsAllPath> bool connect(size_t pos, Node *rnode,
 }  // namespace
 
 template <bool IsAllPath, bool IsPartial>
-bool Viterbi::viterbi(Lattice *lattice, bool koreanMode) const {
+bool Viterbi::viterbi(Lattice *lattice) const {
   Node **end_node_list   = lattice->end_nodes();
   Node **begin_node_list = lattice->begin_nodes();
   Allocator<Node, Path> *allocator = lattice->allocator();
@@ -381,8 +380,7 @@ bool Viterbi::viterbi(Lattice *lattice, bool koreanMode) const {
                               begin_node_list,
                               end_node_list,
                               connector_.get(),
-                              allocator,
-                              koreanMode)) {
+                              allocator)) {
         lattice->set_what("too long sentence.");
         return false;
       }
@@ -399,8 +397,7 @@ bool Viterbi::viterbi(Lattice *lattice, bool koreanMode) const {
                               begin_node_list,
                               end_node_list,
                               connector_.get(),
-                              allocator,
-                              koreanMode)) {
+                              allocator)) {
         lattice->set_what("too long sentence.");
         return false;
       }

@@ -21,7 +21,7 @@ class Viterbi {
  public:
   bool open(const Param &param);
 
-  bool analyze(Lattice *lattice, bool koreanMode = false) const;
+  bool analyze(Lattice *lattice) const;
 
   const Tokenizer<Node, Path> *tokenizer() const;
 
@@ -35,7 +35,7 @@ class Viterbi {
   virtual ~Viterbi();
 
  private:
-  template <bool IsAllPath, bool IsPartial> bool viterbi(Lattice *lattice, bool koreanMode = false) const;
+  template <bool IsAllPath, bool IsPartial> bool viterbi(Lattice *lattice) const;
 
   static bool forwardbackward(Lattice *lattice);
   static bool initPartial(Lattice *lattice);
