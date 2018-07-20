@@ -11,13 +11,15 @@
 #include <iconv.h>
 #import "MecabObjC.h"
 
-NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME = @"dicdirNaistJdic.bundle";
-NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME = @"dicdirKoDic.bundle";
+NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS = @"dicdirNaistJdic.bundle";
+NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_MACOS = @"dicdirNaistJdic-macos.bundle";
+NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_IOS = @"dicdirKoDic.bundle";
+NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS = @"dicdirKoDic-macos.bundle";
 
 @implementation Mecab
 
 - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string {
-    return [self parseToNodeWithString:string dicdirRelativePath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME];
+    return [self parseToNodeWithString:string dicdirRelativePath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS];
 }
 
 - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirRelativePath:(NSString *)dicdirRelativePath {

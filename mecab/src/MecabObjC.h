@@ -10,8 +10,10 @@
 #import <Foundation/Foundation.h> // imported implicitly via mecab_Prefix.pch
 #import "Node.h"
 
-extern NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME;
-extern NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME;
+extern NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS;
+extern NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_MACOS;
+extern NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_IOS;
+extern NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS;
 
 @interface Mecab : NSObject {
     mecab_t *mecab;
