@@ -31,7 +31,7 @@
 	
     // self.nodes = [mecab parseToNodeWithString:string]; // Implicit Japanese mode.
     // self.nodes = [mecab parseToNodeWithString:string dicdirRelativePath:DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME]; // Explicit Japanese mode.
-    self.nodes = [mecab parseToNodeWithString:string dicdirRelativePath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME]; // Explicit Korean mode.
+    self.nodes = [mecab parseToNodeWithString:string dicdirRelativePath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS]; // Explicit Korean mode.
 	
 	[tableView_ reloadData];
 }
