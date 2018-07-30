@@ -54,6 +54,7 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS = @"dicdirKoDic-macos
         Node *newNode = [Node new];
         newNode.surface = [[[NSString alloc] initWithBytes:node->surface length:node->length encoding:NSUTF8StringEncoding] autorelease];
         newNode.feature = [NSString stringWithCString:node->feature encoding:NSUTF8StringEncoding];
+        newNode.leadingWhitespace = node->rlength - node->length;
         [newNodes addObject:newNode];
         [newNode release];
     }

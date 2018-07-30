@@ -23,6 +23,7 @@
 @synthesize originalForm;
 @synthesize reading;
 @synthesize pronunciation;
+@synthesize leadingWhitespace;
 // MecabObjC.m sets newNode.feature =, but never any other property (lazy setting)
 - (void)setFeature:(NSString *)value {
     if (feature) [feature release];
@@ -83,6 +84,10 @@
     pronunciation = value ? [value retain] : nil;
 }
 
+- (void)setLeadingWhitespace:(int)value {
+    leadingWhitespace = value;
+}
+
 // surface seems to be exposed by Mecab itself, hence why I haven't written a field for it here.
 
 - (NSString *)partOfSpeech {
@@ -130,11 +135,16 @@
     return [features objectAtIndex:8];
 }
 
+- (int)leadingWhitespace {
+    return leadingWhitespace;
+}
+
 - (void)dealloc {
     // release methods untested here because we're using ARC.
     // Note: http://stackoverflow.com/a/7906891/5951226 says you shouldn't actually nil out properties in dealloc.
     self.feature = nil;
     self.features = nil;
+    self.leadingWhitespace = nil;
     
     self.surface = nil;
     self.partOfSpeech = nil;
