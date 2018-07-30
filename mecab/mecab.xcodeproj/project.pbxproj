@@ -21,7 +21,6 @@
 		7D60FCDA1FB76E11006E7BF8 /* MecabObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D60FCD51FB76E11006E7BF8 /* MecabObjC.m */; };
 		7D60FCDB1FB76E11006E7BF8 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD61FB76E11006E7BF8 /* Node.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D60FCDC1FB76E11006E7BF8 /* MecabObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCD71FB76E11006E7BF8 /* MecabObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D60FD701FB7A6C7006E7BF8 /* mecab-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D60FCCF1FB76DF8006E7BF8 /* mecab-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D6D55681FB876F800DEF011 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5B1FB76EA5006E7BF8 /* char.bin */; };
 		7D6D55691FB876F800DEF011 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD601FB76EA5006E7BF8 /* dicrc */; };
 		7D6D556A1FB876F800DEF011 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D60FD5A1FB76EA5006E7BF8 /* left-id.def */; };
@@ -119,7 +118,7 @@
 		7D9E77171FFC4AD500C82B51 /* mecab-system-eval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E76DE1FFC4ACE00C82B51 /* mecab-system-eval.cpp */; };
 		7D9E77181FFC4AD500C82B51 /* ucs.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76DF1FFC4ACE00C82B51 /* ucs.h */; };
 		7D9E77191FFC4AD500C82B51 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D9E76E01FFC4ACE00C82B51 /* utils.cpp */; };
-		7D9E771A1FFC4AD500C82B51 /* mecab.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76E11FFC4ACE00C82B51 /* mecab.h */; };
+		7D9E771A1FFC4AD500C82B51 /* mecab.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76E11FFC4ACE00C82B51 /* mecab.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D9E771B1FFC4AD500C82B51 /* learner_tagger.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76E21FFC4ACE00C82B51 /* learner_tagger.h */; };
 		7D9E771C1FFC4AD500C82B51 /* connector.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76E31FFC4ACE00C82B51 /* connector.h */; };
 		7D9E771D1FFC4AD500C82B51 /* dictionary_rewriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9E76E41FFC4ACE00C82B51 /* dictionary_rewriter.h */; };
@@ -536,14 +535,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9E771A1FFC4AD500C82B51 /* mecab.h in Headers */,
 				7D9E77331FFC4AD500C82B51 /* viterbi.h in Headers */,
+				7D60FCDC1FB76E11006E7BF8 /* MecabObjC.h in Headers */,
 				7D9E773A1FFC4AD500C82B51 /* char_property.h in Headers */,
 				7D9E77291FFC4AD500C82B51 /* winmain.h in Headers */,
 				7D9E774C1FFC4AD500C82B51 /* darts.h in Headers */,
 				7D9E77371FFC4AD500C82B51 /* learner_node.h in Headers */,
 				7D9E774A1FFC4AD500C82B51 /* common.h in Headers */,
 				7D9E771B1FFC4AD500C82B51 /* learner_tagger.h in Headers */,
-				7D9E771A1FFC4AD500C82B51 /* mecab.h in Headers */,
 				7D9E77261FFC4AD500C82B51 /* iconv_utils.h in Headers */,
 				7D9E77481FFC4AD500C82B51 /* ucstable.h in Headers */,
 				7D9E77181FFC4AD500C82B51 /* ucs.h in Headers */,
@@ -561,13 +561,11 @@
 				7D9E771D1FFC4AD500C82B51 /* dictionary_rewriter.h in Headers */,
 				7D9E774B1FFC4AD500C82B51 /* thread.h in Headers */,
 				7D9E77451FFC4AD500C82B51 /* config.h in Headers */,
-				7D60FCDC1FB76E11006E7BF8 /* MecabObjC.h in Headers */,
 				7D9E77491FFC4AD500C82B51 /* writer.h in Headers */,
 				7D9E77411FFC4AD500C82B51 /* feature_index.h in Headers */,
 				7D9E77351FFC4AD500C82B51 /* string_buffer.h in Headers */,
 				7D60FCD81FB76E11006E7BF8 /* mecab_Prefix.pch in Headers */,
 				7D9E77311FFC4AD500C82B51 /* param.h in Headers */,
-				7D60FD701FB7A6C7006E7BF8 /* mecab-Bridging-Header.h in Headers */,
 				7D9E772F1FFC4AD500C82B51 /* scoped_ptr.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
