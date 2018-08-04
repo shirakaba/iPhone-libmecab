@@ -144,7 +144,7 @@
     // Note: http://stackoverflow.com/a/7906891/5951226 says you shouldn't actually nil out properties in dealloc.
     self.feature = nil;
     self.features = nil;
-    self.leadingWhitespace = nil;
+    // self.leadingWhitespace = nil;
     
     self.surface = nil;
     self.partOfSpeech = nil;
