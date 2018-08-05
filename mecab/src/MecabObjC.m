@@ -58,15 +58,13 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS = @"dicdirKoDic-macos
         newNode.leadingWhitespaceLength = node->rlength - node->length;
         if(oldNode != NULL){
             if(newNode.leadingWhitespaceLength > 0 && prevNode != NULL){
-                oldNode.trailingWhitespace = [[[[[NSString alloc] initWithBytes:prevNode->surface length:(prevNode->length + newNode.leadingWhitespaceLength) encoding:NSUTF8StringEncoding] autorelease] substringFromIndex:prevNode->length] autorelease];
-                // oldNode.trailingWhitespace = [[[NSString alloc] initWithBytes:prevNode->surface length:(prevNode->length + newNode.leadingWhitespaceLength) encoding:NSUTF8StringEncoding] autorelease];
+                oldNode.trailingWhitespace = [[[NSString alloc] initWithBytes:(prevNode->surface + prevNode->length) length:newNode.leadingWhitespaceLength encoding:NSUTF8StringEncoding] autorelease];
             }
             [oldNode release];
         }
         [newNodes addObject:newNode];
         prevNode = node;
         oldNode = newNode;
-        [newNode release];
     }
     if(oldNode != NULL){
         [oldNode release];
