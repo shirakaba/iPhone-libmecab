@@ -19,11 +19,14 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS = @"dicdirKoDic-macos
 @implementation Mecab
 
 - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string {
-    return [self parseToNodeWithString:string dicdirRelativePath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS];
+    return [self parseToNodeWithString:string dicdirRelativePath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS calculateTrailingWhitespace:NO];
 }
 
 - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirRelativePath:(NSString *)dicdirRelativePath {
-    
+    return [self parseToNodeWithString:string dicdirRelativePath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS calculateTrailingWhitespace:NO];
+}
+
+- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirRelativePath:(NSString *)dicdirRelativePath calculateTrailingWhitespace:(BOOL)calculateTrailingWhitespace {
     if (mecab == NULL) {
         // https://developer.apple.com/documentation/foundation/bundle
         NSString *path = [[NSBundle mainBundle] resourcePath];
@@ -49,22 +52,34 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS = @"dicdirKoDic-macos
     
     NSMutableArray<Node *> *newNodes = [NSMutableArray<Node *> array];
     node = node->next;
-    const mecab_node_t *prevNode = NULL;
+    // const mecab_node_t *prevNode = NULL;
     Node *oldNode = NULL;
+    BOOL firstNode = YES;
     for (; node->next != NULL; node = node->next) {
+        BOOL lastNode = (node->next == NULL) || (node->next->next == NULL);
         Node *newNode = [Node new];
+        /* Note: this method will not identify whitespace at the start of input text. MeCab always trims leading whitespace from each node's surface (although does acknowledge the increased rlength), so we'd have to compare the original string's length to node->length. */
         newNode.surface = [[[NSString alloc] initWithBytes:node->surface length:node->length encoding:NSUTF8StringEncoding] autorelease];
         newNode.feature = [NSString stringWithCString:node->feature encoding:NSUTF8StringEncoding];
         newNode.leadingWhitespaceLength = node->rlength - node->length;
         if(oldNode != NULL){
-            if(newNode.leadingWhitespaceLength > 0 && prevNode != NULL){
-                oldNode.trailingWhitespace = [[[NSString alloc] initWithBytes:(prevNode->surface + prevNode->length) length:newNode.leadingWhitespaceLength encoding:NSUTF8StringEncoding] autorelease];
+            if(calculateTrailingWhitespace){
+                // NSLog(@"%lu", strlen(node->surface));
+                if(newNode.leadingWhitespaceLength > 0 && node->prev != NULL){
+                    oldNode.trailingWhitespace = [[[NSString alloc] initWithBytes:(node->prev->surface + node->prev->length) length:newNode.leadingWhitespaceLength encoding:NSUTF8StringEncoding] autorelease];
+                }
+                /* We calculate the trailingWhitespace on the last node by checking whether the length of node->surface exceeds node->length. */
+                if(lastNode){
+                    const int offset = newNode.leadingWhitespaceLength + node->length;
+                    newNode.trailingWhitespace = [[[NSString alloc] initWithBytes:(node->surface + offset) length:strlen(node->surface) - offset encoding:NSUTF8StringEncoding] autorelease];
+                }
             }
             [oldNode release];
         }
         [newNodes addObject:newNode];
-        prevNode = node;
+        // prevNode = node;
         oldNode = newNode;
+        firstNode = NO;
     }
     if(oldNode != NULL){
         [oldNode release];

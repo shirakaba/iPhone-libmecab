@@ -19,11 +19,14 @@ extern NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS;
     mecab_t *mecab;
 }
 
-/** Uses Japanese dictionary by default. */
+/** Uses Japanese iOS resources bundle by default, and leaves the trailingWhitespace value as NULL. */
 - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string;
 
-/** Specify the path from the main bundle to the dicdir folder */
+/** You may specify the path from the main bundle to the dicdir folder. The trailingWhitespace value is left as NULL. */
 - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirRelativePath:(NSString *)dicdirRelativePath;
+
+/** You may specify the path from the main bundle to the dicdir folder. The trailingWhitespace value is calculated where applicable. */
+- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirRelativePath:(NSString *)dicdirRelativePath calculateTrailingWhitespace:(BOOL)calculateTrailingWhitespace;
 
 @end
 
