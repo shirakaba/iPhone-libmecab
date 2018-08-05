@@ -52,7 +52,6 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS = @"dicdirKoDic-macos
     
     NSMutableArray<Node *> *newNodes = [NSMutableArray<Node *> array];
     node = node->next;
-    // const mecab_node_t *prevNode = NULL;
     Node *oldNode = NULL;
     BOOL firstNode = YES;
     for (; node->next != NULL; node = node->next) {
@@ -77,7 +76,6 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS = @"dicdirKoDic-macos
             [oldNode release];
         }
         [newNodes addObject:newNode];
-        // prevNode = node;
         oldNode = newNode;
         firstNode = NO;
     }
