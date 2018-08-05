@@ -49,14 +49,27 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS = @"dicdirKoDic-macos
     
     NSMutableArray<Node *> *newNodes = [NSMutableArray<Node *> array];
     node = node->next;
+    const mecab_node_t *prevNode = NULL;
+    Node *oldNode = NULL;
     for (; node->next != NULL; node = node->next) {
-        
         Node *newNode = [Node new];
         newNode.surface = [[[NSString alloc] initWithBytes:node->surface length:node->length encoding:NSUTF8StringEncoding] autorelease];
         newNode.feature = [NSString stringWithCString:node->feature encoding:NSUTF8StringEncoding];
-        newNode.leadingWhitespace = node->rlength - node->length;
+        newNode.leadingWhitespaceLength = node->rlength - node->length;
+        if(oldNode != NULL){
+            if(newNode.leadingWhitespaceLength > 0 && prevNode != NULL){
+                oldNode.trailingWhitespace = [[[[[NSString alloc] initWithBytes:prevNode->surface length:(prevNode->length + newNode.leadingWhitespaceLength) encoding:NSUTF8StringEncoding] autorelease] substringFromIndex:prevNode->length] autorelease];
+                // oldNode.trailingWhitespace = [[[NSString alloc] initWithBytes:prevNode->surface length:(prevNode->length + newNode.leadingWhitespaceLength) encoding:NSUTF8StringEncoding] autorelease];
+            }
+            [oldNode release];
+        }
         [newNodes addObject:newNode];
+        prevNode = node;
+        oldNode = newNode;
         [newNode release];
+    }
+    if(oldNode != NULL){
+        [oldNode release];
     }
     
     return [NSArray<Node *> arrayWithArray:newNodes];
