@@ -14,6 +14,7 @@
     NSString *feature;
     NSArray<NSString *> *features;
     int leadingWhitespaceLength;
+    NSString *trailingWhitespace;
     
     NSString *surface; // provided in original implementation
     NSString *partOfSpeech;
@@ -30,6 +31,7 @@
 // These are assigned pre-emptively to Node, pulled out of the mecab node.
 @property (nonatomic, retain, nullable) NSString *feature;
 @property (nonatomic, retain, nullable) NSArray<NSString *> *features;
+@property (nonatomic, retain, nullable) NSString *trailingWhitespace;
 @property (nonatomic) int leadingWhitespaceLength;
 
 // These are getters (calculated only when called).
@@ -64,6 +66,8 @@
 - (nullable NSString *)pronunciation;
 
 - (int)leadingWhitespaceLength;
+
+- (nullable NSString *)trailingWhitespace;
 
 @end
 
