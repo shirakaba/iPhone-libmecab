@@ -13,7 +13,7 @@
 @interface Node : NSObject {
     NSString *feature;
     NSArray<NSString *> *features;
-    int leadingWhitespace;
+    int leadingWhitespaceLength;
     
     NSString *surface; // provided in original implementation
     NSString *partOfSpeech;
@@ -30,7 +30,7 @@
 // These are assigned pre-emptively to Node, pulled out of the mecab node.
 @property (nonatomic, retain, nullable) NSString *feature;
 @property (nonatomic, retain, nullable) NSArray<NSString *> *features;
-@property (nonatomic) int leadingWhitespace;
+@property (nonatomic) int leadingWhitespaceLength;
 
 // These are getters (calculated only when called).
 @property (nonatomic, retain, nonnull) NSString *surface; // provided in original implementation
@@ -63,7 +63,7 @@
 // 発音
 - (nullable NSString *)pronunciation;
 
-- (int)leadingWhitespace;
+- (int)leadingWhitespaceLength;
 
 @end
 

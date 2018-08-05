@@ -17,7 +17,7 @@ import Cocoa
 class Uivc: UIViewController {
     override func viewDidLoad() {
         let mecab : Mecab = Mecab()
-        let nodes : [Node] = mecab.parseToNode(with: "これはなんですか。")
+        let nodes : [Node] = mecab.parseToNode(with: "これ は なん です か。")
         print(nodes[0].feature)
     }
 }
