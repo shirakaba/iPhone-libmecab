@@ -53,8 +53,8 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS = @"dicdirKoDic-macos
     NSMutableArray<Node *> *newNodes = [NSMutableArray<Node *> array];
     node = node->next;
     Node *oldNode = NULL;
-    BOOL firstNode = YES;
     for (; node->next != NULL; node = node->next) {
+        BOOL firstNode = (node->prev == NULL) || (node->prev->prev == NULL);
         BOOL lastNode = (node->next == NULL) || (node->next->next == NULL);
         Node *newNode = [Node new];
         /* Note: this method will not identify whitespace at the start of input text. MeCab always trims leading whitespace from each node's surface (although does acknowledge the increased rlength), so we'd have to compare the original string's length to node->length. */
@@ -67,17 +67,30 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS = @"dicdirKoDic-macos
                 if(newNode.leadingWhitespaceLength > 0 && node->prev != NULL){
                     oldNode.trailingWhitespace = [[[NSString alloc] initWithBytes:(node->prev->surface + node->prev->length) length:newNode.leadingWhitespaceLength encoding:NSUTF8StringEncoding] autorelease];
                 }
-                /* We calculate the trailingWhitespace on the last node by checking whether the length of node->surface exceeds node->length. */
-                if(lastNode){
-                    const int offset = newNode.leadingWhitespaceLength + node->length;
-                    newNode.trailingWhitespace = [[[NSString alloc] initWithBytes:(node->surface + offset) length:strlen(node->surface) - offset encoding:NSUTF8StringEncoding] autorelease];
-                }
             }
             [oldNode release];
         }
+        /* We calculate the trailingWhitespace on the last node by checking whether the length of node->surface exceeds node->length. */
+        if(lastNode && calculateTrailingWhitespace){
+            // Don't need to cut off any leadingWhitespace; the surface has been trimmed already. So only need to refer to node->length.
+            // "Analyzer": length 8, rlength 9.
+            // node->prev->surface + 0 == 'Analyzer'
+            // node->prev->surface + 1 == 'nalyzer'
+            // node->prev->surface + 7 == 'r'
+            // node->prev->surface + 8 == 0x00
+            // node->prev->surface + 9 == '\0' Coincidence?
+            // const int offset = newNode.leadingWhitespaceLength + node->length;
+            const int offset = node->length;
+            
+            /* The final '\0' is counted for in the rlength value. Should be guaranteed to be there, as our buffer 'buf' is based on a C string. */
+            NSString *trailingWhitespace = [[[NSString alloc] initWithBytes:(node->surface + offset) length:strlen(node->surface) - offset encoding:NSUTF8StringEncoding] autorelease];
+            if(trailingWhitespace.length > 0){
+                newNode.trailingWhitespace = trailingWhitespace;
+            }
+            // Only apply if trailingWhitespace has more than 0 length.
+        }
         [newNodes addObject:newNode];
         oldNode = newNode;
-        firstNode = NO;
     }
     if(oldNode != NULL){
         [oldNode release];
