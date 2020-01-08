@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.description  = <<-DESC
   NAIST JDIC in UTF-8 format, for use with Mecab. A dictionary for morphological analysis of Japanese text.
                    DESC
-  spec.homepage     = "http://EXAMPLE/mecab-naist-jdic-utf-8"
+  spec.homepage     = "https://github.com/shirakaba/iPhone-libmecab"
   spec.license      = { :type => "BSD", :file => "FILE_LICENSE" }
   spec.author             = { "Jamie Birch" => "14055146+shirakaba@users.noreply.github.com" }
   s.platforms      = { :ios => "10.3", :macos => "10.11" }
