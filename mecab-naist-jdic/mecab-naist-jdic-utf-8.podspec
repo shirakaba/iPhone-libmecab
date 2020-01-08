@@ -11,6 +11,6 @@ Pod::Spec.new do |spec|
   spec.author             = { "Jamie Birch" => "14055146+shirakaba@users.noreply.github.com" }
   s.platforms      = { :ios => "10.3", :macos => "10.11" }
   spec.source       = { :git => "https://github.com/shirakaba/iPhone-libmecab.git", :tag => "#{spec.version}" }
-  spec.resources = "mecab-naist-jdic-utf-8/*"
+  spec.resource_bundle = { "mecab-naist-jdic-utf-8" => "mecab-naist-jdic-utf-8/*" }
 
 end
