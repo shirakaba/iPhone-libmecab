@@ -30,9 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7D698FE223C6769C00C2AF34 /* mecab-naist-jdic-macos.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mecab-naist-jdic-macos.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D698FE223C6769C00C2AF34 /* mecab-naist-jdic-utf-8-macos.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mecab-naist-jdic-utf-8-macos.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D698FE523C6769C00C2AF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D698FEF23C676FA00C2AF34 /* mecab-naist-jdic-ios.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mecab-naist-jdic-ios.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D698FEF23C676FA00C2AF34 /* mecab-naist-jdic-utf-8-ios.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mecab-naist-jdic-utf-8-ios.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D698FF523C6799F00C2AF34 /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = sys.dic; sourceTree = "<group>"; };
 		7D698FF623C6799F00C2AF34 /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = unk.dic; sourceTree = "<group>"; };
 		7D698FF723C6799F00C2AF34 /* left-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "left-id.def"; sourceTree = "<group>"; };
@@ -74,8 +74,8 @@
 		7D698FE323C6769C00C2AF34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7D698FE223C6769C00C2AF34 /* mecab-naist-jdic-macos.bundle */,
-				7D698FEF23C676FA00C2AF34 /* mecab-naist-jdic-ios.bundle */,
+				7D698FE223C6769C00C2AF34 /* mecab-naist-jdic-utf-8-macos.bundle */,
+				7D698FEF23C676FA00C2AF34 /* mecab-naist-jdic-utf-8-ios.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7D698FE123C6769C00C2AF34 /* mecab-naist-jdic-macos */ = {
+		7D698FE123C6769C00C2AF34 /* mecab-naist-jdic-utf-8-macos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D698FE823C6769C00C2AF34 /* Build configuration list for PBXNativeTarget "mecab-naist-jdic-macos" */;
+			buildConfigurationList = 7D698FE823C6769C00C2AF34 /* Build configuration list for PBXNativeTarget "mecab-naist-jdic-utf-8-macos" */;
 			buildPhases = (
 				7D698FDE23C6769C00C2AF34 /* Sources */,
 				7D698FDF23C6769C00C2AF34 /* Frameworks */,
@@ -113,14 +113,14 @@
 			);
 			dependencies = (
 			);
-			name = "mecab-naist-jdic-macos";
+			name = "mecab-naist-jdic-utf-8-macos";
 			productName = "mecab-naist-jdic";
-			productReference = 7D698FE223C6769C00C2AF34 /* mecab-naist-jdic-macos.bundle */;
+			productReference = 7D698FE223C6769C00C2AF34 /* mecab-naist-jdic-utf-8-macos.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		7D698FEE23C676FA00C2AF34 /* mecab-naist-jdic-ios */ = {
+		7D698FEE23C676FA00C2AF34 /* mecab-naist-jdic-utf-8-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D698FF223C676FB00C2AF34 /* Build configuration list for PBXNativeTarget "mecab-naist-jdic-ios" */;
+			buildConfigurationList = 7D698FF223C676FB00C2AF34 /* Build configuration list for PBXNativeTarget "mecab-naist-jdic-utf-8-ios" */;
 			buildPhases = (
 				7D698FEB23C676FA00C2AF34 /* Sources */,
 				7D698FEC23C676FA00C2AF34 /* Frameworks */,
@@ -130,9 +130,9 @@
 			);
 			dependencies = (
 			);
-			name = "mecab-naist-jdic-ios";
+			name = "mecab-naist-jdic-utf-8-ios";
 			productName = "mecab-naist-jdic";
-			productReference = 7D698FEF23C676FA00C2AF34 /* mecab-naist-jdic-ios.bundle */;
+			productReference = 7D698FEF23C676FA00C2AF34 /* mecab-naist-jdic-utf-8-ios.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -165,8 +165,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7D698FEE23C676FA00C2AF34 /* mecab-naist-jdic-ios */,
-				7D698FE123C6769C00C2AF34 /* mecab-naist-jdic-macos */,
+				7D698FEE23C676FA00C2AF34 /* mecab-naist-jdic-utf-8-ios */,
+				7D698FE123C6769C00C2AF34 /* mecab-naist-jdic-utf-8-macos */,
 			);
 		};
 /* End PBXProject section */
@@ -344,7 +344,7 @@
 				INFOPLIST_FILE = "mecab-naist-jdic/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic-utf-8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
@@ -360,7 +360,7 @@
 				INFOPLIST_FILE = "mecab-naist-jdic/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic-utf-8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
@@ -376,7 +376,7 @@
 				INFOPLIST_FILE = "mecab-naist-jdic/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic-utf-8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -394,7 +394,7 @@
 				INFOPLIST_FILE = "mecab-naist-jdic/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic-utf-8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -415,7 +415,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D698FE823C6769C00C2AF34 /* Build configuration list for PBXNativeTarget "mecab-naist-jdic-macos" */ = {
+		7D698FE823C6769C00C2AF34 /* Build configuration list for PBXNativeTarget "mecab-naist-jdic-utf-8-macos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D698FE923C6769C00C2AF34 /* Debug */,
@@ -424,7 +424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D698FF223C676FB00C2AF34 /* Build configuration list for PBXNativeTarget "mecab-naist-jdic-ios" */ = {
+		7D698FF223C676FB00C2AF34 /* Build configuration list for PBXNativeTarget "mecab-naist-jdic-utf-8-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7D698FF323C676FB00C2AF34 /* Debug */,
