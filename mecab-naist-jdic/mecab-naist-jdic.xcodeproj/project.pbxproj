@@ -66,7 +66,7 @@
 		7D698FD923C6769B00C2AF34 = {
 			isa = PBXGroup;
 			children = (
-				7D698FE423C6769C00C2AF34 /* mecab-naist-jdic */,
+				7D698FE423C6769C00C2AF34 /* mecab-naist-jdic-utf-8 */,
 				7D698FE323C6769C00C2AF34 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,7 +80,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7D698FE423C6769C00C2AF34 /* mecab-naist-jdic */ = {
+		7D698FE423C6769C00C2AF34 /* mecab-naist-jdic-utf-8 */ = {
 			isa = PBXGroup;
 			children = (
 				7D698FF923C6799F00C2AF34 /* char.bin */,
@@ -95,7 +95,7 @@
 				7D698FF623C6799F00C2AF34 /* unk.dic */,
 				7D698FE523C6769C00C2AF34 /* Info.plist */,
 			);
-			path = "mecab-naist-jdic";
+			path = "mecab-naist-jdic-utf-8";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
