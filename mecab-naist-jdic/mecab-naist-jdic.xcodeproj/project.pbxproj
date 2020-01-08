@@ -6,11 +6,43 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7D698FFF23C679A000C2AF34 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FF523C6799F00C2AF34 /* sys.dic */; };
+		7D69900023C679A000C2AF34 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FF523C6799F00C2AF34 /* sys.dic */; };
+		7D69900123C679A000C2AF34 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FF623C6799F00C2AF34 /* unk.dic */; };
+		7D69900223C679A000C2AF34 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FF623C6799F00C2AF34 /* unk.dic */; };
+		7D69900323C679A000C2AF34 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FF723C6799F00C2AF34 /* left-id.def */; };
+		7D69900423C679A000C2AF34 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FF723C6799F00C2AF34 /* left-id.def */; };
+		7D69900523C679A000C2AF34 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FF823C6799F00C2AF34 /* COPYING */; };
+		7D69900623C679A000C2AF34 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FF823C6799F00C2AF34 /* COPYING */; };
+		7D69900723C679A000C2AF34 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FF923C6799F00C2AF34 /* char.bin */; };
+		7D69900823C679A000C2AF34 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FF923C6799F00C2AF34 /* char.bin */; };
+		7D69900923C679A000C2AF34 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FFA23C6799F00C2AF34 /* dicrc */; };
+		7D69900A23C679A000C2AF34 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FFA23C6799F00C2AF34 /* dicrc */; };
+		7D69900B23C679A000C2AF34 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FFB23C6799F00C2AF34 /* pos-id.def */; };
+		7D69900C23C679A000C2AF34 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FFB23C6799F00C2AF34 /* pos-id.def */; };
+		7D69900D23C679A000C2AF34 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FFC23C6799F00C2AF34 /* rewrite.def */; };
+		7D69900E23C679A000C2AF34 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FFC23C6799F00C2AF34 /* rewrite.def */; };
+		7D69900F23C679A000C2AF34 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FFD23C6799F00C2AF34 /* right-id.def */; };
+		7D69901023C679A000C2AF34 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FFD23C6799F00C2AF34 /* right-id.def */; };
+		7D69901123C679A000C2AF34 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FFE23C679A000C2AF34 /* matrix.bin */; };
+		7D69901223C679A000C2AF34 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 7D698FFE23C679A000C2AF34 /* matrix.bin */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		7D698FE223C6769C00C2AF34 /* mecab-naist-jdic-macos.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mecab-naist-jdic-macos.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D698FE523C6769C00C2AF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D698FEF23C676FA00C2AF34 /* mecab-naist-jdic-ios.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mecab-naist-jdic-ios.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D698FF123C676FB00C2AF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D698FF523C6799F00C2AF34 /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = sys.dic; sourceTree = "<group>"; };
+		7D698FF623C6799F00C2AF34 /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = unk.dic; sourceTree = "<group>"; };
+		7D698FF723C6799F00C2AF34 /* left-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "left-id.def"; sourceTree = "<group>"; };
+		7D698FF823C6799F00C2AF34 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		7D698FF923C6799F00C2AF34 /* char.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = char.bin; sourceTree = "<group>"; };
+		7D698FFA23C6799F00C2AF34 /* dicrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dicrc; sourceTree = "<group>"; };
+		7D698FFB23C6799F00C2AF34 /* pos-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pos-id.def"; sourceTree = "<group>"; };
+		7D698FFC23C6799F00C2AF34 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rewrite.def; sourceTree = "<group>"; };
+		7D698FFD23C6799F00C2AF34 /* right-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-id.def"; sourceTree = "<group>"; };
+		7D698FFE23C679A000C2AF34 /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = matrix.bin; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				7D698FE423C6769C00C2AF34 /* mecab-naist-jdic */,
-				7D698FF023C676FB00C2AF34 /* mecab-naist-jdic */,
 				7D698FE323C6769C00C2AF34 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,15 +83,17 @@
 		7D698FE423C6769C00C2AF34 /* mecab-naist-jdic */ = {
 			isa = PBXGroup;
 			children = (
+				7D698FF923C6799F00C2AF34 /* char.bin */,
+				7D698FF823C6799F00C2AF34 /* COPYING */,
+				7D698FFA23C6799F00C2AF34 /* dicrc */,
+				7D698FF723C6799F00C2AF34 /* left-id.def */,
+				7D698FFE23C679A000C2AF34 /* matrix.bin */,
+				7D698FFB23C6799F00C2AF34 /* pos-id.def */,
+				7D698FFC23C6799F00C2AF34 /* rewrite.def */,
+				7D698FFD23C6799F00C2AF34 /* right-id.def */,
+				7D698FF523C6799F00C2AF34 /* sys.dic */,
+				7D698FF623C6799F00C2AF34 /* unk.dic */,
 				7D698FE523C6769C00C2AF34 /* Info.plist */,
-			);
-			path = "mecab-naist-jdic";
-			sourceTree = "<group>";
-		};
-		7D698FF023C676FB00C2AF34 /* mecab-naist-jdic */ = {
-			isa = PBXGroup;
-			children = (
-				7D698FF123C676FB00C2AF34 /* Info.plist */,
 			);
 			path = "mecab-naist-jdic";
 			sourceTree = "<group>";
@@ -132,8 +165,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7D698FE123C6769C00C2AF34 /* mecab-naist-jdic-macos */,
 				7D698FEE23C676FA00C2AF34 /* mecab-naist-jdic-ios */,
+				7D698FE123C6769C00C2AF34 /* mecab-naist-jdic-macos */,
 			);
 		};
 /* End PBXProject section */
@@ -143,6 +176,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D69901123C679A000C2AF34 /* matrix.bin in Resources */,
+				7D69900923C679A000C2AF34 /* dicrc in Resources */,
+				7D69900F23C679A000C2AF34 /* right-id.def in Resources */,
+				7D69900523C679A000C2AF34 /* COPYING in Resources */,
+				7D69900D23C679A000C2AF34 /* rewrite.def in Resources */,
+				7D698FFF23C679A000C2AF34 /* sys.dic in Resources */,
+				7D69900B23C679A000C2AF34 /* pos-id.def in Resources */,
+				7D69900123C679A000C2AF34 /* unk.dic in Resources */,
+				7D69900723C679A000C2AF34 /* char.bin in Resources */,
+				7D69900323C679A000C2AF34 /* left-id.def in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +193,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D69901223C679A000C2AF34 /* matrix.bin in Resources */,
+				7D69900A23C679A000C2AF34 /* dicrc in Resources */,
+				7D69901023C679A000C2AF34 /* right-id.def in Resources */,
+				7D69900623C679A000C2AF34 /* COPYING in Resources */,
+				7D69900E23C679A000C2AF34 /* rewrite.def in Resources */,
+				7D69900023C679A000C2AF34 /* sys.dic in Resources */,
+				7D69900C23C679A000C2AF34 /* pos-id.def in Resources */,
+				7D69900223C679A000C2AF34 /* unk.dic in Resources */,
+				7D69900823C679A000C2AF34 /* char.bin in Resources */,
+				7D69900423C679A000C2AF34 /* left-id.def in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +343,7 @@
 				DEVELOPMENT_TEAM = TVU9P2GAL9;
 				INFOPLIST_FILE = "mecab-naist-jdic/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -305,6 +359,7 @@
 				DEVELOPMENT_TEAM = TVU9P2GAL9;
 				INFOPLIST_FILE = "mecab-naist-jdic/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -320,10 +375,12 @@
 				DEVELOPMENT_TEAM = TVU9P2GAL9;
 				INFOPLIST_FILE = "mecab-naist-jdic/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -336,10 +393,12 @@
 				DEVELOPMENT_TEAM = TVU9P2GAL9;
 				INFOPLIST_FILE = "mecab-naist-jdic/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
