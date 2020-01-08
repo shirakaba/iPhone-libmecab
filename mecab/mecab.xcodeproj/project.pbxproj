@@ -890,6 +890,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/mecab.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -900,6 +901,7 @@
 				GCC_PREFIX_HEADER = "${SRCROOT}/src/mecab_Prefix.pch";
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = mecab;
 				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 			};
@@ -909,6 +911,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/mecab.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
