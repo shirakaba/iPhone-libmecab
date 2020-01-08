@@ -31,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		7D698FE223C6769C00C2AF34 /* mecab-naist-jdic-utf-8-macos.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mecab-naist-jdic-utf-8-macos.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D698FE523C6769C00C2AF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D698FEF23C676FA00C2AF34 /* mecab-naist-jdic-utf-8-ios.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mecab-naist-jdic-utf-8-ios.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D698FF523C6799F00C2AF34 /* sys.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = sys.dic; sourceTree = "<group>"; };
 		7D698FF623C6799F00C2AF34 /* unk.dic */ = {isa = PBXFileReference; lastKnownFileType = file; path = unk.dic; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		7D698FFC23C6799F00C2AF34 /* rewrite.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rewrite.def; sourceTree = "<group>"; };
 		7D698FFD23C6799F00C2AF34 /* right-id.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-id.def"; sourceTree = "<group>"; };
 		7D698FFE23C679A000C2AF34 /* matrix.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = matrix.bin; sourceTree = "<group>"; };
+		7D69903323C6A2B300C2AF34 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +66,7 @@
 		7D698FD923C6769B00C2AF34 = {
 			isa = PBXGroup;
 			children = (
+				7D69903323C6A2B300C2AF34 /* Info.plist */,
 				7D698FE423C6769C00C2AF34 /* mecab-naist-jdic-utf-8 */,
 				7D698FE323C6769C00C2AF34 /* Products */,
 			);
@@ -93,7 +94,6 @@
 				7D698FFD23C6799F00C2AF34 /* right-id.def */,
 				7D698FF523C6799F00C2AF34 /* sys.dic */,
 				7D698FF623C6799F00C2AF34 /* unk.dic */,
-				7D698FE523C6769C00C2AF34 /* Info.plist */,
 			);
 			path = "mecab-naist-jdic-utf-8";
 			sourceTree = "<group>";
@@ -341,7 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TVU9P2GAL9;
-				INFOPLIST_FILE = "mecab-naist-jdic/Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic-utf-8";
@@ -357,7 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TVU9P2GAL9;
-				INFOPLIST_FILE = "mecab-naist-jdic/Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic-utf-8";
@@ -373,7 +373,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TVU9P2GAL9;
-				INFOPLIST_FILE = "mecab-naist-jdic/Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic-utf-8";
@@ -391,7 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TVU9P2GAL9;
-				INFOPLIST_FILE = "mecab-naist-jdic/Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.bottledlogic.mecab-naist-jdic-utf-8";
