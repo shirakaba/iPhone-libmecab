@@ -1,16 +1,21 @@
 PODS:
+  - mecab-ko (0.1.0)
   - mecab-naist-jdic-utf-8 (0.1.0)
 
 DEPENDENCIES:
+  - mecab-ko (from `../mecab-ko`)
   - mecab-naist-jdic-utf-8 (from `../mecab-naist-jdic-utf-8`)
 
 EXTERNAL SOURCES:
+  mecab-ko:
+    :path: "../mecab-ko"
   mecab-naist-jdic-utf-8:
     :path: "../mecab-naist-jdic-utf-8"
 
 SPEC CHECKSUMS:
-  mecab-naist-jdic-utf-8: 886f311a4674ad82745a27af1bdda536f79cc5ed
+  mecab-ko: ed6c9752e447a479ef90cdf65c173d5956b723bb
+  mecab-naist-jdic-utf-8: 31e4f4d65e98769cef187c99cf7c456bf81e9553
 
-PODFILE CHECKSUM: 68a9837b85a076a4131547e02fd738487c9d8eb4
+PODFILE CHECKSUM: eb3df48da491be547ed7cb30e35b90a2b8c4dd89
 
 COCOAPODS: 1.8.4

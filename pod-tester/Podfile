@@ -7,5 +7,6 @@ target 'pod-tester' do
 
   # Pods for pod-tester
   pod 'mecab-naist-jdic-utf-8', :path => '../mecab-naist-jdic-utf-8'
+  pod 'mecab-ko', :path => '../mecab-ko'
 
 end
