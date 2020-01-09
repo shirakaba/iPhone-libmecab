@@ -8,11 +8,11 @@ Pod::Spec.new do |s|
   s.version      = package['version']
   s.summary      = package['description']
   s.homepage     = "https://github.com/shirakaba/iPhone-libmecab"
-  s.license      = { :type => "BSD", :file => "mecab-naist-jdic-utf-8/COPYING" }
+  s.license      = { :type => "BSD", :file => "bundleContents/COPYING" }
   s.author       = package['author']
   s.platforms    = { :ios => "10.3", :macos => "10.11" }
   s.source       = { :git => "https://github.com/shirakaba/iPhone-libmecab.git", :tag => "v#{s.version}" }
-  s.resource_bundle = { "mecab-naist-jdic-utf-8" => "mecab-naist-jdic-utf-8/*" }
+  s.resource_bundle = { "mecab-naist-jdic-utf-8" => "bundleContents/*" }
   s.info_plist = {
     'NSHumanReadableCopyright' => 'Copyright (c) 2009, Nara Institute of Science and Technology, Japan.',
     'NAIST JDIC version' => '0.6.3b-20111013'

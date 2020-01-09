@@ -2,15 +2,15 @@ PODS:
   - mecab-naist-jdic-utf-8 (0.1.0)
 
 DEPENDENCIES:
-  - mecab-naist-jdic-utf-8 (from `../mecab-naist-jdic`)
+  - mecab-naist-jdic-utf-8 (from `../mecab-naist-jdic-utf-8`)
 
 EXTERNAL SOURCES:
   mecab-naist-jdic-utf-8:
-    :path: "../mecab-naist-jdic"
+    :path: "../mecab-naist-jdic-utf-8"
 
 SPEC CHECKSUMS:
-  mecab-naist-jdic-utf-8: 6f6e05281551ec06cc5cb6fcfab4ae072ae87d71
+  mecab-naist-jdic-utf-8: 886f311a4674ad82745a27af1bdda536f79cc5ed
 
-PODFILE CHECKSUM: 01c78162146af0e2be2283afa09dcd2930f1ca14
+PODFILE CHECKSUM: 68a9837b85a076a4131547e02fd738487c9d8eb4
 
 COCOAPODS: 1.8.4

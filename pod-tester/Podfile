@@ -6,6 +6,6 @@ target 'pod-tester' do
   use_frameworks!
 
   # Pods for pod-tester
-  pod 'mecab-naist-jdic-utf-8', :path => '../mecab-naist-jdic'
+  pod 'mecab-naist-jdic-utf-8', :path => '../mecab-naist-jdic-utf-8'
 
 end
