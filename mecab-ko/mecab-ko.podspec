@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   # s.library      = 'c++'
   s.info_plist = {
     'mecab-ko authors' => 'Taku Kudo <taku@chasen.org>; Yongwoon Lee <bibreen@gmail.com>; Yungho Yu <mousegood@gmail.com>',
-    'mecab-ko repo' => 'https://bitbucket.org/eunjeon/mecab-ko/src/master/'
+    'mecab-ko repo' => 'https://bitbucket.org/eunjeon/mecab-ko/src/master/',
     'mecab-ko version' => '0.996'
   }
 
