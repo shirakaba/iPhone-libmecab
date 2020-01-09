@@ -1,0 +1,29 @@
+{
+  "name": "mecab-ko-dic-utf-8",
+  "version": "0.1.0",
+  "description": "mecab-ko-dic in UTF-8 format - a Korean dictionary for use with Mecab.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shirakaba/iPhone-libmecab.git"
+  },
+  "keywords": [
+    "mecab",
+    "korean",
+    "ko",
+    "dic",
+    "dictionary"
+  ],
+  "author": {
+    "name": "Jamie Birch",
+    "email": "14055146+shirakaba@users.noreply.github.com"
+  },
+  "license": "SEE LICENSE IN bundleContents/COPYING",
+  "bugs": {
+    "url": "https://github.com/shirakaba/iPhone-libmecab/issues"
+  },
+  "homepage": "https://github.com/shirakaba/iPhone-libmecab#readme"
+}
