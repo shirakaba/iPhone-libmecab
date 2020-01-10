@@ -14,12 +14,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/shirakaba/iPhone-libmecab.git", :tag => "v#{s.version}" }
   s.public_header_files = 'Classes/mecab.h', 'Classes/MecabObjC.h', 'Classes/Node.h'
   s.source_files = 'Classes/*.{c,cpp,mm,h}'
+  # These are all entry points to Mecab that we don't want to include (because they lead to: "duplicate symbol_main").
+  s.exclude_files = 'Classes/mecab-cost-train.cpp', 'Classes/mecab-dict-gen.cpp', 'Classes/mecab-dict-index.cpp', 'Classes/mecab-system-eval.cpp', 'Classes/mecab-test-gen.cpp'
   s.resources    = 'Assets/*'
-
-  # Seems that without the build is failing because HAVE_CONFIG_H is somehow undefined
-  # Thus, as it is required to include "config.h", all of its HAVE_*_H definitions are left undefined
-  # Thus none of the header imports such as HAVE_DIRENT_H occur.
-  # UPDATE: solved via GCC_PREPROCESSOR_DEFINITIONS!
 
 
   s.xcconfig = {
@@ -35,7 +32,7 @@ Pod::Spec.new do |s|
   # s.library      = 'c++'
   # s.static_framework = true
   # s.frameworks    = 'Foundation'
-  # s.libraries    = 'stdc++', 'iconv', 'mecab'
+  s.libraries    = 'iconv' #, 'stdc++', 'mecab'
   s.info_plist = {
     'mecab-ko authors' => 'Taku Kudo (taku@chasen.org); Yongwoon Lee (bibreen@gmail.com); Yungho Yu (mousegood@gmail.com)',
     'mecab-ko repo' => 'https://bitbucket.org/eunjeon/mecab-ko/src/master/',
