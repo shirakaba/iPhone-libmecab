@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import mecab_ko
 
 class ViewController: UIViewController {
 
@@ -14,7 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        // let mecab: Mecab = Mecab()
+         let mecab: Mecab = Mecab()
+         let nodes: [Node]? = mecab.parseToNode(with: "この番組はご覧のスポンサーの提供で送りします。")
+         print(nodes ?? "Unable to deduce nodes")
     }
 
 
