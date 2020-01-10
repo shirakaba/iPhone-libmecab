@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "10.3", :macos => "10.11" }
   s.source       = { :git => "https://github.com/shirakaba/iPhone-libmecab.git", :tag => "v#{s.version}" }
   s.public_header_files = 'Classes/mecab.h', 'Classes/MecabObjC.h', 'Classes/Node.h'
-  s.source_files = 'Classes/*.{c,cpp,mm,h}'
+  s.source_files = 'Classes/*.{cpp,m,h}'
   # These are all entry points to Mecab that we don't want to include (because they lead to: "duplicate symbol_main").
   s.exclude_files = 'Classes/mecab-cost-train.cpp', 'Classes/mecab-dict-gen.cpp', 'Classes/mecab-dict-index.cpp', 'Classes/mecab-system-eval.cpp', 'Classes/mecab-test-gen.cpp'
   s.resources    = 'Assets/*'

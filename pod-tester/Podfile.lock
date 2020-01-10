@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../mecab-naist-jdic-utf-8"
 
 SPEC CHECKSUMS:
-  mecab-ko: 4f3388007be2f32b0ec5ee9a017aad69ade31499
+  mecab-ko: 586e9d9db8e688e745085e78f4c4ce5cffcbb238
   mecab-naist-jdic-utf-8: 8756a11e929b554a8ad0f3051963a6f7be628a5a
 
 PODFILE CHECKSUM: eb3df48da491be547ed7cb30e35b90a2b8c4dd89
