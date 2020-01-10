@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/shirakaba/iPhone-libmecab.git", :tag => "v#{s.version}" }
   s.resource_bundle = { "mecab-ko-dic-utf-8" => "bundleContents/*" }
   s.info_plist = {
-    'mecab-ko-dic authors' => 'Yongwoon Lee <bibreen@gmail.com>; Yungho Yu <mousegood@gmail.com>',
+    'mecab-ko-dic authors' => 'Yongwoon Lee (bibreen@gmail.com); Yungho Yu (mousegood@gmail.com)',
     'mecab-ko-dic repo' => 'https://bitbucket.org/eunjeon/mecab-ko-dic',
     'mecab-ko-dic version' => '0.9.2'
   }

@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.resource_bundle = { "mecab-naist-jdic-utf-8" => "bundleContents/*" }
   s.info_plist = {
     'NSHumanReadableCopyright' => 'Copyright (c) 2009, Nara Institute of Science and Technology, Japan.',
-    'NAIST JDIC authors' => 'Masayuki Asahara <masayua@gmail.com>',
+    'NAIST JDIC authors' => 'Masayuki Asahara (masayua@gmail.com)',
     'NAIST JDIC repo' => 'http://sourceforge.jp/projects/naist-jdic/',
     'NAIST JDIC version' => '0.6.3b-20111013'
   }
