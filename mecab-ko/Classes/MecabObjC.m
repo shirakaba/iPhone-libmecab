@@ -11,26 +11,24 @@
 #include <iconv.h>
 #import "MecabObjC.h"
 
-NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS = @"dicdirNaistJdic.bundle";
-NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_MACOS = @"dicdirNaistJdic-macos.bundle";
-NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_IOS = @"dicdirKoDic.bundle";
-NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS = @"dicdirKoDic-macos.bundle";
+NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS = @"mecab-naist-jdic-utf-8.bundle";
+NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_MACOS = @"mecab-naist-jdic-utf-8.bundle";
+NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_IOS = @"mecab-ko-dic-utf-8.bundle";
+NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS = @"mecab-ko-dic-utf-8.bundle";
 
 @implementation Mecab
 
-- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string {
-    return [self parseToNodeWithString:string dicdirRelativePath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS calculateTrailingWhitespace:NO];
+// - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string {
+//     return [self parseToNodeWithString:string dicdirPath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS calculateTrailingWhitespace:NO];
+// }
+
+- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirPath:(NSString *)dicdirPath {
+    return [self parseToNodeWithString:string dicdirPath:dicdirPath calculateTrailingWhitespace:NO];
 }
 
-- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirRelativePath:(NSString *)dicdirRelativePath {
-    return [self parseToNodeWithString:string dicdirRelativePath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS calculateTrailingWhitespace:NO];
-}
-
-- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirRelativePath:(NSString *)dicdirRelativePath calculateTrailingWhitespace:(BOOL)calculateTrailingWhitespace {
+- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirPath:(NSString *)dicdirPath calculateTrailingWhitespace:(BOOL)calculateTrailingWhitespace {
     if (mecab == NULL) {
-        // https://developer.apple.com/documentation/foundation/bundle
-        NSString *path = [[NSBundle mainBundle] resourcePath];
-        mecab = mecab_new2([[@"--output-format-type=none --dicdir " stringByAppendingString:[NSString stringWithFormat:@"%@/%@", path, dicdirRelativePath]] UTF8String]);
+        mecab = mecab_new2([[@"--output-format-type=none --dicdir " stringByAppendingString:[NSString stringWithFormat:@"%@", dicdirPath]] UTF8String]);
         
         if (mecab == NULL) {
             fprintf(stderr, "error in mecab_new2: %s\n", mecab_strerror(NULL));
