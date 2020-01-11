@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Classes/mecab.h', 'ObjCWrapper/*.h'
   s.source_files = 'Classes/*.{cpp,h}', 'ObjCWrapper/*.{m,h}'
   # These are all entry points to Mecab that we don't want to include (because they lead to: "duplicate symbol_main").
+  # TODO: Decide a good way to make model.bin optional
   s.exclude_files = 'Classes/mecab-cost-train.cpp', 'Classes/mecab-dict-gen.cpp', 'Classes/mecab-dict-index.cpp', 'Classes/mecab-system-eval.cpp', 'Classes/mecab-test-gen.cpp'
   s.resources    = 'Assets/*'
 

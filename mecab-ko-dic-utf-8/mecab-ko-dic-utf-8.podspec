@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.info_plist = {
     'mecab-ko-dic authors' => 'Yongwoon Lee (bibreen@gmail.com); Yungho Yu (mousegood@gmail.com)',
     'mecab-ko-dic repo' => 'https://bitbucket.org/eunjeon/mecab-ko-dic',
-    'mecab-ko-dic version' => '0.9.2'
+    'mecab-ko-dic version' => '2.1.1'
   }
 
 end

@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         print(japaneseNodes!)
         japaneseNodes?.forEach({ node in print("[\(node.surface)] \(node.partOfSpeech ?? "*") \(node.originalForm ?? "*")") })
         
-        let koreanNodes: [MecabNode]? = mecabKorean.parseToNode(with: "띄어쓰기를 하지 않는 일본어와 달리 띄어쓰기를 하는 한국어 특성에 맞게 특정 품사가 띄어쓰기 되어있는 경우 해당 품사의 비용을 늘리는 기능 (사전 설정(dicrc)에 설정 값을 지정)")
+        let koreanNodes: [MecabNode]? = mecabKorean.parseToNode(with: "mecab-ko-dic은 MeCab을 사용하여, 한국어 형태소 분석을 하기 위한 프로젝트입니다.")
         koreanNodes?.forEach({ node in print("[\(node.surface)] (\(node.partOfSpeech ?? "*")) \(node.originalForm ?? "*")") })
     }
 
