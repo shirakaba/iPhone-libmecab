@@ -16,25 +16,35 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME = @"mecab-ko-dic-utf-8";
 
 @implementation Mecab
 
-// - (NSArray<MecabNode *> *)parseToNodeWithString:(NSString *)string {
-//     return [self parseToNodeWithString:string dicdirPath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS calculateTrailingWhitespace:NO];
-// }
+// Page 106, "Objective-C for Swift developers": no need to implement alloc, which is handled by NSObject.
 
-- (NSArray<MecabNode *> *)parseToNodeWithString:(NSString *)string dicdirPath:(NSString *)dicdirPath {
-    return [self parseToNodeWithString:string dicdirPath:dicdirPath calculateTrailingWhitespace:NO];
+// Page 90, "Objective-C for Swift developers"
++ (instancetype)mecabWithDicDirPath:(NSString *)dicDirPath
+{
+    return [[self alloc] initWithDicDirPath:dicDirPath];
 }
 
-- (NSArray<MecabNode *> *)parseToNodeWithString:(NSString *)string dicdirPath:(NSString *)dicdirPath calculateTrailingWhitespace:(BOOL)calculateTrailingWhitespace {
-    if (mecab == NULL) {
-        mecab = mecab_new2([[@"--output-format-type=none --dicdir " stringByAppendingString:[NSString stringWithFormat:@"%@", dicdirPath]] UTF8String]);
-        
+- (instancetype)initWithDicDirPath:(NSString *)dicDirPath
+{
+    // or [self init] ?
+    // Page 105, "Objective-C for Swift developers"
+    if(self = [super init])
+    {
+        mecab = mecab_new2([[@"--output-format-type=none --dicdir " stringByAppendingString:[NSString stringWithFormat:@"%@", dicDirPath]] UTF8String]);
         if (mecab == NULL) {
             fprintf(stderr, "error in mecab_new2: %s\n", mecab_strerror(NULL));
             
             return nil;
         }
     }
-    
+    return self;
+}
+
+- (NSArray<MecabNode *> *)parseToNodeWithString:(NSString *)string {
+    return [self parseToNodeWithString:string calculateTrailingWhitespace:NO];
+}
+
+- (NSArray<MecabNode *> *)parseToNodeWithString:(NSString *)string calculateTrailingWhitespace:(BOOL)calculateTrailingWhitespace {    
     const mecab_node_t *node;
     const char *buf= [string cStringUsingEncoding:NSUTF8StringEncoding];
     NSUInteger l= [string lengthOfBytesUsingEncoding:NSUTF8StringEncoding];

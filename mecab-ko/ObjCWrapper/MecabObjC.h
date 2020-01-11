@@ -17,14 +17,16 @@ extern NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME;
     mecab_t *mecab;
 }
 
-/** Uses Japanese iOS resources bundle by default, and leaves the trailingWhitespace value as NULL. */
-// - (NSArray<MecabNode *> *)parseToNodeWithString:(NSString *)string;
++ (instancetype)mecabWithDicDirPath:(NSString *)dicDirPath;
 
-/** You may specify the absolute path to the dicdir folder. The trailingWhitespace value is left as NULL. */
-- (NSArray<MecabNode *> *)parseToNodeWithString:(NSString *)string dicdirPath:(NSString *)dicdirPath;
+/** You must specify the absolute path to the dicdir folder.*/
+- (instancetype)initWithDicDirPath:(NSString *)dicDirPath;
 
-/** You may specify the absolute path to the dicdir folder. The trailingWhitespace value is calculated where applicable. */
-- (NSArray<MecabNode *> *)parseToNodeWithString:(NSString *)string dicdirPath:(NSString *)dicdirPath calculateTrailingWhitespace:(BOOL)calculateTrailingWhitespace;
+/** The trailingWhitespace value is left as NULL. */
+- (NSArray<MecabNode *> *)parseToNodeWithString:(NSString *)string;
+
+/** The trailingWhitespace value is calculated where applicable. */
+- (NSArray<MecabNode *> *)parseToNodeWithString:(NSString *)string calculateTrailingWhitespace:(BOOL)calculateTrailingWhitespace;
 
 @end
 
