@@ -11,10 +11,8 @@
 #include <iconv.h>
 #import "MecabObjC.h"
 
-NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS = @"mecab-naist-jdic-utf-8.bundle";
-NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_MACOS = @"mecab-naist-jdic-utf-8.bundle";
-NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_IOS = @"mecab-ko-dic-utf-8.bundle";
-NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME_MACOS = @"mecab-ko-dic-utf-8.bundle";
+NSString *const DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME = @"mecab-naist-jdic-utf-8";
+NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME = @"mecab-ko-dic-utf-8";
 
 @implementation Mecab
 
