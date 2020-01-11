@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
     
-    NSString *jpDicBundlePath = [[NSBundle mainBundle] pathForResource:@"mecab-naist-jdic-utf-8" ofType:@"bundle"];
+    NSString *jpDicBundlePath = [[NSBundle mainBundle] pathForResource:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME ofType:@"bundle"];
     NSString *jpDicBundleResourcePath = [[NSBundle alloc] initWithPath:jpDicBundlePath].resourcePath;
 	
 	self.mecab = [[Mecab alloc] initWithDicDirPath:jpDicBundleResourcePath];
