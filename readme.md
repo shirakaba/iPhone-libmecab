@@ -1,11 +1,14 @@
 # Japanese Morphological Analyzer Mecab on iPhone（Cocoa Static Library Version）
 
-This is a project that enables Mecab to be easily integrated into an iOS or macOS app.
+This is a project that enables `mecab-ko` (a fork of Mecab that adds support for Korean) to be easily integrated into an iOS or macOS app.
+
 Updated to work with Xcode 11, iOS 9+, macOS 10.11+, and Swift 5.
 
 ## Sample app
 
 The sample app in LibMecabSample should build both an iOS Obj-C app (with a UI) and a macOS Swift app (without any UI; check the console for results).
+
+<img width="200px" src="/github_img/ios_sample.png"/>
 
 ## Installing from Cocoapods
 
@@ -128,9 +131,33 @@ A few examples:
 
 ## License
 
-Mecab is free software and can be used under the GPL, LGPL, and/or BSD licenses.
-For details, please check the COPYING, GPL, LGPL, and BSD files included with Mecab.
-Feel free to use this repository under the terms of the licenses inherited from Mecab.
+### `iPhone-libmecab`
+
+Feel free to use this sample project under the terms of the licenses inherited from `mecab-ko`.
+
+### `mecab-ko`
+
+`mecab-ko` is free software; I can only specify one license in the metadata for the Cocoapods `mecab-ko.podspec` and npm `package.json`, so I have specified BSD, but it can be used under the GPL, LGPL, and/or BSD licenses; please feel free to do so despite the limitations of what I can write into the metadata.
+
+For details, please check the `COPYING`, `GPL`, `LGPL`, and `BSD` files in `mecab-ko/Assets`.
+
+### `mecab-ko-dic-utf-8`
+
+`mecab-ko-dic-utf-8` is available only under the Apache 2.0 licence: `mecab-ko-dic-utf-8/bundleContents/COPYING`.
+
+### `mecab-naist-jdic-utf-8`
+
+`mecab-naist-jdic-utf-8` is available only under the BSD licence: `mecab-naist-jdic-utf-8/bundleContents/COPYING`.
+
+## Contributors
+
+This repository has had a long history (9 years?), being contributed to by (to my knowledge):
+
+* Toshinori Watanabe (link to fork now broken, but was re-hosted at some point by Richard North [here](https://github.com/rnorth/iPhone-libmecab))
+* Matthew Long (fork [here](https://github.com/lxmmxl56/iPhone-libmecab))
+* Jamie Birch (the [current fork](https://github.com/shirakaba/iPhone-libmecab))
+
+Special thank you to Joseph Toronto on StackOverflow for assisting both Matthew Long and myself by providing [setup steps](http://stackoverflow.com/a/37891729/3295398).
 
 ## Acknowledgments
 
@@ -138,3 +165,8 @@ This repository is based on:
 
 [Mecab](http://taku910.github.io/mecab/)  
 [iPhone-libmecab](https://github.com/FLCLjp/iPhone-libmecab/)
+
+
+## See also
+
+https://github.com/junhewk/RcppMeCab
