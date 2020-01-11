@@ -1,0 +1,2212 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		72073CD66E17770DFE1DEEE2753119C0 /* mecab-naist-jdic-utf-8-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 38E40089CDE03932B3AF64A9D4819A23 /* Build configuration list for PBXAggregateTarget "mecab-naist-jdic-utf-8-iOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+				B57522F99C2FE467D84B60F5AC081527 /* PBXTargetDependency */,
+			);
+			name = "mecab-naist-jdic-utf-8-iOS";
+		};
+		7CD9E15230AC1CDF68411A0493EF8F74 /* mecab-ko-dic-utf-8-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2FC0C8D3907E3720E62CE978A3516351 /* Build configuration list for PBXAggregateTarget "mecab-ko-dic-utf-8-iOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+				0A6CEDC63479751AAA34B784181A2AC8 /* PBXTargetDependency */,
+			);
+			name = "mecab-ko-dic-utf-8-iOS";
+		};
+		B3E5ECD27561423E29BDDAAE75D2C9C1 /* mecab-naist-jdic-utf-8-macOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8A8A9A39ADC910B7B63FC673A52BA38C /* Build configuration list for PBXAggregateTarget "mecab-naist-jdic-utf-8-macOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+				0661E00D54616E2CB2C7F4FA780D2BB6 /* PBXTargetDependency */,
+			);
+			name = "mecab-naist-jdic-utf-8-macOS";
+		};
+		B51706D04487B4A2B61E3F6570D5FEFB /* mecab-ko-dic-utf-8-macOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 911CF0BCBC7964CB6619EF133EBA4E53 /* Build configuration list for PBXAggregateTarget "mecab-ko-dic-utf-8-macOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+				8C4C33775017EA7BDF4B9569B2633B55 /* PBXTargetDependency */,
+			);
+			name = "mecab-ko-dic-utf-8-macOS";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00733160F0C00432E5481EEDFEA1D61E /* scoped_ptr.h in Headers */ = {isa = PBXBuildFile; fileRef = E35D9D3FAF3D5597D2E9CEB284D59BBA /* scoped_ptr.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		02038372051624B4778A27F570700871 /* connector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 269E8C2FD2D5E7BD11F95DA6E65EAE0F /* connector.cpp */; };
+		036E62D664CA995F2C727EF2338E27BB /* dictionary_compiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60D286497A08C75B0D24010DE4EB8CD7 /* dictionary_compiler.cpp */; };
+		037C7FB1DA961168BFB84EBEE55D0718 /* AUTHORS in Resources */ = {isa = PBXBuildFile; fileRef = 6F297EEFB2452AA49C9C2CCE7391A67B /* AUTHORS */; };
+		04D2D35503F52CB5A96297F9F519227F /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = A81CA4F50708A63B959CD3D265FEA79C /* COPYING */; };
+		04F154191B1E49859A0DCF9D5B3B11CB /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 373E5559E20933F93A2DD08D2D0FCD21 /* utils.cpp */; };
+		06CC78620D4FF11E08FFBD2EE9112863 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = E5FB9619692042B4BB2E50ED2662E965 /* thread.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		07347F153FCF20BDF2079A744563EA60 /* writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6426A59420E56F17EB3ED6DF2F8735AB /* writer.cpp */; };
+		09CD835ACBD87E2C2B1F7BAE8B65D424 /* eval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 672FD8CF1F15C8616A05165DBD3B7709 /* eval.cpp */; };
+		0A73DFAC11B2FEAD42B702E6C2A554F6 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = A81CA4F50708A63B959CD3D265FEA79C /* COPYING */; };
+		0D73FAEA060D38B1710E7F416C30CEB0 /* viterbi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E52A600F682F2133616954C667206A46 /* viterbi.cpp */; };
+		0DD91FF56711B0ACF876F3C65097AFD9 /* learner_tagger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AEB9E551D3BB108DDB3BAFBA73EFB44 /* learner_tagger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0F6E7104374EEC9D1DC88E45F4A3186D /* MecabNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CE50FEEDB4D5EFC1DE93B245883050 /* MecabNode.m */; };
+		118EBF2AC472A2527DDEA5E9D9818CB5 /* learner_tagger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD416374CF5F79947A2BB77992A91476 /* learner_tagger.cpp */; };
+		12E4B03A43BDDC9E8DBF83DE4C8F0E6C /* LGPL in Resources */ = {isa = PBXBuildFile; fileRef = F0A9D4BD6A8259F7CD01FD5BC6D0CB1F /* LGPL */; };
+		1318DFA55A6AE6C93AC12FD326A40053 /* learner_node.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C69F7FD924EE7F5B5CBB9E7581A498 /* learner_node.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1364A8118C627CDE7B29C48A99BEC5FD /* Pods-LibMecabSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC16372028443AEDC2159B9A78D9578F /* Pods-LibMecabSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15F03B89C12EBF02CFD86BF6FE1958ED /* mecab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF9E4F0205B771B865E15DFC6E559D /* mecab.cpp */; };
+		18064C505C1DD6AF76107EFF53B7CCBD /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = ED8E5FE37A4D6FE96E3D64268E13996D /* sys.dic */; };
+		19DE06FE674ABF4FE1138CE451580714 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 04E0A5266761D3C6C76DDA0E5E26CB6F /* right-id.def */; };
+		19EDA32885A2A008807AA92AEF4B3892 /* feature_index.h in Headers */ = {isa = PBXBuildFile; fileRef = C9BB9CF50A65EA32C1915405F9279E44 /* feature_index.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1A07FF1EA371B193DCF430CF87018280 /* lbfgs.h in Headers */ = {isa = PBXBuildFile; fileRef = D78C0589970EC1E758FFAEF5CA2C4BBC /* lbfgs.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1A3301185CA9461CCE49000DE59A8918 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 4004F02523AD0E4E6FAB7F02452E9E31 /* rewrite.def */; };
+		1B77EACB01D7271B7C37D202907826FF /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B9015F16FC006A62E5B9E078B6F60FC /* config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1B799251D1702F1B975E8ED87684E14C /* nbest_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A824ADBCB82F0B3F10ADD8573E4ADEC /* nbest_generator.cpp */; };
+		1B876394DBBBC6AB1F11BBCCA26AA12D /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 79AAC7B15E26DEA734844FF0C57ABC82 /* common.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C95F8598E6ACDE585D03842C6031476 /* param.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FBF89C97E6876BAEE9295A26A1BCD50 /* param.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1D0EA221EF9161BA3EF63459D7DBB2DB /* NEWS in Resources */ = {isa = PBXBuildFile; fileRef = 32440997B550CCA6830396993412A113 /* NEWS */; };
+		22198A56818C40EAE36CBDF399407670 /* dictionary_rewriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEECB7C35078F8ACFB6157DCD6BE7864 /* dictionary_rewriter.cpp */; };
+		23095DA42FAFC9A491359BED2AEF65F3 /* dictionary_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D470E797F6A6DD9E152249C4D3375677 /* dictionary_generator.cpp */; };
+		24D121DA94DB8052988B2FA780CE8CBF /* char_property.h in Headers */ = {isa = PBXBuildFile; fileRef = D1C02B468CA24455CD0B4FD2E58544FE /* char_property.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		25CF1C594960A72B834AF9435604A5C6 /* dictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 40FDA9CF3289E5501858A7283463E1F9 /* dictionary.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2634D1C00C4A61CBB8D18BF163F0752F /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 5854A824471BA5D2FD2741000A95AD52 /* right-id.def */; };
+		28815B051C6583C279B69853C6B6BBF4 /* mecab-ko-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC89D210520E94D69BA479EF871844A /* mecab-ko-iOS-dummy.m */; };
+		2B3C6960611C73D24F443135D394565A /* string_buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = B7AE60620872BA7ADB5F48DE3FA02F73 /* string_buffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2B868419FF4995CBCD88116839571B2F /* stream_wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = D1820B4262E92075B0E27E24E31DB4AF /* stream_wrapper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2C9847F293B7D82C7E1FD51481186318 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 818CDFBD7268856DDB17CE10F2A4095E /* unk.dic */; };
+		2CCD701F30B643C85F70E9650A7A2CB2 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 5EB212A0E5958F64C022283021CB86B5 /* matrix.bin */; };
+		2E281A98D860650F42EB54049566BFA5 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = BAEF91554E0E40D3F30BA8E64762CF55 /* pos-id.def */; };
+		2EA6536796CB6CF100635FCB30483B9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E0833F774141EB04DC79D0F4664C87 /* Cocoa.framework */; };
+		311B17A2B20F0EDF2594DB5994B5D9BC /* tokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B359EC780D2CD5F6EA0BD72D9199588F /* tokenizer.cpp */; };
+		31BE1317180659948914ED15BF85472D /* ucstable.h in Headers */ = {isa = PBXBuildFile; fileRef = F5AB2801C9CA5FCFDBB7C7E0FFA85F4E /* ucstable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		321D50BF19158D6A1A29467DC438A644 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7E27A651C3D2C3DFF3B9D5CF7842113D /* left-id.def */; };
+		3286B151C742908E7BAC4B52D2E42EC8 /* learner_tagger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AEB9E551D3BB108DDB3BAFBA73EFB44 /* learner_tagger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		32D0FF096D804EB7568FEF3E7C2B518D /* char_property.h in Headers */ = {isa = PBXBuildFile; fileRef = D1C02B468CA24455CD0B4FD2E58544FE /* char_property.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		33F4356E65DF048E02E944921E9826CE /* darts.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C28EEB1E820C50AE2DAE36AF474BA8 /* darts.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3620406BC2CC593323F378150A38CD44 /* libmecab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41BCCE9C8703BE1EC671DF7409C7A72A /* libmecab.cpp */; };
+		39183842F5000A8F88E1A1DEB8B906C8 /* freelist.h in Headers */ = {isa = PBXBuildFile; fileRef = 27EDA9873BE0C915A6605C6BD4969FF5 /* freelist.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		394701490320AF21CA0069A2926A72BA /* string_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8DB86002A62E4F548F9092EDC88C4 /* string_buffer.cpp */; };
+		3A86E942C5207585844A6082CD7D1882 /* iconv_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6BBDA58426A461FAB6B7AA65A1771B /* iconv_utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3B1346AB63934C706672366B57C0ACC8 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 224FC45ADB15530CD482AB16DB9117BA /* dicrc */; };
+		3B52081D6923A21C4783069AF9183C4F /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 3E80F6335A73E5FEDA45EE21FA535B05 /* COPYING */; };
+		3CE78DA3DCBCE9FD884B126D2BCB0AD4 /* MecabObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2033D8213E84F0E92A5C69D86E1FEDA8 /* MecabObjC.m */; };
+		3D7640442FDDA7105CDC8C280B87BE6F /* ucs.h in Headers */ = {isa = PBXBuildFile; fileRef = BD6C7981DB1A605927189F2E0791585E /* ucs.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3E7130DFB00A7BFFB6878618FAF92505 /* learner_tagger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD416374CF5F79947A2BB77992A91476 /* learner_tagger.cpp */; };
+		402AA5DF4BC65C4A9183082CF0DB32F9 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7A43F415A37A41C9186CAD62A5126A31 /* dicrc */; };
+		40F5221BB250009F2EF302109A67019B /* ucstable.h in Headers */ = {isa = PBXBuildFile; fileRef = F5AB2801C9CA5FCFDBB7C7E0FFA85F4E /* ucstable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4289A170E061E5E86DA1F8154FABA3A7 /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 206D9B9A68A4CD77386AA9DEDE361134 /* char.bin */; };
+		43E48F3075C0673BD80C3781187B5623 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9E50002BCFF2BBA247B87D390A0F40 /* utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		462CCCDEA6780993F10E82478791999E /* mmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EE4DE2910988EC643AE50733531909 /* mmap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		47AA7DE05CF40182834BD5537DA1E179 /* winmain.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A97904A6E8D0A4BFBD8AD8CFD1EFAA0 /* winmain.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4876F22DCD467AE047F1B47FAFB76C39 /* writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6426A59420E56F17EB3ED6DF2F8735AB /* writer.cpp */; };
+		48AE92AB644F33548CB271830F69F97C /* learner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48E0CAD5698AC3DD537BE46148591CEE /* learner.cpp */; };
+		48B0814F38D1462E67360CFE82CBF979 /* param.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9650F4D7ECB21CC158B993BD7755EDF2 /* param.cpp */; };
+		48BCA0C521A0E3A977B8808742BF0565 /* dictionary_compiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60D286497A08C75B0D24010DE4EB8CD7 /* dictionary_compiler.cpp */; };
+		4A277E27FE33F229BD52A36ABE0406BD /* MecabObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2033D8213E84F0E92A5C69D86E1FEDA8 /* MecabObjC.m */; };
+		4A3CE5FE3B82FA44F44A890CAC7B7184 /* dictionary_rewriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AEF4E6A9D4CE60298D829322F8A61F /* dictionary_rewriter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4BBB927AEEAA36D2C2C225B9176C0D8F /* dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD11A3D618E50A6039E4B924ADF5FC82 /* dictionary.cpp */; };
+		4D1CEC0E431105E4833142AFF6DDB3B7 /* mecab.h in Headers */ = {isa = PBXBuildFile; fileRef = F7881DB24188399D800CFC526073D876 /* mecab.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E7EECC4C0D0ECAE2CE90920F2996989 /* param.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9650F4D7ECB21CC158B993BD7755EDF2 /* param.cpp */; };
+		4E9553AC44A499DDA2BE77C84EE9392F /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 4004F02523AD0E4E6FAB7F02452E9E31 /* rewrite.def */; };
+		4F2A7F0B9C4FE8C4BCFBB7565BEE7414 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 24A534EEC030831CBEF91538BAA8F9C5 /* unk.dic */; };
+		508AC897C0D98386D2D0381715B0C813 /* char_property.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16BCA2587BE27E9B9732C3CCCE1CF73A /* char_property.cpp */; };
+		548A955EF8E9BF533DE256C2B9AE8426 /* freelist.h in Headers */ = {isa = PBXBuildFile; fileRef = 27EDA9873BE0C915A6605C6BD4969FF5 /* freelist.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		54DA2C1EFFFCFBF607B69E6E2B47172B /* learner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48E0CAD5698AC3DD537BE46148591CEE /* learner.cpp */; };
+		55EE753FEB897459CB3F307CEB15919B /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 07FCE700AB20F5E78A17A26C5B8290BA /* COPYING */; };
+		56BA489B6BBF046797DA6E90EAF10C22 /* GPL in Resources */ = {isa = PBXBuildFile; fileRef = CCC5B221D9C68FD5CC5F1AC62E2D2510 /* GPL */; };
+		57F0F13ED4E9BD8BA5A8E839516F5A3D /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 5854A824471BA5D2FD2741000A95AD52 /* right-id.def */; };
+		5963EA3DC34FF4EBB9967C7FCAAFBB32 /* dictionary_rewriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 73AEF4E6A9D4CE60298D829322F8A61F /* dictionary_rewriter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5A4BD9C0F3F97B5B1A92DE05099668DC /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = B29FD5003652342D6F4F2E05AD49BF14 /* sys.dic */; };
+		5B33DF02B6B265272F8E61FCE65DAB03 /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 224FC45ADB15530CD482AB16DB9117BA /* dicrc */; };
+		5B8EFDAD9F586D92EBAE0341DAA3DD73 /* context_id.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD85622DB9282AD58FB2F41CAD87A151 /* context_id.cpp */; };
+		5C494FE554BCB057B99A09A397FCC568 /* AUTHORS in Resources */ = {isa = PBXBuildFile; fileRef = 413AA7D068A5B0A520D048598F9A7C91 /* AUTHORS */; };
+		5CFDE21E78481B970ABFC600187DC6CC /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = BAEF91554E0E40D3F30BA8E64762CF55 /* pos-id.def */; };
+		5DED3295CEFACB1F1C9F8CB912832309 /* lbfgs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1AAE83B223440D575D46E4D2157340E /* lbfgs.cpp */; };
+		5F5BDE1720530141ECC8FBDD0FB1E675 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 35D14EBAC7BB4465FDC19F6502AD44D5 /* matrix.bin */; };
+		60E18F8056E806C8294A95B0B9D9FF35 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 54AEB297BF463B7066D96E01FD3BC140 /* rewrite.def */; };
+		617BAE9D7E6D22039F8FE62BD80D35C9 /* feature_index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC6DC21BAEBE3A0599E70A2201AFBDA2 /* feature_index.cpp */; };
+		618B17ABEE5817D9FA3BB70946517281 /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 013813EEC852727C8BDA386A2F7C2F3D /* mecabrc */; };
+		61B6348A5B40AAAFB2D9469C33CB7A49 /* iconv_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0DFDC8A534EB9C86EAEB9E60C22CF15 /* iconv_utils.cpp */; };
+		64184D30BCFD4A28649E083610E81F1B /* ucs.h in Headers */ = {isa = PBXBuildFile; fileRef = BD6C7981DB1A605927189F2E0791585E /* ucs.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		65516DB83812A8E7FF0E3B2F8100E502 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = E5FB9619692042B4BB2E50ED2662E965 /* thread.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		66181E82072AF969914F2FDD186BEF31 /* BSD in Resources */ = {isa = PBXBuildFile; fileRef = BB3CF3CF3BDBF147FC4BAE628327473E /* BSD */; };
+		6771BC29B4B90DDA13B460B25AF772E3 /* stream_wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = D1820B4262E92075B0E27E24E31DB4AF /* stream_wrapper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		682F126B2AC0D582BFD68C1A22388214 /* mecab-ko-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A13305658B1306F6E076D2FCD72633A /* mecab-ko-macOS-dummy.m */; };
+		69D471ED654C7B4A409EE1661643C1E1 /* context_id.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD85622DB9282AD58FB2F41CAD87A151 /* context_id.cpp */; };
+		6A123E62DC86ED12A0EFB50991BC9680 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E0833F774141EB04DC79D0F4664C87 /* Cocoa.framework */; };
+		6A80A6016DEAA525DD34B70F4B62EDA0 /* tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F3FB696FF5433A9E8E5159BF7438338 /* tokenizer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6B881897672214374398C5CDC4572C0D /* dictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 40FDA9CF3289E5501858A7283463E1F9 /* dictionary.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6B8F427546079EE4F4B00222EDBD1248 /* connector.h in Headers */ = {isa = PBXBuildFile; fileRef = B57BB3FA7F7E9071E06399605EB5191C /* connector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C0E59EB2BB481931D00601C310B82DB /* scoped_ptr.h in Headers */ = {isa = PBXBuildFile; fileRef = E35D9D3FAF3D5597D2E9CEB284D59BBA /* scoped_ptr.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6FC0773442C13D8E4943FB6D700CA66B /* char_property.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16BCA2587BE27E9B9732C3CCCE1CF73A /* char_property.cpp */; };
+		7934D5D9CC91A8C987E2B48855A383C8 /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 5EB212A0E5958F64C022283021CB86B5 /* matrix.bin */; };
+		79A76CA971E544FB23B0E2E6E032AF9B /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 3E80F6335A73E5FEDA45EE21FA535B05 /* COPYING */; };
+		7AE2C6516945FBC03F4F284FCDC470B9 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = A33760DD2B420AB1D618F5478A7A0ADF /* left-id.def */; };
+		7B17C5EF1EECB14687AD964EF98E98A0 /* writer.h in Headers */ = {isa = PBXBuildFile; fileRef = E77CC134CB46406A9796354DD96F9DD8 /* writer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7CD4A65E05CA5CBDF2F20D257BA2A4D6 /* MecabNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 533AFA426A20ABFEC320496EE5C02CE9 /* MecabNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		803BD1D6A39F7C7B31383ABF3795CBFE /* Pods-LibMecabSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF546DAB2950D1CB7C378CBDD7353F5 /* Pods-LibMecabSample-dummy.m */; };
+		80A375305BD6394D01787E226DE4A27C /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = B1F5AD77935D036A4D5BCB9D217FC453 /* ChangeLog */; };
+		81EC50446A26AE5DBBBEC48596F56DF6 /* connector.h in Headers */ = {isa = PBXBuildFile; fileRef = B57BB3FA7F7E9071E06399605EB5191C /* connector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81F237CEB07F2E2F01AD5143069C405C /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = 206D9B9A68A4CD77386AA9DEDE361134 /* char.bin */; };
+		82644A918BECDC43DEFB2AB85EF81958 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 79AAC7B15E26DEA734844FF0C57ABC82 /* common.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		832BAFED6A1C8195D26B980D913367EA /* param.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FBF89C97E6876BAEE9295A26A1BCD50 /* param.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8370166C0BDFA4FC22725AA8A1E9BE6B /* dicrc in Resources */ = {isa = PBXBuildFile; fileRef = 7A43F415A37A41C9186CAD62A5126A31 /* dicrc */; };
+		85828401260B3CB00F854946CD21C3AE /* mecab.h in Headers */ = {isa = PBXBuildFile; fileRef = F7881DB24188399D800CFC526073D876 /* mecab.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8651A2EF821056CA699429FD3B08A036 /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 7E27A651C3D2C3DFF3B9D5CF7842113D /* left-id.def */; };
+		86DB07335349C1373A113C2610701604 /* winmain.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A97904A6E8D0A4BFBD8AD8CFD1EFAA0 /* winmain.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		888D942CBFBDBDDEDC81075BDEB348ED /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = B1F5AD77935D036A4D5BCB9D217FC453 /* ChangeLog */; };
+		8B301E3341D67D7DF52F98D7CF94C2BC /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 07FCE700AB20F5E78A17A26C5B8290BA /* COPYING */; };
+		8C1BFBBDF04F48B6107368DCE2F60EFD /* mecab-ko-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 841C96F3AE7A8CBCCDAC5CE5F272AB63 /* mecab-ko-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E06D2F0A2F03EA0CBDF196E5B1D709F /* dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD11A3D618E50A6039E4B924ADF5FC82 /* dictionary.cpp */; };
+		9293B18764330F55B4166CDE494BD200 /* rewrite.def in Resources */ = {isa = PBXBuildFile; fileRef = 54AEB297BF463B7066D96E01FD3BC140 /* rewrite.def */; };
+		93991C0487073B72651F9A41B69DB4FF /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = B29FD5003652342D6F4F2E05AD49BF14 /* sys.dic */; };
+		93AF65FCC6B535BD828C332C0EC9EDED /* connector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 269E8C2FD2D5E7BD11F95DA6E65EAE0F /* connector.cpp */; };
+		9446BACF8B646EBACD80BAD5827BC759 /* MecabNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CE50FEEDB4D5EFC1DE93B245883050 /* MecabNode.m */; };
+		9558D6BD6C9B430D43B011D69ACC9931 /* NEWS in Resources */ = {isa = PBXBuildFile; fileRef = 32440997B550CCA6830396993412A113 /* NEWS */; };
+		965D648480CDFF61D71BE240D5EE5146 /* MecabObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = C397A240636441EDE09BE38D970AA98E /* MecabObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97F70A2DE35DDA1AD3A3872A24E4C072 /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 24A534EEC030831CBEF91538BAA8F9C5 /* unk.dic */; };
+		9B05188695258F93317DA4EE01CA2B75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF078200D3CDAD0F3FB03ED9391A7F0 /* Foundation.framework */; };
+		9DA5F1CD86CA8D58CDD923BB6B653EE6 /* string_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DA8DB86002A62E4F548F9092EDC88C4 /* string_buffer.cpp */; };
+		9F5403400D416F3D6CB5164B9545D38C /* eval.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 672FD8CF1F15C8616A05165DBD3B7709 /* eval.cpp */; };
+		9FDF4D7299449A180B5BC653F1911BEF /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = F349857DE1BE07DD0BF6854ADA9D2C0A /* char.bin */; };
+		A05BFC1E530B36BF3D8171E9E4ECBB56 /* AUTHORS in Resources */ = {isa = PBXBuildFile; fileRef = 413AA7D068A5B0A520D048598F9A7C91 /* AUTHORS */; };
+		A55F183007EAE25847BA4260A64B48D1 /* AUTHORS in Resources */ = {isa = PBXBuildFile; fileRef = 6F297EEFB2452AA49C9C2CCE7391A67B /* AUTHORS */; };
+		A99DF96E77FCC425E1F75D6BA3A2EFA4 /* string_buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = B7AE60620872BA7ADB5F48DE3FA02F73 /* string_buffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ABE263D6B945381626CA8BDDFBA99A18 /* right-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 04E0A5266761D3C6C76DDA0E5E26CB6F /* right-id.def */; };
+		AC73C676C710D342346B9DB54235F57A /* viterbi.h in Headers */ = {isa = PBXBuildFile; fileRef = DB458138CAFBDEADF5E928186925ACF8 /* viterbi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ADB23A9EA6E790DAE09C9AE60B2BCADB /* mecab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF9E4F0205B771B865E15DFC6E559D /* mecab.cpp */; };
+		AFBF79FEFEA4020589449979B5CC545D /* feature_index.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC6DC21BAEBE3A0599E70A2201AFBDA2 /* feature_index.cpp */; };
+		B1E7C28C93E097D9F585085359742E98 /* iconv_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0DFDC8A534EB9C86EAEB9E60C22CF15 /* iconv_utils.cpp */; };
+		B2CB14299E69375EF9F091D442F22815 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 373E5559E20933F93A2DD08D2D0FCD21 /* utils.cpp */; };
+		B4E5A372333CECB34759802A878B7A76 /* feature_index.h in Headers */ = {isa = PBXBuildFile; fileRef = C9BB9CF50A65EA32C1915405F9279E44 /* feature_index.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B645C2D873D813FB29EE379417CA5032 /* mmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EE4DE2910988EC643AE50733531909 /* mmap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B718FD99E9C1D976B09D9847A3230CDD /* Pods-LibMecabSample-macos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C00BCBE3C62D2DCF302966A51A8E72F2 /* Pods-LibMecabSample-macos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B72EBF36EC243E4C9786CFFAC91F11B2 /* tokenizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B359EC780D2CD5F6EA0BD72D9199588F /* tokenizer.cpp */; };
+		B75E830ECC790FFA7CA8CF0DDAE92374 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9E50002BCFF2BBA247B87D390A0F40 /* utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B8A71BF63F45B86E48DD8A88A059D3BA /* nbest_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A824ADBCB82F0B3F10ADD8573E4ADEC /* nbest_generator.cpp */; };
+		C0575597D196FC88DE65495072CE9E06 /* writer.h in Headers */ = {isa = PBXBuildFile; fileRef = E77CC134CB46406A9796354DD96F9DD8 /* writer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C2F940FBDBDC3E5C808FD8A057FA8A72 /* lbfgs.h in Headers */ = {isa = PBXBuildFile; fileRef = D78C0589970EC1E758FFAEF5CA2C4BBC /* lbfgs.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C45B25B28C006AF65DC9C179AC12917C /* MecabNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 533AFA426A20ABFEC320496EE5C02CE9 /* MecabNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5D6274FB29C63DEE3455172353BE87B /* mecab-ko-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA95DC8DD2F52AC492557B2327FC8B6 /* mecab-ko-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C610C115E04F3BB5A9707412AEEA6617 /* dictionary_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D470E797F6A6DD9E152249C4D3375677 /* dictionary_generator.cpp */; };
+		C90B4CF7849DF3A1498D4913CEB1F1DC /* nbest_generator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D4C3CFAD472C6F87D55D44413BD170F /* nbest_generator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA98F1E31FB8F288DABE12BD945142FC /* char.bin in Resources */ = {isa = PBXBuildFile; fileRef = F349857DE1BE07DD0BF6854ADA9D2C0A /* char.bin */; };
+		CAC40D30382641BE72219696E243DCD2 /* viterbi.h in Headers */ = {isa = PBXBuildFile; fileRef = DB458138CAFBDEADF5E928186925ACF8 /* viterbi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CD5F6D5423FAB616552F947C89BCC169 /* Pods-LibMecabSample-macos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8468ABCEB56009D7879C8EA7DCB96F /* Pods-LibMecabSample-macos-dummy.m */; };
+		CD670E15D03646B0186A56DA2B1D8BA1 /* nbest_generator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D4C3CFAD472C6F87D55D44413BD170F /* nbest_generator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CD7DD3E29F1912517070142B21BC169F /* mecabrc in Resources */ = {isa = PBXBuildFile; fileRef = 013813EEC852727C8BDA386A2F7C2F3D /* mecabrc */; };
+		CE5BFBA305145C7FB84E9384ABDCA829 /* context_id.h in Headers */ = {isa = PBXBuildFile; fileRef = 0001DF9DAF3AADEF560E62E8A49A18A6 /* context_id.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D00A7AFC50AB9617974B7176D723C5AF /* unk.dic in Resources */ = {isa = PBXBuildFile; fileRef = 818CDFBD7268856DDB17CE10F2A4095E /* unk.dic */; };
+		D38A775EAD1F511EB7460CCF6EA7ABD1 /* GPL in Resources */ = {isa = PBXBuildFile; fileRef = CCC5B221D9C68FD5CC5F1AC62E2D2510 /* GPL */; };
+		D3DD7FF35E4E63C7D339880BCF915C76 /* darts.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C28EEB1E820C50AE2DAE36AF474BA8 /* darts.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D3F7EBA1574E5A58C136D1BC37E6B367 /* learner_node.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C69F7FD924EE7F5B5CBB9E7581A498 /* learner_node.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D74472B8362DD660D67DE1E88E61754A /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 9BC2D568F4CEFB37351171B054204878 /* pos-id.def */; };
+		D8D8C76B42C01FD376856DBA94D1E43E /* iconv_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6BBDA58426A461FAB6B7AA65A1771B /* iconv_utils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DA128F1E69ADB406479F16CFB7EE0A48 /* MecabObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = C397A240636441EDE09BE38D970AA98E /* MecabObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA4D6ABEAC78391F04ABFF39357DE0CA /* tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F3FB696FF5433A9E8E5159BF7438338 /* tokenizer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E2B4A378CA86D9F14FBABF2D366DCD4B /* dictionary_rewriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEECB7C35078F8ACFB6157DCD6BE7864 /* dictionary_rewriter.cpp */; };
+		E2D2A7C8E9BC5BBD50FC6AF6BC7443A2 /* tagger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48F1A3AAAE050055C8992307DAD2E2D3 /* tagger.cpp */; };
+		E535274B423D06710E7EB36C8168CD45 /* sys.dic in Resources */ = {isa = PBXBuildFile; fileRef = ED8E5FE37A4D6FE96E3D64268E13996D /* sys.dic */; };
+		E8417E8230824BA03AC7B37E5EAA1982 /* BSD in Resources */ = {isa = PBXBuildFile; fileRef = BB3CF3CF3BDBF147FC4BAE628327473E /* BSD */; };
+		EA2A70F4D119F62073AAF75CE901BD5C /* left-id.def in Resources */ = {isa = PBXBuildFile; fileRef = A33760DD2B420AB1D618F5478A7A0ADF /* left-id.def */; };
+		ED987B92FCD7503592346245EEC85223 /* context_id.h in Headers */ = {isa = PBXBuildFile; fileRef = 0001DF9DAF3AADEF560E62E8A49A18A6 /* context_id.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F66DB026EF8AE2C7E7EA6433FF36DC64 /* LGPL in Resources */ = {isa = PBXBuildFile; fileRef = F0A9D4BD6A8259F7CD01FD5BC6D0CB1F /* LGPL */; };
+		F6C6E3413CE9E9AFDBE08C70153E7DF2 /* libmecab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41BCCE9C8703BE1EC671DF7409C7A72A /* libmecab.cpp */; };
+		F885038D0AAD825AAFB70CFB27BEF3A5 /* pos-id.def in Resources */ = {isa = PBXBuildFile; fileRef = 9BC2D568F4CEFB37351171B054204878 /* pos-id.def */; };
+		F891F49F89EDE5AC478C939BD6148242 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF078200D3CDAD0F3FB03ED9391A7F0 /* Foundation.framework */; };
+		F8C51734702CB2A2F374CA3C7F4B0EEB /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B9015F16FC006A62E5B9E078B6F60FC /* config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F8F85E9BC502964DF1EAE530EC6282B3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 9B45CA15A78F7878C5746877B62946AC /* README */; };
+		F9AD820680F96453496C01F9ECE5673C /* matrix.bin in Resources */ = {isa = PBXBuildFile; fileRef = 35D14EBAC7BB4465FDC19F6502AD44D5 /* matrix.bin */; };
+		FB68FF709482261C512F73D9A3DEA77D /* viterbi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E52A600F682F2133616954C667206A46 /* viterbi.cpp */; };
+		FE64238A12441C5D204635C27BB4179B /* lbfgs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1AAE83B223440D575D46E4D2157340E /* lbfgs.cpp */; };
+		FFA4216AC0DB40AF3FB9143342D35BD0 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 9B45CA15A78F7878C5746877B62946AC /* README */; };
+		FFE6504BE1BAE541787076432A0478D8 /* tagger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48F1A3AAAE050055C8992307DAD2E2D3 /* tagger.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0583FBF0CA4A41A08CC1E779FE5C3B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A3CC969F047276CF5DFEB7949860EFA;
+			remoteInfo = "mecab-ko-dic-utf-8-macOS-mecab-ko-dic-utf-8";
+		};
+		096152AEE3A74B6F95AE99478CF7BE0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 037C6D2230236CCE88E8582CF4E994FB;
+			remoteInfo = "mecab-ko-dic-utf-8-iOS-mecab-ko-dic-utf-8";
+		};
+		15987D0EE1CCB230DC48A40ABB9E58A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3E5ECD27561423E29BDDAAE75D2C9C1;
+			remoteInfo = "mecab-naist-jdic-utf-8-macOS";
+		};
+		56E2C4F5570BE5A30FB97C6E55C70A93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72073CD66E17770DFE1DEEE2753119C0;
+			remoteInfo = "mecab-naist-jdic-utf-8-iOS";
+		};
+		798C38469E160D42AA09C623ECA1F4C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD25F61881833D5C06BDC67604488A4E;
+			remoteInfo = "mecab-ko-macOS";
+		};
+		85A4CEB490E51F8A0F89B81B0F0F79CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FE001291D4836BA59C6C964E71A582D;
+			remoteInfo = "mecab-naist-jdic-utf-8-iOS-mecab-naist-jdic-utf-8";
+		};
+		8E5D891AB76DB16D9C66596196841B83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CD9E15230AC1CDF68411A0493EF8F74;
+			remoteInfo = "mecab-ko-dic-utf-8-iOS";
+		};
+		A503580D0832E199F9E87B5BCF744052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CC1AE5011F284FDEB1AA2D0C6414728;
+			remoteInfo = "mecab-ko-iOS";
+		};
+		E0D1447008849D2AD1525806F82DB35E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22380DE027C9CF7B32E49B1D548562F5;
+			remoteInfo = "mecab-naist-jdic-utf-8-macOS-mecab-naist-jdic-utf-8";
+		};
+		F6C4AD0849D9ED6BA9DEA70B3A812B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B51706D04487B4A2B61E3F6570D5FEFB;
+			remoteInfo = "mecab-ko-dic-utf-8-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0001DF9DAF3AADEF560E62E8A49A18A6 /* context_id.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = context_id.h; sourceTree = "<group>"; };
+		013813EEC852727C8BDA386A2F7C2F3D /* mecabrc */ = {isa = PBXFileReference; includeInIndex = 1; name = mecabrc; path = Assets/mecabrc; sourceTree = "<group>"; };
+		04E0A5266761D3C6C76DDA0E5E26CB6F /* right-id.def */ = {isa = PBXFileReference; includeInIndex = 1; name = "right-id.def"; path = "bundleContents/right-id.def"; sourceTree = "<group>"; };
+		06EE49C39AB28C17485D91CE2D680ACA /* mecab-ko-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mecab-ko-iOS-prefix.pch"; sourceTree = "<group>"; };
+		07FCE700AB20F5E78A17A26C5B8290BA /* COPYING */ = {isa = PBXFileReference; includeInIndex = 1; name = COPYING; path = Assets/COPYING; sourceTree = "<group>"; };
+		0B4FDE4BFB6793DF70FA07C5DF5DC736 /* mecab-naist-jdic-utf-8-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "mecab-naist-jdic-utf-8-macOS.xcconfig"; path = "../mecab-naist-jdic-utf-8-macOS/mecab-naist-jdic-utf-8-macOS.xcconfig"; sourceTree = "<group>"; };
+		0B809BFAE6C74CFAF116C525C9DEF854 /* mecab-naist-jdic-utf-8.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "mecab-naist-jdic-utf-8.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0CB43FEFBB37E8A0A1869F6BD60DF8B6 /* Pods-LibMecabSample-macos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LibMecabSample-macos.release.xcconfig"; sourceTree = "<group>"; };
+		0F45D8B8A73E2A54F2C481572D720C77 /* Pods-LibMecabSample-macos-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LibMecabSample-macos-resources.sh"; sourceTree = "<group>"; };
+		14F5914510F0291DC64D165DFBDB7C71 /* Pods-LibMecabSample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LibMecabSample-Info.plist"; sourceTree = "<group>"; };
+		16BCA2587BE27E9B9732C3CCCE1CF73A /* char_property.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = char_property.cpp; sourceTree = "<group>"; };
+		1FBF89C97E6876BAEE9295A26A1BCD50 /* param.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = param.h; sourceTree = "<group>"; };
+		2033D8213E84F0E92A5C69D86E1FEDA8 /* MecabObjC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MecabObjC.m; sourceTree = "<group>"; };
+		206D9B9A68A4CD77386AA9DEDE361134 /* char.bin */ = {isa = PBXFileReference; includeInIndex = 1; name = char.bin; path = bundleContents/char.bin; sourceTree = "<group>"; };
+		20B5FAE313785C8003FCC1B8F466100B /* Pods-LibMecabSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LibMecabSample-resources.sh"; sourceTree = "<group>"; };
+		21EE4DE2910988EC643AE50733531909 /* mmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mmap.h; sourceTree = "<group>"; };
+		224FC45ADB15530CD482AB16DB9117BA /* dicrc */ = {isa = PBXFileReference; includeInIndex = 1; name = dicrc; path = bundleContents/dicrc; sourceTree = "<group>"; };
+		231F0D60454AF18C598F74BD09224E64 /* mecab-ko-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "mecab-ko-macOS-Info.plist"; path = "../mecab-ko-macOS/mecab-ko-macOS-Info.plist"; sourceTree = "<group>"; };
+		24A534EEC030831CBEF91538BAA8F9C5 /* unk.dic */ = {isa = PBXFileReference; includeInIndex = 1; name = unk.dic; path = bundleContents/unk.dic; sourceTree = "<group>"; };
+		269E8C2FD2D5E7BD11F95DA6E65EAE0F /* connector.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = connector.cpp; sourceTree = "<group>"; };
+		27EDA9873BE0C915A6605C6BD4969FF5 /* freelist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = freelist.h; sourceTree = "<group>"; };
+		2A4139BC309C9D677E49708125F48270 /* Pods_LibMecabSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LibMecabSample.framework; path = "Pods-LibMecabSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30CE50FEEDB4D5EFC1DE93B245883050 /* MecabNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MecabNode.m; sourceTree = "<group>"; };
+		30E0833F774141EB04DC79D0F4664C87 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		32440997B550CCA6830396993412A113 /* NEWS */ = {isa = PBXFileReference; includeInIndex = 1; name = NEWS; path = Assets/NEWS; sourceTree = "<group>"; };
+		35D14EBAC7BB4465FDC19F6502AD44D5 /* matrix.bin */ = {isa = PBXFileReference; includeInIndex = 1; name = matrix.bin; path = bundleContents/matrix.bin; sourceTree = "<group>"; };
+		373E5559E20933F93A2DD08D2D0FCD21 /* utils.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = utils.cpp; sourceTree = "<group>"; };
+		385E73941D72A782A3CCB0763DC9EC62 /* ResourceBundle-mecab-naist-jdic-utf-8-mecab-naist-jdic-utf-8-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-mecab-naist-jdic-utf-8-mecab-naist-jdic-utf-8-iOS-Info.plist"; sourceTree = "<group>"; };
+		3A824ADBCB82F0B3F10ADD8573E4ADEC /* nbest_generator.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = nbest_generator.cpp; sourceTree = "<group>"; };
+		3C7B1E16A918904AA80FF11780470774 /* mecab_ko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = mecab_ko.framework; path = "mecab-ko-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E80F6335A73E5FEDA45EE21FA535B05 /* COPYING */ = {isa = PBXFileReference; includeInIndex = 1; name = COPYING; path = bundleContents/COPYING; sourceTree = "<group>"; };
+		4004F02523AD0E4E6FAB7F02452E9E31 /* rewrite.def */ = {isa = PBXFileReference; includeInIndex = 1; name = rewrite.def; path = bundleContents/rewrite.def; sourceTree = "<group>"; };
+		40FDA9CF3289E5501858A7283463E1F9 /* dictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dictionary.h; sourceTree = "<group>"; };
+		41306CB02035BC680E4AF10D5F23FDA8 /* mecab-ko-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "mecab-ko-macOS.xcconfig"; path = "../mecab-ko-macOS/mecab-ko-macOS.xcconfig"; sourceTree = "<group>"; };
+		413AA7D068A5B0A520D048598F9A7C91 /* AUTHORS */ = {isa = PBXFileReference; includeInIndex = 1; name = AUTHORS; path = bundleContents/AUTHORS; sourceTree = "<group>"; };
+		41BCCE9C8703BE1EC671DF7409C7A72A /* libmecab.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = libmecab.cpp; sourceTree = "<group>"; };
+		48E0CAD5698AC3DD537BE46148591CEE /* learner.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = learner.cpp; sourceTree = "<group>"; };
+		48F1A3AAAE050055C8992307DAD2E2D3 /* tagger.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = tagger.cpp; sourceTree = "<group>"; };
+		4B9015F16FC006A62E5B9E078B6F60FC /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		4CCF9E4F0205B771B865E15DFC6E559D /* mecab.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = mecab.cpp; sourceTree = "<group>"; };
+		4D4C3CFAD472C6F87D55D44413BD170F /* nbest_generator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = nbest_generator.h; sourceTree = "<group>"; };
+		4F3FB696FF5433A9E8E5159BF7438338 /* tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = tokenizer.h; sourceTree = "<group>"; };
+		50C69F7FD924EE7F5B5CBB9E7581A498 /* learner_node.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = learner_node.h; sourceTree = "<group>"; };
+		533AFA426A20ABFEC320496EE5C02CE9 /* MecabNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MecabNode.h; sourceTree = "<group>"; };
+		54AEB297BF463B7066D96E01FD3BC140 /* rewrite.def */ = {isa = PBXFileReference; includeInIndex = 1; name = rewrite.def; path = bundleContents/rewrite.def; sourceTree = "<group>"; };
+		5854A824471BA5D2FD2741000A95AD52 /* right-id.def */ = {isa = PBXFileReference; includeInIndex = 1; name = "right-id.def"; path = "bundleContents/right-id.def"; sourceTree = "<group>"; };
+		5D9E50002BCFF2BBA247B87D390A0F40 /* utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		5EB212A0E5958F64C022283021CB86B5 /* matrix.bin */ = {isa = PBXFileReference; includeInIndex = 1; name = matrix.bin; path = bundleContents/matrix.bin; sourceTree = "<group>"; };
+		5F508B9D3E693234A82D8153C508C2EA /* Pods-LibMecabSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LibMecabSample-frameworks.sh"; sourceTree = "<group>"; };
+		60D286497A08C75B0D24010DE4EB8CD7 /* dictionary_compiler.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = dictionary_compiler.cpp; sourceTree = "<group>"; };
+		62B625B5630DE0FF3F8778255A451609 /* Pods-LibMecabSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LibMecabSample.release.xcconfig"; sourceTree = "<group>"; };
+		6426A59420E56F17EB3ED6DF2F8735AB /* writer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = writer.cpp; sourceTree = "<group>"; };
+		644A5F3345D29B3EA3F8972F7691EE0D /* mecab-ko-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "mecab-ko-macOS.modulemap"; path = "../mecab-ko-macOS/mecab-ko-macOS.modulemap"; sourceTree = "<group>"; };
+		672FD8CF1F15C8616A05165DBD3B7709 /* eval.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = eval.cpp; sourceTree = "<group>"; };
+		6A97904A6E8D0A4BFBD8AD8CFD1EFAA0 /* winmain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = winmain.h; sourceTree = "<group>"; };
+		6AEB9E551D3BB108DDB3BAFBA73EFB44 /* learner_tagger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = learner_tagger.h; sourceTree = "<group>"; };
+		6B7179184DA512B3FFBBC09662D4560D /* Pods-LibMecabSample-macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LibMecabSample-macos.debug.xcconfig"; sourceTree = "<group>"; };
+		6E186E6D2B4FD94E49BD1898DEB1B914 /* ResourceBundle-mecab-naist-jdic-utf-8-mecab-naist-jdic-utf-8-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ResourceBundle-mecab-naist-jdic-utf-8-mecab-naist-jdic-utf-8-macOS-Info.plist"; path = "../mecab-naist-jdic-utf-8-macOS/ResourceBundle-mecab-naist-jdic-utf-8-mecab-naist-jdic-utf-8-macOS-Info.plist"; sourceTree = "<group>"; };
+		6F297EEFB2452AA49C9C2CCE7391A67B /* AUTHORS */ = {isa = PBXFileReference; includeInIndex = 1; name = AUTHORS; path = Assets/AUTHORS; sourceTree = "<group>"; };
+		6FF546DAB2950D1CB7C378CBDD7353F5 /* Pods-LibMecabSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LibMecabSample-dummy.m"; sourceTree = "<group>"; };
+		72E9479BD9913BDA0F1C5052F42C72CF /* Pods-LibMecabSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LibMecabSample.modulemap"; sourceTree = "<group>"; };
+		73AEF4E6A9D4CE60298D829322F8A61F /* dictionary_rewriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dictionary_rewriter.h; sourceTree = "<group>"; };
+		799BC1668121A52F4589C673CC456293 /* mecab_ko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = mecab_ko.framework; path = "mecab-ko-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79AAC7B15E26DEA734844FF0C57ABC82 /* common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		7A43F415A37A41C9186CAD62A5126A31 /* dicrc */ = {isa = PBXFileReference; includeInIndex = 1; name = dicrc; path = bundleContents/dicrc; sourceTree = "<group>"; };
+		7B5D00BD3A9713D57DD9B1654639B0D4 /* mecab-ko-dic-utf-8.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "mecab-ko-dic-utf-8.bundle"; path = "mecab-ko-dic-utf-8-iOS-mecab-ko-dic-utf-8.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C4CB084E15EC2EEC506D5887EBAE928 /* Pods-LibMecabSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LibMecabSample-acknowledgements.plist"; sourceTree = "<group>"; };
+		7E27A651C3D2C3DFF3B9D5CF7842113D /* left-id.def */ = {isa = PBXFileReference; includeInIndex = 1; name = "left-id.def"; path = "bundleContents/left-id.def"; sourceTree = "<group>"; };
+		818CDFBD7268856DDB17CE10F2A4095E /* unk.dic */ = {isa = PBXFileReference; includeInIndex = 1; name = unk.dic; path = bundleContents/unk.dic; sourceTree = "<group>"; };
+		841C96F3AE7A8CBCCDAC5CE5F272AB63 /* mecab-ko-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "mecab-ko-macOS-umbrella.h"; path = "../mecab-ko-macOS/mecab-ko-macOS-umbrella.h"; sourceTree = "<group>"; };
+		8A5A7EF7376736F6D8564E49F949EA9F /* mecab-ko-dic-utf-8-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "mecab-ko-dic-utf-8-iOS.xcconfig"; sourceTree = "<group>"; };
+		8ABFE6730DBF88A882BC4BAFDC5D7310 /* Pods-LibMecabSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LibMecabSample.debug.xcconfig"; sourceTree = "<group>"; };
+		8F0F00D94AE2DFAAC0B303410B367363 /* ResourceBundle-mecab-ko-dic-utf-8-mecab-ko-dic-utf-8-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "ResourceBundle-mecab-ko-dic-utf-8-mecab-ko-dic-utf-8-macOS-Info.plist"; path = "../mecab-ko-dic-utf-8-macOS/ResourceBundle-mecab-ko-dic-utf-8-mecab-ko-dic-utf-8-macOS-Info.plist"; sourceTree = "<group>"; };
+		8F8468ABCEB56009D7879C8EA7DCB96F /* Pods-LibMecabSample-macos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LibMecabSample-macos-dummy.m"; sourceTree = "<group>"; };
+		915531B866E0817AA6372047AA8DE91E /* Pods-LibMecabSample-macos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LibMecabSample-macos-Info.plist"; sourceTree = "<group>"; };
+		9168989BC7F8A41D0C90304DB11D1879 /* mecab-naist-jdic-utf-8.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "mecab-naist-jdic-utf-8.bundle"; path = "mecab-naist-jdic-utf-8-macOS-mecab-naist-jdic-utf-8.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9650F4D7ECB21CC158B993BD7755EDF2 /* param.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = param.cpp; sourceTree = "<group>"; };
+		9A13305658B1306F6E076D2FCD72633A /* mecab-ko-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "mecab-ko-macOS-dummy.m"; path = "../mecab-ko-macOS/mecab-ko-macOS-dummy.m"; sourceTree = "<group>"; };
+		9B45CA15A78F7878C5746877B62946AC /* README */ = {isa = PBXFileReference; includeInIndex = 1; name = README; path = Assets/README; sourceTree = "<group>"; };
+		9BC2D568F4CEFB37351171B054204878 /* pos-id.def */ = {isa = PBXFileReference; includeInIndex = 1; name = "pos-id.def"; path = "bundleContents/pos-id.def"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DA8DB86002A62E4F548F9092EDC88C4 /* string_buffer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = string_buffer.cpp; sourceTree = "<group>"; };
+		9E5D6D1AC8D8C16A2B2BC68547673894 /* mecab-ko-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "mecab-ko-macOS-prefix.pch"; path = "../mecab-ko-macOS/mecab-ko-macOS-prefix.pch"; sourceTree = "<group>"; };
+		A33760DD2B420AB1D618F5478A7A0ADF /* left-id.def */ = {isa = PBXFileReference; includeInIndex = 1; name = "left-id.def"; path = "bundleContents/left-id.def"; sourceTree = "<group>"; };
+		A81CA4F50708A63B959CD3D265FEA79C /* COPYING */ = {isa = PBXFileReference; includeInIndex = 1; name = COPYING; path = bundleContents/COPYING; sourceTree = "<group>"; };
+		A91D0DC79D434D7663D12FC336A7A34E /* Pods_LibMecabSample_macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LibMecabSample_macos.framework; path = "Pods-LibMecabSample-macos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABBE47E4438C55B8282A4774D00A1D14 /* ResourceBundle-mecab-ko-dic-utf-8-mecab-ko-dic-utf-8-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-mecab-ko-dic-utf-8-mecab-ko-dic-utf-8-iOS-Info.plist"; sourceTree = "<group>"; };
+		AC77C43ACB367F65E36122E187D66AE4 /* mecab-ko-dic-utf-8.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "mecab-ko-dic-utf-8.bundle"; path = "mecab-ko-dic-utf-8-macOS-mecab-ko-dic-utf-8.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD11A3D618E50A6039E4B924ADF5FC82 /* dictionary.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = dictionary.cpp; sourceTree = "<group>"; };
+		AF3EDEE3A0BC5D8673912DB582ACF053 /* Pods-LibMecabSample-macos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LibMecabSample-macos-frameworks.sh"; sourceTree = "<group>"; };
+		B147B649B0CF2F10C94EEA1EECF623B6 /* Pods-LibMecabSample-macos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LibMecabSample-macos.modulemap"; sourceTree = "<group>"; };
+		B1F5AD77935D036A4D5BCB9D217FC453 /* ChangeLog */ = {isa = PBXFileReference; includeInIndex = 1; name = ChangeLog; path = Assets/ChangeLog; sourceTree = "<group>"; };
+		B29FD5003652342D6F4F2E05AD49BF14 /* sys.dic */ = {isa = PBXFileReference; includeInIndex = 1; name = sys.dic; path = bundleContents/sys.dic; sourceTree = "<group>"; };
+		B359EC780D2CD5F6EA0BD72D9199588F /* tokenizer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = tokenizer.cpp; sourceTree = "<group>"; };
+		B51F2960BA24CC7C0DD50D9E6106DE8B /* Pods-LibMecabSample-macos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LibMecabSample-macos-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B57BB3FA7F7E9071E06399605EB5191C /* connector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = connector.h; sourceTree = "<group>"; };
+		B6C28EEB1E820C50AE2DAE36AF474BA8 /* darts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = darts.h; sourceTree = "<group>"; };
+		B7AE60620872BA7ADB5F48DE3FA02F73 /* string_buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = string_buffer.h; sourceTree = "<group>"; };
+		BAEF91554E0E40D3F30BA8E64762CF55 /* pos-id.def */ = {isa = PBXFileReference; includeInIndex = 1; name = "pos-id.def"; path = "bundleContents/pos-id.def"; sourceTree = "<group>"; };
+		BB3CF3CF3BDBF147FC4BAE628327473E /* BSD */ = {isa = PBXFileReference; includeInIndex = 1; name = BSD; path = Assets/BSD; sourceTree = "<group>"; };
+		BD6C7981DB1A605927189F2E0791585E /* ucs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ucs.h; sourceTree = "<group>"; };
+		BD85622DB9282AD58FB2F41CAD87A151 /* context_id.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = context_id.cpp; sourceTree = "<group>"; };
+		C00BCBE3C62D2DCF302966A51A8E72F2 /* Pods-LibMecabSample-macos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LibMecabSample-macos-umbrella.h"; sourceTree = "<group>"; };
+		C0DFDC8A534EB9C86EAEB9E60C22CF15 /* iconv_utils.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = iconv_utils.cpp; sourceTree = "<group>"; };
+		C397A240636441EDE09BE38D970AA98E /* MecabObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MecabObjC.h; sourceTree = "<group>"; };
+		C6183C2E4AC53B27A718CE20BDEF3293 /* mecab-naist-jdic-utf-8-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "mecab-naist-jdic-utf-8-iOS.xcconfig"; sourceTree = "<group>"; };
+		C658D0AE51C3279F338595B19ADA0CEA /* mecab-ko.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "mecab-ko.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C9BB9CF50A65EA32C1915405F9279E44 /* feature_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = feature_index.h; sourceTree = "<group>"; };
+		CAF078200D3CDAD0F3FB03ED9391A7F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC6DC21BAEBE3A0599E70A2201AFBDA2 /* feature_index.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = feature_index.cpp; sourceTree = "<group>"; };
+		CCC5B221D9C68FD5CC5F1AC62E2D2510 /* GPL */ = {isa = PBXFileReference; includeInIndex = 1; name = GPL; path = Assets/GPL; sourceTree = "<group>"; };
+		CD416374CF5F79947A2BB77992A91476 /* learner_tagger.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = learner_tagger.cpp; sourceTree = "<group>"; };
+		CF6A3C1095DD274468360082F452DE0B /* mecab-naist-jdic-utf-8.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "mecab-naist-jdic-utf-8.bundle"; path = "mecab-naist-jdic-utf-8-iOS-mecab-naist-jdic-utf-8.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1820B4262E92075B0E27E24E31DB4AF /* stream_wrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = stream_wrapper.h; sourceTree = "<group>"; };
+		D1C02B468CA24455CD0B4FD2E58544FE /* char_property.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = char_property.h; sourceTree = "<group>"; };
+		D26F2783CB27DE7407D7A3A9B1745B92 /* mecab-ko-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "mecab-ko-iOS.xcconfig"; sourceTree = "<group>"; };
+		D470E797F6A6DD9E152249C4D3375677 /* dictionary_generator.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = dictionary_generator.cpp; sourceTree = "<group>"; };
+		D78C0589970EC1E758FFAEF5CA2C4BBC /* lbfgs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = lbfgs.h; sourceTree = "<group>"; };
+		DB458138CAFBDEADF5E928186925ACF8 /* viterbi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = viterbi.h; sourceTree = "<group>"; };
+		DD39A2D3803A0FF462C802C37CF7D8AD /* Pods-LibMecabSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LibMecabSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DFC89D210520E94D69BA479EF871844A /* mecab-ko-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "mecab-ko-iOS-dummy.m"; sourceTree = "<group>"; };
+		E2E1C17E069C6EDCAEA868E06D1FC250 /* mecab-ko-dic-utf-8.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "mecab-ko-dic-utf-8.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E35D9D3FAF3D5597D2E9CEB284D59BBA /* scoped_ptr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = scoped_ptr.h; sourceTree = "<group>"; };
+		E52A600F682F2133616954C667206A46 /* viterbi.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = viterbi.cpp; sourceTree = "<group>"; };
+		E5CA3682B977A184AB5126AC27635D76 /* mecab-ko-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "mecab-ko-iOS.modulemap"; sourceTree = "<group>"; };
+		E5DE227873F4E41704CC89EFB043D988 /* mecab-ko-dic-utf-8-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "mecab-ko-dic-utf-8-macOS.xcconfig"; path = "../mecab-ko-dic-utf-8-macOS/mecab-ko-dic-utf-8-macOS.xcconfig"; sourceTree = "<group>"; };
+		E5FB9619692042B4BB2E50ED2662E965 /* thread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		E77CC134CB46406A9796354DD96F9DD8 /* writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		E83469A88DD0C9E5B6B4D27872E43E39 /* mecab-ko-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "mecab-ko-iOS-Info.plist"; sourceTree = "<group>"; };
+		EAA95DC8DD2F52AC492557B2327FC8B6 /* mecab-ko-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mecab-ko-iOS-umbrella.h"; sourceTree = "<group>"; };
+		EC16372028443AEDC2159B9A78D9578F /* Pods-LibMecabSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LibMecabSample-umbrella.h"; sourceTree = "<group>"; };
+		ED8E5FE37A4D6FE96E3D64268E13996D /* sys.dic */ = {isa = PBXFileReference; includeInIndex = 1; name = sys.dic; path = bundleContents/sys.dic; sourceTree = "<group>"; };
+		F0A9D4BD6A8259F7CD01FD5BC6D0CB1F /* LGPL */ = {isa = PBXFileReference; includeInIndex = 1; name = LGPL; path = Assets/LGPL; sourceTree = "<group>"; };
+		F1AAE83B223440D575D46E4D2157340E /* lbfgs.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = lbfgs.cpp; sourceTree = "<group>"; };
+		F291387D575F173E3F780804CA13B23E /* Pods-LibMecabSample-macos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LibMecabSample-macos-acknowledgements.plist"; sourceTree = "<group>"; };
+		F349857DE1BE07DD0BF6854ADA9D2C0A /* char.bin */ = {isa = PBXFileReference; includeInIndex = 1; name = char.bin; path = bundleContents/char.bin; sourceTree = "<group>"; };
+		F5AB2801C9CA5FCFDBB7C7E0FFA85F4E /* ucstable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ucstable.h; sourceTree = "<group>"; };
+		F7881DB24188399D800CFC526073D876 /* mecab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = mecab.h; sourceTree = "<group>"; };
+		FE6BBDA58426A461FAB6B7AA65A1771B /* iconv_utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = iconv_utils.h; sourceTree = "<group>"; };
+		FEECB7C35078F8ACFB6157DCD6BE7864 /* dictionary_rewriter.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = dictionary_rewriter.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15C7A653351EDC52DFBEEDFF4A7819D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A123E62DC86ED12A0EFB50991BC9680 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2306E547886BEBB6BFCEA6F562C0FD9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45F87AF9A3A433044966F32C19A44563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BE7875FCE042626F6619753D02BD8A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F891F49F89EDE5AC478C939BD6148242 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A9D0FE450EC368DF62B00B3EF91DBF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		943E212A70E49809674516F830F9A333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC7A811B9EEBAF401A7EA35246AFBC4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B05188695258F93317DA4EE01CA2B75 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA800EADE64E71C5DDECB546C926E4F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA6536796CB6CF100635FCB30483B9C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15D46465E4D06E23BC6A6F0243F80ADF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0B809BFAE6C74CFAF116C525C9DEF854 /* mecab-naist-jdic-utf-8.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		23AEE3BD7E35D75E0E34EF6B270B0C60 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				413AA7D068A5B0A520D048598F9A7C91 /* AUTHORS */,
+				206D9B9A68A4CD77386AA9DEDE361134 /* char.bin */,
+				3E80F6335A73E5FEDA45EE21FA535B05 /* COPYING */,
+				7A43F415A37A41C9186CAD62A5126A31 /* dicrc */,
+				A33760DD2B420AB1D618F5478A7A0ADF /* left-id.def */,
+				35D14EBAC7BB4465FDC19F6502AD44D5 /* matrix.bin */,
+				BAEF91554E0E40D3F30BA8E64762CF55 /* pos-id.def */,
+				54AEB297BF463B7066D96E01FD3BC140 /* rewrite.def */,
+				5854A824471BA5D2FD2741000A95AD52 /* right-id.def */,
+				B29FD5003652342D6F4F2E05AD49BF14 /* sys.dic */,
+				24A534EEC030831CBEF91538BAA8F9C5 /* unk.dic */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		27F7F8A45C5017D44DB0462891B6D840 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				533AFA426A20ABFEC320496EE5C02CE9 /* MecabNode.h */,
+				30CE50FEEDB4D5EFC1DE93B245883050 /* MecabNode.m */,
+				C397A240636441EDE09BE38D970AA98E /* MecabObjC.h */,
+				2033D8213E84F0E92A5C69D86E1FEDA8 /* MecabObjC.m */,
+			);
+			name = ios;
+			path = ios;
+			sourceTree = "<group>";
+		};
+		2CF860DDD4DD05F727E7D3F18D3FD342 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5CA3682B977A184AB5126AC27635D76 /* mecab-ko-iOS.modulemap */,
+				D26F2783CB27DE7407D7A3A9B1745B92 /* mecab-ko-iOS.xcconfig */,
+				DFC89D210520E94D69BA479EF871844A /* mecab-ko-iOS-dummy.m */,
+				E83469A88DD0C9E5B6B4D27872E43E39 /* mecab-ko-iOS-Info.plist */,
+				06EE49C39AB28C17485D91CE2D680ACA /* mecab-ko-iOS-prefix.pch */,
+				EAA95DC8DD2F52AC492557B2327FC8B6 /* mecab-ko-iOS-umbrella.h */,
+				644A5F3345D29B3EA3F8972F7691EE0D /* mecab-ko-macOS.modulemap */,
+				41306CB02035BC680E4AF10D5F23FDA8 /* mecab-ko-macOS.xcconfig */,
+				9A13305658B1306F6E076D2FCD72633A /* mecab-ko-macOS-dummy.m */,
+				231F0D60454AF18C598F74BD09224E64 /* mecab-ko-macOS-Info.plist */,
+				9E5D6D1AC8D8C16A2B2BC68547673894 /* mecab-ko-macOS-prefix.pch */,
+				841C96F3AE7A8CBCCDAC5CE5F272AB63 /* mecab-ko-macOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../LibMecabSample/Pods/Target Support Files/mecab-ko-iOS";
+			sourceTree = "<group>";
+		};
+		301E38D301EE45A4A9F58C751BB85ADD /* mecab-ko-dic-utf-8 */ = {
+			isa = PBXGroup;
+			children = (
+				DDC9C23E26B3C5371694EFCA685F74BB /* Pod */,
+				23AEE3BD7E35D75E0E34EF6B270B0C60 /* Resources */,
+				76B50E610188BC6E5D73E19CE617B9B9 /* Support Files */,
+			);
+			name = "mecab-ko-dic-utf-8";
+			path = "../../mecab-ko-dic-utf-8";
+			sourceTree = "<group>";
+		};
+		3A922A1DA0C643ED977B1F50AD6119FE /* Pods-LibMecabSample-macos */ = {
+			isa = PBXGroup;
+			children = (
+				B147B649B0CF2F10C94EEA1EECF623B6 /* Pods-LibMecabSample-macos.modulemap */,
+				B51F2960BA24CC7C0DD50D9E6106DE8B /* Pods-LibMecabSample-macos-acknowledgements.markdown */,
+				F291387D575F173E3F780804CA13B23E /* Pods-LibMecabSample-macos-acknowledgements.plist */,
+				8F8468ABCEB56009D7879C8EA7DCB96F /* Pods-LibMecabSample-macos-dummy.m */,
+				AF3EDEE3A0BC5D8673912DB582ACF053 /* Pods-LibMecabSample-macos-frameworks.sh */,
+				915531B866E0817AA6372047AA8DE91E /* Pods-LibMecabSample-macos-Info.plist */,
+				0F45D8B8A73E2A54F2C481572D720C77 /* Pods-LibMecabSample-macos-resources.sh */,
+				C00BCBE3C62D2DCF302966A51A8E72F2 /* Pods-LibMecabSample-macos-umbrella.h */,
+				6B7179184DA512B3FFBBC09662D4560D /* Pods-LibMecabSample-macos.debug.xcconfig */,
+				0CB43FEFBB37E8A0A1869F6BD60DF8B6 /* Pods-LibMecabSample-macos.release.xcconfig */,
+			);
+			name = "Pods-LibMecabSample-macos";
+			path = "Target Support Files/Pods-LibMecabSample-macos";
+			sourceTree = "<group>";
+		};
+		3F8A24B87B4D62BA127BA8D3FE734D3E /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				30E0833F774141EB04DC79D0F4664C87 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		4D38877E9558452688A41447ED0AD3E7 /* mecab-ko */ = {
+			isa = PBXGroup;
+			children = (
+				BDE031E4DA7D40B154A0E2765DFE0FCA /* Classes */,
+				27F7F8A45C5017D44DB0462891B6D840 /* ios */,
+				C2BEE6772F13D5F4727D41BB38CB61BE /* Pod */,
+				B41B50AA7CC07E112012D96E8AABCDF2 /* Resources */,
+				2CF860DDD4DD05F727E7D3F18D3FD342 /* Support Files */,
+			);
+			name = "mecab-ko";
+			path = "../../mecab-ko";
+			sourceTree = "<group>";
+		};
+		4EDC20B56A0B9A8564E1FCEA191C83C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A04419A5AE537C90597A7C474BBB87C9 /* iOS */,
+				3F8A24B87B4D62BA127BA8D3FE734D3E /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5ECE5D877367F7FD7724835077EAF035 /* Pods-LibMecabSample */ = {
+			isa = PBXGroup;
+			children = (
+				72E9479BD9913BDA0F1C5052F42C72CF /* Pods-LibMecabSample.modulemap */,
+				DD39A2D3803A0FF462C802C37CF7D8AD /* Pods-LibMecabSample-acknowledgements.markdown */,
+				7C4CB084E15EC2EEC506D5887EBAE928 /* Pods-LibMecabSample-acknowledgements.plist */,
+				6FF546DAB2950D1CB7C378CBDD7353F5 /* Pods-LibMecabSample-dummy.m */,
+				5F508B9D3E693234A82D8153C508C2EA /* Pods-LibMecabSample-frameworks.sh */,
+				14F5914510F0291DC64D165DFBDB7C71 /* Pods-LibMecabSample-Info.plist */,
+				20B5FAE313785C8003FCC1B8F466100B /* Pods-LibMecabSample-resources.sh */,
+				EC16372028443AEDC2159B9A78D9578F /* Pods-LibMecabSample-umbrella.h */,
+				8ABFE6730DBF88A882BC4BAFDC5D7310 /* Pods-LibMecabSample.debug.xcconfig */,
+				62B625B5630DE0FF3F8778255A451609 /* Pods-LibMecabSample.release.xcconfig */,
+			);
+			name = "Pods-LibMecabSample";
+			path = "Target Support Files/Pods-LibMecabSample";
+			sourceTree = "<group>";
+		};
+		76B50E610188BC6E5D73E19CE617B9B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A5A7EF7376736F6D8564E49F949EA9F /* mecab-ko-dic-utf-8-iOS.xcconfig */,
+				E5DE227873F4E41704CC89EFB043D988 /* mecab-ko-dic-utf-8-macOS.xcconfig */,
+				ABBE47E4438C55B8282A4774D00A1D14 /* ResourceBundle-mecab-ko-dic-utf-8-mecab-ko-dic-utf-8-iOS-Info.plist */,
+				8F0F00D94AE2DFAAC0B303410B367363 /* ResourceBundle-mecab-ko-dic-utf-8-mecab-ko-dic-utf-8-macOS-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../LibMecabSample/Pods/Target Support Files/mecab-ko-dic-utf-8-iOS";
+			sourceTree = "<group>";
+		};
+		978FC2DC951FC579C1FE3F4D8C77EBD3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5ECE5D877367F7FD7724835077EAF035 /* Pods-LibMecabSample */,
+				3A922A1DA0C643ED977B1F50AD6119FE /* Pods-LibMecabSample-macos */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9E5FF979EB4A06D428EAAE7446462F09 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D38877E9558452688A41447ED0AD3E7 /* mecab-ko */,
+				301E38D301EE45A4A9F58C751BB85ADD /* mecab-ko-dic-utf-8 */,
+				FA0074D045CA923B9AC3EE4A3242AD69 /* mecab-naist-jdic-utf-8 */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A04419A5AE537C90597A7C474BBB87C9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CAF078200D3CDAD0F3FB03ED9391A7F0 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B41B50AA7CC07E112012D96E8AABCDF2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6F297EEFB2452AA49C9C2CCE7391A67B /* AUTHORS */,
+				BB3CF3CF3BDBF147FC4BAE628327473E /* BSD */,
+				B1F5AD77935D036A4D5BCB9D217FC453 /* ChangeLog */,
+				07FCE700AB20F5E78A17A26C5B8290BA /* COPYING */,
+				CCC5B221D9C68FD5CC5F1AC62E2D2510 /* GPL */,
+				F0A9D4BD6A8259F7CD01FD5BC6D0CB1F /* LGPL */,
+				013813EEC852727C8BDA386A2F7C2F3D /* mecabrc */,
+				32440997B550CCA6830396993412A113 /* NEWS */,
+				9B45CA15A78F7878C5746877B62946AC /* README */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BDE031E4DA7D40B154A0E2765DFE0FCA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				16BCA2587BE27E9B9732C3CCCE1CF73A /* char_property.cpp */,
+				D1C02B468CA24455CD0B4FD2E58544FE /* char_property.h */,
+				79AAC7B15E26DEA734844FF0C57ABC82 /* common.h */,
+				4B9015F16FC006A62E5B9E078B6F60FC /* config.h */,
+				269E8C2FD2D5E7BD11F95DA6E65EAE0F /* connector.cpp */,
+				B57BB3FA7F7E9071E06399605EB5191C /* connector.h */,
+				BD85622DB9282AD58FB2F41CAD87A151 /* context_id.cpp */,
+				0001DF9DAF3AADEF560E62E8A49A18A6 /* context_id.h */,
+				B6C28EEB1E820C50AE2DAE36AF474BA8 /* darts.h */,
+				AD11A3D618E50A6039E4B924ADF5FC82 /* dictionary.cpp */,
+				40FDA9CF3289E5501858A7283463E1F9 /* dictionary.h */,
+				60D286497A08C75B0D24010DE4EB8CD7 /* dictionary_compiler.cpp */,
+				D470E797F6A6DD9E152249C4D3375677 /* dictionary_generator.cpp */,
+				FEECB7C35078F8ACFB6157DCD6BE7864 /* dictionary_rewriter.cpp */,
+				73AEF4E6A9D4CE60298D829322F8A61F /* dictionary_rewriter.h */,
+				672FD8CF1F15C8616A05165DBD3B7709 /* eval.cpp */,
+				CC6DC21BAEBE3A0599E70A2201AFBDA2 /* feature_index.cpp */,
+				C9BB9CF50A65EA32C1915405F9279E44 /* feature_index.h */,
+				27EDA9873BE0C915A6605C6BD4969FF5 /* freelist.h */,
+				C0DFDC8A534EB9C86EAEB9E60C22CF15 /* iconv_utils.cpp */,
+				FE6BBDA58426A461FAB6B7AA65A1771B /* iconv_utils.h */,
+				F1AAE83B223440D575D46E4D2157340E /* lbfgs.cpp */,
+				D78C0589970EC1E758FFAEF5CA2C4BBC /* lbfgs.h */,
+				48E0CAD5698AC3DD537BE46148591CEE /* learner.cpp */,
+				50C69F7FD924EE7F5B5CBB9E7581A498 /* learner_node.h */,
+				CD416374CF5F79947A2BB77992A91476 /* learner_tagger.cpp */,
+				6AEB9E551D3BB108DDB3BAFBA73EFB44 /* learner_tagger.h */,
+				41BCCE9C8703BE1EC671DF7409C7A72A /* libmecab.cpp */,
+				4CCF9E4F0205B771B865E15DFC6E559D /* mecab.cpp */,
+				F7881DB24188399D800CFC526073D876 /* mecab.h */,
+				21EE4DE2910988EC643AE50733531909 /* mmap.h */,
+				3A824ADBCB82F0B3F10ADD8573E4ADEC /* nbest_generator.cpp */,
+				4D4C3CFAD472C6F87D55D44413BD170F /* nbest_generator.h */,
+				9650F4D7ECB21CC158B993BD7755EDF2 /* param.cpp */,
+				1FBF89C97E6876BAEE9295A26A1BCD50 /* param.h */,
+				E35D9D3FAF3D5597D2E9CEB284D59BBA /* scoped_ptr.h */,
+				D1820B4262E92075B0E27E24E31DB4AF /* stream_wrapper.h */,
+				9DA8DB86002A62E4F548F9092EDC88C4 /* string_buffer.cpp */,
+				B7AE60620872BA7ADB5F48DE3FA02F73 /* string_buffer.h */,
+				48F1A3AAAE050055C8992307DAD2E2D3 /* tagger.cpp */,
+				E5FB9619692042B4BB2E50ED2662E965 /* thread.h */,
+				B359EC780D2CD5F6EA0BD72D9199588F /* tokenizer.cpp */,
+				4F3FB696FF5433A9E8E5159BF7438338 /* tokenizer.h */,
+				BD6C7981DB1A605927189F2E0791585E /* ucs.h */,
+				F5AB2801C9CA5FCFDBB7C7E0FFA85F4E /* ucstable.h */,
+				373E5559E20933F93A2DD08D2D0FCD21 /* utils.cpp */,
+				5D9E50002BCFF2BBA247B87D390A0F40 /* utils.h */,
+				E52A600F682F2133616954C667206A46 /* viterbi.cpp */,
+				DB458138CAFBDEADF5E928186925ACF8 /* viterbi.h */,
+				6A97904A6E8D0A4BFBD8AD8CFD1EFAA0 /* winmain.h */,
+				6426A59420E56F17EB3ED6DF2F8735AB /* writer.cpp */,
+				E77CC134CB46406A9796354DD96F9DD8 /* writer.h */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C2BEE6772F13D5F4727D41BB38CB61BE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C658D0AE51C3279F338595B19ADA0CEA /* mecab-ko.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C6CE650B211ADE2F9A40C1C0C65837FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F349857DE1BE07DD0BF6854ADA9D2C0A /* char.bin */,
+				A81CA4F50708A63B959CD3D265FEA79C /* COPYING */,
+				224FC45ADB15530CD482AB16DB9117BA /* dicrc */,
+				7E27A651C3D2C3DFF3B9D5CF7842113D /* left-id.def */,
+				5EB212A0E5958F64C022283021CB86B5 /* matrix.bin */,
+				9BC2D568F4CEFB37351171B054204878 /* pos-id.def */,
+				4004F02523AD0E4E6FAB7F02452E9E31 /* rewrite.def */,
+				04E0A5266761D3C6C76DDA0E5E26CB6F /* right-id.def */,
+				ED8E5FE37A4D6FE96E3D64268E13996D /* sys.dic */,
+				818CDFBD7268856DDB17CE10F2A4095E /* unk.dic */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				9E5FF979EB4A06D428EAAE7446462F09 /* Development Pods */,
+				4EDC20B56A0B9A8564E1FCEA191C83C4 /* Frameworks */,
+				F539C67EBBB54A875D92736ADED31D5D /* Products */,
+				978FC2DC951FC579C1FE3F4D8C77EBD3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DDC9C23E26B3C5371694EFCA685F74BB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E2E1C17E069C6EDCAEA868E06D1FC250 /* mecab-ko-dic-utf-8.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		E6A535D166D24814A4534441F946658A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6183C2E4AC53B27A718CE20BDEF3293 /* mecab-naist-jdic-utf-8-iOS.xcconfig */,
+				0B4FDE4BFB6793DF70FA07C5DF5DC736 /* mecab-naist-jdic-utf-8-macOS.xcconfig */,
+				385E73941D72A782A3CCB0763DC9EC62 /* ResourceBundle-mecab-naist-jdic-utf-8-mecab-naist-jdic-utf-8-iOS-Info.plist */,
+				6E186E6D2B4FD94E49BD1898DEB1B914 /* ResourceBundle-mecab-naist-jdic-utf-8-mecab-naist-jdic-utf-8-macOS-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../LibMecabSample/Pods/Target Support Files/mecab-naist-jdic-utf-8-iOS";
+			sourceTree = "<group>";
+		};
+		F539C67EBBB54A875D92736ADED31D5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B5D00BD3A9713D57DD9B1654639B0D4 /* mecab-ko-dic-utf-8.bundle */,
+				AC77C43ACB367F65E36122E187D66AE4 /* mecab-ko-dic-utf-8.bundle */,
+				CF6A3C1095DD274468360082F452DE0B /* mecab-naist-jdic-utf-8.bundle */,
+				9168989BC7F8A41D0C90304DB11D1879 /* mecab-naist-jdic-utf-8.bundle */,
+				3C7B1E16A918904AA80FF11780470774 /* mecab_ko.framework */,
+				799BC1668121A52F4589C673CC456293 /* mecab_ko.framework */,
+				2A4139BC309C9D677E49708125F48270 /* Pods_LibMecabSample.framework */,
+				A91D0DC79D434D7663D12FC336A7A34E /* Pods_LibMecabSample_macos.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA0074D045CA923B9AC3EE4A3242AD69 /* mecab-naist-jdic-utf-8 */ = {
+			isa = PBXGroup;
+			children = (
+				15D46465E4D06E23BC6A6F0243F80ADF /* Pod */,
+				C6CE650B211ADE2F9A40C1C0C65837FA /* Resources */,
+				E6A535D166D24814A4534441F946658A /* Support Files */,
+			);
+			name = "mecab-naist-jdic-utf-8";
+			path = "../../mecab-naist-jdic-utf-8";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5E14D29E80618DC598322E0E4FF55215 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B718FD99E9C1D976B09D9847A3230CDD /* Pods-LibMecabSample-macos-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76829015D549970E942261B8E332B005 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D0FF096D804EB7568FEF3E7C2B518D /* char_property.h in Headers */,
+				1B876394DBBBC6AB1F11BBCCA26AA12D /* common.h in Headers */,
+				1B77EACB01D7271B7C37D202907826FF /* config.h in Headers */,
+				81EC50446A26AE5DBBBEC48596F56DF6 /* connector.h in Headers */,
+				ED987B92FCD7503592346245EEC85223 /* context_id.h in Headers */,
+				33F4356E65DF048E02E944921E9826CE /* darts.h in Headers */,
+				25CF1C594960A72B834AF9435604A5C6 /* dictionary.h in Headers */,
+				5963EA3DC34FF4EBB9967C7FCAAFBB32 /* dictionary_rewriter.h in Headers */,
+				19EDA32885A2A008807AA92AEF4B3892 /* feature_index.h in Headers */,
+				548A955EF8E9BF533DE256C2B9AE8426 /* freelist.h in Headers */,
+				3A86E942C5207585844A6082CD7D1882 /* iconv_utils.h in Headers */,
+				C2F940FBDBDC3E5C808FD8A057FA8A72 /* lbfgs.h in Headers */,
+				D3F7EBA1574E5A58C136D1BC37E6B367 /* learner_node.h in Headers */,
+				0DD91FF56711B0ACF876F3C65097AFD9 /* learner_tagger.h in Headers */,
+				C5D6274FB29C63DEE3455172353BE87B /* mecab-ko-iOS-umbrella.h in Headers */,
+				4D1CEC0E431105E4833142AFF6DDB3B7 /* mecab.h in Headers */,
+				C45B25B28C006AF65DC9C179AC12917C /* MecabNode.h in Headers */,
+				965D648480CDFF61D71BE240D5EE5146 /* MecabObjC.h in Headers */,
+				B645C2D873D813FB29EE379417CA5032 /* mmap.h in Headers */,
+				C90B4CF7849DF3A1498D4913CEB1F1DC /* nbest_generator.h in Headers */,
+				832BAFED6A1C8195D26B980D913367EA /* param.h in Headers */,
+				00733160F0C00432E5481EEDFEA1D61E /* scoped_ptr.h in Headers */,
+				2B868419FF4995CBCD88116839571B2F /* stream_wrapper.h in Headers */,
+				A99DF96E77FCC425E1F75D6BA3A2EFA4 /* string_buffer.h in Headers */,
+				06CC78620D4FF11E08FFBD2EE9112863 /* thread.h in Headers */,
+				DA4D6ABEAC78391F04ABFF39357DE0CA /* tokenizer.h in Headers */,
+				3D7640442FDDA7105CDC8C280B87BE6F /* ucs.h in Headers */,
+				40F5221BB250009F2EF302109A67019B /* ucstable.h in Headers */,
+				43E48F3075C0673BD80C3781187B5623 /* utils.h in Headers */,
+				AC73C676C710D342346B9DB54235F57A /* viterbi.h in Headers */,
+				47AA7DE05CF40182834BD5537DA1E179 /* winmain.h in Headers */,
+				7B17C5EF1EECB14687AD964EF98E98A0 /* writer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1C06F2BD576A0A6C936F5AC5E3436F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1364A8118C627CDE7B29C48A99BEC5FD /* Pods-LibMecabSample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3794D5562003B5F360C25B2B29466B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D121DA94DB8052988B2FA780CE8CBF /* char_property.h in Headers */,
+				82644A918BECDC43DEFB2AB85EF81958 /* common.h in Headers */,
+				F8C51734702CB2A2F374CA3C7F4B0EEB /* config.h in Headers */,
+				6B8F427546079EE4F4B00222EDBD1248 /* connector.h in Headers */,
+				CE5BFBA305145C7FB84E9384ABDCA829 /* context_id.h in Headers */,
+				D3DD7FF35E4E63C7D339880BCF915C76 /* darts.h in Headers */,
+				6B881897672214374398C5CDC4572C0D /* dictionary.h in Headers */,
+				4A3CE5FE3B82FA44F44A890CAC7B7184 /* dictionary_rewriter.h in Headers */,
+				B4E5A372333CECB34759802A878B7A76 /* feature_index.h in Headers */,
+				39183842F5000A8F88E1A1DEB8B906C8 /* freelist.h in Headers */,
+				D8D8C76B42C01FD376856DBA94D1E43E /* iconv_utils.h in Headers */,
+				1A07FF1EA371B193DCF430CF87018280 /* lbfgs.h in Headers */,
+				1318DFA55A6AE6C93AC12FD326A40053 /* learner_node.h in Headers */,
+				3286B151C742908E7BAC4B52D2E42EC8 /* learner_tagger.h in Headers */,
+				8C1BFBBDF04F48B6107368DCE2F60EFD /* mecab-ko-macOS-umbrella.h in Headers */,
+				85828401260B3CB00F854946CD21C3AE /* mecab.h in Headers */,
+				7CD4A65E05CA5CBDF2F20D257BA2A4D6 /* MecabNode.h in Headers */,
+				DA128F1E69ADB406479F16CFB7EE0A48 /* MecabObjC.h in Headers */,
+				462CCCDEA6780993F10E82478791999E /* mmap.h in Headers */,
+				CD670E15D03646B0186A56DA2B1D8BA1 /* nbest_generator.h in Headers */,
+				1C95F8598E6ACDE585D03842C6031476 /* param.h in Headers */,
+				6C0E59EB2BB481931D00601C310B82DB /* scoped_ptr.h in Headers */,
+				6771BC29B4B90DDA13B460B25AF772E3 /* stream_wrapper.h in Headers */,
+				2B3C6960611C73D24F443135D394565A /* string_buffer.h in Headers */,
+				65516DB83812A8E7FF0E3B2F8100E502 /* thread.h in Headers */,
+				6A80A6016DEAA525DD34B70F4B62EDA0 /* tokenizer.h in Headers */,
+				64184D30BCFD4A28649E083610E81F1B /* ucs.h in Headers */,
+				31BE1317180659948914ED15BF85472D /* ucstable.h in Headers */,
+				B75E830ECC790FFA7CA8CF0DDAE92374 /* utils.h in Headers */,
+				CAC40D30382641BE72219696E243DCD2 /* viterbi.h in Headers */,
+				86DB07335349C1373A113C2610701604 /* winmain.h in Headers */,
+				C0575597D196FC88DE65495072CE9E06 /* writer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		037C6D2230236CCE88E8582CF4E994FB /* mecab-ko-dic-utf-8-iOS-mecab-ko-dic-utf-8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 639D6C8F9DE8632B123544551B98FEBD /* Build configuration list for PBXNativeTarget "mecab-ko-dic-utf-8-iOS-mecab-ko-dic-utf-8" */;
+			buildPhases = (
+				F4DE3F7233FFDFD35F177B66FD4ECAAE /* Sources */,
+				6A9D0FE450EC368DF62B00B3EF91DBF6 /* Frameworks */,
+				993490D2B45766EC6D378BE532D9A154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mecab-ko-dic-utf-8-iOS-mecab-ko-dic-utf-8";
+			productName = "mecab-ko-dic-utf-8-iOS-mecab-ko-dic-utf-8";
+			productReference = 7B5D00BD3A9713D57DD9B1654639B0D4 /* mecab-ko-dic-utf-8.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		22380DE027C9CF7B32E49B1D548562F5 /* mecab-naist-jdic-utf-8-macOS-mecab-naist-jdic-utf-8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12CF5A7897846586F2A065188189FC6B /* Build configuration list for PBXNativeTarget "mecab-naist-jdic-utf-8-macOS-mecab-naist-jdic-utf-8" */;
+			buildPhases = (
+				DFC19D50408F766907F9EA7B2B84A766 /* Sources */,
+				45F87AF9A3A433044966F32C19A44563 /* Frameworks */,
+				9A71B324610F7B74828FC8D16E5CB20D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mecab-naist-jdic-utf-8-macOS-mecab-naist-jdic-utf-8";
+			productName = "mecab-naist-jdic-utf-8-macOS-mecab-naist-jdic-utf-8";
+			productReference = 9168989BC7F8A41D0C90304DB11D1879 /* mecab-naist-jdic-utf-8.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4A3CC969F047276CF5DFEB7949860EFA /* mecab-ko-dic-utf-8-macOS-mecab-ko-dic-utf-8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F43D69D3C58AA8C6888FFC679A9C84 /* Build configuration list for PBXNativeTarget "mecab-ko-dic-utf-8-macOS-mecab-ko-dic-utf-8" */;
+			buildPhases = (
+				FC850A49274F0FD7AF16925D9F5A88D1 /* Sources */,
+				943E212A70E49809674516F830F9A333 /* Frameworks */,
+				6FA6BEC44FE1D1FA78596BD8F6BD77CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mecab-ko-dic-utf-8-macOS-mecab-ko-dic-utf-8";
+			productName = "mecab-ko-dic-utf-8-macOS-mecab-ko-dic-utf-8";
+			productReference = AC77C43ACB367F65E36122E187D66AE4 /* mecab-ko-dic-utf-8.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		6976EB7D871A0E5DA87A4B2C4061207C /* Pods-LibMecabSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 577D3B5D0E78C9CFB153A73AB7572FD0 /* Build configuration list for PBXNativeTarget "Pods-LibMecabSample" */;
+			buildPhases = (
+				8B1C06F2BD576A0A6C936F5AC5E3436F /* Headers */,
+				83F0B58FB7A612F5BAD128A0F2626605 /* Sources */,
+				BC7A811B9EEBAF401A7EA35246AFBC4E /* Frameworks */,
+				505747363DD013DCD15662985013F05E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98F986F26F615F923A8A0D210520E4B3 /* PBXTargetDependency */,
+				1E09636B2F41F5F18D74D4E60D412753 /* PBXTargetDependency */,
+				E5665E2028A16ED0E651EF5C7429ABF0 /* PBXTargetDependency */,
+			);
+			name = "Pods-LibMecabSample";
+			productName = "Pods-LibMecabSample";
+			productReference = 2A4139BC309C9D677E49708125F48270 /* Pods_LibMecabSample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6FE001291D4836BA59C6C964E71A582D /* mecab-naist-jdic-utf-8-iOS-mecab-naist-jdic-utf-8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFF79619CB1BDE31EEAA8EE677CB09E7 /* Build configuration list for PBXNativeTarget "mecab-naist-jdic-utf-8-iOS-mecab-naist-jdic-utf-8" */;
+			buildPhases = (
+				ED3E93F9D94768B6F4AFC57E654A28EF /* Sources */,
+				2306E547886BEBB6BFCEA6F562C0FD9C /* Frameworks */,
+				73EA0D157A9CF8E2C7E52E98691EF673 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mecab-naist-jdic-utf-8-iOS-mecab-naist-jdic-utf-8";
+			productName = "mecab-naist-jdic-utf-8-iOS-mecab-naist-jdic-utf-8";
+			productReference = CF6A3C1095DD274468360082F452DE0B /* mecab-naist-jdic-utf-8.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9CC1AE5011F284FDEB1AA2D0C6414728 /* mecab-ko-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57C088C9444D8BD2C1501A7AEEF7E5F0 /* Build configuration list for PBXNativeTarget "mecab-ko-iOS" */;
+			buildPhases = (
+				76829015D549970E942261B8E332B005 /* Headers */,
+				D26B357FCA6697A118F4AD5479D1C2FC /* Sources */,
+				5BE7875FCE042626F6619753D02BD8A2 /* Frameworks */,
+				D92AB62F7D74CEAE67A1ED20BF567024 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mecab-ko-iOS";
+			productName = "mecab-ko-iOS";
+			productReference = 3C7B1E16A918904AA80FF11780470774 /* mecab_ko.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9DD4F04873F0458780CBB3047C27C88F /* Pods-LibMecabSample-macos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFBDE76574E86375ABCD8C68D600BB79 /* Build configuration list for PBXNativeTarget "Pods-LibMecabSample-macos" */;
+			buildPhases = (
+				5E14D29E80618DC598322E0E4FF55215 /* Headers */,
+				7DF6C593569802C4C9C60281B9759A14 /* Sources */,
+				15C7A653351EDC52DFBEEDFF4A7819D4 /* Frameworks */,
+				A1F4CA58AB18EFA178304E81F92DC5FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5CE819EFD8CB75831BED620881166FF /* PBXTargetDependency */,
+				966E6E3A74178072AF3B1A6523D6D5C8 /* PBXTargetDependency */,
+				D905FA0C12A3D22089C9329D2C47A379 /* PBXTargetDependency */,
+			);
+			name = "Pods-LibMecabSample-macos";
+			productName = "Pods-LibMecabSample-macos";
+			productReference = A91D0DC79D434D7663D12FC336A7A34E /* Pods_LibMecabSample_macos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD25F61881833D5C06BDC67604488A4E /* mecab-ko-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8C911F7B83C5F95318D55A64695FAD3 /* Build configuration list for PBXNativeTarget "mecab-ko-macOS" */;
+			buildPhases = (
+				D3794D5562003B5F360C25B2B29466B4 /* Headers */,
+				FAA931992BD25CE82435D6820AD3DD8A /* Sources */,
+				DA800EADE64E71C5DDECB546C926E4F3 /* Frameworks */,
+				B904F913A81A9BB99AE621D5E15CBFB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mecab-ko-macOS";
+			productName = "mecab-ko-macOS";
+			productReference = 799BC1668121A52F4589C673CC456293 /* mecab_ko.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F539C67EBBB54A875D92736ADED31D5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CD9E15230AC1CDF68411A0493EF8F74 /* mecab-ko-dic-utf-8-iOS */,
+				037C6D2230236CCE88E8582CF4E994FB /* mecab-ko-dic-utf-8-iOS-mecab-ko-dic-utf-8 */,
+				B51706D04487B4A2B61E3F6570D5FEFB /* mecab-ko-dic-utf-8-macOS */,
+				4A3CC969F047276CF5DFEB7949860EFA /* mecab-ko-dic-utf-8-macOS-mecab-ko-dic-utf-8 */,
+				9CC1AE5011F284FDEB1AA2D0C6414728 /* mecab-ko-iOS */,
+				CD25F61881833D5C06BDC67604488A4E /* mecab-ko-macOS */,
+				72073CD66E17770DFE1DEEE2753119C0 /* mecab-naist-jdic-utf-8-iOS */,
+				6FE001291D4836BA59C6C964E71A582D /* mecab-naist-jdic-utf-8-iOS-mecab-naist-jdic-utf-8 */,
+				B3E5ECD27561423E29BDDAAE75D2C9C1 /* mecab-naist-jdic-utf-8-macOS */,
+				22380DE027C9CF7B32E49B1D548562F5 /* mecab-naist-jdic-utf-8-macOS-mecab-naist-jdic-utf-8 */,
+				6976EB7D871A0E5DA87A4B2C4061207C /* Pods-LibMecabSample */,
+				9DD4F04873F0458780CBB3047C27C88F /* Pods-LibMecabSample-macos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		505747363DD013DCD15662985013F05E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FA6BEC44FE1D1FA78596BD8F6BD77CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A05BFC1E530B36BF3D8171E9E4ECBB56 /* AUTHORS in Resources */,
+				81F237CEB07F2E2F01AD5143069C405C /* char.bin in Resources */,
+				3B52081D6923A21C4783069AF9183C4F /* COPYING in Resources */,
+				8370166C0BDFA4FC22725AA8A1E9BE6B /* dicrc in Resources */,
+				7AE2C6516945FBC03F4F284FCDC470B9 /* left-id.def in Resources */,
+				F9AD820680F96453496C01F9ECE5673C /* matrix.bin in Resources */,
+				5CFDE21E78481B970ABFC600187DC6CC /* pos-id.def in Resources */,
+				60E18F8056E806C8294A95B0B9D9FF35 /* rewrite.def in Resources */,
+				57F0F13ED4E9BD8BA5A8E839516F5A3D /* right-id.def in Resources */,
+				5A4BD9C0F3F97B5B1A92DE05099668DC /* sys.dic in Resources */,
+				4F2A7F0B9C4FE8C4BCFBB7565BEE7414 /* unk.dic in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73EA0D157A9CF8E2C7E52E98691EF673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FDF4D7299449A180B5BC653F1911BEF /* char.bin in Resources */,
+				0A73DFAC11B2FEAD42B702E6C2A554F6 /* COPYING in Resources */,
+				3B1346AB63934C706672366B57C0ACC8 /* dicrc in Resources */,
+				321D50BF19158D6A1A29467DC438A644 /* left-id.def in Resources */,
+				7934D5D9CC91A8C987E2B48855A383C8 /* matrix.bin in Resources */,
+				D74472B8362DD660D67DE1E88E61754A /* pos-id.def in Resources */,
+				1A3301185CA9461CCE49000DE59A8918 /* rewrite.def in Resources */,
+				ABE263D6B945381626CA8BDDFBA99A18 /* right-id.def in Resources */,
+				E535274B423D06710E7EB36C8168CD45 /* sys.dic in Resources */,
+				2C9847F293B7D82C7E1FD51481186318 /* unk.dic in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		993490D2B45766EC6D378BE532D9A154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C494FE554BCB057B99A09A397FCC568 /* AUTHORS in Resources */,
+				4289A170E061E5E86DA1F8154FABA3A7 /* char.bin in Resources */,
+				79A76CA971E544FB23B0E2E6E032AF9B /* COPYING in Resources */,
+				402AA5DF4BC65C4A9183082CF0DB32F9 /* dicrc in Resources */,
+				EA2A70F4D119F62073AAF75CE901BD5C /* left-id.def in Resources */,
+				5F5BDE1720530141ECC8FBDD0FB1E675 /* matrix.bin in Resources */,
+				2E281A98D860650F42EB54049566BFA5 /* pos-id.def in Resources */,
+				9293B18764330F55B4166CDE494BD200 /* rewrite.def in Resources */,
+				2634D1C00C4A61CBB8D18BF163F0752F /* right-id.def in Resources */,
+				93991C0487073B72651F9A41B69DB4FF /* sys.dic in Resources */,
+				97F70A2DE35DDA1AD3A3872A24E4C072 /* unk.dic in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A71B324610F7B74828FC8D16E5CB20D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA98F1E31FB8F288DABE12BD945142FC /* char.bin in Resources */,
+				04D2D35503F52CB5A96297F9F519227F /* COPYING in Resources */,
+				5B33DF02B6B265272F8E61FCE65DAB03 /* dicrc in Resources */,
+				8651A2EF821056CA699429FD3B08A036 /* left-id.def in Resources */,
+				2CCD701F30B643C85F70E9650A7A2CB2 /* matrix.bin in Resources */,
+				F885038D0AAD825AAFB70CFB27BEF3A5 /* pos-id.def in Resources */,
+				4E9553AC44A499DDA2BE77C84EE9392F /* rewrite.def in Resources */,
+				19DE06FE674ABF4FE1138CE451580714 /* right-id.def in Resources */,
+				18064C505C1DD6AF76107EFF53B7CCBD /* sys.dic in Resources */,
+				D00A7AFC50AB9617974B7176D723C5AF /* unk.dic in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F4CA58AB18EFA178304E81F92DC5FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B904F913A81A9BB99AE621D5E15CBFB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55F183007EAE25847BA4260A64B48D1 /* AUTHORS in Resources */,
+				E8417E8230824BA03AC7B37E5EAA1982 /* BSD in Resources */,
+				888D942CBFBDBDDEDC81075BDEB348ED /* ChangeLog in Resources */,
+				55EE753FEB897459CB3F307CEB15919B /* COPYING in Resources */,
+				56BA489B6BBF046797DA6E90EAF10C22 /* GPL in Resources */,
+				12E4B03A43BDDC9E8DBF83DE4C8F0E6C /* LGPL in Resources */,
+				CD7DD3E29F1912517070142B21BC169F /* mecabrc in Resources */,
+				9558D6BD6C9B430D43B011D69ACC9931 /* NEWS in Resources */,
+				FFA4216AC0DB40AF3FB9143342D35BD0 /* README in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92AB62F7D74CEAE67A1ED20BF567024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037C7FB1DA961168BFB84EBEE55D0718 /* AUTHORS in Resources */,
+				66181E82072AF969914F2FDD186BEF31 /* BSD in Resources */,
+				80A375305BD6394D01787E226DE4A27C /* ChangeLog in Resources */,
+				8B301E3341D67D7DF52F98D7CF94C2BC /* COPYING in Resources */,
+				D38A775EAD1F511EB7460CCF6EA7ABD1 /* GPL in Resources */,
+				F66DB026EF8AE2C7E7EA6433FF36DC64 /* LGPL in Resources */,
+				618B17ABEE5817D9FA3BB70946517281 /* mecabrc in Resources */,
+				1D0EA221EF9161BA3EF63459D7DBB2DB /* NEWS in Resources */,
+				F8F85E9BC502964DF1EAE530EC6282B3 /* README in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DF6C593569802C4C9C60281B9759A14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5F6D5423FAB616552F947C89BCC169 /* Pods-LibMecabSample-macos-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83F0B58FB7A612F5BAD128A0F2626605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803BD1D6A39F7C7B31383ABF3795CBFE /* Pods-LibMecabSample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D26B357FCA6697A118F4AD5479D1C2FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508AC897C0D98386D2D0381715B0C813 /* char_property.cpp in Sources */,
+				02038372051624B4778A27F570700871 /* connector.cpp in Sources */,
+				69D471ED654C7B4A409EE1661643C1E1 /* context_id.cpp in Sources */,
+				4BBB927AEEAA36D2C2C225B9176C0D8F /* dictionary.cpp in Sources */,
+				48BCA0C521A0E3A977B8808742BF0565 /* dictionary_compiler.cpp in Sources */,
+				C610C115E04F3BB5A9707412AEEA6617 /* dictionary_generator.cpp in Sources */,
+				22198A56818C40EAE36CBDF399407670 /* dictionary_rewriter.cpp in Sources */,
+				09CD835ACBD87E2C2B1F7BAE8B65D424 /* eval.cpp in Sources */,
+				AFBF79FEFEA4020589449979B5CC545D /* feature_index.cpp in Sources */,
+				B1E7C28C93E097D9F585085359742E98 /* iconv_utils.cpp in Sources */,
+				FE64238A12441C5D204635C27BB4179B /* lbfgs.cpp in Sources */,
+				48AE92AB644F33548CB271830F69F97C /* learner.cpp in Sources */,
+				3E7130DFB00A7BFFB6878618FAF92505 /* learner_tagger.cpp in Sources */,
+				F6C6E3413CE9E9AFDBE08C70153E7DF2 /* libmecab.cpp in Sources */,
+				28815B051C6583C279B69853C6B6BBF4 /* mecab-ko-iOS-dummy.m in Sources */,
+				15F03B89C12EBF02CFD86BF6FE1958ED /* mecab.cpp in Sources */,
+				9446BACF8B646EBACD80BAD5827BC759 /* MecabNode.m in Sources */,
+				4A277E27FE33F229BD52A36ABE0406BD /* MecabObjC.m in Sources */,
+				B8A71BF63F45B86E48DD8A88A059D3BA /* nbest_generator.cpp in Sources */,
+				48B0814F38D1462E67360CFE82CBF979 /* param.cpp in Sources */,
+				394701490320AF21CA0069A2926A72BA /* string_buffer.cpp in Sources */,
+				E2D2A7C8E9BC5BBD50FC6AF6BC7443A2 /* tagger.cpp in Sources */,
+				311B17A2B20F0EDF2594DB5994B5D9BC /* tokenizer.cpp in Sources */,
+				B2CB14299E69375EF9F091D442F22815 /* utils.cpp in Sources */,
+				0D73FAEA060D38B1710E7F416C30CEB0 /* viterbi.cpp in Sources */,
+				07347F153FCF20BDF2079A744563EA60 /* writer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFC19D50408F766907F9EA7B2B84A766 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3E93F9D94768B6F4AFC57E654A28EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4DE3F7233FFDFD35F177B66FD4ECAAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA931992BD25CE82435D6820AD3DD8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC0773442C13D8E4943FB6D700CA66B /* char_property.cpp in Sources */,
+				93AF65FCC6B535BD828C332C0EC9EDED /* connector.cpp in Sources */,
+				5B8EFDAD9F586D92EBAE0341DAA3DD73 /* context_id.cpp in Sources */,
+				8E06D2F0A2F03EA0CBDF196E5B1D709F /* dictionary.cpp in Sources */,
+				036E62D664CA995F2C727EF2338E27BB /* dictionary_compiler.cpp in Sources */,
+				23095DA42FAFC9A491359BED2AEF65F3 /* dictionary_generator.cpp in Sources */,
+				E2B4A378CA86D9F14FBABF2D366DCD4B /* dictionary_rewriter.cpp in Sources */,
+				9F5403400D416F3D6CB5164B9545D38C /* eval.cpp in Sources */,
+				617BAE9D7E6D22039F8FE62BD80D35C9 /* feature_index.cpp in Sources */,
+				61B6348A5B40AAAFB2D9469C33CB7A49 /* iconv_utils.cpp in Sources */,
+				5DED3295CEFACB1F1C9F8CB912832309 /* lbfgs.cpp in Sources */,
+				54DA2C1EFFFCFBF607B69E6E2B47172B /* learner.cpp in Sources */,
+				118EBF2AC472A2527DDEA5E9D9818CB5 /* learner_tagger.cpp in Sources */,
+				3620406BC2CC593323F378150A38CD44 /* libmecab.cpp in Sources */,
+				682F126B2AC0D582BFD68C1A22388214 /* mecab-ko-macOS-dummy.m in Sources */,
+				ADB23A9EA6E790DAE09C9AE60B2BCADB /* mecab.cpp in Sources */,
+				0F6E7104374EEC9D1DC88E45F4A3186D /* MecabNode.m in Sources */,
+				3CE78DA3DCBCE9FD884B126D2BCB0AD4 /* MecabObjC.m in Sources */,
+				1B799251D1702F1B975E8ED87684E14C /* nbest_generator.cpp in Sources */,
+				4E7EECC4C0D0ECAE2CE90920F2996989 /* param.cpp in Sources */,
+				9DA5F1CD86CA8D58CDD923BB6B653EE6 /* string_buffer.cpp in Sources */,
+				FFE6504BE1BAE541787076432A0478D8 /* tagger.cpp in Sources */,
+				B72EBF36EC243E4C9786CFFAC91F11B2 /* tokenizer.cpp in Sources */,
+				04F154191B1E49859A0DCF9D5B3B11CB /* utils.cpp in Sources */,
+				FB68FF709482261C512F73D9A3DEA77D /* viterbi.cpp in Sources */,
+				4876F22DCD467AE047F1B47FAFB76C39 /* writer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC850A49274F0FD7AF16925D9F5A88D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0661E00D54616E2CB2C7F4FA780D2BB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "mecab-naist-jdic-utf-8-macOS-mecab-naist-jdic-utf-8";
+			target = 22380DE027C9CF7B32E49B1D548562F5 /* mecab-naist-jdic-utf-8-macOS-mecab-naist-jdic-utf-8 */;
+			targetProxy = E0D1447008849D2AD1525806F82DB35E /* PBXContainerItemProxy */;
+		};
+		0A6CEDC63479751AAA34B784181A2AC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "mecab-ko-dic-utf-8-iOS-mecab-ko-dic-utf-8";
+			target = 037C6D2230236CCE88E8582CF4E994FB /* mecab-ko-dic-utf-8-iOS-mecab-ko-dic-utf-8 */;
+			targetProxy = 096152AEE3A74B6F95AE99478CF7BE0F /* PBXContainerItemProxy */;
+		};
+		1E09636B2F41F5F18D74D4E60D412753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "mecab-ko-iOS";
+			target = 9CC1AE5011F284FDEB1AA2D0C6414728 /* mecab-ko-iOS */;
+			targetProxy = A503580D0832E199F9E87B5BCF744052 /* PBXContainerItemProxy */;
+		};
+		8C4C33775017EA7BDF4B9569B2633B55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "mecab-ko-dic-utf-8-macOS-mecab-ko-dic-utf-8";
+			target = 4A3CC969F047276CF5DFEB7949860EFA /* mecab-ko-dic-utf-8-macOS-mecab-ko-dic-utf-8 */;
+			targetProxy = 0583FBF0CA4A41A08CC1E779FE5C3B01 /* PBXContainerItemProxy */;
+		};
+		966E6E3A74178072AF3B1A6523D6D5C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "mecab-ko-macOS";
+			target = CD25F61881833D5C06BDC67604488A4E /* mecab-ko-macOS */;
+			targetProxy = 798C38469E160D42AA09C623ECA1F4C7 /* PBXContainerItemProxy */;
+		};
+		98F986F26F615F923A8A0D210520E4B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "mecab-ko-dic-utf-8-iOS";
+			target = 7CD9E15230AC1CDF68411A0493EF8F74 /* mecab-ko-dic-utf-8-iOS */;
+			targetProxy = 8E5D891AB76DB16D9C66596196841B83 /* PBXContainerItemProxy */;
+		};
+		B57522F99C2FE467D84B60F5AC081527 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "mecab-naist-jdic-utf-8-iOS-mecab-naist-jdic-utf-8";
+			target = 6FE001291D4836BA59C6C964E71A582D /* mecab-naist-jdic-utf-8-iOS-mecab-naist-jdic-utf-8 */;
+			targetProxy = 85A4CEB490E51F8A0F89B81B0F0F79CF /* PBXContainerItemProxy */;
+		};
+		B5CE819EFD8CB75831BED620881166FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "mecab-ko-dic-utf-8-macOS";
+			target = B51706D04487B4A2B61E3F6570D5FEFB /* mecab-ko-dic-utf-8-macOS */;
+			targetProxy = F6C4AD0849D9ED6BA9DEA70B3A812B8D /* PBXContainerItemProxy */;
+		};
+		D905FA0C12A3D22089C9329D2C47A379 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "mecab-naist-jdic-utf-8-macOS";
+			target = B3E5ECD27561423E29BDDAAE75D2C9C1 /* mecab-naist-jdic-utf-8-macOS */;
+			targetProxy = 15987D0EE1CCB230DC48A40ABB9E58A0 /* PBXContainerItemProxy */;
+		};
+		E5665E2028A16ED0E651EF5C7429ABF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "mecab-naist-jdic-utf-8-iOS";
+			target = 72073CD66E17770DFE1DEEE2753119C0 /* mecab-naist-jdic-utf-8-iOS */;
+			targetProxy = 56E2C4F5570BE5A30FB97C6E55C70A93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00A9DDE4ECEECE260841192FF412004B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62B625B5630DE0FF3F8778255A451609 /* Pods-LibMecabSample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LibMecabSample/Pods-LibMecabSample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LibMecabSample/Pods-LibMecabSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		088316E3649D30848F8C0C29B2BD94CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B4FDE4BFB6793DF70FA07C5DF5DC736 /* mecab-naist-jdic-utf-8-macOS.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		19C70105456B0C26E6CC4DCBF26DAF1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ABFE6730DBF88A882BC4BAFDC5D7310 /* Pods-LibMecabSample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LibMecabSample/Pods-LibMecabSample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LibMecabSample/Pods-LibMecabSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		32033EB5A35DA87D182E8E692ADA377E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B4FDE4BFB6793DF70FA07C5DF5DC736 /* mecab-naist-jdic-utf-8-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/mecab-naist-jdic-utf-8-macOS";
+				IBSC_MODULE = mecab_naist_jdic_utf_8;
+				INFOPLIST_FILE = "Target Support Files/mecab-naist-jdic-utf-8-macOS/ResourceBundle-mecab-naist-jdic-utf-8-mecab-naist-jdic-utf-8-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "mecab-naist-jdic-utf-8";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		45E9B87C98FFF955AF383C79F432CF46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		54850067C5AD7496CE971312F1D55E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DE227873F4E41704CC89EFB043D988 /* mecab-ko-dic-utf-8-macOS.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5890C3B109742564CDE1913653EB8EB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A5A7EF7376736F6D8564E49F949EA9F /* mecab-ko-dic-utf-8-iOS.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E01F9840DE11269F339FA04616B7574 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A5A7EF7376736F6D8564E49F949EA9F /* mecab-ko-dic-utf-8-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/mecab-ko-dic-utf-8-iOS";
+				IBSC_MODULE = mecab_ko_dic_utf_8;
+				INFOPLIST_FILE = "Target Support Files/mecab-ko-dic-utf-8-iOS/ResourceBundle-mecab-ko-dic-utf-8-mecab-ko-dic-utf-8-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = "mecab-ko-dic-utf-8";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		822CE0011DE08CEFE82E230CC8B86321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6183C2E4AC53B27A718CE20BDEF3293 /* mecab-naist-jdic-utf-8-iOS.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		824C72AC8DC67338D093EC4C3520814E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B4FDE4BFB6793DF70FA07C5DF5DC736 /* mecab-naist-jdic-utf-8-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/mecab-naist-jdic-utf-8-macOS";
+				IBSC_MODULE = mecab_naist_jdic_utf_8;
+				INFOPLIST_FILE = "Target Support Files/mecab-naist-jdic-utf-8-macOS/ResourceBundle-mecab-naist-jdic-utf-8-mecab-naist-jdic-utf-8-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "mecab-naist-jdic-utf-8";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		82A920FE02E7E06F2DE3636B95A17C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6183C2E4AC53B27A718CE20BDEF3293 /* mecab-naist-jdic-utf-8-iOS.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89E87103BF85E4007096F89B6F11885A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DE227873F4E41704CC89EFB043D988 /* mecab-ko-dic-utf-8-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/mecab-ko-dic-utf-8-macOS";
+				IBSC_MODULE = mecab_ko_dic_utf_8;
+				INFOPLIST_FILE = "Target Support Files/mecab-ko-dic-utf-8-macOS/ResourceBundle-mecab-ko-dic-utf-8-mecab-ko-dic-utf-8-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "mecab-ko-dic-utf-8";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8B17962D4572201AC7990D1012BA0CDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41306CB02035BC680E4AF10D5F23FDA8 /* mecab-ko-macOS.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/mecab-ko-macOS/mecab-ko-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/mecab-ko-macOS/mecab-ko-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/mecab-ko-macOS/mecab-ko-macOS.modulemap";
+				PRODUCT_MODULE_NAME = mecab_ko;
+				PRODUCT_NAME = mecab_ko;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3F40C12173F7450D3855C6C9CBF0ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D26F2783CB27DE7407D7A3A9B1745B92 /* mecab-ko-iOS.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/mecab-ko-iOS/mecab-ko-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/mecab-ko-iOS/mecab-ko-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/mecab-ko-iOS/mecab-ko-iOS.modulemap";
+				PRODUCT_MODULE_NAME = mecab_ko;
+				PRODUCT_NAME = mecab_ko;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B81B62E4BB848D35F64E9B73BAE6A133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B4FDE4BFB6793DF70FA07C5DF5DC736 /* mecab-naist-jdic-utf-8-macOS.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BAF7A6CA0AAC91D6D28023EB263B70F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B7179184DA512B3FFBBC09662D4560D /* Pods-LibMecabSample-macos.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-LibMecabSample-macos/Pods-LibMecabSample-macos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-LibMecabSample-macos/Pods-LibMecabSample-macos.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C47573CD6D155775F52A3EDA8043132F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DE227873F4E41704CC89EFB043D988 /* mecab-ko-dic-utf-8-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/mecab-ko-dic-utf-8-macOS";
+				IBSC_MODULE = mecab_ko_dic_utf_8;
+				INFOPLIST_FILE = "Target Support Files/mecab-ko-dic-utf-8-macOS/ResourceBundle-mecab-ko-dic-utf-8-mecab-ko-dic-utf-8-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "mecab-ko-dic-utf-8";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C76AB6B96DE2F2DE9BDBB8ECCB7085B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A5A7EF7376736F6D8564E49F949EA9F /* mecab-ko-dic-utf-8-iOS.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D009A2BBC671F204EA84E0DC35EC2BDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6183C2E4AC53B27A718CE20BDEF3293 /* mecab-naist-jdic-utf-8-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/mecab-naist-jdic-utf-8-iOS";
+				IBSC_MODULE = mecab_naist_jdic_utf_8;
+				INFOPLIST_FILE = "Target Support Files/mecab-naist-jdic-utf-8-iOS/ResourceBundle-mecab-naist-jdic-utf-8-mecab-naist-jdic-utf-8-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = "mecab-naist-jdic-utf-8";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D59C628BD349093650A99433F8481DFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D26F2783CB27DE7407D7A3A9B1745B92 /* mecab-ko-iOS.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/mecab-ko-iOS/mecab-ko-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/mecab-ko-iOS/mecab-ko-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/mecab-ko-iOS/mecab-ko-iOS.modulemap";
+				PRODUCT_MODULE_NAME = mecab_ko;
+				PRODUCT_NAME = mecab_ko;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D6142DB7DA890658F44D3306FB9D409B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A5A7EF7376736F6D8564E49F949EA9F /* mecab-ko-dic-utf-8-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/mecab-ko-dic-utf-8-iOS";
+				IBSC_MODULE = mecab_ko_dic_utf_8;
+				INFOPLIST_FILE = "Target Support Files/mecab-ko-dic-utf-8-iOS/ResourceBundle-mecab-ko-dic-utf-8-mecab-ko-dic-utf-8-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = "mecab-ko-dic-utf-8";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E26C38043AC029146E42AB2428D946A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CB43FEFBB37E8A0A1869F6BD60DF8B6 /* Pods-LibMecabSample-macos.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-LibMecabSample-macos/Pods-LibMecabSample-macos-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-LibMecabSample-macos/Pods-LibMecabSample-macos.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E57E06921269C4AF68E96EEBC035E902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		EEA1F23636F9CD1A194F6CC0ABE6D216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41306CB02035BC680E4AF10D5F23FDA8 /* mecab-ko-macOS.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/mecab-ko-macOS/mecab-ko-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/mecab-ko-macOS/mecab-ko-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/mecab-ko-macOS/mecab-ko-macOS.modulemap";
+				PRODUCT_MODULE_NAME = mecab_ko;
+				PRODUCT_NAME = mecab_ko;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F7A5C46F667E34F4447694EF8A33D28C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6183C2E4AC53B27A718CE20BDEF3293 /* mecab-naist-jdic-utf-8-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/mecab-naist-jdic-utf-8-iOS";
+				IBSC_MODULE = mecab_naist_jdic_utf_8;
+				INFOPLIST_FILE = "Target Support Files/mecab-naist-jdic-utf-8-iOS/ResourceBundle-mecab-naist-jdic-utf-8-mecab-naist-jdic-utf-8-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PRODUCT_NAME = "mecab-naist-jdic-utf-8";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F86DCE84E6C678E1636DE4E1D886A846 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DE227873F4E41704CC89EFB043D988 /* mecab-ko-dic-utf-8-macOS.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12CF5A7897846586F2A065188189FC6B /* Build configuration list for PBXNativeTarget "mecab-naist-jdic-utf-8-macOS-mecab-naist-jdic-utf-8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32033EB5A35DA87D182E8E692ADA377E /* Debug */,
+				824C72AC8DC67338D093EC4C3520814E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FC0C8D3907E3720E62CE978A3516351 /* Build configuration list for PBXAggregateTarget "mecab-ko-dic-utf-8-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76AB6B96DE2F2DE9BDBB8ECCB7085B7 /* Debug */,
+				5890C3B109742564CDE1913653EB8EB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38E40089CDE03932B3AF64A9D4819A23 /* Build configuration list for PBXAggregateTarget "mecab-naist-jdic-utf-8-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82A920FE02E7E06F2DE3636B95A17C41 /* Debug */,
+				822CE0011DE08CEFE82E230CC8B86321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E9B87C98FFF955AF383C79F432CF46 /* Debug */,
+				E57E06921269C4AF68E96EEBC035E902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		577D3B5D0E78C9CFB153A73AB7572FD0 /* Build configuration list for PBXNativeTarget "Pods-LibMecabSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C70105456B0C26E6CC4DCBF26DAF1F /* Debug */,
+				00A9DDE4ECEECE260841192FF412004B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57C088C9444D8BD2C1501A7AEEF7E5F0 /* Build configuration list for PBXNativeTarget "mecab-ko-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D59C628BD349093650A99433F8481DFA /* Debug */,
+				B3F40C12173F7450D3855C6C9CBF0ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		639D6C8F9DE8632B123544551B98FEBD /* Build configuration list for PBXNativeTarget "mecab-ko-dic-utf-8-iOS-mecab-ko-dic-utf-8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6142DB7DA890658F44D3306FB9D409B /* Debug */,
+				5E01F9840DE11269F339FA04616B7574 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80F43D69D3C58AA8C6888FFC679A9C84 /* Build configuration list for PBXNativeTarget "mecab-ko-dic-utf-8-macOS-mecab-ko-dic-utf-8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E87103BF85E4007096F89B6F11885A /* Debug */,
+				C47573CD6D155775F52A3EDA8043132F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A8A9A39ADC910B7B63FC673A52BA38C /* Build configuration list for PBXAggregateTarget "mecab-naist-jdic-utf-8-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81B62E4BB848D35F64E9B73BAE6A133 /* Debug */,
+				088316E3649D30848F8C0C29B2BD94CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		911CF0BCBC7964CB6619EF133EBA4E53 /* Build configuration list for PBXAggregateTarget "mecab-ko-dic-utf-8-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54850067C5AD7496CE971312F1D55E63 /* Debug */,
+				F86DCE84E6C678E1636DE4E1D886A846 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8C911F7B83C5F95318D55A64695FAD3 /* Build configuration list for PBXNativeTarget "mecab-ko-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B17962D4572201AC7990D1012BA0CDE /* Debug */,
+				EEA1F23636F9CD1A194F6CC0ABE6D216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFBDE76574E86375ABCD8C68D600BB79 /* Build configuration list for PBXNativeTarget "Pods-LibMecabSample-macos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF7A6CA0AAC91D6D28023EB263B70F3 /* Debug */,
+				E26C38043AC029146E42AB2428D946A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFF79619CB1BDE31EEAA8EE677CB09E7 /* Build configuration list for PBXNativeTarget "mecab-naist-jdic-utf-8-iOS-mecab-naist-jdic-utf-8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D009A2BBC671F204EA84E0DC35EC2BDB /* Debug */,
+				F7A5C46F667E34F4447694EF8A33D28C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

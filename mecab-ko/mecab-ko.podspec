@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/shirakaba/iPhone-libmecab"
   s.license      = { :type => "BSD", :file => "Assets/BSD" }
   s.author       = package['author']
-  s.platforms    = { :ios => "10.3", :macos => "10.11" }
+  s.platforms    = { :ios => "10.3", :osx => "10.11" }
   s.source       = { :git => "https://github.com/shirakaba/iPhone-libmecab.git", :tag => "v#{s.version}" }
   s.public_header_files = 'Classes/mecab.h', 'ios/*.h'
   s.source_files = 'Classes/*.{cpp,h}', 'ios/*.{m,h}'

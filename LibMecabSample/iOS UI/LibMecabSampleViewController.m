@@ -7,8 +7,10 @@
 //
 
 #import "LibMecabSampleViewController.h"
-#import "../mecab/src/MecabObjC.h"
-#import "../mecab/src/Node.h"
+#import <mecab_ko/MecabObjC.h>
+#import <mecab_ko/MecabNode.h>
+//#import "../mecab/src/MecabObjC.h"
+//#import "../mecab/src/Node.h"
 
 @implementation LibMecabSampleViewController
 
@@ -29,9 +31,9 @@
 	
 	NSString *string = textField.text;
 	
-    // self.nodes = [mecab parseToNodeWithString:string]; // Implicit Japanese mode.
-    // self.nodes = [mecab parseToNodeWithString:string dicdirRelativePath:DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME]; // Explicit Japanese mode.
-    self.nodes = [mecab parseToNodeWithString:string dicdirRelativePath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS calculateTrailingWhitespace:YES]; // Explicit Korean mode.
+    NSString *jpDicBundlePath = [[NSBundle mainBundle] pathForResource:@"mecab-naist-jdic-utf-8" ofType:@"bundle"];
+    Mecab *mecab = [[Mecab alloc] initWithDicDirPath:jpDicBundlePath];
+    [mecab parseToNodeWithString:string calculateTrailingWhitespace:YES];
 	
 	[tableView_ reloadData];
 }

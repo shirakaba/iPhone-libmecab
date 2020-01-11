@@ -12,12 +12,13 @@ import UIKit
 #elseif canImport(Cocoa)
 import Cocoa
 #endif
+import mecab_ko
 
 #if canImport(UIKit)
 class Uivc: UIViewController {
     override func viewDidLoad() {
         let mecab : Mecab = Mecab()
-        let nodes : [Node] = mecab.parseToNode(with: "これ は なん です か。")
+        let nodes : [MecabNode] = mecab.parseToNode(with: "これ は なん です か。")
         print(nodes[0].feature)
     }
 }
@@ -25,7 +26,7 @@ class Uivc: UIViewController {
 class Nsvc: NSViewController {
     override func viewDidLoad() {
         let mecab : Mecab = Mecab()
-        let nodes : [Node] = mecab.parseToNode(with: "これはなんですか。")
+        let nodes : [MecabNode] = mecab.parseToNode(with: "これはなんですか。")
         print(nodes[0].feature!)
     }
 }

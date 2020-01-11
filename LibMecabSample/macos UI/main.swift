@@ -16,6 +16,6 @@ for i in 1..<CommandLine.argc {
     // print(NSString(utf8String: CommandLine.unsafeArgv[Int(i)]!)!)
     argvArray.add(NSString(utf8String: CommandLine.unsafeArgv[Int(i)]!)!)
 }
-myDelegate.argv = argvArray
+// myDelegate.argv = argvArray
 myApp.delegate = myDelegate
 _ = NSApplicationMain(CommandLine.argc, CommandLine.unsafeArgv)

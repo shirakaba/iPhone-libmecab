@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13C86E5E12C87B3E006F2369 /* NodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C86E5D12C87B3E006F2369 /* NodeCell.xib */; };
-		13C86E6812C87B6C006F2369 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E6712C87B6C006F2369 /* libiconv.dylib */; };
 		13C86E6B12C87B77006F2369 /* NodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C86E6A12C87B77006F2369 /* NodeCell.m */; };
-		13C86E8812C87C70006F2369 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E8712C87C70006F2369 /* libstdc++.dylib */; };
 		1D3623260D0F684500981E51 /* LibMecabSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* LibMecabSampleAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -19,103 +17,17 @@
 		2899E5220DE3E06400AC0155 /* LibMecabSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* LibMecabSampleViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* LibMecabSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* LibMecabSampleViewController.m */; };
-		7D15E73F1FFB0FC80015401F /* dicdirKoDic.bundle in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D15E73E1FFB0FC80015401F /* dicdirKoDic.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C0E4A98620F6945679CBBFD /* Pods_LibMecabSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD225A2A3BBD2D74CB137D6 /* Pods_LibMecabSample.framework */; };
+		7D468B2023CA81D5000382D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D468B1E23CA81B1000382D5 /* AppDelegate.swift */; };
+		7D468B2223CA8245000382D5 /* LibMecabSample-macos-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D468B2123CA8245000382D5 /* LibMecabSample-macos-Info.plist */; };
 		7D471CA51EB4B7610038BCA5 /* ExampleUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D471CA41EB4B7610038BCA5 /* ExampleUsage.swift */; };
-		7D471CD61EB4DEB50038BCA5 /* LibMecabSample-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* LibMecabSample-Info.plist */; };
-		7D471CD81EB4DEE30038BCA5 /* libmecab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E7C12C87C31006F2369 /* libmecab.a */; };
-		7D471CE21EB4E7390038BCA5 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D471CE11EB4E7390038BCA5 /* libstdc++.tbd */; };
-		7D471CE41EB4E7460038BCA5 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D471CE31EB4E7460038BCA5 /* libiconv.tbd */; };
-		7D833C0C21026451005F2854 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		7D833C0D21026451005F2854 /* LibMecabSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* LibMecabSampleViewController.xib */; };
-		7D833C0E21026451005F2854 /* NodeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13C86E5D12C87B3E006F2369 /* NodeCell.xib */; };
 		7D833C0F21026451005F2854 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E630CC2E1CFBE222001774B0 /* Default-568h@2x.png */; };
 		7D833C1521026451005F2854 /* ExampleUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D471CA41EB4B7610038BCA5 /* ExampleUsage.swift */; };
 		7D833C1721026451005F2854 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		7D833C1821026451005F2854 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		7D833C1921026451005F2854 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		7D833C1A21026451005F2854 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E6712C87B6C006F2369 /* libiconv.dylib */; };
-		7D833C1C21026451005F2854 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E8712C87C70006F2369 /* libstdc++.dylib */; };
-		7D833C33210265C7005F2854 /* dicdirNaistJdic-macos.bundle in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D833C2C21026451005F2854 /* dicdirNaistJdic-macos.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7D833C34210265C7005F2854 /* dicdirKoDic-macos.bundle in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D833C2E21026451005F2854 /* dicdirKoDic-macos.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7D833C35210265EB005F2854 /* libmecab-macos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D833C2A21026451005F2854 /* libmecab-macos.a */; };
 		7D833C37210269AE005F2854 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D833C36210269AE005F2854 /* main.swift */; };
-		7D9E76D61FFC3F9A00C82B51 /* dicdirNaistJdic.bundle in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D6D55791FB87C2900DEF011 /* dicdirNaistJdic.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7DA3635E1FCB42270004EF6F /* libmecab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C86E7C12C87C31006F2369 /* libmecab.a */; };
+		C573533B78CAD79835ACCF63 /* Pods_LibMecabSample_macos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686B94DEC436E986723A1DFA /* Pods_LibMecabSample_macos.framework */; };
 		E630CC2F1CFBE222001774B0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E630CC2E1CFBE222001774B0 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		13C86E7B12C87C31006F2369 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13C86E7412C87C31006F2369 /* mecab.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = mecab;
-		};
-		7D15E73D1FFB0FC80015401F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13C86E7412C87C31006F2369 /* mecab.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7D15E71D1FFB0CD80015401F;
-			remoteInfo = mecabResourcesKorean;
-		};
-		7D6D55781FB87C2900DEF011 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13C86E7412C87C31006F2369 /* mecab.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7D6D55601FB875FB00DEF011;
-			remoteInfo = mecabResources;
-		};
-		7D833C2921026451005F2854 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13C86E7412C87C31006F2369 /* mecab.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7D833BE121026379005F2854;
-			remoteInfo = "mecab-macos";
-		};
-		7D833C2B21026451005F2854 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13C86E7412C87C31006F2369 /* mecab.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7D833BF2210263BA005F2854;
-			remoteInfo = "dicdirNaistJdic-macos";
-		};
-		7D833C2D21026451005F2854 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13C86E7412C87C31006F2369 /* mecab.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7D833C04210263CE005F2854;
-			remoteInfo = "dicdirKoDic-macos";
-		};
-		7D833C2F210265AC005F2854 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13C86E7412C87C31006F2369 /* mecab.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D833BE2210263BA005F2854;
-			remoteInfo = "dicdirNaistJdic-macos";
-		};
-		7D833C31210265B0005F2854 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13C86E7412C87C31006F2369 /* mecab.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D833BF4210263CE005F2854;
-			remoteInfo = "dicdirKoDic-macos";
-		};
-		7D9E76D71FFC40B000C82B51 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13C86E7412C87C31006F2369 /* mecab.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D6D555F1FB875FB00DEF011;
-			remoteInfo = dicdirNaistJdic;
-		};
-		7D9E76D91FFC40B000C82B51 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13C86E7412C87C31006F2369 /* mecab.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D15E70C1FFB0CD80015401F;
-			remoteInfo = dicdirKoDic;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		7D471CB91EB4D6CB0038BCA5 /* Embed Frameworks */ = {
@@ -124,8 +36,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				7D9E76D61FFC3F9A00C82B51 /* dicdirNaistJdic.bundle in Embed Frameworks */,
-				7D15E73F1FFB0FC80015401F /* dicdirKoDic.bundle in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +46,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				7D833C33210265C7005F2854 /* dicdirNaistJdic-macos.bundle in Embed Frameworks */,
-				7D833C34210265C7005F2854 /* dicdirKoDic-macos.bundle in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,11 +54,8 @@
 
 /* Begin PBXFileReference section */
 		13C86E5D12C87B3E006F2369 /* NodeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NodeCell.xib; sourceTree = "<group>"; };
-		13C86E6712C87B6C006F2369 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		13C86E6912C87B77006F2369 /* NodeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeCell.h; sourceTree = "<group>"; };
 		13C86E6A12C87B77006F2369 /* NodeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeCell.m; sourceTree = "<group>"; };
-		13C86E7412C87C31006F2369 /* mecab.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mecab.xcodeproj; path = ../mecab/mecab.xcodeproj; sourceTree = SOURCE_ROOT; };
-		13C86E8712C87C70006F2369 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* LibMecabSampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibMecabSampleAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* LibMecabSampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibMecabSampleAppDelegate.m; sourceTree = "<group>"; };
@@ -161,21 +66,20 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28D7ACF60DDB3853001CB0EB /* LibMecabSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibMecabSampleViewController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* LibMecabSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibMecabSampleViewController.m; sourceTree = "<group>"; };
+		2917EF38E1BA40C08FFB9095 /* Pods-LibMecabSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibMecabSample.release.xcconfig"; path = "Target Support Files/Pods-LibMecabSample/Pods-LibMecabSample.release.xcconfig"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* LibMecabSample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibMecabSample_Prefix.pch; sourceTree = "<group>"; };
+		367A2F93A04EA3B74709C8E6 /* Pods-LibMecabSample-macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibMecabSample-macos.debug.xcconfig"; path = "Target Support Files/Pods-LibMecabSample-macos/Pods-LibMecabSample-macos.debug.xcconfig"; sourceTree = "<group>"; };
+		686B94DEC436E986723A1DFA /* Pods_LibMecabSample_macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibMecabSample_macos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D468B1E23CA81B1000382D5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D468B2123CA8245000382D5 /* LibMecabSample-macos-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LibMecabSample-macos-Info.plist"; sourceTree = "<group>"; };
 		7D471CA41EB4B7610038BCA5 /* ExampleUsage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleUsage.swift; sourceTree = "<group>"; };
-		7D471CAC1EB4D6CB0038BCA5 /* Mecab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mecab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D471CBB1EB4D89C0038BCA5 /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libiconv.2.tbd; sourceTree = DEVELOPER_DIR; };
-		7D471CBD1EB4D8B30038BCA5 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libstdc++.6.0.9.tbd"; sourceTree = DEVELOPER_DIR; };
-		7D471CBF1EB4D9320038BCA5 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../../../usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
-		7D471CC11EB4D9440038BCA5 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "../../../../../../usr/lib/libstdc++.6.0.9.dylib"; sourceTree = "<group>"; };
-		7D471CE11EB4E7390038BCA5 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
-		7D471CE31EB4E7460038BCA5 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		7D833C2321026451005F2854 /* LibMecabSample-macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LibMecabSample-macos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D833C2421026451005F2854 /* LibMecabSample copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LibMecabSample copy-Info.plist"; path = "/Users/jamie/Documents/git/iPhone-libmecab/LibMecabSample/LibMecabSample copy-Info.plist"; sourceTree = "<absolute>"; };
 		7D833C36210269AE005F2854 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* LibMecabSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LibMecabSample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		DFD225A2A3BBD2D74CB137D6 /* Pods_LibMecabSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibMecabSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D8933F41C385A03E916969 /* Pods-LibMecabSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibMecabSample.debug.xcconfig"; path = "Target Support Files/Pods-LibMecabSample/Pods-LibMecabSample.debug.xcconfig"; sourceTree = "<group>"; };
 		E630CC2E1CFBE222001774B0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F71CF0D94911F0860BEF1A61 /* Pods-LibMecabSample-macos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibMecabSample-macos.release.xcconfig"; path = "Target Support Files/Pods-LibMecabSample-macos/Pods-LibMecabSample-macos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,19 +90,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
-				13C86E6812C87B6C006F2369 /* libiconv.dylib in Frameworks */,
-				7DA3635E1FCB42270004EF6F /* libmecab.a in Frameworks */,
-				13C86E8812C87C70006F2369 /* libstdc++.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D471CA81EB4D6CB0038BCA5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D471CE41EB4E7460038BCA5 /* libiconv.tbd in Frameworks */,
-				7D471CE21EB4E7390038BCA5 /* libstdc++.tbd in Frameworks */,
-				7D471CD81EB4DEE30038BCA5 /* libmecab.a in Frameworks */,
+				3C0E4A98620F6945679CBBFD /* Pods_LibMecabSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,11 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D833C1721026451005F2854 /* Foundation.framework in Frameworks */,
-				7D833C1821026451005F2854 /* UIKit.framework in Frameworks */,
-				7D833C1921026451005F2854 /* CoreGraphics.framework in Frameworks */,
-				7D833C1A21026451005F2854 /* libiconv.dylib in Frameworks */,
-				7D833C35210265EB005F2854 /* libmecab-macos.a in Frameworks */,
-				7D833C1C21026451005F2854 /* libstdc++.dylib in Frameworks */,
+				C573533B78CAD79835ACCF63 /* Pods_LibMecabSample_macos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,24 +120,10 @@
 			path = "iOS UI";
 			sourceTree = "<group>";
 		};
-		13C86E7512C87C31006F2369 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				13C86E7C12C87C31006F2369 /* libmecab.a */,
-				7D833C2A21026451005F2854 /* libmecab-macos.a */,
-				7D6D55791FB87C2900DEF011 /* dicdirNaistJdic.bundle */,
-				7D15E73E1FFB0FC80015401F /* dicdirKoDic.bundle */,
-				7D833C2C21026451005F2854 /* dicdirNaistJdic-macos.bundle */,
-				7D833C2E21026451005F2854 /* dicdirKoDic-macos.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* LibMecabSample.app */,
-				7D471CAC1EB4D6CB0038BCA5 /* Mecab.framework */,
 				7D833C2321026451005F2854 /* LibMecabSample-macos.app */,
 			);
 			name = Products;
@@ -265,7 +139,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				7D833C2421026451005F2854 /* LibMecabSample copy-Info.plist */,
+				A30F994597B822A85714F94B /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -273,8 +147,6 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				13C86E7412C87C31006F2369 /* mecab.xcodeproj */,
-				32CA4F630368D1EE00C91783 /* LibMecabSample_Prefix.pch */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -287,6 +159,7 @@
 				2899E5210DE3E06400AC0155 /* LibMecabSampleViewController.xib */,
 				13C86E5D12C87B3E006F2369 /* NodeCell.xib */,
 				8D1107310486CEB800E47090 /* LibMecabSample-Info.plist */,
+				7D468B2123CA8245000382D5 /* LibMecabSample-macos-Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -294,17 +167,11 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7D471CE31EB4E7460038BCA5 /* libiconv.tbd */,
-				7D471CE11EB4E7390038BCA5 /* libstdc++.tbd */,
-				7D471CC11EB4D9440038BCA5 /* libstdc++.6.0.9.dylib */,
-				7D471CBF1EB4D9320038BCA5 /* libiconv.2.dylib */,
-				7D471CBD1EB4D8B30038BCA5 /* libstdc++.6.0.9.tbd */,
-				7D471CBB1EB4D89C0038BCA5 /* libiconv.2.tbd */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
-				13C86E6712C87B6C006F2369 /* libiconv.dylib */,
-				13C86E8712C87C70006F2369 /* libstdc++.dylib */,
+				DFD225A2A3BBD2D74CB137D6 /* Pods_LibMecabSample.framework */,
+				686B94DEC436E986723A1DFA /* Pods_LibMecabSample_macos.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -312,77 +179,62 @@
 		7D833C3921026A28005F2854 /* macos UI */ = {
 			isa = PBXGroup;
 			children = (
+				7D468B1E23CA81B1000382D5 /* AppDelegate.swift */,
 				7D833C36210269AE005F2854 /* main.swift */,
 			);
 			path = "macos UI";
 			sourceTree = "<group>";
 		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		7D471CA91EB4D6CB0038BCA5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+		A30F994597B822A85714F94B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1D8933F41C385A03E916969 /* Pods-LibMecabSample.debug.xcconfig */,
+				2917EF38E1BA40C08FFB9095 /* Pods-LibMecabSample.release.xcconfig */,
+				367A2F93A04EA3B74709C8E6 /* Pods-LibMecabSample-macos.debug.xcconfig */,
+				F71CF0D94911F0860BEF1A61 /* Pods-LibMecabSample-macos.release.xcconfig */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			path = Pods;
+			sourceTree = "<group>";
 		};
-/* End PBXHeadersBuildPhase section */
+/* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		1D6058900D05DD3D006BFB54 /* LibMecabSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "LibMecabSample" */;
 			buildPhases = (
+				38D7C2CF359A323E25DD2AF5 /* [CP] Check Pods Manifest.lock */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				7D471CB91EB4D6CB0038BCA5 /* Embed Frameworks */,
+				44A896FE70CA78077DE7F9AD /* [CP] Embed Pods Frameworks */,
+				E19F85F11466468B26D92BD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7D9E76D81FFC40B000C82B51 /* PBXTargetDependency */,
-				7D9E76DA1FFC40B000C82B51 /* PBXTargetDependency */,
 			);
 			name = LibMecabSample;
 			productName = LibMecabSample;
 			productReference = 1D6058910D05DD3D006BFB54 /* LibMecabSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7D471CAB1EB4D6CB0038BCA5 /* Mecab */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D471CB81EB4D6CB0038BCA5 /* Build configuration list for PBXNativeTarget "Mecab" */;
-			buildPhases = (
-				7D471CA71EB4D6CB0038BCA5 /* Sources */,
-				7D471CA81EB4D6CB0038BCA5 /* Frameworks */,
-				7D471CA91EB4D6CB0038BCA5 /* Headers */,
-				7D471CAA1EB4D6CB0038BCA5 /* Resources */,
-				7D8F2DC81EB5F7CC0039B643 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Mecab;
-			productName = MeCab;
-			productReference = 7D471CAC1EB4D6CB0038BCA5 /* Mecab.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		7D833C0621026451005F2854 /* LibMecabSample-macos */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D833C2021026451005F2854 /* Build configuration list for PBXNativeTarget "LibMecabSample-macos" */;
 			buildPhases = (
+				65303BF16940EF171AED8557 /* [CP] Check Pods Manifest.lock */,
 				7D833C0B21026451005F2854 /* Resources */,
 				7D833C1021026451005F2854 /* Sources */,
 				7D833C1621026451005F2854 /* Frameworks */,
 				7D833C1D21026451005F2854 /* Embed Frameworks */,
+				1D0593A7180F9EBF44E0DE47 /* [CP] Embed Pods Frameworks */,
+				B3EA189BD4B99B26165695BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7D833C32210265B0005F2854 /* PBXTargetDependency */,
-				7D833C30210265AC005F2854 /* PBXTargetDependency */,
 			);
 			name = "LibMecabSample-macos";
 			productName = LibMecabSample;
@@ -401,10 +253,6 @@
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Manual;
 					};
-					7D471CAB1EB4D6CB0038BCA5 = {
-						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Manual;
-					};
 				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LibMecabSample" */;
@@ -418,66 +266,15 @@
 				German,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 13C86E7512C87C31006F2369 /* Products */;
-					ProjectRef = 13C86E7412C87C31006F2369 /* mecab.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* LibMecabSample */,
-				7D471CAB1EB4D6CB0038BCA5 /* Mecab */,
 				7D833C0621026451005F2854 /* LibMecabSample-macos */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		13C86E7C12C87C31006F2369 /* libmecab.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libmecab.a;
-			remoteRef = 13C86E7B12C87C31006F2369 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7D15E73E1FFB0FC80015401F /* dicdirKoDic.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = dicdirKoDic.bundle;
-			remoteRef = 7D15E73D1FFB0FC80015401F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7D6D55791FB87C2900DEF011 /* dicdirNaistJdic.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = dicdirNaistJdic.bundle;
-			remoteRef = 7D6D55781FB87C2900DEF011 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7D833C2A21026451005F2854 /* libmecab-macos.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libmecab-macos.a";
-			remoteRef = 7D833C2921026451005F2854 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7D833C2C21026451005F2854 /* dicdirNaistJdic-macos.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "dicdirNaistJdic-macos.bundle";
-			remoteRef = 7D833C2B21026451005F2854 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7D833C2E21026451005F2854 /* dicdirKoDic-macos.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "dicdirKoDic-macos.bundle";
-			remoteRef = 7D833C2D21026451005F2854 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -486,16 +283,9 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* LibMecabSampleViewController.xib in Resources */,
+				7D468B2223CA8245000382D5 /* LibMecabSample-macos-Info.plist in Resources */,
 				13C86E5E12C87B3E006F2369 /* NodeCell.xib in Resources */,
 				E630CC2F1CFBE222001774B0 /* Default-568h@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D471CAA1EB4D6CB0038BCA5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D471CD61EB4DEB50038BCA5 /* LibMecabSample-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,9 +293,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D833C0C21026451005F2854 /* MainWindow.xib in Resources */,
-				7D833C0D21026451005F2854 /* LibMecabSampleViewController.xib in Resources */,
-				7D833C0E21026451005F2854 /* NodeCell.xib in Resources */,
 				7D833C0F21026451005F2854 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,18 +300,125 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7D8F2DC81EB5F7CC0039B643 /* ShellScript */ = {
+		1D0593A7180F9EBF44E0DE47 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LibMecabSample-macos/Pods-LibMecabSample-macos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/mecab-ko-macOS/mecab_ko.framework",
 			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mecab_ko.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LibMecabSample-macos/Pods-LibMecabSample-macos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38D7C2CF359A323E25DD2AF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LibMecabSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44A896FE70CA78077DE7F9AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LibMecabSample/Pods-LibMecabSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/mecab-ko-iOS/mecab_ko.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mecab_ko.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LibMecabSample/Pods-LibMecabSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65303BF16940EF171AED8557 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LibMecabSample-macos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3EA189BD4B99B26165695BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LibMecabSample-macos/Pods-LibMecabSample-macos-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/mecab-ko-dic-utf-8-macOS/mecab-ko-dic-utf-8.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/mecab-naist-jdic-utf-8-macOS/mecab-naist-jdic-utf-8.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mecab-ko-dic-utf-8.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mecab-naist-jdic-utf-8.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LibMecabSample-macos/Pods-LibMecabSample-macos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E19F85F11466468B26D92BD0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LibMecabSample/Pods-LibMecabSample-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/mecab-ko-dic-utf-8-iOS/mecab-ko-dic-utf-8.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/mecab-naist-jdic-utf-8-iOS/mecab-naist-jdic-utf-8.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mecab-ko-dic-utf-8.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mecab-naist-jdic-utf-8.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LibMecabSample/Pods-LibMecabSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -541,17 +435,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D471CA71EB4D6CB0038BCA5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7D833C1021026451005F2854 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D468B2023CA81D5000382D5 /* AppDelegate.swift in Sources */,
 				7D833C37210269AE005F2854 /* main.swift in Sources */,
 				7D833C1521026451005F2854 /* ExampleUsage.swift in Sources */,
 			);
@@ -559,264 +447,97 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		7D833C30210265AC005F2854 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "dicdirNaistJdic-macos";
-			targetProxy = 7D833C2F210265AC005F2854 /* PBXContainerItemProxy */;
-		};
-		7D833C32210265B0005F2854 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "dicdirKoDic-macos";
-			targetProxy = 7D833C31210265B0005F2854 /* PBXContainerItemProxy */;
-		};
-		7D9E76D81FFC40B000C82B51 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = dicdirNaistJdic;
-			targetProxy = 7D9E76D71FFC40B000C82B51 /* PBXContainerItemProxy */;
-		};
-		7D9E76DA1FFC40B000C82B51 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = dicdirKoDic;
-			targetProxy = 7D9E76D91FFC40B000C82B51 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1D8933F41C385A03E916969 /* Pods-LibMecabSample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = LibMecabSample_Prefix.pch;
 				INFOPLIST_FILE = "LibMecabSample-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = LibMecabSample;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/../mecab/src/mecab-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2917EF38E1BA40C08FFB9095 /* Pods-LibMecabSample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = LibMecabSample_Prefix.pch;
 				INFOPLIST_FILE = "LibMecabSample-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = LibMecabSample;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/../mecab/src/mecab-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		7D471CB51EB4D6CB0038BCA5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = MeCab/Info.plist;
-				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					../mecab/,
-					/usr/local/lib,
-					/usr/local/Cellar/mecab/0.996/lib,
-				);
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "-lmecab";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.birchlabs.Mecab;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LibMecabSample-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = NO;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7D471CB61EB4D6CB0038BCA5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = NO;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = MeCab/Info.plist;
-				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					../mecab/,
-					/usr/local/lib,
-					/usr/local/Cellar/mecab/0.996/lib,
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "-lmecab";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.birchlabs.Mecab;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SKIP_INSTALL = YES;
-				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LibMecabSample-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = NO;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 		7D833C2121026451005F2854 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 367A2F93A04EA3B74709C8E6 /* Pods-LibMecabSample-macos.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = LibMecabSample_Prefix.pch;
-				INFOPLIST_FILE = "LibMecabSample copy-Info.plist";
+				INFOPLIST_FILE = "LibMecabSample-macos-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/../mecab/src/mecab-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		7D833C2221026451005F2854 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F71CF0D94911F0860BEF1A61 /* Pods-LibMecabSample-macos.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = LibMecabSample_Prefix.pch;
-				INFOPLIST_FILE = "LibMecabSample copy-Info.plist";
+				INFOPLIST_FILE = "LibMecabSample-macos-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/../mecab/src/mecab-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -834,6 +555,7 @@
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -849,6 +571,7 @@
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -860,15 +583,6 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D471CB81EB4D6CB0038BCA5 /* Build configuration list for PBXNativeTarget "Mecab" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D471CB51EB4D6CB0038BCA5 /* Debug */,
-				7D471CB61EB4D6CB0038BCA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,6 @@
+framework module mecab_ko {
+  umbrella header "mecab-ko-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
