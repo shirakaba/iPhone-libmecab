@@ -6,5 +6,5 @@
 //
 
 
-#import "MecabObjC.h"
-#import "Node.h"
+#import <mecab/MecabObjC.h>
+#import <mecab/Node.h>

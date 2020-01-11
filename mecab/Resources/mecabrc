@@ -13,4 +13,3 @@ dicdir =  ./
 ; node-format = %m\n
 ; bos-format = %S\n
 ; eos-format = EOS\n
-

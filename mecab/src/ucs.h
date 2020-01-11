@@ -1,6 +1,5 @@
 //  MeCab -- Yet Another Part-of-Speech and Morphological Analyzer
 //
-//  $Id: ucs.h 173 2009-04-18 08:10:57Z taku-ku $;
 //
 //  Copyright(C) 2001-2006 Taku Kudo <taku@chasen.org>
 //  Copyright(C) 2004-2006 Nippon Telegraph and Telephone Corporation
@@ -55,6 +54,7 @@ inline unsigned short utf8_to_ucs2(const char *begin, const char *end,
 
 inline unsigned short ascii_to_ucs2(const char *begin, const char *end,
                                     size_t *mblen) {
+  *mblen = 1;
   return static_cast<unsigned char>(begin[0]);
 }
 

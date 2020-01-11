@@ -23,7 +23,9 @@
 @synthesize originalForm;
 @synthesize reading;
 @synthesize pronunciation;
-
+@synthesize leadingWhitespaceLength;
+@synthesize trailingWhitespace;
+// MecabObjC.m sets newNode.feature =, but never any other property (lazy setting)
 - (void)setFeature:(NSString *)value {
     if (feature) [feature release];
     
@@ -37,7 +39,7 @@
 }
 
 // surface seems to be exposed by Mecab itself, hence why I haven't written a setter for it here.
-
+// I wrote the implementation for all these setters, but in practice MecabObjC.m only assigns to newNode lazily.
 - (void)setPartOfSpeech:(NSString *)value {
     if (partOfSpeech) [partOfSpeech release];
     partOfSpeech = value ? [value retain] : nil;
@@ -81,6 +83,15 @@
 - (void)setPronunciation:(NSString *)value {
     if (pronunciation) [pronunciation release];
     pronunciation = value ? [value retain] : nil;
+}
+
+- (void)setLeadingWhitespaceLength:(int)value {
+    leadingWhitespaceLength = value;
+}
+
+- (void)setTrailingWhitespace:(NSString *)value {
+    if (trailingWhitespace) [trailingWhitespace release];
+    trailingWhitespace = value ? [value retain] : nil;
 }
 
 // surface seems to be exposed by Mecab itself, hence why I haven't written a field for it here.
@@ -130,11 +141,20 @@
     return [features objectAtIndex:8];
 }
 
+- (int)leadingWhitespaceLength {
+    return leadingWhitespaceLength;
+}
+
+- (NSString *)trailingWhitespace {
+    return trailingWhitespace;
+}
+
 - (void)dealloc {
     // release methods untested here because we're using ARC.
-    // Note: http://stackoverflow.com/a/7906891/5951226 says you shouldn't actually nil out properties in dealloc.
+    // Note: http://stackoverflow.com/a/7906891/5951226 says you shouldn't actually nil out properties in dealloc, and certainly not 'retain' ones.
     self.feature = nil;
     self.features = nil;
+    // self.leadingWhitespaceLength = nil;
     
     self.surface = nil;
     self.partOfSpeech = nil;
@@ -146,6 +166,7 @@
     self.originalForm = nil;
     self.reading = nil;
     self.pronunciation = nil;
+    self.trailingWhitespace = nil;
     
     [super dealloc];
 }

@@ -1,0 +1,35 @@
+{
+  "name": "mecab-ko",
+  "version": "0.1.0",
+  "description": "mecab-ko - a fork of Mecab, with support for both Japanese and Korean.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shirakaba/iPhone-libmecab.git"
+  },
+  "keywords": [
+    "mecab",
+    "korean",
+    "ko",
+    "dic",
+    "dictionary"
+  ],
+  "author": {
+    "name": "Jamie Birch",
+    "email": "14055146+shirakaba@users.noreply.github.com"
+  },
+  "license": "SEE LICENSE IN Assets/BSD",
+  "bugs": {
+    "url": "https://github.com/shirakaba/iPhone-libmecab/issues"
+  },
+  "homepage": "https://github.com/shirakaba/iPhone-libmecab#readme",
+  "files": [
+    "Assets",
+    "Classes",
+    "ios",
+    "mecab-naist-jdic-utf-8.podspec"
+  ]
+}
