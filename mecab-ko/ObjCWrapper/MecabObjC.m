@@ -52,7 +52,7 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME = @"mecab-ko-dic-utf-8";
     for (; node->next != NULL; node = node->next) {
         BOOL firstNode = (node->prev == NULL) || (node->prev->prev == NULL);
         BOOL lastNode = (node->next == NULL) || (node->next->next == NULL);
-        MecabNode *newNode = [Node new];
+        MecabNode *newNode = [MecabNode new];
         /* Note: this method will not identify whitespace at the start of input text. MeCab always trims leading whitespace from each node's surface (although does acknowledge the increased rlength), so we'd have to compare the original string's length to node->length. */
         newNode.surface = [[[NSString alloc] initWithBytes:node->surface length:node->length encoding:NSUTF8StringEncoding] autorelease];
         newNode.feature = [NSString stringWithCString:node->feature encoding:NSUTF8StringEncoding];
