@@ -23,7 +23,6 @@ class ViewController: UIViewController {
         let mecabJapanese: Mecab = Mecab.init(dicDirPath: jpBundlePath!)
         let mecabKorean: Mecab = Mecab.init(dicDirPath: koBundlePath!)
         let japaneseNodes: [MecabNode]? = mecabJapanese.parseToNode(with: "この番組はご覧のスポンサーの提供で送りします。")
-        print(japaneseNodes!)
         japaneseNodes?.forEach({ node in print("[\(node.surface)] \(node.partOfSpeech ?? "*") \(node.originalForm ?? "*")") })
         
         let koreanNodes: [MecabNode]? = mecabKorean.parseToNode(with: "mecab-ko-dic은 MeCab을 사용하여, 한국어 형태소 분석을 하기 위한 프로젝트입니다.")

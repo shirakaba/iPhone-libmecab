@@ -16,9 +16,6 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME = @"mecab-ko-dic-utf-8";
 
 @implementation Mecab
 
-// Page 106, "Objective-C for Swift developers": no need to implement alloc, which is handled by NSObject.
-
-// Page 90, "Objective-C for Swift developers"
 + (instancetype)mecabWithDicDirPath:(NSString *)dicDirPath
 {
     return [[self alloc] initWithDicDirPath:dicDirPath];
@@ -26,8 +23,6 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME = @"mecab-ko-dic-utf-8";
 
 - (instancetype)initWithDicDirPath:(NSString *)dicDirPath
 {
-    // or [self init] ?
-    // Page 105, "Objective-C for Swift developers"
     if(self = [super init])
     {
         mecab = mecab_new2([[@"--output-format-type=none --dicdir " stringByAppendingString:[NSString stringWithFormat:@"%@", dicDirPath]] UTF8String]);
