@@ -1,7 +1,7 @@
 //
-//  Mecab.h
+//  MecabObjC.h
 //
-//  Created by Watanabe Toshinori on 10/12/22.
+//  Created by Watanabe Toshinori on 10/12/22 (originally as "Mecab.h").
 //  Copyright 2010 FLCL.jp. All rights reserved.
 //
 

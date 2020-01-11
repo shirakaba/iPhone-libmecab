@@ -22,14 +22,17 @@ Pod::Spec.new do |s|
   s.xcconfig = {
     'CLANG_ENABLE_OBJC_ARC' => 'NO',
     'GCC_PREPROCESSOR_DEFINITIONS' => 'HAVE_CONFIG_H MECAB_DEFAULT_RC=\"./\" DIC_VERSION=102',
+    # I'm unsure how many of these below are necessary to specify, but they were in use in iPhone-libmecab.
     'GCC_DYNAMIC_NO_PIC' => 'NO',
     'GCC_MODEL_TUNING' => 'G5',
     'GCC_C_LANGUAGE_STANDARD' => 'c99',
     'CLANG_CXX_LANGUAGE_STANDARD' => 'compiler-default',
     'CLANG_CXX_LIBRARY' => 'compiler-default'
   }
-  s.libraries    = 'iconv'
+  s.libraries  = 'iconv'
   s.info_plist = {
+    'iPhone-libmecab authors' => 'Toshinori Watanabe; Matthew Long; Jamie Birch',
+    'iPhone-libmecab special thanks' => 'Joseph Toronto',
     'mecab-ko authors' => 'Taku Kudo (taku@chasen.org); Yongwoon Lee (bibreen@gmail.com); Yungho Yu (mousegood@gmail.com)',
     'mecab-ko repo' => 'https://bitbucket.org/eunjeon/mecab-ko/src/master/',
     'mecab-ko version' => '0.996'
