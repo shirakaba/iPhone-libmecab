@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
     :path: "../mecab-naist-jdic-utf-8"
 
 SPEC CHECKSUMS:
-  mecab-ko: 638eb980733a6a58bd81b96674590c0801e02492
+  mecab-ko: 94c3642c8cf1f555c3b51a290844dbb2c44f1a33
   mecab-ko-dic-utf-8: bf46ca9826b52d1fe0f0a019cb5caed773099417
   mecab-naist-jdic-utf-8: 8756a11e929b554a8ad0f3051963a6f7be628a5a
 

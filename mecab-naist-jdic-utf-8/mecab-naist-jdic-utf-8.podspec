@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.author       = package['author']
   s.platforms    = { :ios => "10.3", :macos => "10.11" }
   s.source       = { :git => "https://github.com/shirakaba/iPhone-libmecab.git", :tag => "v#{s.version}" }
+  # TODO: Decide a good way to optionally include the model file (model_file)
   s.resource_bundle = { "mecab-naist-jdic-utf-8" => "bundleContents/*" }
   s.info_plist = {
     'NSHumanReadableCopyright' => 'Copyright (c) 2009, Nara Institute of Science and Technology, Japan.',

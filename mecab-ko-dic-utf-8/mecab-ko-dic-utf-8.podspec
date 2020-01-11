@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.author       = package['author']
   s.platforms    = { :ios => "10.3", :macos => "10.11" }
   s.source       = { :git => "https://github.com/shirakaba/iPhone-libmecab.git", :tag => "v#{s.version}" }
+  # TODO: Decide a good way to optionally include the model file (model.bin)
   s.resource_bundle = { "mecab-ko-dic-utf-8" => "bundleContents/*" }
   s.info_plist = {
     'mecab-ko-dic authors' => 'Yongwoon Lee (bibreen@gmail.com); Yungho Yu (mousegood@gmail.com)',

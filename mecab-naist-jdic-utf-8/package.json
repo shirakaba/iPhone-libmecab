@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/shirakaba/iPhone-libmecab/issues"
   },
-  "homepage": "https://github.com/shirakaba/iPhone-libmecab#readme"
+  "homepage": "https://github.com/shirakaba/iPhone-libmecab#readme",
+  "files": [
+    "bundleContents",
+    "mecab-naist-jdic-utf-8.podspec"
+  ]
 }
