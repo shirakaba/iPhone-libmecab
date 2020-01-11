@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "NodeCell.h"
-#import "../mecab/src/Node.h"
+#import <mecab_ko/MecabObjC.h>
+#import <mecab_ko/MecabNode.h>
 
 @class Mecab;
 
@@ -19,7 +20,7 @@
 	NodeCell *nodeCell;
 	
 	Mecab *mecab;
-	NSArray<Node *> *nodes;
+	NSArray<MecabNode *> *nodes;
 
 }
 
@@ -27,7 +28,7 @@
 @property (nonatomic, retain) IBOutlet UITableView *tableView_;
 @property (nonatomic, retain) IBOutlet NodeCell *nodeCell;
 @property (nonatomic, retain) Mecab *mecab;
-@property (nonatomic, retain) NSArray<Node *> *nodes;
+@property (nonatomic, retain) NSArray<MecabNode *> *nodes;
 
 - (IBAction)parse:(id)sender;
 

@@ -9,8 +9,6 @@
 #import "LibMecabSampleViewController.h"
 #import <mecab_ko/MecabObjC.h>
 #import <mecab_ko/MecabNode.h>
-//#import "../mecab/src/MecabObjC.h"
-//#import "../mecab/src/Node.h"
 
 @implementation LibMecabSampleViewController
 
@@ -22,18 +20,18 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+    
+    NSString *jpDicBundlePath = [[NSBundle mainBundle] pathForResource:@"mecab-naist-jdic-utf-8" ofType:@"bundle"];
+    NSString *jpDicBundleResourcePath = [[NSBundle alloc] initWithPath:jpDicBundlePath].resourcePath;
 	
-	self.mecab = [[Mecab new] autorelease];
+	self.mecab = [[Mecab alloc] initWithDicDirPath:jpDicBundleResourcePath];
 }
 
 - (IBAction)parse:(id)sender {
 	[textField resignFirstResponder];
 	
 	NSString *string = textField.text;
-	
-    NSString *jpDicBundlePath = [[NSBundle mainBundle] pathForResource:@"mecab-naist-jdic-utf-8" ofType:@"bundle"];
-    Mecab *mecab = [[Mecab alloc] initWithDicDirPath:jpDicBundlePath];
-    [mecab parseToNodeWithString:string calculateTrailingWhitespace:YES];
+    self.nodes = [mecab parseToNodeWithString:string calculateTrailingWhitespace:NO];
 	
 	[tableView_ reloadData];
 }
@@ -60,8 +58,7 @@
 		cell = nodeCell;
 		self.nodeCell = nil;
     }
-    
-	Node *node = [nodes objectAtIndex:indexPath.row];
+	MecabNode *node = [nodes objectAtIndex:indexPath.row];
 	cell.surfaceLabel.text = node.surface;
     cell.featureLabel.text = [node reading]; // node.pronunciation field (field index 8) exists in Japanese (whether or not populated), but for Korean, the top index is 7 (which corresponds to node.pronunciation), although I don't yet know what that actually is.
     
