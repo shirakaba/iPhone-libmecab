@@ -1,7 +1,7 @@
 //
-//  Node.h
+//  MecabNode.h
 //
-//  Created by Watanabe Toshinori on 10/12/22.
+//  Created by Watanabe Toshinori on 10/12/22 (originally as "Node.h").
 //  Copyright 2010 FLCL.jp. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 //#import "/Users/jamie/Documents/git/iPhone-libmecab/mecab/mecab.h"
 #import "mecab.h" // or #import <mecab.h> to use globally installed one
 
-@interface Node : NSObject {
+@interface MecabNode : NSObject {
     NSString *feature;
     NSArray<NSString *> *features;
     int leadingWhitespaceLength;
@@ -28,7 +28,7 @@
     NSString *pronunciation;
 }
 
-// These are assigned pre-emptively to Node, pulled out of the mecab node.
+// These are assigned pre-emptively to MecabNode, pulled out of the mecab node.
 @property (nonatomic, retain, nullable) NSString *feature;
 @property (nonatomic, retain, nullable) NSArray<NSString *> *features;
 @property (nonatomic, retain, nullable) NSString *trailingWhitespace;

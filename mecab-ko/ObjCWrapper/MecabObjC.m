@@ -16,15 +16,15 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME = @"mecab-ko-dic-utf-8";
 
 @implementation Mecab
 
-// - (NSArray<Node *> *)parseToNodeWithString:(NSString *)string {
+// - (NSArray<MecabNode *> *)parseToNodeWithString:(NSString *)string {
 //     return [self parseToNodeWithString:string dicdirPath:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME_IOS calculateTrailingWhitespace:NO];
 // }
 
-- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirPath:(NSString *)dicdirPath {
+- (NSArray<MecabNode *> *)parseToNodeWithString:(NSString *)string dicdirPath:(NSString *)dicdirPath {
     return [self parseToNodeWithString:string dicdirPath:dicdirPath calculateTrailingWhitespace:NO];
 }
 
-- (NSArray<Node *> *)parseToNodeWithString:(NSString *)string dicdirPath:(NSString *)dicdirPath calculateTrailingWhitespace:(BOOL)calculateTrailingWhitespace {
+- (NSArray<MecabNode *> *)parseToNodeWithString:(NSString *)string dicdirPath:(NSString *)dicdirPath calculateTrailingWhitespace:(BOOL)calculateTrailingWhitespace {
     if (mecab == NULL) {
         mecab = mecab_new2([[@"--output-format-type=none --dicdir " stringByAppendingString:[NSString stringWithFormat:@"%@", dicdirPath]] UTF8String]);
         
@@ -46,13 +46,13 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME = @"mecab-ko-dic-utf-8";
         return nil;
     }
     
-    NSMutableArray<Node *> *newNodes = [NSMutableArray<Node *> array];
+    NSMutableArray<MecabNode *> *newNodes = [NSMutableArray<MecabNode *> array];
     node = node->next;
-    Node *oldNode = NULL;
+    MecabNode *oldNode = NULL;
     for (; node->next != NULL; node = node->next) {
         BOOL firstNode = (node->prev == NULL) || (node->prev->prev == NULL);
         BOOL lastNode = (node->next == NULL) || (node->next->next == NULL);
-        Node *newNode = [Node new];
+        MecabNode *newNode = [Node new];
         /* Note: this method will not identify whitespace at the start of input text. MeCab always trims leading whitespace from each node's surface (although does acknowledge the increased rlength), so we'd have to compare the original string's length to node->length. */
         newNode.surface = [[[NSString alloc] initWithBytes:node->surface length:node->length encoding:NSUTF8StringEncoding] autorelease];
         newNode.feature = [NSString stringWithCString:node->feature encoding:NSUTF8StringEncoding];
@@ -80,7 +80,7 @@ NSString *const DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME = @"mecab-ko-dic-utf-8";
         [oldNode release];
     }
     
-    return [NSArray<Node *> arrayWithArray:newNodes];
+    return [NSArray<MecabNode *> arrayWithArray:newNodes];
 }
 
 - (void)dealloc {
