@@ -8,8 +8,26 @@ Updated to work with Xcode 11, iOS 9+, macOS 10.11+, and Swift 5.
 
 The sample app in LibMecabSample should build both an iOS Obj-C app (with a UI) and a macOS Swift app (without any UI; check the console for results).
 
-<img width="200px" src="/github_img/ios_sample_jp.png"/>
-<img width="200px" src="/github_img/ios_sample_ko.png"/>
+<table>
+    <tbody>
+        <tr>
+            <td align="center" valign="middle">
+                <img width="200px" src="/github_img/ios_sample_jp.png"/>
+            </td>
+            <td align="center" valign="middle">
+                <img width="200px" src="/github_img/ios_sample_ko.png"/>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" valign="middle">
+                <p><b>Japanese</b></p>
+            </td>
+            <td align="center" valign="middle">
+                <p><b>Korean</b></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 ## Installing from Cocoapods
 
