@@ -1,4 +1,4 @@
-# Japanese Morphological Analyzer Mecab on iPhone（Cocoa Static Library Version）
+# Japanese Morphological Analyzer Mecab on iOS and macOS
 
 This is a project that enables `mecab-ko` (a fork of Mecab that adds support for Korean) to be easily integrated into an iOS or macOS app.
 
@@ -31,7 +31,7 @@ pod update
 
 ## Installing as a Cocoapod from `npm` (for React Native iOS apps)
 
-Add these packages to your `package.json` (you can omit the Japanese or Korean dictionary if you only plan to use Mecab with one of the two languages):
+Add these npm packages (you can omit the Japanese or Korean dictionary if you only plan to use Mecab with one of the two languages):
 
 ```sh
 yarn add mecab-ko mecab-naist-jdic-utf-8 mecab-ko-dic-utf-8
@@ -179,4 +179,7 @@ This repository is based on:
 
 ## See also
 
-https://github.com/junhewk/RcppMeCab
+* https://github.com/shirakaba/mecab-ko
+* https://github.com/shirakaba/mecab-ko-dic-utf-8
+* https://github.com/shirakaba/mecab-naist-jdic-utf-8
+* Mecab for Japanese, Korean, and Chinese: https://github.com/junhewk/RcppMeCab
