@@ -96,7 +96,7 @@ let jpBundleResourcePath = Bundle.init(path: jpBundlePath!)!.resourcePath
 
 let mecabJapanese: Mecab = Mecab.init(dicDirPath: jpBundleResourcePath!)
 let japaneseNodes: [MecabNode]? = mecabJapanese.parseToNode(with: "すもももももももものうち")
-japaneseNodes?.forEach({ node in print("[\(node.surface)] \(node.partOfSpeech ?? "*") \(node.originalForm ?? "*")") })
+japaneseNodes?.forEach({ node in print("[\(node.surface)] \(node.feature)") })
 ```
 
 ### Obj-C invocation
@@ -213,7 +213,7 @@ It's based on IPADIC, and the tags are fully documented here https://osdn.net/pr
 
 Information about the dictionary format and part-of-speech tags used by mecab-ko-dic is documented in [this Google Spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0ApcJghR6UMXxdEdURGY2YzIwb3dSZ290RFpSaUkzZ0E&usp=sharing), linked to from `mecab-ko-dic`'s [repo readme](https://bitbucket.org/eunjeon/mecab-ko-dic/src/master/README.md).
 
-Note how ko-dic has one less feature column than NAIST JDIC, and has an altogether different set of information (e.g.  doesn't provide the "original form" of the word).
+Note how ko-dic has one less feature column than NAIST JDIC, and has an altogether different set of information (e.g.  doesn't provide the "original form" of the morpheme).
 
 The tags are a slight modification of those specified by 세종 (Sejong), whatever that is. The mappings from Sejong to mecab-ko-dic's tag names are given in tab "태그 v2.0" on the above-linked spreadsheet.
 
@@ -303,5 +303,5 @@ This repository is based on:
 * https://github.com/shirakaba/mecab-ko
 * https://github.com/shirakaba/mecab-ko-dic-utf-8
 * https://github.com/shirakaba/mecab-naist-jdic-utf-8
-* Mecab for Japanese, Korean, and Chinese: https://github.com/junhewk/RcppMeCab
+* Mecab for Japanese, Korean, and Chinese, by [Junhewk Kim](https://github.com/junhewk): [introduction](https://junhewk.github.io/text/2018/05/18/introduction-to-rcppmecab/); [repo](https://github.com/junhewk/RcppMeCab)
 * Overview of Japanese tokenizer dictionaries: https://www.dampfkraft.com/nlp/japanese-tokenizer-dictionaries.html
