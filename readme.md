@@ -114,7 +114,7 @@ self.mecab = [[Mecab alloc] initWithDicDirPath:jpDicBundleResourcePath];
 NSArray<MecabNode *> results = [mecab parseToNodeWithString:@"すもももももももものうち"];
 ```
 
-This would give you the following result:
+This would give you an array of nodes with the following raw metadata:
 
 ```
 すもも: 名詞,一般,*,*,*,*,すもも,スモモ,スモモ  
@@ -126,11 +126,58 @@ This would give you the following result:
 うち: 名詞,非自立,副詞可能,*,*,*,うち,ウチ,ウチ
 ```
 
-If you're planning to use this to present results to users, you'll probably need to write quite a bit of parsing code to put the nodes back together in a useful way since the nodes will be broken down into the smallest possible pieces.
+You can access each piece of metadata by getting the full comma-separated feature string `node.feature` or calling the lazy getters such as `node.surface` which index into that string. Note that these interfaces correspond to NAIST JDIC; (Korean support is secondary, unfortunately)! If you know the schema for `mecab-ko-dic`, I can improve the interface.
 
-A few examples:
+```objc
+@interface MecabNode : NSObject {
+    /* What text the node consists of. */
+    NSString *surface;
 
-欲しがっていた  
+    /* The raw comma-separated string of metadata about the node. */
+    NSString *feature;
+
+    /* All the comma-separated features converted into an array, for 
+     * direct access. */
+    NSArray<NSString *> *features;
+
+    /* The leading whitespace in front of this node (strictly 0 for the
+     * first node, as Mecab always trims whitespace at the start of input
+     * text). */
+    int leadingWhitespaceLength;
+
+    /* Trailing whitespace is only calculated if passing YES into
+     * calculateTrailingWhitespace when calling this method on the mecab
+     * instance:
+     * 
+     * - (NSArray<MecabNode *> *)parseToNodeWithString:(NSString *)string calculateTrailingWhitespace:(BOOL)calculateTrailingWhitespace;
+     *
+     */
+    NSString *trailingWhitespace;
+    
+    /* These getter names correspond to the IPADIC format (as this library was 
+     * originally written purely with a Japanese IPADIC-based dictionary in
+     * mind), but are in index order, so can equally be used for mecab-ko-dic
+     * if you don't mind the names being totally unhelpful.
+     *
+     * If I knew the schema of mecab-ko-dic, I could improve this; sorry! */
+    NSString *partOfSpeech;         // index 0
+    NSString *partOfSpeechSubtype1; // index 1
+    NSString *partOfSpeechSubtype2; // index 2
+    NSString *partOfSpeechSubtype3; // index 3
+    NSString *inflection;           // index 4
+    NSString *useOfType;            // index 5
+    NSString *originalForm;         // index 6
+    NSString *reading;              // index 7
+    NSString *pronunciation;        // index 8 (not present in mecab-ko-dic!)
+}
+```
+
+### Examples
+
+#### Japanese
+
+> 欲しがっていた
+
 ```
 欲し: 形容詞,自立,*,*,形容詞・イ段,ガル接続,欲しい,ホシ,ホシ  
 がっ: 動詞,接尾,*,*,五段・ラ行,連用タ接続,がる,ガッ,ガッ  
@@ -139,7 +186,8 @@ A few examples:
 た: 助動詞,*,*,*,特殊・タ,基本形,た,タ,タ  
 ```
 
-通ったんだろうな  
+> 通ったんだろうな
+
 ```
 通っ: 動詞,自立,*,*,五段・ラ行,連用タ接続,通る,トオッ,トーッ  
 た: 助動詞,*,*,*,特殊・タ,基本形,た,タ,タ  
@@ -149,13 +197,46 @@ A few examples:
 な: 助詞,終助詞,*,*,*,*,な,ナ,ナ  
 ```
 
-光らせておくように  
+> 光らせておくように
+
 ```
 光らせ: 動詞,自立,*,*,一段,連用形,光らせる,ヒカラセ,ヒカラセ  
 て: 助詞,接続助詞,*,*,*,*,て,テ,テ  
 おく: 動詞,非自立,*,*,五段・カ行イ音便,基本形,おく,オク,オク  
 よう: 名詞,非自立,助動詞語幹,*,*,*,よう,ヨウ,ヨー  
 に: 助詞,副詞化,*,*,*,*,に,ニ,ニ  
+```
+
+#### Korean
+
+Note how ko-dic has one less feature column than NAIST JDIC – so be careful not to index into index 8 of the feature set (`node.pronunciation`).
+
+> mecab-ko-dic은 MeCab을 사용하여, 한국어 형태소 분석을 하기 위한 프로젝트입니다.
+
+```
+mecab    SL,*,*,*,*,*,*,*
+-    SY,*,*,*,*,*,*,*
+ko    SL,*,*,*,*,*,*,*
+-    SY,*,*,*,*,*,*,*
+dic    SL,*,*,*,*,*,*,*
+은    JX,*,T,은,*,*,*,*
+MeCab    SL,*,*,*,*,*,*,*
+을    JKO,*,T,을,*,*,*,*
+사용    NNG,행위,T,사용,*,*,*,*
+하    XSV,*,F,하,*,*,*,*
+여    EC,*,F,여,*,*,*,*
+,    SC,*,*,*,*,*,*,*
+한국어    NNG,*,F,한국어,Compound,*,*,한국/NNG/*+어/NNG/*
+형태소    NNG,*,F,형태소,Compound,*,*,형태/NNG/*+소/NNG/*
+분석    NNG,행위,T,분석,*,*,*,*
+을    JKO,*,T,을,*,*,*,*
+하    VV,*,F,하,*,*,*,*
+기    ETN,*,F,기,*,*,*,*
+위한    VV+ETM,*,T,위한,Inflect,VV,ETM,위하/VV/*+ᆫ/ETM/*
+프로젝트    NNG,*,F,프로젝트,*,*,*,*
+입니다    VCP+EF,*,F,입니다,Inflect,VCP,EF,이/VCP/*+ᄇ니다/EF/*
+.    SF,*,*,*,*,*,*,*
+EOS
 ```
 
 ## License
