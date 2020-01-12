@@ -8,9 +8,13 @@ target 'LibMecabSample' do
   platform :ios, '10.3'
 
   # Pods for LibMecabSample
-  pod 'mecab-naist-jdic-utf-8', :path => '../mecab-naist-jdic-utf-8'
-  pod 'mecab-ko-dic-utf-8', :path => '../mecab-ko-dic-utf-8'
-  pod 'mecab-ko', :path => '../mecab-ko'
+  pod 'mecab-ko', '~> 0.1.0'
+
+  # Japanese dictionary
+  pod 'mecab-naist-jdic-utf-8', '~> 0.1.0'
+
+  # Korean dictionary
+  pod 'mecab-ko-dic-utf-8', '~> 0.1.0'
 
 end
 
@@ -21,8 +25,12 @@ target 'LibMecabSample-macos' do
   platform :osx, '10.11'
 
   # Pods for LibMecabSample-macos
-  pod 'mecab-naist-jdic-utf-8', :path => '../mecab-naist-jdic-utf-8'
-  pod 'mecab-ko-dic-utf-8', :path => '../mecab-ko-dic-utf-8'
-  pod 'mecab-ko', :path => '../mecab-ko'
+  pod 'mecab-ko', '~> 0.1.0'
+
+  # Japanese dictionary
+  pod 'mecab-naist-jdic-utf-8', '~> 0.1.0'
+
+  # Korean dictionary
+  pod 'mecab-ko-dic-utf-8', '~> 0.1.0'
 
 end

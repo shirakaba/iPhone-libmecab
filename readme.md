@@ -16,22 +16,32 @@ Specify these pods in your `Podfile` (you can omit the Japanese or Korean dictio
 
 ```ruby
 # Fork of Mecab supporting both Japanese and Korean
-pod 'mecab-ko', :path => '../mecab-ko'
+pod 'mecab-ko'
 
 # Japanese dictionary
-pod 'mecab-naist-jdic-utf-8', :path => '../mecab-naist-jdic-utf-8'
+pod 'mecab-naist-jdic-utf-8'
 
 # Korean dictionary
-pod 'mecab-ko-dic-utf-8', :path => '../mecab-ko-dic-utf-8'
+pod 'mecab-ko-dic-utf-8'
 ```
 
 ```sh
-pod install
+pod update
 ```
 
 ## Installing as a Cocoapod from `npm` (for React Native iOS apps)
 
-Specify these pods in your `Podfile` (you can omit the Japanese or Korean dictionary if you only plan to use Mecab with one of the two languages):
+Add these packages to your `package.json` (you can omit the Japanese or Korean dictionary if you only plan to use Mecab with one of the two languages):
+
+```sh
+yarn add mecab-ko mecab-naist-jdic-utf-8 mecab-ko-dic-utf-8
+
+# or:
+
+npm install --save mecab-ko mecab-naist-jdic-utf-8 mecab-ko-dic-utf-8
+```
+
+Next, specify these pods in your `Podfile` (you can omit the Japanese or Korean dictionary if you only plan to use Mecab with one of the two languages):
 
 ```ruby
 # Fork of Mecab supporting both Japanese and Korean
@@ -48,7 +58,7 @@ Don't forget to install the pods.
 
 ```sh
 cd ios
-pod install
+pod update
 ```
 
 ## Usage
