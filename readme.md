@@ -12,10 +12,10 @@ The sample app in LibMecabSample should build both an iOS Obj-C app (with a UI) 
     <tbody>
         <tr>
             <td align="center" valign="middle">
-                <img width="200px" src="/github_img/ios_sample_jp.png"/>
+                <img width="400px" src="/github_img/ios_sample_jp.png"/>
             </td>
             <td align="center" valign="middle">
-                <img width="200px" src="/github_img/ios_sample_ko.png"/>
+                <img width="400px" src="/github_img/ios_sample_ko.png"/>
             </td>
         </tr>
         <tr>
