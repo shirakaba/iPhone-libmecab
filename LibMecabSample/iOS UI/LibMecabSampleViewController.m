@@ -15,7 +15,8 @@
 @synthesize textField;
 @synthesize tableView_;
 @synthesize nodeCell;
-@synthesize mecab;
+@synthesize mecabJp;
+@synthesize mecabKo;
 @synthesize nodes;
 
 - (void)viewDidLoad {
@@ -23,15 +24,24 @@
     
     NSString *jpDicBundlePath = [[NSBundle mainBundle] pathForResource:DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME ofType:@"bundle"];
     NSString *jpDicBundleResourcePath = [[NSBundle alloc] initWithPath:jpDicBundlePath].resourcePath;
+    
+    NSString *koDicBundlePath = [[NSBundle mainBundle] pathForResource:DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME ofType:@"bundle"];
+    NSString *koDicBundleResourcePath = [[NSBundle alloc] initWithPath:koDicBundlePath].resourcePath;
 	
-	self.mecab = [[Mecab alloc] initWithDicDirPath:jpDicBundleResourcePath];
+	self.mecabJp = [[Mecab alloc] initWithDicDirPath:jpDicBundleResourcePath];
+    self.mecabKo = [[Mecab alloc] initWithDicDirPath:koDicBundleResourcePath];
 }
 
 - (IBAction)parse:(id)sender {
 	[textField resignFirstResponder];
 	
 	NSString *string = textField.text;
-    self.nodes = [mecab parseToNodeWithString:string calculateTrailingWhitespace:NO];
+    NSInteger tag = ((UIButton*)sender).tag;
+    if(tag == 1){
+        self.nodes = [mecabJp parseToNodeWithString:string calculateTrailingWhitespace:NO];
+    } else if(tag == 2){
+        self.nodes = [mecabKo parseToNodeWithString:string calculateTrailingWhitespace:NO];
+    }
 	
 	[tableView_ reloadData];
 }
@@ -66,7 +76,8 @@
 }
 
 - (void)dealloc {
-	self.mecab = nil;
+	self.mecabJp = nil;
+    self.mecabKo = nil;
 	self.nodes = nil;
 	
 	self.textField = nil;
