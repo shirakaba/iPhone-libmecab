@@ -1,4 +1,4 @@
-# Japanese Morphological Analyzer Mecab on iOS and macOS
+# Japanese and Korean Morphological Analyzer Mecab on iOS and macOS
 
 This is a project that enables `mecab-ko` (a fork of Mecab that adds support for Korean) to be easily integrated into an iOS or macOS app.
 
