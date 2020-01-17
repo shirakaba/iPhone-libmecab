@@ -53,11 +53,14 @@ pod update
 Add these npm packages (you can omit the Japanese or Korean dictionary if you only plan to use Mecab with one of the two languages):
 
 ```sh
-yarn add mecab-ko mecab-naist-jdic-utf-8 mecab-ko-dic-utf-8
+yarn add mecab-ko mecab-naist-jdic mecab-ko-dic
 
 # or:
 
-npm install --save mecab-ko mecab-naist-jdic-utf-8 mecab-ko-dic-utf-8
+npm install --save mecab-ko mecab-naist-jdic mecab-ko-dic
+
+# WHY THE DICTIONARY NPM PACKAGE NAMES DIFFER FROM THOSE OF THE COCOAPODS:
+# I had to remove the "-utf-8" suffix from them for npm publishing to succeed.
 ```
 
 Next, specify these pods in your `Podfile` (you can omit the Japanese or Korean dictionary if you only plan to use Mecab with one of the two languages):
@@ -67,10 +70,13 @@ Next, specify these pods in your `Podfile` (you can omit the Japanese or Korean 
 pod 'mecab-ko', :podspec => '../node_modules/mecab-ko/mecab-ko.podspec'
 
 # Japanese dictionary
-pod 'mecab-naist-jdic-utf-8', :podspec => '../node_modules/mecab-naist-jdic-utf-8/mecab-naist-jdic-utf-8.podspec'
+pod 'mecab-naist-jdic-utf-8', :podspec => '../node_modules/mecab-naist-jdic/mecab-naist-jdic-utf-8.podspec'
 
 # Korean dictionary
-pod 'mecab-ko-dic-utf-8', :podspec => '../node_modules/mecab-ko-dic-utf-8/mecab-ko-dic-utf-8.podspec'
+pod 'mecab-ko-dic-utf-8', :podspec => '../node_modules/mecab-ko-dic/mecab-ko-dic-utf-8.podspec'
+
+# WHY THE DICTIONARY NPM PACKAGE NAMES DIFFER FROM THOSE OF THE COCOAPODS:
+# I had to remove the "-utf-8" suffix from them for npm publishing to succeed.
 ```
 
 Don't forget to install the pods.
@@ -96,7 +102,7 @@ let jpBundleResourcePath = Bundle.init(path: jpBundlePath!)!.resourcePath
 
 let mecabJapanese: Mecab = Mecab.init(dicDirPath: jpBundleResourcePath!)
 let japaneseNodes: [MecabNode]? = mecabJapanese.parseToNode(with: "すもももももももものうち")
-japaneseNodes?.forEach({ node in print("[\(node.surface)] \(node.feature)") })
+japaneseNodes?.forEach({ node in print("[\(node.surface)] \(node.feature ?? "")") })
 ```
 
 ### Obj-C invocation
