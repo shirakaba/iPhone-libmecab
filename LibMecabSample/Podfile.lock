@@ -1,0 +1,24 @@
+PODS:
+  - mecab-ko (0.3.0)
+  - mecab-ko-dic-utf-8 (0.1.3)
+  - mecab-naist-jdic-utf-8 (0.1.3)
+
+DEPENDENCIES:
+  - mecab-ko
+  - mecab-ko-dic-utf-8
+  - mecab-naist-jdic-utf-8
+
+SPEC REPOS:
+  trunk:
+    - mecab-ko
+    - mecab-ko-dic-utf-8
+    - mecab-naist-jdic-utf-8
+
+SPEC CHECKSUMS:
+  mecab-ko: 19eb348fe04c4912f2698f928ca6cf3023948297
+  mecab-ko-dic-utf-8: 8938527f7104bbb0a6cabb5c2791764d55b7a0d3
+  mecab-naist-jdic-utf-8: 0df05453d30e5774bf28f019eb45507fc8a4f740
+
+PODFILE CHECKSUM: 394ad348833ac9d7d02f9bb5842cfa27adfad89f
+
+COCOAPODS: 1.9.1
