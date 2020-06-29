@@ -22,10 +22,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let mecabJapanese: Mecab = Mecab.init(dicDirPath: jpBundleResourcePath!)
         let mecabKorean: Mecab = Mecab.init(dicDirPath: koBundleResourcePath!)
         let japaneseNodes: [MecabNode]? = mecabJapanese.parseToNode(with: "この番組はご覧のスポンサーの提供で送りします。")
-        japaneseNodes?.forEach({ node in print("[\(node.surface)] \(node.partOfSpeech ?? "*") \(node.originalForm ?? "*")") })
+        japaneseNodes?.forEach({ node in print("[\(node.surface)] \(node.features?[0] ?? "*") \(node.features?[6] ?? "*")") })
         
         let koreanNodes: [MecabNode]? = mecabKorean.parseToNode(with: "mecab-ko-dic은 MeCab을 사용하여, 한국어 형태소 분석을 하기 위한 프로젝트입니다.")
-        koreanNodes?.forEach({ node in print("[\(node.surface)] (\(node.partOfSpeech ?? "*")) \(node.originalForm ?? "*")") })
+        koreanNodes?.forEach({ node in print("[\(node.surface)] (\(node.features?[0] ?? "*")) \(node.features?[6] ?? "*")") })
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
