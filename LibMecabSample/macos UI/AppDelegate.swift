@@ -1,5 +1,5 @@
 import Cocoa
-import mecab_ko
+// import mecab_ko
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 

@@ -25,7 +25,7 @@
 		7D833C1521026451005F2854 /* ExampleUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D471CA41EB4B7610038BCA5 /* ExampleUsage.swift */; };
 		7D833C1721026451005F2854 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		7D833C37210269AE005F2854 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D833C36210269AE005F2854 /* main.swift */; };
-		C573533B78CAD79835ACCF63 /* Pods_LibMecabSample_macos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686B94DEC436E986723A1DFA /* Pods_LibMecabSample_macos.framework */; };
+		8EE8E5A5B49319DAC4651372 /* libPods-LibMecabSample-macos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D591D9B8DB98AD19F7E2F1DC /* libPods-LibMecabSample-macos.a */; };
 		E630CC2F1CFBE222001774B0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E630CC2E1CFBE222001774B0 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -69,13 +69,14 @@
 		2917EF38E1BA40C08FFB9095 /* Pods-LibMecabSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibMecabSample.release.xcconfig"; path = "Target Support Files/Pods-LibMecabSample/Pods-LibMecabSample.release.xcconfig"; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		367A2F93A04EA3B74709C8E6 /* Pods-LibMecabSample-macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibMecabSample-macos.debug.xcconfig"; path = "Target Support Files/Pods-LibMecabSample-macos/Pods-LibMecabSample-macos.debug.xcconfig"; sourceTree = "<group>"; };
-		686B94DEC436E986723A1DFA /* Pods_LibMecabSample_macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibMecabSample_macos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D468B1E23CA81B1000382D5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D468B2123CA8245000382D5 /* LibMecabSample-macos-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LibMecabSample-macos-Info.plist"; sourceTree = "<group>"; };
 		7D471CA41EB4B7610038BCA5 /* ExampleUsage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleUsage.swift; sourceTree = "<group>"; };
 		7D833C2321026451005F2854 /* LibMecabSample-macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LibMecabSample-macos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D833C36210269AE005F2854 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7DE1019524AA89A60092C9E4 /* LibMecabSample-macos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LibMecabSample-macos-Bridging-Header.h"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* LibMecabSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LibMecabSample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D591D9B8DB98AD19F7E2F1DC /* libPods-LibMecabSample-macos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LibMecabSample-macos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD225A2A3BBD2D74CB137D6 /* Pods_LibMecabSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibMecabSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D8933F41C385A03E916969 /* Pods-LibMecabSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibMecabSample.debug.xcconfig"; path = "Target Support Files/Pods-LibMecabSample/Pods-LibMecabSample.debug.xcconfig"; sourceTree = "<group>"; };
 		E630CC2E1CFBE222001774B0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -99,7 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D833C1721026451005F2854 /* Foundation.framework in Frameworks */,
-				C573533B78CAD79835ACCF63 /* Pods_LibMecabSample_macos.framework in Frameworks */,
+				8EE8E5A5B49319DAC4651372 /* libPods-LibMecabSample-macos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +172,7 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				DFD225A2A3BBD2D74CB137D6 /* Pods_LibMecabSample.framework */,
-				686B94DEC436E986723A1DFA /* Pods_LibMecabSample_macos.framework */,
+				D591D9B8DB98AD19F7E2F1DC /* libPods-LibMecabSample-macos.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,6 +182,7 @@
 			children = (
 				7D468B1E23CA81B1000382D5 /* AppDelegate.swift */,
 				7D833C36210269AE005F2854 /* main.swift */,
+				7DE1019524AA89A60092C9E4 /* LibMecabSample-macos-Bridging-Header.h */,
 			);
 			path = "macos UI";
 			sourceTree = "<group>";
@@ -229,7 +231,6 @@
 				7D833C1021026451005F2854 /* Sources */,
 				7D833C1621026451005F2854 /* Frameworks */,
 				7D833C1D21026451005F2854 /* Embed Frameworks */,
-				1D0593A7180F9EBF44E0DE47 /* [CP] Embed Pods Frameworks */,
 				B3EA189BD4B99B26165695BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -252,6 +253,9 @@
 					1D6058900D05DD3D006BFB54 = {
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Manual;
+					};
+					7D833C0621026451005F2854 = {
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -300,24 +304,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1D0593A7180F9EBF44E0DE47 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LibMecabSample-macos/Pods-LibMecabSample-macos-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/mecab-ko-macOS/mecab_ko.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mecab_ko.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LibMecabSample-macos/Pods-LibMecabSample-macos-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		38D7C2CF359A323E25DD2AF5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,7 +333,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LibMecabSample/Pods-LibMecabSample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/mecab-ko-iOS/mecab_ko.framework",
+				"${BUILT_PRODUCTS_DIR}/mecab-ko-framework/mecab_ko.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -387,11 +373,29 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LibMecabSample-macos/Pods-LibMecabSample-macos-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/mecab-ko-dic-utf-8-macOS/mecab-ko-dic-utf-8.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/mecab-naist-jdic-utf-8-macOS/mecab-naist-jdic-utf-8.bundle",
+				"${PODS_ROOT}/mecab-ko/Assets/AUTHORS",
+				"${PODS_ROOT}/mecab-ko/Assets/BSD",
+				"${PODS_ROOT}/mecab-ko/Assets/ChangeLog",
+				"${PODS_ROOT}/mecab-ko/Assets/COPYING",
+				"${PODS_ROOT}/mecab-ko/Assets/GPL",
+				"${PODS_ROOT}/mecab-ko/Assets/LGPL",
+				"${PODS_ROOT}/mecab-ko/Assets/mecabrc",
+				"${PODS_ROOT}/mecab-ko/Assets/NEWS",
+				"${PODS_ROOT}/mecab-ko/Assets/README",
+				"${PODS_CONFIGURATION_BUILD_DIR}/mecab-ko-dic-utf-8-library/mecab-ko-dic-utf-8.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/mecab-naist-jdic-utf-8-library/mecab-naist-jdic-utf-8.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AUTHORS",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BSD",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ChangeLog",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/COPYING",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GPL",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LGPL",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mecabrc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NEWS",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/README",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mecab-ko-dic-utf-8.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mecab-naist-jdic-utf-8.bundle",
 			);
@@ -407,8 +411,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LibMecabSample/Pods-LibMecabSample-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/mecab-ko-dic-utf-8-iOS/mecab-ko-dic-utf-8.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/mecab-naist-jdic-utf-8-iOS/mecab-naist-jdic-utf-8.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/mecab-ko-dic-utf-8-framework/mecab-ko-dic-utf-8.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/mecab-naist-jdic-utf-8-framework/mecab-naist-jdic-utf-8.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -513,6 +517,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "macos UI/LibMecabSample-macos-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -537,6 +542,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "macos UI/LibMecabSample-macos-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};

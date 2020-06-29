@@ -90,10 +90,25 @@ pod update
 
 Import the necessary `mecab_ko` headers into your class. Allocate and initialize a new Mecab object (specifying whether to use the Japanese or Korean dictionary via the `DEFAULT_JAPANESE_RESOURCES_BUNDLE_NAME` or `DEFAULT_KOREAN_RESOURCES_BUNDLE_NAME` constants) and then supply it a string to parse via the `parseToNodeWithString` method. It'll return an array of nodes that you can then manipulate as needed:
 
+
 ### Swift invocation
+#### Bridging header
+
+If you have `use_frameworks!` enabled in your Podfile, then you don't need to include a bridging header.
+
+If you don't have it enabled (because you're using only static libraries), then add these imports to your bridging header to expose the Obj-C headers to the Swift runtime:
+
+```objc
+// LibMecabSample-macos-Bridging-Header.h
+// Note how the module is `mecab-ko` in this Obj-C header but `mecab_ko` in Swift!
+#import <mecab-ko/MecabObjC.h>
+#import <mecab-ko/MecabNode.h>
+```
+
+#### Swift file
 
 ```swift
-import mecab_ko
+import mecab_ko // Omit this if you have `use_frameworks!` enabled in your Podfile.
 
 // ...
 
@@ -108,8 +123,11 @@ japaneseNodes?.forEach({ node in print("[\(node.surface)] \(node.feature ?? "")"
 ### Obj-C invocation
 
 ```objc
-#import <mecab_ko/MecabObjC.h>
-#import <mecab_ko/MecabNode.h>
+// If use_frameworks! is on, you may have to write mecab_ko instead of mecab-ko.
+// This is because Clang modules don't support hyphens:
+// http://blog.cocoapods.org/Pod-Authors-Guide-to-CocoaPods-Frameworks/
+#import <mecab-ko/MecabObjC.h>
+#import <mecab-ko/MecabNode.h>
 
 // ...
 
@@ -181,6 +199,8 @@ It's based on IPADIC, and the tags are fully documented here https://osdn.net/pr
 | 7     | 読み       | reading |
 | 8     | 発音       | pronunciation |
 
+⚠️ When accessing these features, e.g. `feature[3]`, most of them safely return "*" when there is no data. However, certain ones may return `null` for certain words (usually these are corner-cases like pronunciation for foreign tokens). As I'm not too sure which ones return `null`, so please treat everything as potentially `null` to avoid crashes!
+
 ##### Example feature strings
 
 > 欲しがっていた
@@ -235,6 +255,8 @@ The dictionary format is specified fully (in Korean) in tab "사전 형식 v2.0"
 | 5     | 첫번째 품사     | first part-of-speech | e.g. given a part-of-speech tag of "VV+EM+VX+EP", would return `VV` |
 | 6     | 마지막 품사       | last part-of-speech | e.g. given a part-of-speech tag of "VV+EM+VX+EP", would return `EP` |
 | 7     | 표현       | expression | "활용, 복합명사, 기분석이 어떻게 구성되는지 알려주는 필드" – Fields that tell how usage, compound nouns, and key analysis are organized |
+
+⚠️ As I'm mentioned for NAIST JDic above, I am unsure whether any of these fields may return `null` in certain circumstances. It is safest to handle all fields as if they may be optional in practice.
 
 ##### Example feature strings
 

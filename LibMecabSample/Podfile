@@ -8,7 +8,7 @@ target 'LibMecabSample' do
   platform :ios, '10.3'
 
   # Pods for LibMecabSample
-  pod 'mecab-ko'
+  pod 'mecab-ko', '~> 0.4.0'
 
   # Japanese dictionary
   pod 'mecab-naist-jdic-utf-8'
@@ -20,12 +20,12 @@ end
 
 target 'LibMecabSample-macos' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  # use_frameworks!
 
   platform :osx, '10.11'
 
   # Pods for LibMecabSample-macos
-  pod 'mecab-ko'
+  pod 'mecab-ko', '~> 0.4.0'
 
   # Japanese dictionary
   pod 'mecab-naist-jdic-utf-8'
